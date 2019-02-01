@@ -6,7 +6,7 @@
 
 ![Image of Sense HAT](/images/sense-hat.png)
 
-# The Sense HAT has an 8 × 8 RGB LED matrix, a five – button joystick and includes the following sensors:
+## The Sense HAT has an 8 × 8 RGB LED matrix, a five – button joystick and includes the following sensors:
 - Gyroscope
 - Accelerometer
 - Magnetometer
