@@ -1,3 +1,0 @@
-# Setting up Raspian and .NET Core 2.0 on a Raspberry Pi
-
-## Coming soon...

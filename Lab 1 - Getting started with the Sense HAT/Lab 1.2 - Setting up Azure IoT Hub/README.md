@@ -1,0 +1,3 @@
+# Lab 1.2 - Setting up Azure IoT Hub
+
+## Coming soon...

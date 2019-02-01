@@ -1,0 +1,3 @@
+# Lab 2.5 - Function Trigger for CosmosDB
+
+## Coming soon...

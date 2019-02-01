@@ -1,0 +1,3 @@
+# Lab 2.4 - Setting up CosmosDB
+
+## Coming soon...

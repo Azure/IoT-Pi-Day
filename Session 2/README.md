@@ -1,3 +1,0 @@
-# Session 2 - Sending SIMULATED sensor data to Azure Cloud
-
-## Coming soon...

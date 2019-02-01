@@ -1,0 +1,3 @@
+# Lab 1.1 - Reading SenseHat Data
+
+## Coming soon...

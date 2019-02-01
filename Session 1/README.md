@@ -1,3 +1,0 @@
-# Session 1 - Sending sensor data to Azure Cloud
-
-## Coming soon...
