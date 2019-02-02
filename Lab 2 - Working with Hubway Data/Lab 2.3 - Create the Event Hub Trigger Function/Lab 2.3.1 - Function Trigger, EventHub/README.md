@@ -1,3 +1,0 @@
-# Lab 2.3.1 - Function Trigger for EventHub
-
-## Coming soon...
