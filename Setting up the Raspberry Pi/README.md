@@ -27,18 +27,22 @@
 
 ## Telnet into the Raspberry Pi using SSH
 
-- Download the PuTTY SSH and Telnet client and launch it.
-    - Click [Download PuTTY](https://www.putty.org/) and click **Download it here** to download the latest version. Use the **MSI Windows Installer - 64-bit**.
-    - Click **Run** to accept the default prompts.
-    - Run **PuTTY** and enter the IP address of the Raspberry Pi and click Open. Accept the message about keys.
-    - Enter **pi** as the logon name, and **raspberry** as the password.
-    - Change the default password for the pi user .
-        - Type **passwd** to change it to **iotpiday** for the current user.
+- Option 1 - Using Windows 10
+    - Click [How to Enable and Use Windows 10’s New Built-in SSH Commands](https://www.howtogeek.com/336775/how-to-enable-and-use-windows-10s-built-in-ssh-commands/)
+
+- Option 2 - Not using Windows 10
+    - Download the PuTTY SSH and Telnet client and launch it.
+        - Click [Download PuTTY](https://www.putty.org/) and click **Download it here** to download the latest version. Use the **MSI Windows Installer - 64-bit**.
+        - Click **Run** to accept the default prompts.
+        - Run **PuTTY** and enter the IP address of the Raspberry Pi and click Open. Accept the message about keys.
+        - Enter **pi** as the logon name, and **raspberry** as the password.
+        - Change the default password for the pi user .
+            - Type **passwd** to change it to **iotpiday** for the current user.
 
 ## Update your system's package list
 - Entering the following command: **sudo apt-get -y update**
 
-## Install .NET Core Runtime
+## Install .Net Core Runtime
 The following commands need to be run on the Raspberry Pi whilst connected over an SSH session.
 ```
 // Note: This will use the apt-get package manager to install three prerequiste packages.
