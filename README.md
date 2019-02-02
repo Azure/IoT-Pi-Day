@@ -15,3 +15,5 @@ contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additio
 
 # Mastering Markdown
 - https://guides.github.com/features/mastering-markdown/
+- https://www.webfx.com/tools/emoji-cheat-sheet/ :smile:
+
