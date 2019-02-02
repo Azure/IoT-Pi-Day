@@ -65,5 +65,5 @@ dotnet –info to confirm installation.
 - **sudo mkdir HubwayApp**
 - **sudo mkdir SenseHAT**
 
-> Note: These instructions were based off of the following, [Set up Raspian and .NET Core 2.0 on a Raspberry Pi](https://blogs.msdn.microsoft.com/david/2017/07/20/setting_up_raspian_and_dotnet_core_2_0_on_a_raspberry_pi/)
+> Note: Many of these instructions were based off of the following, [Set up Raspian and .NET Core 2.0 on a Raspberry Pi](https://blogs.msdn.microsoft.com/david/2017/07/20/setting_up_raspian_and_dotnet_core_2_0_on_a_raspberry_pi/)
 
