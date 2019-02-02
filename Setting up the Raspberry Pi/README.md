@@ -12,15 +12,15 @@
     - After download completes, **Right-Click** on **2018-xxx.zip** file to unzip the contents and create the **2018-xxx.img** file.
     - Insert & format the SD Card using a SD formatting tool.
         - Use [SD Memory Card Formatter](https://www.sdcard.org/downloads/formatter_4/eula_windows/index.html) tool.
-    - Burn the file **2018-xxx.img** file.
-        - Use [BalenaEtcher.](https://www.balena.io/etcher/?ref=etcher_footer).
+    - Burn the file **2018-xxx.img** file to the SD card.
+        - Use [BalenaEtcher](https://www.balena.io/etcher/?ref=etcher_footer).
     > **EXTREMELY IMPORTANT** - Once flashing is complete, create a new empty file named **ssh** (with no extension) in the root folder of the SD card drive.
     - Eject the SD card and insert it into the slot on the Raspberry Pi.
     - Plug the Raspberry Pi into your laptop via USB
         > TBD - Plug the Raspberry Pi into your laptop via RJ45?
     - Plug power into the Raspberry Pi.
     - Wait 4-5 min for it to fully boot up.
-        - Grab a cup of joe! :coffee:
+        - Time to grab another cup of joe! :coffee:
     - Locate the IP address which has been assigned by your DHCP server to the Raspberry Pi and make note of it.
     - Open a Command Prompt as an Administrator.
         - type: **ping -c 1 raspberrypi.local** to get it.
@@ -42,16 +42,24 @@
 The following commands need to be run on the Raspberry Pi whilst connected over an SSH session.
 - **sudo apt-get -y install libunwind8 gettext**
     > Note: This will use the apt-get package manager to install three prerequiste packages.
-- **wget https://dotnetcli.blob.core.windows.net/dotnet/Sdk/2.2.103/dotnet-sdk-2.2.103-linux-arm.tar.gz**
-- **wget https://dotnetcli.blob.core.windows.net/dotnet/aspnetcore/Runtime/2.2.1/aspnetcore-runtime-2.2.1-linux-arm.tar.gz**
-- **sudo mkdir /opt/dotnet**
-- **sudo tar -xvf dotnet-sdk-2.2.103-linux-arm.tar.gz -C /opt/dotnet/**
-- **sudo tar -xvf aspnetcore-runtime-2.2.1-linux-arm.tar.gz -C /opt/dotnet/**
-    > Note: This creates a destination folder and extract the downloaded package into it.   
-- **sudo ln -s /opt/dotnet/dotnet /usr/local/bin**
-    > Note: This sets up a symbolic link.
-- **dotnet –info** to confirm installation.
-    > Note: The Raspberry Pi itself is supported only as deployment target to run .Net Core apps. 
+
+```
+wget https://dotnetcli.blob.core.windows.net/dotnet/Sdk/2.2.103/dotnet-sdk-2.2.103-linux-arm.tar.gz
+wget https://dotnetcli.blob.core.windows.net/dotnet/aspnetcore/Runtime/2.2.1/aspnetcore-runtime-2.2.1-linux-arm.tar.gz
+
+sudo mkdir /opt/dotnet
+
+sudo tar -xvf dotnet-sdk-2.2.103-linux-arm.tar.gz -C /opt/dotnet/
+
+*** Note: This creates a destination folder and extract the downloaded package into it.
+sudo tar -xvf aspnetcore-runtime-2.2.1-linux-arm.tar.gz -C /opt/dotnet/
+
+*** Note: This sets up a symbolic link.
+sudo ln -s /opt/dotnet/dotnet /usr/local/bin
+
+*** Note: The Raspberry Pi itself is supported only as deployment target to run .Net Core apps.
+dotnet –info to confirm installation.
+```
 
 ## Create application folders
 - **sudo mkdir HubwayApp**
