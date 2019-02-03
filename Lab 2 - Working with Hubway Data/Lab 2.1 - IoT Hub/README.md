@@ -1,5 +1,5 @@
 # Lab 2.1 - Setting up Iot Hub
-We need to document the scenario here
+TBD - We need to document the scenario here
 
 
 ## Prerequisites
@@ -7,7 +7,7 @@ We need to document the scenario here
 
 ## Create an Iot Hub
 
-Note:  If you already created your account, skip to the section Configuration and Settings
+Note:  If you already created your Iot Hub, skip to the section Configuration and Settings
 
 Use the following steps to create an Iot Hub:    
 
@@ -19,7 +19,7 @@ Use the following steps to create an Iot Hub:
    * **Subscription**: Select the subscription to use for your IoT hub.
    * **Resource Group**: You can create a new resource group or use an existing one. To create a new one, click Create new and fill in the name you want to use. To use an existing resource group, click Use existing and select the resource group from the dropdown list.
    * **Region**: This is the region in which you want your hub to be located. Select the location closest to you from the dropdown list.
-   * **IoT Hub Name**: Put in the name for your IoT Hub. This name must be globally unique. A recommendation is LastName-pi-day-IoT-Hub.
+   * **IoT Hub Name**: Put in the name for your IoT Hub. This name must be globally unique. A recommendation is LastName-CLE-IoT-Hub.
 5. Click Next: Size and scale to continue creating your IoT hub.  
 6. On this screen, you can take the defaults and just click Review + create at the bottom.  
     * **Pricing and scale tier**: You can choose from several tiers depending on how many features you want and how many messages you send through your solution per day. The free tier is intended for testing and evaluation. It allows 500 devices to be connected to the IoT hub and up to 8,000 messages per day. Each Azure subscription can create one IoT Hub in the free tier.
