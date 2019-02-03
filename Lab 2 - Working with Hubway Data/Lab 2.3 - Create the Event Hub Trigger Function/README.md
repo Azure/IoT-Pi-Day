@@ -49,15 +49,42 @@ We will be using Visual Studio Code and the Azure Functions Extension.
 8.  Select the HubwayFunctions.csproj and change the TargetFramework to netcoreapp2.2
 9.  Save and close the file.
 
-`Azure Credentials`
+## Azure Credentials
 
 1.  Press Control Shift P
 2.  Enter Azure and select Sign in to Azure Cloud
-3.  
+   
+## Create the Event Hub Trigger
 
+1.  Press Control Shift P
+2.  Enter Azure Functions and select Create Function
+3.  Select the Folder containting your function app
+4.  Select a function Template.
+    * Change the template filter to All
+5.  Select EventHubTrigger
+6.  Change the name from EventHubTriggerCSharp to HubwayEventHubTrigger.
+7.  Take the default Company.Function namespace and press enter.
+8.  Select an App Setting for your Event Hub:
+    * Select New App Setting
+    * Enter a key for your Event Hub - Hubway_EVENTHUB
+    * Enter the connection string for your event hub.   This can be found in the Azure Portal by selecting the Event Hub namespace  Go to Shared Access policies and select the RootManageSharedAccessKey.  Copy either connection string and press enter.
+    * Enter the name of the event hub you created earlier -- hubwaytelemetry.
 
+## Test the Function
+1.  Press F5 from within VS Code
+2.  TBD : You should see...
 
+## Add the CosmosDB Binding
 
+1.  First decorate the function with the CosmosDB Binding -- refer to the Solution provided as a reference.
+2.  Update the Event Hub Trigger -- add ConsumerGroup = "hubwaycg".
+
+## Update the code
+
+1.  Change the body of the code to map the incoming JSON string to an output document for inserting into CosmosDB.
+
+## Test the Function
+1.  Press F5 from within VS Code
 
 
 
@@ -71,6 +98,8 @@ We will be using Visual Studio Code and the Azure Functions Extension.
 
 [Event Hub Trigger][EventHubTrigger]
 
+[CosmosDB Binding][CosmosDB-Binding]
+
 [Azure-Portal]: https://portal.azure.com/ 
 
 [Create-FunctionApp]: https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-function-app-portal
@@ -82,3 +111,7 @@ https://docs.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindin
 
 [EventHubTrigger]: 
 https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-event-hubs
+
+
+[CosmosDB-Binding]: 
+https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-cosmosdb-v2
