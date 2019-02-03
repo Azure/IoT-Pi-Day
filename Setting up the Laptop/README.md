@@ -17,7 +17,7 @@
     - Click **Mac** button.
     - Click **Run** to execute **VSCode-darwin-stable.zip**
 
-    > Path will automaticly be updated
+> Path will automaticly be updated
 
 ### Install Extensions
 What are Visual Studio Code Extensions? Extensions let you add languages, debuggers, and tools to your installation to support your development workflow. You can browse and install extensions from within Visual Studio Code or from the Command line.
@@ -58,7 +58,7 @@ What are Visual Studio Code Extensions? Extensions let you add languages, debugg
 **MacOS**
 - Under .NET Core 2.2-Build Apps, Click [Download .Net Core SDK]([https://dotnet.microsoft.com/download) to execute **dotnet-sdk-2.2.103-osx-x64.pkg**.
 
-> - Open a a command line as an Administrator and type: **run dotnet --info** to confirm installation.
+> Open a a command line as an Administrator and type: **run dotnet --info** to confirm installation.
  
 ### Install Node.js
 What is npm? npm makes it easy for JavaScript developers to share and reuse code, and makes it easy to update the code that you’re sharing, so you can build amazing things.
@@ -77,12 +77,12 @@ What is npm? npm makes it easy for JavaScript developers to share and reuse code
     - Click **Windows Installer** to execute **node-v10.15.1-x64.msi**
     - Accept all the defaults to install npm.
  
-  **MacOS**
+**MacOS**
 - Click [Get npm](https://nodejs.org/en/download/)
 - Click **macOS Installer** to execute **node-v10.15.1.pkg**
 - Accept all the defaults to install npm.
 
- **Linux**
+**Linux**
 - Click [Get npm](https://nodejs.org/en/download/)
 - Click **64-bit** for the correct version to execute correct file.
     - i.e. **nnode-v11.9.0-linux-ppc64le.tar.xz**
