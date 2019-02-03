@@ -4,9 +4,19 @@
 
 ### Download Visual Studio Code
 - Click [Visual Studio Code](https://code.visualstudio.com/Download)
-- Click **Windows 7, 8, 10** button.
-- Click **Run** to execute **VSCodeUserSetup-x64-x.xx.x.exe**
- 
+
+    ### Windows
+    - Click **Windows 7, 8, 10** button.
+    - Click **Run** to execute **VSCodeUserSetup-x64-x.xx.x.exe**
+    
+    ### Linux
+    - Click **Debian, Ubuntu, Red Hate...etc** button.
+    - Click **Run** to execute **code_1.30.2-1546901646_amd64.deb**
+
+    ### MacOS
+    - Click **Mac** button.
+    - Click **Run** to execute **VSCode-darwin-stable.zip**
+
     > Path will automaticly be updated
 
 ### Install Extensions
@@ -38,27 +48,68 @@ What are Visual Studio Code Extensions? Extensions let you add languages, debugg
 ### Install DotNet Core
 .NET Core is a cross-platform version of .NET for building websites, services, and console apps.
 
+**Windows**
 - Under .NET Core 2.2-Build Apps, Click [Download .Net Core SDK]([https://dotnet.microsoft.com/download) to execute **dotnet-sdk-2.2.103-win-x64.exe**.
-    - Open a a command line as an Administrator and type: **run dotnet --info** to confirm installation.
+
+**Linux**
+- Under .NET Core 2.2-Build Apps, Click [Install .Net Core SDK]([https://dotnet.microsoft.com/download).
+- Under Linux Distribution, select your version of Linux and folllow the instructions on the site.
+
+**MacOS**
+- Under .NET Core 2.2-Build Apps, Click [Download .Net Core SDK]([https://dotnet.microsoft.com/download) to execute **dotnet-sdk-2.2.103-osx-x64.pkg**.
+
+> - Open a a command line as an Administrator and type: **run dotnet --info** to confirm installation.
  
 ### Install Node.js
 What is npm? npm makes it easy for JavaScript developers to share and reuse code, and makes it easy to update the code that you’re sharing, so you can build amazing things.
-- Click [Get npm](https://nodejs.org/en/)
-- Click **Download Node.js and npm**
-- Click [10.15.1 LTS](https://www.npmjs.com/get-npm) to execute **node-v10.15.1-x64.msi**
-- Open a a command line as an Administrator.
+
+**Windows**
+
+- Option 1
+    - Click [Get npm](https://nodejs.org/en/)
+    - Under **Download for Windows (x64)**, click **10.15.1 LTS** to execute **node-v10.15.1-x64.msi**
+    - Open a a command line as an Administrator.
     - Type: **run node --version** to confirm installation.
     - Type **run npm --version** to confirm installation.
+
+- Option 2
+    - Click [Get npm](https://nodejs.org/en/download/)
+    - Click **Windows Installer** to execute **node-v10.15.1-x64.msi**
+    - Accept all the defaults to install npm.
  
+  **MacOS**
+- Click [Get npm](https://nodejs.org/en/download/)
+- Click **macOS Installer** to execute **node-v10.15.1.pkg**
+- Accept all the defaults to install npm.
+
+ **Linux**
+- Click [Get npm](https://nodejs.org/en/download/)
+- Click **64-bit** for the correct version to execute correct file.
+    - i.e. **nnode-v11.9.0-linux-ppc64le.tar.xz**
+- Accept all the defaults to install npm.
+
 ### Install Azure Functions Core Tools
 What are Azure Functions Core Tools? The Azure Functions Core Tools provide a local development experience for creating, developing, testing, running, and debugging Azure Functions.
+
+**Windows**
 - To install v2 with npm, open a Command Prompt as Adminstrator.
 - Type: **npm i -g azure-functions-core-tools --unsafe-perm true**
-    > Docs found at  https://github.com/Azure/azure-functions-core-tools#installing
+
+**MacOS**
+- See [Azure Functions Core Tools on the Mac](https://github.com/Azure/azure-functions-core-tools#mac)
+
+**Linux**
+- See [Azure Functions Core Tools on the Mac](https://github.com/Azure/azure-functions-core-tools#linux)
 
 ### Install Git
 What is Git? Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
 - Click [Git](https://git-scm.com/)
-- Under Latest source Release, click **Download 2.20.1 for Windows** to execute **Git-2.20.1-64-bit.exe**
-    > Select all the defaults.
+
+**Windows**
+- Under Latest source Release, click **Download 2.20.1 for Windows** to execute **Git-2.20.1-64-bit.exe**.
+- Select all the defaults.
+
+**MacOS**
+- Click on **Mac Build** to download **node-v11.9.0.pkg**. 
+
 ​
