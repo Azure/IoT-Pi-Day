@@ -1,4 +1,4 @@
-# Lab 2.4 - Setting up Iot Hub
+# Lab 2.1 - Setting up Iot Hub
 We need to document the scenario here
 
 
