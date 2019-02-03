@@ -39,7 +39,22 @@ When an Event Hubs trigger function is triggered, the message that is passed int
 
 We will be using Visual Studio Code and the Azure Functions Extension.
 
-1.  
+1.  From a command line / powershell, change directory to \Workspace\HubwayFunctions.
+2.  Enter code . and press return.  This brings up an instance on Visual Studio Code with HubwayFunctions selected as the working folder.
+3.  Press Control Shift P
+4.  Enter Azure Functions and select Create New Project from the list.
+5.  Select the folder that will contain your function app - HubwayFunctions.
+6.  Select the project language -- in this case, C#.
+7.  Select the Restore button on the lower right corner when it pops up.
+8.  Select the HubwayFunctions.csproj and change the TargetFramework to netcoreapp2.2
+9.  Save and close the file.
+
+`Azure Credentials`
+
+1.  Press Control Shift P
+2.  Enter Azure and select Sign in to Azure Cloud
+3.  
+
 
 
 

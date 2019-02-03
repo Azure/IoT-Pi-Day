@@ -1,0 +1,20 @@
+Snippet One:                
+                
+                log.LogInformation("We have c# generated JSON");
+
+                outputDocument = new  {startTime = msg.GetValue("starttime").ToString(), 
+                           stopTime = msg.GetValue("stoptime").ToString(),
+                           tripDuration = msg.GetValue("tripduration").ToString(),
+                           startStationID = msg.GetValue("start_station_id").ToString(),
+                           startStationName = msg.GetValue("start_station_name").ToString(),
+                           startStationLatitiude = msg.GetValue("start_station_latitude").ToString(),
+                           startStationLongitude = msg.GetValue("start_station_longitude").ToString(),
+                           endStationID = msg.GetValue("end_station_id").ToString(),
+                           endStationName = msg.GetValue("end_station_name").ToString(),
+                           endStationLatitude = msg.GetValue("end_station_latitude").ToString(),
+                           endStationLongitude = msg.GetValue("end_station_longitude").ToString(),
+                           bikeID = msg.GetValue("bikeid").ToString(),
+                           userType = msg.GetValue("usertype").ToString(),
+                           gender = msg.GetValue("gender").ToString()};
+
+Snippet Two:
