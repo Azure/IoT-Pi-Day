@@ -36,7 +36,7 @@ What are Visual Studio Code Extensions? Extensions let you add languages, debugg
 **From Visual Studio Code**
 
 - Launch Visual Studio Code
-    > Bring up the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of VS Code or the View: Extensions command (**Ctrl+Shift+X**).
+    - Bring up the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of VS Code or the View: Extensions command (**Ctrl+Shift+X**).
 - Search for: **Azure Account**, click **Install**
 - Search for: **Azure Functions**, click **Install**
 - Search for: **Azure IoT Device Workbench**, click **Install**
