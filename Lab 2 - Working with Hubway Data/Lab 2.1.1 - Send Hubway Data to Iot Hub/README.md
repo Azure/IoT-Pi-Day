@@ -7,6 +7,7 @@ We need to document the scenario here
 2.  CosmosDB implementing the SQL APi and Tripdata collection mu already be created.
 3.  Visual Studio Code and listed extenstions are installed.
 4.  The IoT Hub must be created and configured
+5.  Ensure that you created the directory SimulatedDevice on the Raspberry PI.  This project will be copied into this directory.
 
 ## Create the IoTProject console application
 
@@ -27,6 +28,13 @@ From the Visual Studio Code
     *  You should see Hello World printed in the debug console
     *  Once your are satisifed your environment works, delete program.cs
 
+## Azure Credentials
+
+Note:  If this is the first time logging into Azure from Visual Studio Code.
+
+1.  Press Control Shift P
+2.  Enter Azure and select Sign in to Azure Cloud
+
 ## Update code
 
 1.  Edit the simulated-device.csproj
@@ -40,16 +48,8 @@ From the Visual Studio Code
     *  Select the IoT Devices menu on the left
     *  Select your device from the window
     *  Copy either connection string.
-    *  EXAMPLE:  "HostName=smith-iothub.azure-devices.net;DeviceId=countrydiverpi;SharedAccessKey=WAvH5fGAZHKo6U3ccUBpiHa7r1wETD+9gja/Aim6HiR=";
+    *  EXAMPLE:  "HostName=smith-iothub.azure-devices.net;DeviceId=RaspberryPIHostName;SharedAccessKey=WAvH5fGAZHKo6U3ccUBpiHa7r1wETD+9gja/Aim6HiR=";
 
-
-
-## Azure Credentials
-
-Note:  If this is the first time logging into Azure from Visual Studio Code.
-
-1.  Press Control Shift P
-2.  Enter Azure and select Sign in to Azure Cloud
    
 ## Test the Function
 1.  Press F5 from within VS Code
@@ -57,8 +57,26 @@ Note:  If this is the first time logging into Azure from Visual Studio Code.
 3.  Press Ctrl+C to stop
 
 
-## Dotnet command to deploy to RPI
-1.  TBD
+##  Compile the code in preparation to deploy to Raspberry PI
+1.  Open a powershell prompt or command line window
+2.  Change directory to \Workspace\IotProject\simulated-device
+3.  Run the following commands:
+    * dotnet clean .
+    * dotnet restore .
+    * dotnet build .
+    * dotnet publish . -r linux-arm
+
+##  Command to deploy to Raspberry PI
+We need to execute two copy commands
+1.  Change directory to \Workspace\IotProject\simulated-device ( if not already in ths directory)
+2.  scp.exe -r .\bin\Debug\netcoreapp2.2\linux-arm\publish\* Username@IP Address:/home/Username/SimulatedDevice
+3.  scp.exe -r .\data\* Username@IP Address:/home/Username/SimulatedDevice/data
+
+## Run the code from the Raspberry PI
+1.  SSH over to the PI
+2.  cd SimulatedDevice
+3.  chmod simulated-device ( this only has to be done the first time )
+4.  ./simulated-device
 
 
 
