@@ -18,11 +18,13 @@ namespace simulated_device
         // The device connection string to authenticate the device with your IoT hub.
         private readonly static string s_connectionString = "<Your IoT Hub Connnection String>";
 
-        private const string sFilePath = "./data/201502-hubway-tripdata.csv";
-
         // Async method to send simulated telemetry
         private static async void SendDeviceToCloudMessagesAsync()
         {
+            string dirPath = Path.GetFullPath(Directory.GetCurrentDirectory());
+            string sFilePath = dirPath+"/data/201502-hubway-tripdata.csv";
+
+            Console.WriteLine( sFilePath ); 
 
             var reader = new ChoCSVReader(sFilePath).WithFirstLineHeader();
             dynamic rec;
