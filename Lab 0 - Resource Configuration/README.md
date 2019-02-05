@@ -130,26 +130,26 @@ You can now use the Data Explorer tool in the Azure portal to create a database 
 
 ![Image](/images/lab-0-image24.png)
 
-1.  From the **Overview** tab, Click **Data Explorer**.
+2.  From the **Overview** tab, Click **Data Explorer**.
 
 ![Image](/images/lab-0-image25.png)
 
-0. Click on **New Collection**.
+3. Click on **New Collection**.
 
 ![Image](/images/lab-0-image26.png)
 
-3.  In the Add collection page, enter the settings for the new collection.
+4.  In the Add collection page, enter the settings for the new collection.
    
-4.  Enter **Hubway** as the name for the **Database Id**.
+5.  Enter **Hubway** as the name for the **Database Id**.
    
-5.  Enter **Tripdata** as the name for **Collection Id**.
+6.  Enter **Tripdata** as the name for **Collection Id**.
    
-6.  Enter **/startstationid** as the **Partition key**.
+7.  Enter **/startstationid** as the **Partition key**.
    
-7.  Change the **Throughput** to **400** request units per second (RU/s).
+8.  Change the **Throughput** to **400** request units per second (RU/s).
     > Note: If you want to reduce latency, you can scale up the throughput later.
    
-8.  Click **OK**.
+9.  Click **OK**.
 
 ![Image](/images/lab-0-image27.png)
 
