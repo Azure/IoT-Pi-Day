@@ -2,7 +2,6 @@
 
 ## Install Raspbian & Dot Net Core Runtime 2.2
 
-## Headless installation of Raspbian
 - Install Raspbian on your Pi.
     - Create a working folder on c: drive, name it **Raspbian**
     - Click [Raspbian Stretch with desktop](https://www.raspberrypi.org/downloads/
@@ -93,11 +92,8 @@ The following commands need to be run on the Raspberry Pi whilst connected over 
     - Type **cat /etc/timezone** to verify.
 
 ## Change the Device Name
-- Entering the following command to change the device name using the city abbrev. in table below.
-    - sudo nano /etc/hosts
-    - sudo /etc/init.d/hostname.sh
-    - sudo nano /etc/hosts
-    - sudo nano /etc/hostname
+- Entering the following command to change the device name using the city abbrev. in table below using number scheme 01 through 10.
+    - **sudo nano /etc/hostname**
         - i.e. **raspberrypi-<**abbreviation**>-01**, See table below for names.
     - Press **ctrl-X**, press **Y**, press **Enter** to save file.
 
@@ -109,9 +105,10 @@ The following commands need to be run on the Raspberry Pi whilst connected over 
         Cincinnati | cin - i.e. raspberrypi-**cin**-01
         Indianapolis | ind - i.e. raspberrypi-**ind**-01
 
-    - **sudo reboot**
+    - You must reboot the device for changes to take effect.  Type int he following to reboot.
+        - **sudo reboot**
     - Telnet back into the Raspberry Pi using SSH (see above)
-    - **Verify** the device name has been updated.
+    - After you login, **verify** the device name has been updated.
 
 ![Image](/images/settingupthepi-3.png)
 
