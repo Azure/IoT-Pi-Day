@@ -75,9 +75,8 @@ We need to execute two copy commands
 ## Run the code from the Raspberry PI
 1.  SSH over to the PI
 2.  cd SimulatedDevice
-3.  chmod simulated-device ( this only has to be done the first time )
+3.  chmod 755 simulated-device ( this only has to be done the first time )
 4.  ./simulated-device
-
 
 
 ## Reference Sites
