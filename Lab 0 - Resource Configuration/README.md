@@ -107,7 +107,7 @@ Use the following steps to create an Azure Cosmos account:
 
 ![Image](/images/lab-0-image20.png)
 
-4. On the Create Azure Cosmos DB Account page, enter the basic settings for the new Azure Cosmos DB account.
+4. On the **Create Azure Cosmos DB Account** page, enter the basic settings for the new Azure Cosmos DB account.
 5. Select the Azure subscription that you want to use for this Azure Cosmos DB account.
 6. Ener the **resource-group name**.
 7. Enter an **Account Name** that is a unique name to identify your Azure Cosmos DB account. Consider LastName-pi-day-cosmosdb as an example.
@@ -138,7 +138,7 @@ You can now use the Data Explorer tool in the Azure portal to create a database 
 
 ![Image](/images/lab-0-image26.png)
 
-4.  In the Add collection page, enter the settings for the new collection.
+4.  On the **Add Collection** page, enter the settings for the new collection.
    
 5.  Enter **Hubway** as the name for the **Database Id**.
    
