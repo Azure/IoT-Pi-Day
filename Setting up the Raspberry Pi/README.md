@@ -14,16 +14,20 @@
         - Use [SD Memory Card Formatter](https://www.sdcard.org/downloads/formatter_4/eula_windows/index.html) tool.
     - Burn the file **2018-xxx.img** file to the SD card.
         - Use [BalenaEtcher](https://www.balena.io/etcher/?ref=etcher_footer).
-    > **EXTREMELY IMPORTANT** - Once flashing is complete, create a new empty file named **ssh** (with no extension) in the root folder of the SD card drive.
+    > **EXTREMELY IMPORTANT** - Once flashing is complete, create a new empty text file named **ssh** (with no extension) in the **root folder** of the SD card drive.
     - Eject the SD card and insert it into the slot on the Raspberry Pi.
-    - Plug the Raspberry Pi into your laptop via USB
-        > TBD - Plug the Raspberry Pi into your laptop via RJ45?
+    - Plug the Raspberry Pi into your network via RJ45 ethernet cable.
+        > Note: The PI does not have anything to allow ethernet bridging over USB.  TBD if using the internet sharing feature in Win10 to setup another hotspot and let the pi connect to that?
+
     - Plug power into the Raspberry Pi.
     - Wait 4-5 min for it to fully boot up.
         - Time to grab another cup of joe! :coffee:
     - Locate the IP address which has been assigned by your DHCP server to the Raspberry Pi and make note of it.
     - Open a Command Prompt as an Administrator.
         - type: **ping -c 1 raspberrypi.local** to get it.
+    - Another option, open up browser to your routers home page. ie. http://192.168.1.254.
+
+![Image](/images/settingupthepi-1.png)
 
 ## Telnet into the Raspberry Pi using SSH
 
@@ -42,34 +46,74 @@
 - **Option 3** - Use your favorate SSH tool.
 
 ## Update your system's package list
-- Entering the following command: **sudo apt-get -y update**
+- Entering the following command to update the package list
+    - **sudo apt-get -y update**
 
 ## Install .Net Core Runtime
 The following commands need to be run on the Raspberry Pi whilst connected over an SSH session.
 ```
 // Note: This will use the apt-get package manager to install three prerequiste packages.
-sudo apt-get -y install libunwind8 gettext**
+1) sudo apt-get -y install libunwind8 gettext
 
-wget https://dotnetcli.blob.core.windows.net/dotnet/Sdk/2.2.103/dotnet-sdk-2.2.103-linux-arm.tar.gz
-wget https://dotnetcli.blob.core.windows.net/dotnet/aspnetcore/Runtime/2.2.1/aspnetcore-runtime-2.2.1-linux-arm.tar.gz
+2) wget https://dotnetcli.blob.core.windows.net/dotnet/Sdk/2.2.103/dotnet-sdk-2.2.103-linux-arm.tar.gz
 
-sudo mkdir /opt/dotnet
+3) wget https://dotnetcli.blob.core.windows.net/dotnet/aspnetcore/Runtime/2.2.1/aspnetcore-runtime-2.2.1-linux-arm.tar.gz
 
-sudo tar -xvf dotnet-sdk-2.2.103-linux-arm.tar.gz -C /opt/dotnet/
+4) sudo mkdir /opt/dotnet
+
+5) sudo tar -xvf dotnet-sdk-2.2.103-linux-arm.tar.gz -C /opt/dotnet/
 
 // Note: This creates a destination folder and extract the downloaded package into it.
-sudo tar -xvf aspnetcore-runtime-2.2.1-linux-arm.tar.gz -C /opt/dotnet/
+6) sudo tar -xvf aspnetcore-runtime-2.2.1-linux-arm.tar.gz -C /opt/dotnet/
 
 // Note: This sets up a symbolic link.
-sudo ln -s /opt/dotnet/dotnet /usr/local/bin
+7) sudo ln -s /opt/dotnet/dotnet /usr/local/bin
 
-// Note: The Raspberry Pi itself is supported only as deployment target to run .Net Core apps.
-dotnet –info to confirm installation.
+// Note: The Raspberry Pi itself is supported only as deployment target to run .Net Core apps.  Confirm installation.
+8) dotnet --info
 ```
 
-## Create application folders
-- **sudo mkdir HubwayApp**
-- **sudo mkdir SenseHAT**
+![Image](/images/settingupthepi-2.png)
 
-> Note: Many of these instructions were based off of the following, [Set up Raspian and .NET Core 2.0 on a Raspberry Pi](https://blogs.msdn.microsoft.com/david/2017/07/20/setting_up_raspian_and_dotnet_core_2_0_on_a_raspberry_pi/)
+## Create application folders
+- Entering the following commands to create folders
+    - **sudo mkdir SimulatedDevice**
+    - **sudo mkdir SenseHATDotNetCore**
+    - **sudo mkdir SenseHATDotNetCoreSimulation**
+
+## Change the Timezone
+- Entering the following command to run raspi-config
+    - **sudo raspi-config**
+    - Select **Localisation Options**
+    - Select **Change Timezone**
+    - Select **US**
+    - Select **Eastern**
+    - Select **Finish**
+    - Type **cat /etc/timezone** to verify.
+
+## Change the Device Name
+- Entering the following command to change the device name using the city abbrev. in table below.
+    - sudo nano /etc/hosts
+    - sudo /etc/init.d/hostname.sh
+    - sudo nano /etc/hosts
+    - sudo nano /etc/hostname
+        - i.e. **raspberrypi-<**abbreviation**>-01**, See table below for names.
+    - Press **ctrl-X**, press **Y**, press **Enter** to save file.
+
+        City Name | Abbreviation 
+        ------------ | -------------
+        Detroit | det - i.e. raspberrypi-**det**-01
+        Pittsburgh | pit - i.e. raspberrypi-**pit**-01
+        Cleveland | cle - i.e. raspberrypi-**cle**-01
+        Cincinnati | cin - i.e. raspberrypi-**cin**-01
+        Indianapolis | ind - i.e. raspberrypi-**ind**-01
+
+    - **sudo reboot**
+    - Telnet back into the Raspberry Pi using SSH (see above)
+    - **Verify** the device name has been updated.
+
+![Image](/images/settingupthepi-3.png)
+
+## Acknowledgements
+- Many of these instructions were based off of the following, [Set up Raspian and .NET Core 2.0 on a Raspberry Pi](https://blogs.msdn.microsoft.com/david/2017/07/20/setting_up_raspian_and_dotnet_core_2_0_on_a_raspberry_pi/)
 
