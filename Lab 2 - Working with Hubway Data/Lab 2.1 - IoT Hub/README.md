@@ -1,7 +1,6 @@
 # Lab 2.1 - Setting up Iot Hub
 TBD - We need to document the scenario here
 
-
 ## Prerequisites
 1.  The Event Hub Namespace and Event Hub instance must already be created -- see Lab 0.
 
