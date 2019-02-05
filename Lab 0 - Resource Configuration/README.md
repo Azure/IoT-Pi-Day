@@ -93,9 +93,70 @@ Use the following steps to create an Event Hub Namespace:
 
 ![Image](/images/lab-0-image18.png)
 
+## Create a CosmosDB Account
+
+> Note:  If you already created your account, skip to the section **Add a Collection**.
+
+Use the following steps to create an Azure Cosmos account:    
+
+1. In a new browser window, sign in to the [Microsoft Azure Portal](https://portal.azure.com).
+
+2. In the Azure portal click **+Create a resource** at the top left of the screen.
+
+3. Select **Databases**, then **Azure Cosmos DB**.
+
+![Image](/images/lab-0-image20.png)
+
+4. On the Create Azure Cosmos DB Account page, enter the basic settings for the new Azure Cosmos DB account.
+5. Select the Azure subscription that you want to use for this Azure Cosmos DB account.
+6. Ener the **resource-group name**.
+7. Enter an **Account Name** that is a unique name to identify your Azure Cosmos DB account. Consider LastName-pi-day-cosmosdb as an example.
+8. Select **Core(SQL)** for document databases.
+9. Select a geographic **Location** to host your Azure Cosmos DB account.
+10. Select **Review+Create**.
+
+![Image](/images/lab-0-image21.png)
+
+11. Select **Create** on the Validate Success page.
+
+![Image](/images/lab-0-image22.png)
+
+![Image](/images/lab-0-image23.png)
+
+## Add a Collection
+You can now use the Data Explorer tool in the Azure portal to create a database and collection.
+
+1.  Click on **Go to Resource** when deployment is complete.
+
+![Image](/images/lab-0-image24.png)
+
+1.  From the **Overview** tab, Click **Data Explorer**.
+
+![Image](/images/lab-0-image25.png)
+
+0. Click on **New Collection**.
+
+![Image](/images/lab-0-image26.png)
+
+3.  In the Add collection page, enter the settings for the new collection.
+   
+4.  Enter **Hubway** as the name for the **Database Id**.
+   
+5.  Enter **Tripdata** as the name for **Collection Id**.
+   
+6.  Enter **/startstationid** as the **Partition key**.
+   
+7.  Change the **Throughput** to **400** request units per second (RU/s).
+    > Note: If you want to reduce latency, you can scale up the throughput later.
+   
+8.  Click **OK**.
+
+![Image](/images/lab-0-image27.png)
+
 ## Create Favorites
 
-3. Select All services in the left menu, and select star (*) next to Event Hubs in the Analytics category. Confirm that Event Hubs is added to FAVORITES in the left navigational menu.  Feel free to repeat this to make IoT Hub a favorite.
+1. Select All services in the left menu, and select star (*) next to Event Hubs in the Analytics category. Confirm that Event Hubs is added to FAVORITES in the left navigational menu.
+2. Feel free to repeat this to make IoT Hub & CosmosDB a favorite.
 
 ![Image](/images/lab-0-image15.png)
 
@@ -106,3 +167,13 @@ Use the following steps to create an Event Hub Namespace:
 [Create-iot-hub]( https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-create-through-portal)
 
 [IotHub-Documentation](https://docs.microsoft.com/en-us/azure/iot-hub/)
+
+[Azure-Portal](https://portal.azure.com/)
+
+[Tutorial: Build a .NET Core app to manage data stored in a SQL API account](https://docs.microsoft.com/en-us/azure/cosmos-db/sql-api-dotnetcore-get-started)
+
+[.Net-Core-Tutorial](https://docs.microsoft.com/en-us/azure/cosmos-db/sql-api-dotnetcore-get-started)
+
+[CosmosDB-Documentation](https://docs.microsoft.com/en-us/azure/cosmos-db/)
+
+[CosmosDB-Introduction](https://docs.microsoft.com/en-us/azure/cosmos-db/introduction)
