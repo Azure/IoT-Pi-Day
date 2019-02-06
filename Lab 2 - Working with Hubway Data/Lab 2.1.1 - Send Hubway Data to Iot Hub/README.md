@@ -4,8 +4,9 @@ We need to document the scenario here
 
 ## Prerequisites
 1. The Laptop is setup correctly, see [Setting up the Laptop](https://github.com/Azure/IoT-Pi-Day/tree/master/Setting%20up%20the%20Laptop).
+
 2.  The Event Hub Namespace and Event Hub instance must already be created.
-3.  CosmosDB implementing the SQL APi and Tripdata collection mu already be created.
+3.  CosmosDB implementing the SQL APi and Tripdata collection must already be created.
 4.  Visual Studio Code and listed extenstions are installed.
 5.  The IoT Hub must be created and configured
 6.  Ensure that you created the directory SimulatedDevice on the Raspberry PI.  This project will be copied into this directory.
@@ -13,6 +14,7 @@ We need to document the scenario here
 ## Create the IoTProject console application
 
 1. Navigate to the Workspace created in [Setting up the Laptop](https://github.com/Azure/IoT-Pi-Day/tree/master/Setting%20up%20the%20Laptop).
+
 2. Open up a **Command Prompt** or **PowerShell** as an **Administrator**.
     - Type **CD C:\Workspace\IotProject**
 3.  Enter **dotnet new console -o "simulated-device"**
@@ -24,6 +26,7 @@ We need to document the scenario here
 From the Visual Studio Code
 
 1.  When prompted in VS Code to add assets, click **Yes**.
+
 2.  Test the basic Hello World Application from within VS Code
     *  **Press F5**
     *  You should see Hello World printed in the debug console
@@ -39,6 +42,7 @@ Note:  If this is the first time logging into Azure from Visual Studio Code.
 ## Update code
 
 1.  Edit the simulated-device.csproj
+
 2.  Add the ItemGroups from the \Solution\IotProject\simulated-device\simulated-device.csproj 
 3.  Create a new file called SimulatedDevice.cs
 4.  Copy the contents of \Solution\IotProject\simulated-device.cs into your new file.  Save the file.
@@ -54,12 +58,14 @@ Note:  If this is the first time logging into Azure from Visual Studio Code.
    
 ## Test the Function
 1.  Press F5 from within VS Code
+
 2.  If all went well, you should see each record in JSON format being sent up to the IoT Hub.
 3.  Press Ctrl+C to stop
 
 
 ##  Compile the code in preparation to deploy to Raspberry PI
 1.  Open a powershell prompt or command line window
+
 2.  Change directory to \Workspace\IotProject\simulated-device
 3.  Run the following commands:
     * dotnet clean .
@@ -70,11 +76,13 @@ Note:  If this is the first time logging into Azure from Visual Studio Code.
 ##  Command to deploy to Raspberry PI
 We need to execute two copy commands
 1.  Change directory to \Workspace\IotProject\simulated-device ( if not already in ths directory)
+
 2.  scp.exe -r .\bin\Debug\netcoreapp2.2\linux-arm\publish\* Username@IP Address:/home/Username/SimulatedDevice
 3.  scp.exe -r .\data\* Username@IP Address:/home/Username/SimulatedDevice/data
 
 ## Run the code from the Raspberry PI
 1.  SSH over to the PI
+
 2.  cd SimulatedDevice
 3.  chmod 755 simulated-device ( this only has to be done the first time )
 4.  ./simulated-device
