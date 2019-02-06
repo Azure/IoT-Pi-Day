@@ -30,7 +30,7 @@ From the Visual Studio Code
 2.  Test the basic Hello World Application from within VS Code
     *  **Press F5**
     *  You should see Hello World printed in the debug console
-    *  Once your are satisifed your environment works, **delete program.cs**
+    *  Once your are satisifed your environment works, type **delete program.cs**
 
 ## Azure Credentials
 
@@ -47,7 +47,7 @@ Note:  If this is the first time logging into Azure from Visual Studio Code.
 3.  Create a new file called SimulatedDevice.cs
 4.  Copy the contents of \Solution\IotProject\simulated-device.cs into your new file.  Save the file.
 5.  Copy the data directory from \Solution\IotProject\simulated-device into your directory.
-6.  Replace <Your IoT Hub Connnection String> in simulated-device.cs with your connection string from the IotHub.  This can be found by:
+6.  Replace <**Your IoT Hub Connnection String**> in simulated-device.cs with your connection string from the IotHub.  This can be found by:
     *  Go to the Azure Portal
     *  Select your IotHub
     *  Select the IoT Devices menu on the left
@@ -69,7 +69,6 @@ Note:  If this is the first time logging into Azure from Visual Studio Code.
 2.  Change directory to \Workspace\IotProject\simulated-device
 3.  Run the following commands:
     * dotnet clean .
-    * dotnet restore .
     * dotnet build .
     * dotnet publish . -r linux-arm
 
