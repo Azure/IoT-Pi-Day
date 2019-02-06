@@ -75,6 +75,11 @@ The following commands need to be run on the Raspberry Pi whilst connected over 
 
 ![Image](/images/settingupthepi-2.png)
 
+<!--
+## Install Docker
+The following commands need to be run on the Raspberry Pi whilst connected over an SSH session.
+-->
+
 ## Create application folders
 - Entering the following commands to create folders
     - **sudo mkdir SimulatedDevice**
@@ -90,6 +95,17 @@ The following commands need to be run on the Raspberry Pi whilst connected over 
     - Select **Eastern**
     - Select **Finish**
     - Type **cat /etc/timezone** to verify.
+
+## Enable WiFi (Optional)
+- Entering the following command to run raspi-config
+    - **sudo raspi-config**
+    - Select **Network Options**
+    - Select **Wi-Fi**
+    - Select **US**
+    - Enter **Enter SSID**
+    - Enter **Passphrase**
+    - Select **Ok**
+    - Select **Finish**
 
 ## Change the Device Name
 - Entering the following command to change the device name using the city abbrev. in table below using number scheme 01 through 10.
