@@ -28,7 +28,7 @@
     - Option 2: open up browser to your routers home page.
         - ie. http://192.168.1.254 and list out your devices.
 
-![Image](/images/settingupthepi-1.png)
+            ![Image](/images/settingupthepi-1.png)
 
 ## Telnet into the Raspberry Pi using SSH
 
@@ -73,12 +73,17 @@ The following commands need to be run on the Raspberry Pi whilst connected over 
 > Note: The Raspberry Pi itself is supported only as deployment target to run .Net Core apps.  Type the following to confirm installation.
 8) **```dotnet --info```**
 
-![Image](/images/settingupthepi-2.png)
+    ![Image](/images/settingupthepi-2.png)
 
+
+## ~~Install~~ Docker support, coming soon...(Randy is working on this)
 <!--
-## Install Docker
 The following commands need to be run on the Raspberry Pi whilst connected over an SSH session.
--->
+- Enter the following commands to install docker.
+    - **```curl -sSL https://get.docker.com | sh```**
+    - **sudo usermod -aG docker pi**
+
+--->
 
 ## Create application folders
 - Entering the following commands to create folders
