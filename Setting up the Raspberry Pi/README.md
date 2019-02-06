@@ -135,5 +135,5 @@ The following commands need to be run on the Raspberry Pi whilst connected over 
 ![Image](/images/settingupthepi-3.png)
 
 ## Acknowledgements
-- Original instructions were based off of the following, [Set up Raspian and .NET Core 2.0 on a Raspberry Pi](https://blogs.msdn.microsoft.com/david/2017/07/20/setting_up_raspian_and_dotnet_core_2_0_on_a_raspberry_pi/)
+- These instructions were based off of the following blog, [Set up Raspian and .NET Core 2.0 on a Raspberry Pi](https://blogs.msdn.microsoft.com/david/2017/07/20/setting_up_raspian_and_dotnet_core_2_0_on_a_raspberry_pi/)
 
