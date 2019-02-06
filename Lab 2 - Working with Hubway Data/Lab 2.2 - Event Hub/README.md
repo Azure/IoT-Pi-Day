@@ -28,6 +28,7 @@ Use the following steps to create an Event Hub Namespace:
 ## Create an Event Hub
 
 1.  On the Event Hubs Namespace page, select Event Hubs in the left menu.
+
 2.  At the top of the window, click + Event Hub.
 3.  Type a name for your event hub, then click Create.  Consider hubwaytelemetry as an Event Hub Name.
 4.  You can check the status of the event hub creation in alerts.
@@ -37,6 +38,7 @@ Use the following steps to create an Event Hub Namespace:
 
 
 1.  Select Event Hubs from the list on the left.  Event Hubs are displayed in the window on the right such as hubwaytelemetry.
+
 2.  Select Consumer Groups on the left menu.
 3.  Select + Consumer Group to create a new Group.
 4.  Enter the name hubwaycg in the name field on the right.
