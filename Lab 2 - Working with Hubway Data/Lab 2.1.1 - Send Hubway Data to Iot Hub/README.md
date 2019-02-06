@@ -3,30 +3,31 @@ We need to document the scenario here
 
 
 ## Prerequisites
-1.  The Event Hub Namespace and Event Hub instance must already be created.
-2.  CosmosDB implementing the SQL APi and Tripdata collection mu already be created.
-3.  Visual Studio Code and listed extenstions are installed.
-4.  The IoT Hub must be created and configured
-5.  Ensure that you created the directory SimulatedDevice on the Raspberry PI.  This project will be copied into this directory.
+1. The Laptop is setup correctly, see [Setting up the Laptop](https://github.com/Azure/IoT-Pi-Day/tree/master/Setting%20up%20the%20Laptop).
+2.  The Event Hub Namespace and Event Hub instance must already be created.
+3.  CosmosDB implementing the SQL APi and Tripdata collection mu already be created.
+4.  Visual Studio Code and listed extenstions are installed.
+5.  The IoT Hub must be created and configured
+6.  Ensure that you created the directory SimulatedDevice on the Raspberry PI.  This project will be copied into this directory.
 
 ## Create the IoTProject console application
 
-From the command line or powershell
-
-1.  Change directory to \Workspace\IotProject
-2.  Enter dotnet new console -o "simulated-device"
-3.  CD into simulated-device
-4.  Enter code . and press return
+1. Navigate to the Workspace created in [Setting up the Laptop](https://github.com/Azure/IoT-Pi-Day/tree/master/Setting%20up%20the%20Laptop).
+2. Open up a **Command Prompt** or **PowerShell** as an **Administrator**.
+    - Type **CD C:\Workspace\IotProject**
+3.  Enter **dotnet new console -o "simulated-device"**
+4.  CD into **simulated-device**
+5.  Enter **code .** and press return
 
 ## Test Hello World
 
 From the Visual Studio Code
 
-1.  When prompted in VS Code to add assets, click Yes.
+1.  When prompted in VS Code to add assets, click **Yes**.
 2.  Test the basic Hello World Application from within VS Code
-    *  Press F5
+    *  **Press F5**
     *  You should see Hello World printed in the debug console
-    *  Once your are satisifed your environment works, delete program.cs
+    *  Once your are satisifed your environment works, **delete program.cs**
 
 ## Azure Credentials
 

@@ -105,7 +105,7 @@ The following commands need to be run on the Raspberry Pi whilst connected over 
         Cincinnati | cin - i.e. raspberrypi-**cin**-01
         Indianapolis | ind - i.e. raspberrypi-**ind**-01
 
-    - You must reboot the device for changes to take effect.  Type int he following to reboot.
+    - You must reboot the device for changes to take effect.  Type the following to reboot.
         - **sudo reboot**
     - Telnet back into the Raspberry Pi using SSH (see above)
     - After you login, **verify** the device name has been updated.

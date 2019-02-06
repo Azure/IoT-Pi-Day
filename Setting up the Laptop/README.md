@@ -1,6 +1,6 @@
 # Setting up the Laptop
 
-## Install Visual Studio Code & Dot Net Core SDK 2.2
+## Install Visual Studio Code
 
 ### Download Visual Studio Code
 - Click [Visual Studio Code](https://code.visualstudio.com/Download)
@@ -24,7 +24,7 @@ What are Visual Studio Code Extensions? Extensions let you add languages, debugg
 
 **From Command Line**
 
-- Open a a command line as an Administrator.
+- Open up a **Command Prompt** as an **Administrator**.
 - Azure Account, type: **code --install-extension ms-vscode.azure-account**
 - Azure Functions, type: **code --install-extension  - ms-azuretools.vscode-azurefunctions**
 - Azure IoT Device Workbench, type: **code --install-extension  - vsciot-vscode.vscode-iot-workbench**
@@ -45,7 +45,7 @@ What are Visual Studio Code Extensions? Extensions let you add languages, debugg
 - Search for: **NuGet Package Manager**, click **Install**
 - Search for: **Azure CLI Tools**, click **Install**
 
-### Install DotNet Core
+## Install DotNet Core SDK 2.2
 .NET Core is a cross-platform version of .NET for building websites, services, and console apps.
 
 **Windows**
@@ -88,7 +88,7 @@ What is npm? npm makes it easy for JavaScript developers to share and reuse code
     - i.e. **nnode-v11.9.0-linux-ppc64le.tar.xz**
 - Accept all the defaults to install npm.
 
-### Install Azure Functions Core Tools
+## Install Azure Functions Core Tools
 What are Azure Functions Core Tools? The Azure Functions Core Tools provide a local development experience for creating, developing, testing, running, and debugging Azure Functions.
 
 **Windows**
@@ -101,7 +101,7 @@ What are Azure Functions Core Tools? The Azure Functions Core Tools provide a lo
 **Linux**
 - See [Azure Functions Core Tools on the Mac](https://github.com/Azure/azure-functions-core-tools#linux)
 
-### Install Git
+## Install Git
 What is Git? Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
 - Click [Git](https://git-scm.com/)
 
@@ -112,4 +112,25 @@ What is Git? Git is a free and open source distributed version control system de
 **MacOS**
 - Click on **Mac Build** to download **node-v11.9.0.pkg**. 
 
+## Download the Repo
+Workshop to build out a real-life IoT scenario by capturing IoT data and ingesting it into the Azure Cloud.
+
+**Windows**
+- Open up a **Command Prompt** as an **Administrator**.
+- Create a working area on the c: drive.
+    - Type **CD c:\**
+    - Type **MKDIR Workspace**
+    - Type CD **Workspace**
+    - Type **MKDIR IotProject**
+- Open a browser and navigate to https://github.com/Azure/IoT-Pi-Day
+- Click the button **Clone or download**.
+- Click **Download Zip**, **Save As** to folder **C:\Workspace**.
+- When download is complete, click **Open Folder**.
+- **Right-Click** on **Iot-Pi-Day-master.zip**.
+- Select **Extract All**, click **Extract** to default folder.
+
+    ![Image](/images/settingupthelaptop-1.png)
+
+**MacOS**
+- Randy has no clue...please send me instructions so I can update this doc....thank you. :tired_face:
 ​
