@@ -16,7 +16,7 @@ We need to document the scenario here
 1. Navigate to the Workspace created in [Setting up the Laptop](https://github.com/Azure/IoT-Pi-Day/tree/master/Setting%20up%20the%20Laptop).
 
 2. Open up a **Command Prompt** or **PowerShell** as an **Administrator**.
-    - Type **CD C:\Workspace\IotProject**
+    - Type **CD \Workspace\IotProject**
 3.  Enter **dotnet new console -o "simulated-device"**
 4.  CD into **simulated-device**
 5.  Enter **code .** and press return
