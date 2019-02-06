@@ -1,6 +1,6 @@
 # Setting up the Raspberry Pi
 
-## Install Raspbian & Dot Net Core Runtime 2.2
+## Install Raspbian
 
 - Install Raspbian on your Pi.
     - Create a working folder on c: drive, name it **Raspbian**
@@ -14,7 +14,7 @@
     - Burn the file **2018-xxx.img** file to the SD card.
         - Use [BalenaEtcher](https://www.balena.io/etcher/?ref=etcher_footer) burning tool.
     
-    > **EXTREMELY IMPORTANT** - Once flashing is complete, create a new empty text file named **ssh** (with no extension) in the **root folder** of the SD card drive.
+    > 🚨 **EXTREMELY IMPORTANT** - Once flashing is complete, create a new empty text file named **ssh** (with no extension) in the **root folder** of the SD card drive.
     - Eject the SD card and insert it into the slot on the Raspberry Pi.
     - Plug the Raspberry Pi into your network via RJ45 ethernet cable.
         > Note: The PI does not have anything to allow ethernet bridging over USB.  TBD if using the internet sharing feature in Win10 to setup another hotspot and let the pi connect to that?
@@ -50,7 +50,8 @@
 - Entering the following command to update the package list
     - **sudo apt-get -y update**
 
-## Install .Net Core Runtime
+## Install .Net Core Runtime 2.2
+
 The following commands need to be run on the Raspberry Pi whilst connected over an SSH session.
 
 > Note: This will use the apt-get package manager to install three prerequiste packages.
