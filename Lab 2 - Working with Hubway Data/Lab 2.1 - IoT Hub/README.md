@@ -15,7 +15,9 @@ Use the following steps to create an Iot Hub:
 2. Choose +Create a resource, then choose Internet of Things.
 3. Click Iot Hub from the list on the right. You see the first screen for creating an IoT hub.
 4. Fill in the fields.
+
    * **Subscription**: Select the subscription to use for your IoT hub.
+    
    * **Resource Group**: You can create a new resource group or use an existing one. To create a new one, click Create new and fill in the name you want to use. To use an existing resource group, click Use existing and select the resource group from the dropdown list.
    * **Region**: This is the region in which you want your hub to be located. Select the location closest to you from the dropdown list.
    * **IoT Hub Name**: Put in the name for your IoT Hub. This name must be globally unique. A recommendation is LastName-CLE-IoT-Hub.
@@ -35,6 +37,7 @@ Select your IoT Hub from the Resource Blade
 `Iot Devices` - Add your Raspberry PI
 
 1.  Select IoT Devices from the Iot Hub Blade
+
 2.  Click Add and fill in the fields:
     * **Device ID**  Enter the Raspberry PI Hostname.
     * Make sure Auto Generate Keys is selected.
@@ -42,7 +45,9 @@ Select your IoT Hub from the Resource Blade
    
 `Message Routing` - Define Custom End points and routes
 1.  Select the Custom Endpoints Tab at the top of the Message Routing Blade
+
 2.  Click Add ---> Event Hub
+
 3.  Click Add and fill in the fields:
     * **Endpoint Name**  Enter the Name such as HubwayTelemetryRoute.
     * **Event Hub Namespace**  Select the Event Hub Namespace in the drop down.
