@@ -38,7 +38,7 @@ Note:  If this is the first time logging into Azure from Visual Studio Code.
 1.  Press Control Shift P
 2.  Enter Azure and select Sign in to Azure Cloud
 
-## Update code
+## Develop simulated-device code
 
 1.  Edit the simulated-device.csproj
 
