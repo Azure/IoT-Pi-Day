@@ -77,7 +77,7 @@ The following commands need to be run on the Raspberry Pi whilst connected over 
     ![Image](/images/settingupthepi-2.png)
 
 
-## ~~Install~~ Docker support, coming soon...(Randy is working on this)
+## ~~Install~~ Docker, coming soon...(Randy is working on this)
 <!--
 The following commands need to be run on the Raspberry Pi whilst connected over an SSH session.
 - Enter the following commands to install docker.
