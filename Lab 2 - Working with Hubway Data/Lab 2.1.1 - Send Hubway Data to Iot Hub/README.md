@@ -1,7 +1,6 @@
 # Lab 2.1.1 - Send Hubway data to Iot Hub
 We need to document the scenario here
 
-
 ## Prerequisites
 1. The Laptop is setup correctly, see [Setting up the Laptop](https://github.com/Azure/IoT-Pi-Day/tree/master/Setting%20up%20the%20Laptop).
 
