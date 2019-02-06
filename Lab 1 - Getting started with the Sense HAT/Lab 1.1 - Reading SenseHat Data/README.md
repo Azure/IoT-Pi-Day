@@ -2,17 +2,24 @@
 We need to document the scenario here
 
 ## Prerequisites
+1. The Laptop is setup correctly, see [Setting up the Laptop](https://github.com/Azure/IoT-Pi-Day/tree/master/Setting%20up%20the%20Laptop).
 3.  Visual Studio Code and listed extenstions are installed.
 4.  The IoT Hub must be created and configured
 5.  Ensure that you created the directory SenseHATDotNetCore on the Raspberry PI.  This project will be copied into this directory.
 
 
+## Coming soon...
+
+## ...Randy is working on this as we speak...thank you. :tired_face:
+
+# STOP  🚨 Content below this line is Under Construction 🚨
+# -----------------------------------------------
 
 
 
+## ~~Create the ??? application~~
 
-## Create the IoTProject console application
-
+<!--
 From the command line or powershell
 
 1.  Change directory to \Workspace\IotProject
@@ -94,3 +101,4 @@ We need to execute two copy commands
 
 [vs-code-debug]: https://code.visualstudio.com/Docs/editor/debugging
 
+-->
