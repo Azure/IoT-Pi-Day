@@ -4,6 +4,21 @@ TBD - We need to document the scenario here
 ## Prerequisites
 1.  Azure Subscription [Microsoft Azure Portal](https://portal.azure.com).
 
+## Download the Repo
+The **Azure IoTPiDay Workshop** is setup to build out a real-life IoT scenario by capturing IoT data and ingesting it into the Azure Cloud.
+
+- Open up a **Command Prompt** as an **Administrator**.
+- Create a working area on the c: drive.
+    - Type **CD C: root**
+- Open a browser and navigate to [github.com/Azure/IoT-Pi-Day]( https://github.com/Azure/IoT-Pi-Day).
+- Click the button **Clone or download**.
+- Click **Download Zip**, **Save As** to folder **C:**.
+- When download is complete, click **Open Folder**.
+- **Right-Click** on **Iot-Pi-Day-master.zip**.
+- Select **Extract All**, click **Extract** to default folder.
+
+    ![Image](/images/settingupthelaptop-1.png)
+
 ## Create an Iot Hub
 
 Use the following steps to create an Iot Hub:    

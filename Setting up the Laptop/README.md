@@ -111,26 +111,3 @@ What is Git? Git is a free and open source distributed version control system de
 
 **MacOS**
 - Click on **Mac Build** to download **node-v11.9.0.pkg**. 
-
-## Download the Repo
-The **Azure IoTPiDay Workshop** is setup to build out a real-life IoT scenario by capturing IoT data and ingesting it into the Azure Cloud.
-
-**Windows**
-- Open up a **Command Prompt** as an **Administrator**.
-- Create a working area on the c: drive.
-    - Type **CD c:\**
-    - Type **MKDIR Workspace**
-    - Type CD **Workspace**
-    - Type **MKDIR IotProject**
-- Open a browser and navigate to [github.com/Azure/IoT-Pi-Day]( https://github.com/Azure/IoT-Pi-Day).
-- Click the button **Clone or download**.
-- Click **Download Zip**, **Save As** to folder **C:\Workspace**.
-- When download is complete, click **Open Folder**.
-- **Right-Click** on **Iot-Pi-Day-master.zip**.
-- Select **Extract All**, click **Extract** to default folder.
-
-    ![Image](/images/settingupthelaptop-1.png)
-
-**MacOS**
-- Randy has no clue...please send me instructions so I can update this doc....thank you. :tired_face:
-​
