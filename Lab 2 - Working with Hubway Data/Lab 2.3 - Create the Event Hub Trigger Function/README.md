@@ -1,4 +1,4 @@
-# Lab 2.1 - Create a Function App and Event Hub Trigger Function
+# Lab 2.3 - Create a Function App and Event Hub Trigger Function
 We need to document the scenario here
 
 
@@ -19,6 +19,7 @@ Use the following steps to create an Iot Hub:
 3. Select Function App on the right.
 4. Fill in the fields:
    * **App name** Enter LastName-pi-day-Function-Apps
+   
    * **Subscription**  Select your subscription.
    * **Resource Group**  Select your resource Group.
    * **OS** We are using Windows for these labs.
@@ -40,6 +41,7 @@ When an Event Hubs trigger function is triggered, the message that is passed int
 We will be using Visual Studio Code and the Azure Functions Extension.
 
 1.  From a command line / powershell, change directory to \Workspace\HubwayFunctions.
+
 2.  Enter code . and press return.  This brings up an instance on Visual Studio Code with HubwayFunctions selected as the working folder.
 3.  Press Control Shift P
 4.  Enter Azure Functions and select Create New Project from the list.
@@ -57,6 +59,7 @@ We will be using Visual Studio Code and the Azure Functions Extension.
 ## Create the Event Hub Trigger
 
 1.  Press Control Shift P
+
 2.  Enter Azure Functions and select Create Function
 3.  Select the Folder containting your function app
 4.  Select a function Template.
