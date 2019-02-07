@@ -11,6 +11,7 @@
 ), then click **Download Zip** and save it to **C:\Raspbian**.
     - From Windows Explorer, navigate to **C:\Raspbian**.
     - After download completes, **Right-Click** on **2018-xxx.zip** file to unzip the contents.  This creates the **2018-xxx.img** file.
+    
 
     > Note: You'll need a microSD Card Adapter for the MicroSD card.
     
