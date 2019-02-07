@@ -73,7 +73,7 @@ Note:  If this is the first time logging into Azure from Visual Studio Code.
         - Select the **IoT Devices** menu on the left
         - Select **your device name** from the window
         - Copy the **connection string (primary key)**.
-        > Example:  "HostName=smith-iothub.azure-devices.net;DeviceId=RaspberryPIHostName;SharedAccessKey=WAvH5fGAZHKo6U3ccUBpiHa7r1wETD+9gja/Aim6HiR=";
+            > Example:  "HostName=smith-iothub.azure-devices.net;DeviceId=RaspberryPIHostName;SharedAccessKey=WAvH5fGAZHKo6U3ccUBpiHa7r1wETD+9gja/Aim6HiR=";
 
 11. Press **Cntrl-S** to save the file.
    
