@@ -183,7 +183,7 @@ The following commands need to be run on the Raspberry Pi whilst connected over 
         Indianapolis | raspberrypi-**ind-10** | 00:00:00:a1:2b:cc
         Indianapolis | raspberrypi-**ind-11** | 00:00:00:a1:2b:cc
         Indianapolis | raspberrypi-**ind-12** | 00:00:00:a1:2b:cc
-        ------------ | ------------- | -------------  
+
 
     - You must reboot the device for changes to take effect.  Type the following to reboot.
         - **sudo reboot**
