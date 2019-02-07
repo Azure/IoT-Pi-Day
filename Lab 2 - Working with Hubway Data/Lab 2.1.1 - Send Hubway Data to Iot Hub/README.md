@@ -147,7 +147,7 @@ We need to execute two copy commands
 
 4.  To execute the code, type **./simulated-device**
 
-    > Note: If all went well, you should see each record in JSON format being sent up to the IoT Hub.
+    > Note: If all went well, you should see each record in JSON format being sent up to the IoT Hub.  There are **60,315 rows** of data being sent to IoT Hub.
 
 3.  Press **Cntl-C** to stop.
 
