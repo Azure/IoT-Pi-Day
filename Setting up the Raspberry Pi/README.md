@@ -86,12 +86,6 @@ The following commands need to be run on the Raspberry Pi whilst connected over 
 
 --->
 
-## Create application folders
-- Entering the following commands to create folders
-    - **sudo mkdir SimulatedDevice**
-    - **sudo mkdir SenseHATDotNetCore**
-    - **sudo mkdir SenseHATDotNetCoreSimulation**
-
 ## Change the Timezone
 - Entering the following command to run raspi-config
     - **sudo raspi-config**
@@ -133,6 +127,20 @@ The following commands need to be run on the Raspberry Pi whilst connected over 
     - After you login, **verify** the device name has been updated.
 
 ![Image](/images/settingupthepi-3.png)
+
+## Create application folders
+- Telnet back into the Raspberry Pi using SSH (see above)
+    - After you login, **verify** the device name has been updated.
+    - Entering the following commands to create folders
+    - **sudo mkdir SenseHATDotNetCore**
+        - Change ownership: **sudo chown pi:pi -R SenseHATDotNetCore**
+    - **sudo mkdir SenseHATDotNetCoreSimulation**
+        - Change ownership: **sudo chown pi:pi -R SenseHATDotNetCoreSimulation**
+    - **sudo mkdir SimulatedDevice**
+        - Change ownership: **sudo chown pi:pi -R SimulatedDevice**
+    - **sudo cd SimulatedDevice**
+    - **sudo mkdir data**
+        - Change ownership: **sudo chown pi:pi -R data**
 
 ## Acknowledgements
 - These instructions were based off of the following blog, [Set up Raspian and .NET Core 2.0 on a Raspberry Pi](https://blogs.msdn.microsoft.com/david/2017/07/20/setting_up_raspian_and_dotnet_core_2_0_on_a_raspberry_pi/)

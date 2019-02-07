@@ -9,10 +9,10 @@ The **Azure IoTPiDay Workshop** is setup to build out a real-life IoT scenario b
 
 - Open up a **Command Prompt** as an **Administrator**.
 - Create a working area on the c: drive.
-    - Type **CD C: root**
-- Open a browser and navigate to [github.com/Azure/IoT-Pi-Day]( https://github.com/Azure/IoT-Pi-Day).
+    - Type **CD C: root**. i.e c:\Workspace
+- Open a browser and navigate to [github.com/Azure/IoT-Pi-Day](https://github.com/Azure/IoT-Pi-Day).
 - Click the button **Clone or download**.
-- Click **Download Zip**, **Save As** to folder **C:**.
+- Click **Download Zip**, **Save As** to Workspace folder.
 - When download is complete, click **Open Folder**.
 - **Right-Click** on **Iot-Pi-Day-master.zip**.
 - Select **Extract All**, click **Extract** to default folder.
