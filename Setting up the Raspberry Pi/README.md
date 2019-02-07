@@ -7,10 +7,10 @@
 
 - Install Raspbian on your Pi.
     - Create a working folder on c: drive, name it **Raspbian**
-    - Click [Raspbian Stretch with desktop](https://www.raspberrypi.org/downloads/
+    - Click [Raspbian Stretch with desktop](https://www.raspberrypi.org/downloads/raspbian
 ), then click **Download Zip** and save it to **C:\Raspbian**.
     - From Windows Explorer, navigate to **C:\Raspbian**.
-    - After download completes, **Right-Click** on **2018-xxx.zip** file to unzip the contents and create the **2018-xxx.img** file.
+    - After download completes, **Right-Click** on **2018-xxx.zip** file to unzip the contents.  This creates the **2018-xxx.img** file.
 
     > Note: You'll need an SD Card Adapter for the MicroSD cards.
     - Insert & format the microSD Card using a SD formatting tool.
@@ -18,7 +18,7 @@
     - Burn the file **2018-xxx.img** file to the microSD card.
         - Use [BalenaEtcher](https://www.balena.io/etcher/?ref=etcher_footer) burning tool.
     
-    > 🚨 **EXTREMELY IMPORTANT** - Once flashing is complete, create a new empty text file named **ssh** (with no extension) in the **root folder** of the microSD card drive.
+    > 🚨 **EXTREMELY IMPORTANT** - Once flashing is complete, create a new empty text file named **ssh** (with no extension) in the **root folder** of the microSD card drive.  If this step is missed, you will **NOT** 
     - Eject the microSD card and insert it into the slot on the Raspberry Pi.
     - Plug the Raspberry Pi into your network via RJ45 ethernet cable.
         > Note: The PI does not have anything to allow ethernet bridging over USB.  TBD if using the internet sharing feature in Win10 to setup another hotspot and let the pi connect to that?
