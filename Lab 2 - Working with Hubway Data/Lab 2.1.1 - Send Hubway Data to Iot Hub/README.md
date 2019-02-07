@@ -153,6 +153,15 @@ We need to execute two copy commands
 
     ![Image](/images/lab-2.1.1-image7.png)
 
+## Verify data is being sent to Azure IoT Hub
+
+1.  Go to the **Azure Portal**
+2. Select your **IotHub**
+3. Select the **Overview** menu on the left
+4. Scroll to bottom of blade and select **Device to cloud messages**
+5. On the **Metrics** page, change the timeframe to **Last 30 minutes**.
+
+    ![Image](/images/lab-2.1.1-image8.png)
 
 ## Reference Sites
 
