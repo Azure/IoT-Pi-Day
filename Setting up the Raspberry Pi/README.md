@@ -12,7 +12,7 @@
     - From Windows Explorer, navigate to **C:\Raspbian**.
     - After download completes, **Right-Click** on **2018-xxx.zip** file to unzip the contents.  This creates the **2018-xxx.img** file.
 
-    > Note: You'll need an SD Card Adapter for the MicroSD cards.
+    > Note: You'll need a microSD Card Adapter for the MicroSD cards.
     - Insert & format the microSD Card using a SD formatting tool.
         - Use [SD Memory Card Formatter](https://www.sdcard.org/downloads/formatter_4/eula_windows/index.html) tool.
     - Burn the file **2018-xxx.img** file to the microSD card.
