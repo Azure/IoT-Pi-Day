@@ -114,15 +114,76 @@ The following commands need to be run on the Raspberry Pi whilst connected over 
 - Entering the following command to change the device name using the city abbrev. in table below using number scheme 01 through 10.
     - **sudo nano /etc/hostname**
         - i.e. **raspberrypi-<**abbreviation**>-01**, See table below for names.
+    - Copy this table to a Word document and update the MAC Addresses. This info is a MUST to conect to Microsoft WiFi
     - Press **ctrl-X**, press **Y**, press **Enter** to save file.
 
-        City Name | Abbreviation 
-        ------------ | -------------
-        Detroit | det - i.e. raspberrypi-**det**-01
-        Pittsburgh | pit - i.e. raspberrypi-**pit**-01
-        Cleveland | cle - i.e. raspberrypi-**cle**-01
-        Cincinnati | cin - i.e. raspberrypi-**cin**-01
-        Indianapolis | ind - i.e. raspberrypi-**ind**-01
+        City Name | Device Name | MAC Address
+        ------------ | ------------- | -------------
+        Detroit | raspberrypi-**det-01** | 00:00:00:a1:2b:cc
+        Detroit | raspberrypi-**det-02** | 00:00:00:a1:2b:cc
+        Detroit | raspberrypi-**det-03** | 00:00:00:a1:2b:cc
+        Detroit | raspberrypi-**det-04** | 00:00:00:a1:2b:cc
+        Detroit | raspberrypi-**det-05** | 00:00:00:a1:2b:cc
+        Detroit | raspberrypi-**det-06** | 00:00:00:a1:2b:cc
+        Detroit | raspberrypi-**det-07** | 00:00:00:a1:2b:cc
+        Detroit | raspberrypi-**det-08** | 00:00:00:a1:2b:cc
+        Detroit | raspberrypi-**det-09** | 00:00:00:a1:2b:cc
+        Detroit | raspberrypi-**det-10** | 00:00:00:a1:2b:cc
+        Detroit | raspberrypi-**det-11** | 00:00:00:a1:2b:cc
+        Detroit | raspberrypi-**det-12** | 00:00:00:a1:2b:cc
+        ------------ | ------------- | -------------
+        Pittsburgh | raspberrypi-**pit-01** | 00:00:00:a1:2b:cc
+        Pittsburgh | raspberrypi-**pit-02** | 00:00:00:a1:2b:cc
+        Pittsburgh | raspberrypi-**pit-03** | 00:00:00:a1:2b:cc
+        Pittsburgh | raspberrypi-**pit-04** | 00:00:00:a1:2b:cc
+        Pittsburgh | raspberrypi-**pit-05** | 00:00:00:a1:2b:cc
+        Pittsburgh | raspberrypi-**pit-06** | 00:00:00:a1:2b:cc
+        Pittsburgh | raspberrypi-**pit-07** | 00:00:00:a1:2b:cc
+        Pittsburgh | raspberrypi-**pit-08** | 00:00:00:a1:2b:cc
+        Pittsburgh | raspberrypi-**pit-09** | 00:00:00:a1:2b:cc
+        Pittsburgh | raspberrypi-**pit-10** | 00:00:00:a1:2b:cc
+        Pittsburgh | raspberrypi-**pit-11** | 00:00:00:a1:2b:cc
+        Pittsburgh | raspberrypi-**pit-12** | 00:00:00:a1:2b:cc
+        ------------ | ------------- | -------------        
+        Cleveland | raspberrypi-**cle-01** | 00:00:00:a1:2b:cc
+        Cleveland | raspberrypi-**cle-02** | 00:00:00:a1:2b:cc
+        Cleveland | raspberrypi-**cle-03** | 00:00:00:a1:2b:cc
+        Cleveland | raspberrypi-**cle-04** | 00:00:00:a1:2b:cc
+        Cleveland | raspberrypi-**cle-05** | 00:00:00:a1:2b:cc
+        Cleveland | raspberrypi-**cle-06** | 00:00:00:a1:2b:cc
+        Cleveland | raspberrypi-**cle-07** | 00:00:00:a1:2b:cc
+        Cleveland | raspberrypi-**cle-08** | 00:00:00:a1:2b:cc
+        Cleveland | raspberrypi-**cle-09** | 00:00:00:a1:2b:cc
+        Cleveland | raspberrypi-**cle-10** | 00:00:00:a1:2b:cc
+        Cleveland | raspberrypi-**cle-11** | 00:00:00:a1:2b:cc
+        Cleveland | raspberrypi-**cle-12** | 00:00:00:a1:2b:cc
+        ------------ | ------------- | -------------  
+        Cincinnati | raspberrypi-**cin-01** | 00:00:00:a1:2b:cc
+        Cincinnati | raspberrypi-**cin-02** | 00:00:00:a1:2b:cc
+        Cincinnati | raspberrypi-**cin-03** | 00:00:00:a1:2b:cc
+        Cincinnati | raspberrypi-**cin-04** | 00:00:00:a1:2b:cc
+        Cincinnati | raspberrypi-**cin-05** | 00:00:00:a1:2b:cc
+        Cincinnati | raspberrypi-**cin-06** | 00:00:00:a1:2b:cc
+        Cincinnati | raspberrypi-**cin-07** | 00:00:00:a1:2b:cc
+        Cincinnati | raspberrypi-**cin-08** | 00:00:00:a1:2b:cc
+        Cincinnati | raspberrypi-**cin-09** | 00:00:00:a1:2b:cc
+        Cincinnati | raspberrypi-**cin-10** | 00:00:00:a1:2b:cc
+        Cincinnati | raspberrypi-**cin-11** | 00:00:00:a1:2b:cc
+        Cincinnati | raspberrypi-**cin-12** | 00:00:00:a1:2b:cc
+        ------------ | ------------- | -------------  
+        Indianapolis | raspberrypi-**ind-01** | 00:00:00:a1:2b:cc
+        Indianapolis | raspberrypi-**ind-02** | 00:00:00:a1:2b:cc
+        Indianapolis | raspberrypi-**ind-03** | 00:00:00:a1:2b:cc
+        Indianapolis | raspberrypi-**ind-04** | 00:00:00:a1:2b:cc
+        Indianapolis | raspberrypi-**ind-05** | 00:00:00:a1:2b:cc
+        Indianapolis | raspberrypi-**ind-06** | 00:00:00:a1:2b:cc
+        Indianapolis | raspberrypi-**ind-07** | 00:00:00:a1:2b:cc
+        Indianapolis | raspberrypi-**ind-08** | 00:00:00:a1:2b:cc
+        Indianapolis | raspberrypi-**ind-09** | 00:00:00:a1:2b:cc
+        Indianapolis | raspberrypi-**ind-10** | 00:00:00:a1:2b:cc
+        Indianapolis | raspberrypi-**ind-11** | 00:00:00:a1:2b:cc
+        Indianapolis | raspberrypi-**ind-12** | 00:00:00:a1:2b:cc
+        ------------ | ------------- | -------------  
 
     - You must reboot the device for changes to take effect.  Type the following to reboot.
         - **sudo reboot**
