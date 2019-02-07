@@ -10,6 +10,9 @@ We need to document the scenario here
 5.  The IoT Hub must be created and configured
 6.  Ensure that you created the directory SimulatedDevice on the Raspberry PI.  This project will be copied into this directory.
 
+## Estimated time to complete
+- TBD
+
 ## Create the IoTProject console application
 
 1. Navigate to the Workspace created in [Setting up the Laptop](https://github.com/Azure/IoT-Pi-Day/tree/master/Setting%20up%20the%20Laptop).

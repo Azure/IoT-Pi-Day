@@ -1,5 +1,10 @@
 # Lab 1.3 - Sending data to Azure IoT Hub
 
+## Prerequisites
+
+## Estimated time to complete
+- TBD
+
 ## Coming soon...
 
 ## ...Randy is working on this as we speak...thank you. :tired_face:

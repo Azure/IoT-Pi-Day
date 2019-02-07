@@ -7,6 +7,9 @@ We need to document the scenario here
 4.  The IoT Hub must be created and configured
 5.  Ensure that you created the directory SenseHATDotNetCore on the Raspberry PI.  This project will be copied into this directory.
 
+## Estimated time to complete
+- TBD
+
 ## Coming soon...
 
 ## ...Randy is working on this as we speak...thank you. :tired_face:

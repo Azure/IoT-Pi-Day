@@ -1,5 +1,8 @@
 # Setting up the Raspberry Pi
 
+## Estimated time to complete
+- TBD
+
 ## Install Raspbian
 
 - Install Raspbian on your Pi.

@@ -4,6 +4,9 @@ TBD - We need to document the scenario here
 ## Prerequisites
 1.  Azure Subscription [Microsoft Azure Portal](https://portal.azure.com).
 
+## Estimated time to complete
+- TBD
+
 ## Download the Repo
 The **Azure IoTPiDay Workshop** is setup to build out a real-life IoT scenario by capturing IoT data and ingesting it into the Azure Cloud.
 

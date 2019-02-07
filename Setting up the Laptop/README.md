@@ -1,5 +1,8 @@
 # Setting up the Laptop
 
+## Estimated time to complete
+- TBD
+
 ## Install Visual Studio Code
 
 ### Download Visual Studio Code
