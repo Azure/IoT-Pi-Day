@@ -117,7 +117,7 @@ The following commands need to be run on the Raspberry Pi whilst connected over 
 - Entering the following command to change the device name using the city abbrev. in table below using number scheme 01 through 10.
     - **sudo nano /etc/hostname**
         - i.e. **raspberrypi-<**abbreviation**>-01**, See table below for names.
-    - Copy this table to a Word document and update the MAC Addresses. This info is a MUST to conect to Microsoft WiFi
+    - Copy this table to a Word document and update the MAC Addresses. This info is a MUST to conect to Microsoft WiFi, see **Find the MAC Address** below.
     - Press **ctrl-X**, press **Y**, press **Enter** to save file.
 
         City Name | Device Name | MAC Address
@@ -194,6 +194,12 @@ The following commands need to be run on the Raspberry Pi whilst connected over 
     - After you login, **verify** the device name has been updated.
 
 ![Image](/images/settingupthepi-3.png)
+
+## Find the MAC Address
+- To find the MAC address from the command line you need to know the name of the interface. The Ethernet interface used to be called “eth0” but in newer versions of Raspbian it may be “enx########” where ######## is the MAC address. This means the Ethernet interface name is unique for every Pi. The first WiFi interfaces is still named “wlan0”.
+
+    - From the command line, type:
+        - **sudo ifconfig ####**
 
 ## Create application folders
 - Telnet back into the Raspberry Pi using SSH (see above)
