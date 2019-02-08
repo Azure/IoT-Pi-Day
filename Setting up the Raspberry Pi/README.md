@@ -214,6 +214,8 @@ The following commands need to be run on the Raspberry Pi whilst connected over 
         ![Image](/images/settingupthepi-4.png)
 
     - Entering the following commands to create folders for both user accounts.
+
+    **User: Pi1**
     - **```sudo mkdir "/home/pi1/SenseHATDotNetCore"```**
         - Change ownership: **```sudo chown pi:pi -R "/home/pi1/SenseHATDotNetCore"```**
     - **```sudo mkdir "/home/pi1/SenseHATDotNetCoreSimulation"```**
@@ -222,6 +224,16 @@ The following commands need to be run on the Raspberry Pi whilst connected over 
         - Change ownership: **``sudo chown pi:pi -R "/home/pi1/SimulatedDevice"``**
     - **```sudo mkdir "/home/pi1/SimulatedDevice/data"```**
         - Change ownership: **``sudo chown pi:pi -R "/home/pi1/SimulatedDevice/data"``**
+
+   **User: Pi2**
+    - **```sudo mkdir "/home/pi2/SenseHATDotNetCore"```**
+        - Change ownership: **```sudo chown pi:pi -R "/home/pi2/SenseHATDotNetCore"```**
+    - **```sudo mkdir "/home/pi2/SenseHATDotNetCoreSimulation"```**
+        - Change ownership: **```sudo chown pi:pi -R "/home/pi2/SenseHATDotNetCoreSimulation"```**
+    - **```sudo mkdir "/home/pi2/SimulatedDevice"```**
+        - Change ownership: **``sudo chown pi:pi -R "/home/pi2/SimulatedDevice"``**
+    - **```sudo mkdir "/home/pi2/SimulatedDevice/data"```**
+        - Change ownership: **``sudo chown pi:pi -R "/home/pi2/SimulatedDevice/data"``**
 
 ## Acknowledgements
 - These instructions were based off of the following blog, [Set up Raspian and .NET Core 2.0 on a Raspberry Pi](https://blogs.msdn.microsoft.com/david/2017/07/20/setting_up_raspian_and_dotnet_core_2_0_on_a_raspberry_pi/)
