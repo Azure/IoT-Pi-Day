@@ -6,7 +6,7 @@
 1.  CosmosDB implementing the SQL APi and Tripdata collection are already be created.
 2.  Visual Studio Code and listed extenstions are installed.
 3.  Lab 2.3 is completed.  This is where you create the Function App.
-4.  
+4.  Lab 0 is completed -- Azure Maps.
 
 ## Create the CosmosDBTrigger Function
 
