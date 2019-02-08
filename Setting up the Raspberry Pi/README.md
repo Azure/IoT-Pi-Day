@@ -83,14 +83,11 @@ The following commands need to be run on the Raspberry Pi whilst connected over 
     ![Image](/images/settingupthepi-2.png)
 
 
-## ~~Install~~ Docker, coming soon...(Randy is working on this)
-<!--
+## Install Docker
 The following commands need to be run on the Raspberry Pi whilst connected over an SSH session.
 - Enter the following commands to install docker.
     - **```curl -sSL https://get.docker.com | sh```**
-    - **sudo usermod -aG docker pi**
-
---->
+    - **```sudo usermod -aG docker pi```**
 
 ## Change the Timezone
 - Entering the following command to run raspi-config
