@@ -26,6 +26,37 @@ Use the following steps to create an Azure Cosmos account:
 ## Add a Collection
 You can now use the Data Explorer tool in the Azure portal to create a database and collection.
 
+1.  Click on **Go to Resource** when deployment is complete.
+
+![Image](/images/lab-0-image24.png)
+
+2.  From the **Overview** tab, Click **Data Explorer**.
+
+![Image](/images/lab-0-image25.png)
+
+3. Click on **New Collection**.
+
+![Image](/images/lab-0-image26.png)
+
+4.  On the **Add Collection** page, enter the settings for the new collection.
+   
+5.  Enter **Hubway** as the name for the **Database Id**.
+   
+6.  Enter **Tripdata** as the name for **Collection Id**.
+   
+7.  Enter **/startstationid** as the **Partition key**.
+   
+8.  Change the **Throughput** to **400** request units per second (RU/s).
+    > Note: If you want to reduce latency, you can scale up the throughput later.
+   
+9.  Click **OK**.
+
+![Image](/images/lab-0-image27.png)
+
+<!--
+## Add a Collection
+You can now use the Data Explorer tool in the Azure portal to create a database and collection.
+
 1.  Click Data Explorer > New Collection.
    
 2.  The Add Collection area is displayed on the far right, you may need to scroll right to see it.
@@ -41,6 +72,7 @@ You can now use the Data Explorer tool in the Azure portal to create a database 
 7.  Change the throughput to 400 request units per second (RU/s). If you want to reduce latency, you can scale up the throughput later.
    
 8.  Click OK.
+-->
 
 ## Reference Sites
 

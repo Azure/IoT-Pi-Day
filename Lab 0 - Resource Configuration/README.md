@@ -141,6 +141,7 @@ Use the following steps to create an Azure Cosmos account:
 
 ![Image](/images/lab-0-image23.png)
 
+<!--
 ## Add a Collection
 You can now use the Data Explorer tool in the Azure portal to create a database and collection.
 
@@ -170,6 +171,7 @@ You can now use the Data Explorer tool in the Azure portal to create a database 
 9.  Click **OK**.
 
 ![Image](/images/lab-0-image27.png)
+-->
 
 ## Create Favorites
 
