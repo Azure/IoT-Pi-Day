@@ -13,14 +13,15 @@
     - After download completes, **Right-Click** on **2018-xxx.zip** file to unzip the contents.  This creates the **2018-xxx.img** file.
     
 
-    > Note: You'll need a microSD Card Adapter for the MicroSD card.
+        > Note: You'll need a microSD Card Adapter for the MicroSD card.
     
     - Insert & format the microSD Card using a SD formatting tool.
         - Use [SD Memory Card Formatter](https://www.sdcard.org/downloads/formatter_4/eula_windows/index.html) tool.
     - Burn the file **2018-xxx.img** file to the microSD card.
         - Use [BalenaEtcher](https://www.balena.io/etcher/?ref=etcher_footer) burning tool.
     
-    > 🚨 **EXTREMELY IMPORTANT** - Once flashing is complete, create a new empty text file named **ssh** (with no extension) in the **root folder** of the microSD card drive.  If this step is missed, you will **NOT** 
+> 🚨 **EXTREMELY IMPORTANT** - Once flashing is complete, create a new empty text file named **ssh** (with no extension) in the **root folder** of the microSD card drive.  If this step is missed, you will **NOT** be able to SSH into the Rasberry Pi.
+
     - Eject the microSD card and insert it into the slot on the Raspberry Pi.
     - Plug the Raspberry Pi into your network via RJ45 ethernet cable.
         > Note: The PI does not have anything to allow ethernet bridging over USB.  TBD if using the internet sharing feature in Win10 to setup another hotspot and let the pi connect to that?
