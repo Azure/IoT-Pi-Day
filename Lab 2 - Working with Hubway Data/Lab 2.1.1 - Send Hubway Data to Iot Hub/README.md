@@ -116,6 +116,8 @@ We need to execute two copy commands
 
         scp.exe -r .\data\* pi@raspberrypi-rpagels:/home/pi/SimulatedDevice/data
 
+5. Type in **iotpiday** as the password.
+
 ## Run the code from the Raspberry PI
 
 ### Telnet into the Raspberry Pi using SSH
@@ -125,9 +127,7 @@ We need to execute two copy commands
         - Click [Download PuTTY](https://www.putty.org/) and click **Download it here** to download the latest version. Use the **MSI Windows Installer - 64-bit**.
         - Click **Run** to accept the default prompts.
         - Run **PuTTY** and enter the IP address of the Raspberry Pi and click Open. Accept the message about keys.
-        - Enter <**username**> as the logon name, and **raspberry** as the password.
-        - Change the default password for the pi user .
-            - Type **passwd** to change it to **iotpiday** for the current user.
+        - Enter <**username**> as the logon name, and **iotpiday** as the password.
 
 - **Option 2** - Use Windows 10
     - Click [How to Enable and Use Windows 10’s New Built-in SSH Commands](https://www.howtogeek.com/336775/how-to-enable-and-use-windows-10s-built-in-ssh-commands/)

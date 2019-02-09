@@ -10,16 +10,9 @@ We need to document the scenario here
 ## Estimated time to complete
 - TBD
 
-## Coming soon...
-
-## ...Randy is working on this as we speak...thank you. :tired_face:
-
+<!--
 ## 🚨 Content below this line is Under Construction 🚨
-
-## ~~Section 1~~
-## ~~Section 2~~
-## ~~Section 3~~
-## ~~Section 4~~
+-->
 
 ## Load SenseHATDotNetCore code
 
@@ -36,6 +29,7 @@ Note:  If this is the first time logging into Azure from Visual Studio Code.
 1.  From Visual Studio Code, press **Cntl-Shift-P**
 2.  Enter **Azure** and select **Sign in to Azure Cloud**
 3. Authenticate to Azure when the dialog box appears.
+
     > Note: Once you are signed in, close the web page and return to Visual Studio Code.
 
 ## Develop SenseHATDotNetCore code
@@ -78,7 +72,7 @@ Note:  If this is the first time logging into Azure from Visual Studio Code.
         scp.exe -r .\bin\Debug\netcoreapp2.2\linux-arm\publish\* pi@raspberrypi-rpagels:/home/pi/SimulatedDevice
 
 3. When prompted to continue to connect, type **yes**.
-4. Type in the raspberry pi **password**.
+4. Type in **iotpiday** as the password.
 
 ## Run the code from the Raspberry Pi
 
@@ -89,9 +83,7 @@ Note:  If this is the first time logging into Azure from Visual Studio Code.
         - Click [Download PuTTY](https://www.putty.org/) and click **Download it here** to download the latest version. Use the **MSI Windows Installer - 64-bit**.
         - Click **Run** to accept the default prompts.
         - Run **PuTTY** and enter the IP address of the Raspberry Pi and click Open. Accept the message about keys.
-        - Enter <**username**> as the logon name, and **raspberry** as the password.
-        - Change the default password for the pi user .
-            - Type **passwd** to change it to **iotpiday** for the current user.
+        - Enter <**username**> as the logon name, and **iotpiday** as the password.
 
 - **Option 2** - Use Windows 10
     - Click [How to Enable and Use Windows 10’s New Built-in SSH Commands](https://www.howtogeek.com/336775/how-to-enable-and-use-windows-10s-built-in-ssh-commands/)
