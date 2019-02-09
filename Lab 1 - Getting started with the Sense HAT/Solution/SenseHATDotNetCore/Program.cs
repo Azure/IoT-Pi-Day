@@ -25,7 +25,7 @@ namespace SenseHATDotNetCore
 
         // The device connection string to authenticate the device with your IoT hub.
         // This is found on the (Azure IoT Hub |  IoT Devices | <devicename> | Connection String primary)
-        private readonly static string s_connectionString = "<Your IoT Hub Connnection String with Device Id>";
+        private const string s_connectionString = "<Your IoT Hub Connnection String with Device Id>";
          private static async void SendDeviceToCloudMessagesAsync()
         {
             Console.WriteLine("=== Serializing the Sensor Data to JSON format ===========");

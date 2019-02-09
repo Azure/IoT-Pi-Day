@@ -16,7 +16,6 @@ We need to document the scenario here
 ## Create the IoTProject console application
 
 1. Navigate to the Workspace created in [Setting up the Laptop](https://github.com/Azure/IoT-Pi-Day/tree/master/Setting%20up%20the%20Laptop).
-
 2. Open up a **Command Prompt** or **PowerShell** as an **Administrator**.
     - Type **CD C:\Workspace\IoT-Pi-Day-master\IoT-Pi-Day-master\Lab 2 - Working with Hubway Data\Workspace\IotProject**
 3.  Enter **dotnet new console -o "simulated-device"**
@@ -92,10 +91,10 @@ Note:  If this is the first time logging into Azure from Visual Studio Code.
 
     ![Image](/images/lab-2.1.1-image4.png)
 
-##  Compile the code in preparation to deploy to Raspberry PI
+##  Compile the code
 1.  From the command prompt or powershell prompt
 
-2.  Change directory to **\Workspace\IotProject\simulated-device** ( if not already in ths directory)
+2.  Change directory to **\Workspace\IotProject\simulated-device** ( if not already in the directory)
 
 3.  Run the following commands:
     - **dotnet clean .**
@@ -106,14 +105,14 @@ Note:  If this is the first time logging into Azure from Visual Studio Code.
 We need to execute two copy commands
 1.  Change directory to **\Workspace\IotProject\simulated-device** ( if not already in ths directory)
 
-2.  Type **scp.exe -r .\bin\Debug\netcoreapp2.2\linux-arm\publish\* <**username**><**device ip address or name**>:/home/<**username**>/SimulatedDevice**
+2.  Type **scp.exe -r .\bin\Debug\netcoreapp2.2\linux-arm\publish\* <**username**>@<**device ip address or name**>:/home/<**username**>/SimulatedDevice**
 
         scp.exe -r .\bin\Debug\netcoreapp2.2\linux-arm\publish\* pi@raspberrypi-rpagels:/home/pi/SimulatedDevice
 
 3. When prompted to continue to connect, type **yes**.
 4. Type in the raspberry pi **password**.
 
-5.  Type **scp.exe -r .\data\\\* <**username**><**device ip address or name**>:/home/<**username**>/SimulatedDevice/data**
+5.  Type **scp.exe -r .\data\\\* <**username**>@<**device ip address or device name**>:/home/<**username**>/SimulatedDevice/data**
 
         scp.exe -r .\data\* pi@raspberrypi-rpagels:/home/pi/SimulatedDevice/data
 
@@ -126,7 +125,7 @@ We need to execute two copy commands
         - Click [Download PuTTY](https://www.putty.org/) and click **Download it here** to download the latest version. Use the **MSI Windows Installer - 64-bit**.
         - Click **Run** to accept the default prompts.
         - Run **PuTTY** and enter the IP address of the Raspberry Pi and click Open. Accept the message about keys.
-        - Enter **pi** as the logon name, and **raspberry** as the password.
+        - Enter <**username**> as the logon name, and **raspberry** as the password.
         - Change the default password for the pi user .
             - Type **passwd** to change it to **iotpiday** for the current user.
 
