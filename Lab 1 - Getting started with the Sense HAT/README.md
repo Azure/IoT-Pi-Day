@@ -14,6 +14,8 @@
 - Barometric pressure
 - Humidity
 
+## 🚨 Content below this line is Under Construction 🚨
+
 ### First, let’s start with pressure, temperature and humidity sensors! These sensors are located on the right side of the Sense HAT. The humidity sensor is labeled “HUMIDITY” and below it is the atmospheric pressure sensor, labeled “PRESSURE”. The temperature seems to be read from the humidity sensor.
 
 There’s a function for each sensor so the values can be acquired very easily!
