@@ -30,6 +30,7 @@
     - Wait 4-5 min for it to fully boot up.
         - Grab another cup of joe! :coffee: while you wait.
     - Locate the IP address which has been assigned by your DHCP server to the Raspberry Pi and make note of it.
+
     - Option 1: Open a Command Prompt as an Administrator.
         - type: **ping -c 1 raspberrypi.local** to get it.
     - Option 2: open up browser to your routers home page.
@@ -55,7 +56,7 @@
 
 ## Update the Raspberry Pi package list
 - Entering the following command to update the package list
-    - **sudo apt-get -y update**
+    - **```sudo apt-get -y update```**
 
 ## Install .Net Core Runtime 2.2
 
@@ -99,17 +100,17 @@ The following commands need to be run on the Raspberry Pi whilst connected over 
 
 ## Change the Timezone
 - Entering the following command to run raspi-config
-    - **sudo raspi-config**
+    - **```sudo raspi-config```**
     - Select **Localisation Options**
     - Select **Change Timezone**
     - Select **US**
     - Select **Eastern**
     - Select **Finish**
-    - Type **cat /etc/timezone** to verify.
+    - Type **```sydo cat /etc/timezone```** to verify.
 
 ## Enable WiFi (Optional)
 - Entering the following command to run raspi-config
-    - **sudo raspi-config**
+    - **```sudo raspi-config```**
     - Select **Network Options**
     - Select **Wi-Fi**
     - Select **US**
@@ -120,7 +121,7 @@ The following commands need to be run on the Raspberry Pi whilst connected over 
 
 ## Change the Device Name
 - Entering the following command to change the device name using the city abbrev. in table below using number scheme 01 through 10.
-    - **sudo nano /etc/hostname**
+    - **```sudo nano /etc/hostname```**
         - i.e. **raspberrypi-<**abbreviation**>-01**, See table below for names.
     - Copy this table to a Word document and update the MAC Addresses. This info is a MUST to conect to Microsoft WiFi, see **Find the MAC Address** below.
     - Press **ctrl-X**, press **Y**, press **Enter** to save file.
@@ -194,7 +195,7 @@ The following commands need to be run on the Raspberry Pi whilst connected over 
 
 
     - You must reboot the device for changes to take effect.  Type the following to reboot.
-        - **sudo reboot**
+        - **```sudo reboot```**
     - Telnet back into the Raspberry Pi using SSH (see above)
     - After you login, **verify** the device name has been updated.
 
@@ -204,7 +205,7 @@ The following commands need to be run on the Raspberry Pi whilst connected over 
 - To find the MAC address from the command line you need to know the name of the interface. The Ethernet interface used to be called “eth0” but in newer versions of Raspbian it may be “enx########” where ######## is the MAC address. This means the Ethernet interface name is unique for every Pi. The first WiFi interfaces is still named “wlan0”.
 
     - From the command line, type:
-        - **sudo ifconfig ####**
+        - **```sudo ifconfig ####```**
 
 ## Create User Accounts
 - Entering the following command to create the two user accounts and add them to the Admin Group.
@@ -221,7 +222,7 @@ The following commands need to be run on the Raspberry Pi whilst connected over 
 - Telnet back into the Raspberry Pi using SSH (see above)
     - After you login, **verify** the device name has been updated.
 
-    - Type **cd ..** to change to the root /home folder.
+    - Type **```cd ..```** to change to the root /home folder.
 
         ![Image](/images/settingupthepi-4.png)
 
@@ -246,12 +247,6 @@ The following commands need to be run on the Raspberry Pi whilst connected over 
         - Change ownership: **``sudo chown pi:pi -R "/home/pi2/SimulatedDevice"``**
     - **```sudo mkdir "/home/pi2/SimulatedDevice/data"```**
         - Change ownership: **``sudo chown pi:pi -R "/home/pi2/SimulatedDevice/data"``**
-
-## E Docker
-The following commands need to be run on the Raspberry Pi whilst connected over an SSH session.
-- Enter the following commands to install docker.
-    - **```curl -sSL https://get.docker.com | sh```**
-    - **```sudo usermod -aG docker pi```**
 
 ## Acknowledgements
 - These instructions were based off of the following blog, [Set up Raspian and .NET Core 2.0 on a Raspberry Pi](https://blogs.msdn.microsoft.com/david/2017/07/20/setting_up_raspian_and_dotnet_core_2_0_on_a_raspberry_pi/)
