@@ -82,12 +82,19 @@ The following commands need to be run on the Raspberry Pi whilst connected over 
 
     ![Image](/images/settingupthepi-2.png)
 
-
 ## Install Docker
 The following commands need to be run on the Raspberry Pi whilst connected over an SSH session.
 - Enter the following commands to install docker.
     - **```curl -sSL https://get.docker.com | sh```**
     - **```sudo usermod -aG docker pi```**
+
+- Verify docker installation (will see docker stats)
+    - **```sudo docker info```**
+
+- Verify docker installation (will see ASCII art)
+    - **```sudo docker run --rm microsoft/dotnet-samples```**
+
+        ![Image](/images/settingupthepi-5.png)
 
 ## Change the Timezone
 - Entering the following command to run raspi-config
@@ -205,6 +212,10 @@ The following commands need to be run on the Raspberry Pi whilst connected over 
     - **```sudo adduser pi2```**
     - **```sudo adduser pi2 sudo```**
 
+- Elevate permissions to run Docker containers
+    - **```sudo usermod -a -G docker pi1```**
+    - **```sudo usermod -a -G docker pi2```**
+
 ## Create application folders
 - Telnet back into the Raspberry Pi using SSH (see above)
     - After you login, **verify** the device name has been updated.
@@ -234,6 +245,12 @@ The following commands need to be run on the Raspberry Pi whilst connected over 
         - Change ownership: **``sudo chown pi:pi -R "/home/pi2/SimulatedDevice"``**
     - **```sudo mkdir "/home/pi2/SimulatedDevice/data"```**
         - Change ownership: **``sudo chown pi:pi -R "/home/pi2/SimulatedDevice/data"``**
+
+## E Docker
+The following commands need to be run on the Raspberry Pi whilst connected over an SSH session.
+- Enter the following commands to install docker.
+    - **```curl -sSL https://get.docker.com | sh```**
+    - **```sudo usermod -aG docker pi```**
 
 ## Acknowledgements
 - These instructions were based off of the following blog, [Set up Raspian and .NET Core 2.0 on a Raspberry Pi](https://blogs.msdn.microsoft.com/david/2017/07/20/setting_up_raspian_and_dotnet_core_2_0_on_a_raspberry_pi/)
