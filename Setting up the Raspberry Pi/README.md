@@ -22,21 +22,21 @@
     
 > 🚨 **EXTREMELY IMPORTANT** - Once flashing is complete, create a new empty text file named **ssh** (with no extension) in the **root folder** of the microSD card drive.  If this step is missed, you will **NOT** be able to SSH into the Rasberry Pi.
 
-    - Eject the microSD card and insert it into the slot on the Raspberry Pi.
-    - Plug the Raspberry Pi into your network via RJ45 ethernet cable.
-        > Note: The PI does not have anything to allow ethernet bridging over USB.  TBD if using the internet sharing feature in Win10 to setup another hotspot and let the pi connect to that?
+- Eject the microSD card and insert it into the slot on the Raspberry Pi.
+- Plug the Raspberry Pi into your network via RJ45 ethernet cable.
+    > Note: The PI does not have anything to allow ethernet bridging over USB.  TBD if using the internet sharing feature in Win10 to setup another hotspot and let the pi connect to that?
 
-    - Plug power into the Raspberry Pi.
-    - Wait 4-5 min for it to fully boot up.
-        - Grab another cup of joe! :coffee: while you wait.
-    - Locate the IP address which has been assigned by your DHCP server to the Raspberry Pi and make note of it.
+- Plug power into the Raspberry Pi.
+- Wait 4-5 min for it to fully boot up.
+    - Grab another cup of joe! :coffee: while you wait.
+- Locate the IP address which has been assigned by your DHCP server to the Raspberry Pi and make note of it.
 
-    - Option 1: Open a Command Prompt as an Administrator.
-        - type: **ping -c 1 raspberrypi.local** to get it.
-    - Option 2: open up browser to your routers home page.
-        - ie. http://192.168.1.254 and list out your devices.
+- Option 1: Open a Command Prompt as an Administrator.
+    - type: **ping -c 1 raspberrypi.local** to get it.
+- Option 2: open up browser to your routers home page.
+    - ie. http://192.168.1.254 and list out your devices.
 
-            ![Image](/images/settingupthepi-1.png)
+        ![Image](/images/settingupthepi-1.png)
 
 ## Telnet into the Raspberry Pi using SSH
 
