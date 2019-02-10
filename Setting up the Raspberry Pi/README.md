@@ -45,14 +45,16 @@
         - Click [Download PuTTY](https://www.putty.org/) and click **Download it here** to download the latest version. Use the **MSI Windows Installer - 64-bit**.
         - Click **Run** to accept the default prompts.
         - Run **PuTTY** and enter the IP address of the Raspberry Pi and click Open. Accept the message about keys.
-        - Enter **pi** as the logon name, and **raspberry** as the password.
-        - Change the default password for the pi user .
-            - Type **passwd** to change it to **iotpiday** for the current user.
 
 - **Option 2** - Use Windows 10
     - Click [How to Enable and Use Windows 10’s New Built-in SSH Commands](https://www.howtogeek.com/336775/how-to-enable-and-use-windows-10s-built-in-ssh-commands/)
 
 - **Option 3** - Use your favorate SSH tool.
+
+## Update the default password
+- To login in, enter **pi** as the logon name, and **raspberry** as the password.
+- Change the default password for the **pi** user .
+    - Type **passwd** to change it to **iotpiday** for the current user.
 
 ## Update the Raspberry Pi package list
 - Entering the following command to update the package list
