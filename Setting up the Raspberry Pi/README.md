@@ -216,9 +216,9 @@ The following commands need to be run on the Raspberry Pi whilst connected over 
 ## Create User Accounts
 - Entering the following command to create the two user accounts and add them to the Admin Group.
     - **```sudo adduser pi1```**
-    - **```sudo usermod -a -G adm,sudo,audio,video,plugdev,users,input,netdev,spi,i2c,gpio pi1```**
+    - **```sudo usermod -a -G pi1,adm,sudo,audio,video,plugdev,users,input,netdev,spi,i2c,gpio pi1```**
     - **```sudo adduser pi2```**
-    - **```sudo usermod -a -G adm,sudo,audio,video,plugdev,users,input,netdev,spi,i2c,gpio pi2```**
+    - **```sudo usermod -a -G pi2,adm,sudo,audio,video,plugdev,users,input,netdev,spi,i2c,gpio pi2```**
 
     > Note: During account created, when prompted for a new password, **Password.1.!!**.
 <!--
