@@ -84,6 +84,7 @@ The following commands need to be run on the Raspberry Pi whilst connected over 
 
     ![Image](/images/settingupthepi-2.png)
 
+<!--
 ## Install Docker
 The following commands need to be run on the Raspberry Pi whilst connected over an SSH session.
 - Enter the following commands to install docker.
@@ -97,6 +98,7 @@ The following commands need to be run on the Raspberry Pi whilst connected over 
     - **```sudo docker run --rm microsoft/dotnet-samples```**
 
         ![Image](/images/settingupthepi-5.png)
+-->
 
 ## Change the Timezone
 - Entering the following command to run raspi-config
@@ -214,9 +216,11 @@ The following commands need to be run on the Raspberry Pi whilst connected over 
     - **```sudo adduser pi2```**
     - **```sudo adduser pi2 sudo```**
 
+<!-->
 - Elevate permissions to run Docker containers
     - **```sudo usermod -a -G docker pi1```**
     - **```sudo usermod -a -G docker pi2```**
+-->
 
 ## Create application folders
 - Telnet back into the Raspberry Pi using SSH (see above)
