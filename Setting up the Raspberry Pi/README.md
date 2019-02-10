@@ -54,7 +54,7 @@
 ## Update the default password
 - To login in, enter **pi** as the logon name, and **raspberry** as the password.
 - Change the default password for the **pi** user .
-    - Type **passwd** to change it to **iotpiday** for the current user.
+    - Type **passwd** to change it to **Password.1.!!** for the current user.
 
 ## Update the Raspberry Pi package list
 - Entering the following command to update the package list
