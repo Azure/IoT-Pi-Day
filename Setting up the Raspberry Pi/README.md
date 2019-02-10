@@ -218,7 +218,7 @@ The following commands need to be run on the Raspberry Pi whilst connected over 
     - **```sudo adduser pi2```**
     - **```sudo adduser pi2 sudo```**
 
-<!-->
+<!--
 - Elevate permissions to run Docker containers
     - **```sudo usermod -a -G docker pi1```**
     - **```sudo usermod -a -G docker pi2```**
