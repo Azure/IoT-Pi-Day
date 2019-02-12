@@ -218,7 +218,7 @@ The following commands need to be run on the Raspberry Pi whilst connected over 
         - **```ls /sys/class/net/```**  : This will list all the adapters such as wlan0
         - **```cat /sys/class/net/wlan0/address```** : This command obtains the mac address for the requested adapter
 
-## Create User Accounts
+## Create User Account Permissions
 - Entering the following command to create the two user accounts and add them to the Admin Group.
     - **```sudo adduser pi1```**
     - **```sudo usermod -a -G pi1,adm,sudo,audio,video,plugdev,users,input,netdev,spi,i2c,gpio pi1```**
@@ -264,8 +264,38 @@ The following commands need to be run on the Raspberry Pi whilst connected over 
 
 ## How to Clone the microSD card
 - These steps will allow you use an existing image and configure it for each Raspberry Pi.
-If you want to read from an already crea
+- Download Win32DiskImager from the [HERE](http://sourceforge.net/projects/win32diskimager/files/latest/download)
 
+## Writing Your Own Custom SD Card Setup To A File
+**Read Image**
+- Insert the already configured microSD Card into the microSD card Adapter.
+- Insert the Adapter into your Laptop.
+- Run **Win32DiskImager.exe**.
+    > It may give an error message on startup, but you can often ignore it.
+- Ensure the device drop down box has the drive your card is inserted into. 
+- Press the folder button and select the folder and filename you want to use to write your image file to. 
+- Click **Read**.
+
+**Write Image**
+- Remove the Adaptor from the Laptop.
+- Remove the microSD Card from the Adaptor.
+- Insert the blank microSD Card into the Adaptor and insert into the laptop.
+    > Note: It should find your SD Card drive or if not select it.
+- Select the file '***.img' image file you wish to use.
+- Click **Write**.
+- Remove the Adaptor from the Laptop.
+- Remove the microSD Card from the Adaptor.
+- Insert the microSD card into the Raspberry Pi. 
+- Boot the Raspberry Pi.
+
+**Get the MAC Address**
+- See **Find the MAC Address** above.
+
+**Update the Devicename**
+- See **Change the Device Name** above.
+
+**Update the permissions**
+- See **Create User Account Permissions** above.
 
 ## Acknowledgements
 - These instructions were based off of the following blog, [Set up Raspian and .NET Core 2.0 on a Raspberry Pi](https://blogs.msdn.microsoft.com/david/2017/07/20/setting_up_raspian_and_dotnet_core_2_0_on_a_raspberry_pi/)
