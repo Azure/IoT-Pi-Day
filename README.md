@@ -42,17 +42,19 @@ As you create an end-to-end IoT application in a day, you’ll see how easy it i
     > Note: This does NOT require a Raspberry Pi SenseHAT.
 
 ## Lab 2 - Working with Hubway Data
-- Lab 2.1.
+- Lab 2.1 - IoT Hub
     - This lab will guide you through ...(desc coming soon...)
-- Lab 2.2.
+- Lab 2.2 - Event Hub
     - This lab will guide you through ...(desc coming soon...)
-- Lab 2.3.
+- Lab 2.3 - Event Hub Trigger
     - This lab will guide you through ...(desc coming soon...)
-- Lab 2.4.
+- Lab 2.4 - CosmosDB
     - This lab will guide you through ...(desc coming soon...)
-- Lab 2.5.
+- Lab 2.5 - CosmosDB Trigger
     - This lab will guide you through ...(desc coming soon...)
-- Lab 2.6.
+- Lab 2.6 - Storage
+    - This lab will guide you through ...(desc coming soon...)
+- Lab 2.7 - Azure Maps
     - This lab will guide you through ...(desc coming soon...)
 
 
