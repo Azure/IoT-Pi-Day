@@ -1,4 +1,4 @@
-# Lab 2.26 - Setting up Blob Storage
+# Lab 2.6 - Setting up Blob Storage
 We need to document the scenario here
 
 
