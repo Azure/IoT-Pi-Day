@@ -153,7 +153,6 @@ Use the following steps to create an Azure Cosmos account:
 ![Image](/images/lab-0-image23.png)
 
 ## Create an Azure Map
-- Coming soon...
 
 Use the following steps to create an Azure Map:    
 
