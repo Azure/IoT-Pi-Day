@@ -42,13 +42,13 @@ What are Visual Studio Code Extensions? Extensions let you add languages, debugg
 **Option 2 - From Command Line**
 
 - Open up a **Command Prompt** as an **Administrator**.
-- Azure Account, type: **code --install-extension ms-vscode.azure-account**
-- Azure Functions, type: **code --install-extension ms-azuretools.vscode-azurefunctions**
-- Azure IoT Device Workbench, type: **code --install-extension vsciot-vscode.vscode-iot-workbench**
-- C#, type: **code --install-extension ms-vscode.csharp**
-- Material Icon Theme, type: **code --install-extension pkief.material-icon-theme**
-- NuGet Package Manager, type: **code --install-extension jmrog.vscode-nuget-package-manager**
-- Azure CLI Tools, type: **code --install-extension ms-vscode.azurecli**
+- Azure Account, type: **```code --install-extension ms-vscode.azure-account```**
+- Azure Functions, type: **```code --install-extension ms-azuretools.vscode-azurefunctions```**
+- Azure IoT Device Workbench, type: **```code --install-extension vsciot-vscode.vscode-iot-workbench```**
+- C#, type: **```code --install-extension ms-vscode.csharp```**
+- Material Icon Theme, type: **```code --install-extension pkief.material-icon-theme```**
+- NuGet Package Manager, type: **```code --install-extension jmrog.vscode-nuget-package-manager```**
+- Azure CLI Tools, type: **```code --install-extension ms-vscode.azurecli```**
 
 ## Install DotNet Core SDK 2.2
 .NET Core is a cross-platform version of .NET for building websites, services, and console apps.
