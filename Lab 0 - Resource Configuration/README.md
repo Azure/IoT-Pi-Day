@@ -54,21 +54,21 @@ Use the following steps to create an Iot Hub:
    * **Resource Group**: You can create a new resource group or use an existing one. To create a new one, click Create new and fill in the name you want to use. To use an existing resource group, click Use existing and select the resource group from the dropdown list.
    * **Region**: This is the region in which you want your hub to be located. Select the location closest to you from the dropdown list.
    * **IoT Hub Name**: Put in the name for your IoT Hub. This name must be globally unique. A recommendation is LastName-pi-day-IoT-Hub.
+   * Click **Next: Size and scale** to continue creating your IoT hub.
 
-![Image](/images/lab-0-image3.png)
+    ![Image](/images/lab-0-image3.png)
 
-5. Click Next: Size and scale to continue creating your IoT hub.
+    <!-- ![Image](/images/lab-0-image3.2.png) -->
 
-![Image](/images/lab-0-image3.2.png)
-
-6. On this screen, you can take the defaults and just click Review + create at the bottom.  
+6. On this screen, **S1: Standard Tier**.
+7. Click **Review + create** to review your choices.  
     * **Pricing and scale tier**: You can choose from several tiers depending on how many features you want and how many messages you send through your solution per day. The free tier is intended for testing and evaluation. It allows 500 devices to be connected to the IoT hub and up to 8,000 messages per day. Each Azure subscription can create one IoT Hub in the free tier.
 
-![Image](/images/lab-0-image4.png)
+    ![Image](/images/lab-0-image4.png)
 
-7.  Click Review + create to review your choices. 
+    <!-- ![Image](/images/lab-0-image5.png) -->
 
-![Image](/images/lab-0-image5.png)
+8. After reviewing the screen, click **Create**.
 
 
 ## Create an Event Hub namespace
