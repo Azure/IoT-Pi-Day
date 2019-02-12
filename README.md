@@ -13,11 +13,12 @@ This is an exclusive workshop to help developers get hands-on with Azure and IoT
 
 If you’re like us, Pi Day (3/14) is a pretty special day. As many of you know, Pi (Greek letter “π”) is the symbol used in mathematics to represent a constant- the ratio of the circumference of a circle to its diameter- which is approximately 3.14159. Math enthusiasts around the world celebrate Pi day by eating pie, talking about math, and seeing who can recite the greatest number of digits of Pi. As technologists, we like to take this one step further!
 
-This Pi day will explore the power of a Raspberry Pi device combined with Azure. IoT devices can be pretty powerful but sometimes it’s hard to determine what IoT can do for your company and what business solutions you can solve. You probably already have capabilities to grab data through sensors, but what do you do with the data?
+This Pi day will explore the power of a Raspberry Pi device combined with Azure. IoT devices can be pretty powerful but sometimes it’s hard to determine what IoT can do for your company and what business solutions you can solve. You probably already have capabilities to grab data through sensors.
+- What do you do with the data?
 - How do you manipulate the data?
 - How do you get actionable insights?
 
-Also, creating these applications takes a long time and a lot of code, right? Not necessarily.
+Creating these applications takes a long time and a lot of code, right? :weary: Not necessarily.
 
 Together, in this hand-on workshop, we’re going to build out a real-life IoT scenario by capturing IoT data and ingesting it into the Cloud. We’ll explore the amazing visualizations and insights we can draw from that data by applying Azure services like Azure Functions, Logic Apps, CosmosDB, Azure Maps, and more.
 
