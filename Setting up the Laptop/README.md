@@ -110,10 +110,9 @@ What are Azure Functions Core Tools? The Azure Functions Core Tools provide a lo
 **Linux**
 - See [Azure Functions Core Tools on the Mac](https://github.com/Azure/azure-functions-core-tools#linux)
 
-<!--
-## Install Git
+## (Optional) Install Git
 What is Git? Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
-- Click [Git](https://git-scm.com/)
+- Click [Git](https://git-scm.com/) to install.
 
 **Windows**
 - Under Latest source Release, click **Download 2.20.1 for Windows** to execute **Git-2.20.1-64-bit.exe**.
@@ -121,4 +120,15 @@ What is Git? Git is a free and open source distributed version control system de
 
 **MacOS**
 - Click on **Mac Build** to download **node-v11.9.0.pkg**. 
--->
+
+## (Optional) Install Git Desktop
+What is GitHub Desktop? GitHub Desktop extends your GitHub workflow beyond your browser.
+- Click [GitHub Desktop](https://desktop.github.com/) to install.
+
+**Windows**
+- Click **Download for Windows (64bit)** and **Run** the file **GitHubDesktopSetup.exe**.
+- Select all the defaults.
+
+**MacOS**
+- Click **Download for macOS** and **Open** the file **GitHubDesktop.zip**.
+- Select all the defaults.

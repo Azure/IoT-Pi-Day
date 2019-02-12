@@ -15,12 +15,23 @@ The **Azure IoTPiDay Workshop** is setup to build out a real-life IoT scenario b
     - Type **CD C: root**. i.e c:\Workspace
 - Open a browser and navigate to [github.com/Azure/IoT-Pi-Day](https://github.com/Azure/IoT-Pi-Day).
 - Click the button **Clone or download**.
+
+    ![Image](/images/settingupthelaptop-1.png)
+
+**Option 1 - Download ZIP to your Desktop**
+
 - Click **Download Zip**, **Save As** to Workspace folder.
 - When download is complete, click **Open Folder**.
 - **Right-Click** on **Iot-Pi-Day-master.zip**.
 - Select **Extract All**, click **Extract** to default folder.
 
-    ![Image](/images/settingupthelaptop-1.png)
+    ![Image](/images/settingupthelaptop-2.png)
+
+**Option 2 - Clone to your Desktop**
+- Be sure to have GitHub Desktop installed first, see
+
+- Click **Open in Desktop**.
+    > Note: This required the GitHub Desktop to be installed first.
 
 ## Create an Iot Hub
 
