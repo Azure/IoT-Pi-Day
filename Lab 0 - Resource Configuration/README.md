@@ -29,9 +29,7 @@ The **Azure IoTPiDay Workshop** is setup to build out a real-life IoT scenario b
 
 **Option 2 - Clone to your Desktop**
     
-> Note: This requires the Git + GitHub Desktop to be installed first.
-
-- If not already done, install [Install Git](https://github.com/Azure/IoT-Pi-Day/tree/master/Setting%20up%20the%20Laptop#optional-install-git) and [Install GitHub Desktop](https://github.com/Azure/IoT-Pi-Day/tree/master/Setting%20up%20the%20Laptop#optional-install-git-desktop) now.
+> Note: This requires Git + GitHub Desktop to be installed first. If not already done, click [Install Git](https://github.com/Azure/IoT-Pi-Day/tree/master/Setting%20up%20the%20Laptop#optional-install-git) and [Install GitHub Desktop](https://github.com/Azure/IoT-Pi-Day/tree/master/Setting%20up%20the%20Laptop#optional-install-git-desktop).
 
 - Click **Open in Desktop**.
 
