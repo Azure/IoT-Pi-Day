@@ -152,6 +152,33 @@ Use the following steps to create an Azure Cosmos account:
 
 ![Image](/images/lab-0-image23.png)
 
+## Create an Azure Map
+- Coming soon...
+
+Use the following steps to create an Azure Map:    
+
+1. In a new browser window, sign in to the [Microsoft Azure Portal](https://portal.azure.com).
+2. In the Azure portal click **+Create a resource** at the top left of the screen.
+3. Click **Internet of Things** under Azure Marketplace and click **See All**.
+
+    ![Image](/images/lab-0-image30.png)
+
+4. Under **Data analytics and Visualizations**, click **More**.
+5. Click **Maps** from the list on the right, click **Create**.
+
+    ![Image](/images/lab-0-image31.png)
+
+6. On the **Create Azure Maps Account** page, enter the basic settings for the new Azure Maps account.
+7. Select the **Azure subscription** that you want to use.
+8. Ener the **Resource Group Name** from previous steps.
+9. Enter an **Account Name** that is a unique name to identify your Azure Maps account. Consider LastName-pi-day-maps as an example.
+10. Select **Standard S0** for pricing tier.
+11. Check the box **I confirm...**.
+12. Select **Review+Create**.
+13. Select **Create**.
+
+    ![Image](/images/lab-0-image32.png)
+
 <!--
 ## Add a Collection
 You can now use the Data Explorer tool in the Azure portal to create a database and collection.
