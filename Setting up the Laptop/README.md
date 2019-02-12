@@ -27,7 +27,7 @@ What are Visual Studio Code Extensions? Extensions let you add languages, debugg
 
 > Note: Some of the extensions will give you a warning message, please ignore and be patient.
 
-**From Visual Studio Code**
+**Option 1 - From Visual Studio Code**
 
 - Launch Visual Studio Code
     > Note: Bring up the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of VS Code or the View: Extensions command (**Ctrl+Shift+X**).
@@ -39,16 +39,16 @@ What are Visual Studio Code Extensions? Extensions let you add languages, debugg
 - Search for: **NuGet Package Manager**, click **Install**
 - Search for: **Azure CLI Tools**, click **Install**
 
-**(Optional) From Command Line**
+**Option 2 - From Command Line**
 
 - Open up a **Command Prompt** as an **Administrator**.
 - Azure Account, type: **code --install-extension ms-vscode.azure-account**
-- Azure Functions, type: **code --install-extension  - ms-azuretools.vscode-azurefunctions**
-- Azure IoT Device Workbench, type: **code --install-extension  - vsciot-vscode.vscode-iot-workbench**
-- C#, type: **code --install-extension  ms-vscode.csharp**
-- Material Icon Theme, type: **code --install-extension  - pkief.material-icon-theme**
-- NuGet Package Manager, type: **code --install-extension  - jmrog.vscode-nuget-package-manager**
-- Azure CLI Tools, type: **code --install-extension  - ms-vscode.azurecli**
+- Azure Functions, type: **code --install-extension ms-azuretools.vscode-azurefunctions**
+- Azure IoT Device Workbench, type: **code --install-extension vsciot-vscode.vscode-iot-workbench**
+- C#, type: **code --install-extension ms-vscode.csharp**
+- Material Icon Theme, type: **code --install-extension pkief.material-icon-theme**
+- NuGet Package Manager, type: **code --install-extension jmrog.vscode-nuget-package-manager**
+- Azure CLI Tools, type: **code --install-extension ms-vscode.azurecli**
 
 ## Install DotNet Core SDK 2.2
 .NET Core is a cross-platform version of .NET for building websites, services, and console apps.
