@@ -24,35 +24,35 @@ Together, in this hand-on workshop, we’re going to build out a real-life IoT s
 As you create an end-to-end IoT application in a day, you’ll see how easy it is to leverage Azure tools to innovate with IoT, and hopefully come away with some great ideas of your own.
 
 ## Setting up the Raspberry Pi
-- This lab will guide you thorugh configuring a Raspberry Pi from scratch in preparation for the following labs.
+- This lab will guide you through configuring a Raspberry Pi from scratch in preparation for the following labs.
 
 ## Setting up the Laptop
-- This lab will guide you through setting up our laptop with Visual Studio Code and neccessary Azure servcices, in preparation for the following labs.
+- This lab will guide you through setting up your laptop with Visual Studio Code and neccessary Azure services, in preparation for the following labs.
 
 ## Lab 0 - Resource Configuration
-- This lab will guide you through setting up the neccessary Azure servcices in preparation for the following labs.
+- This lab will guide you through setting up the neccessary Azure services in preparation for the following labs.
 
 ## Lab 1 - Getting Started with the SenseHAT
 - Lab 1.1.
     - This lab will guide you through updating code, deploying code to  the device, running code on the device, and sending **Real** sensor data to Azure IoT Hub.
     > Note: This requires a Raspberry Pi SenseHAT.
 - Lab 1.2 (Optional).
-    - This lab will guide you through updating code, deploying code to the device, running code on the device, and sending **simulated** sensor data to Azure IoT Hub.
+    - This lab will guide you through updating code, deploying code to the device, running code on the device, and sending **Simulated** sensor data to Azure IoT Hub.
     > Note: This does NOT require a Raspberry Pi SenseHAT.
 
 ## Lab 2 - Working with Hubway Data
 - Lab 2.1.
-    - This lab will guide you through ...(Tim please update)
+    - This lab will guide you through ...(desc coming soon...)
 - Lab 2.2.
-    - This lab will guide you through ...(Tim please update)
+    - This lab will guide you through ...(desc coming soon...)
 - Lab 2.3.
-    - This lab will guide you through ...(Tim please update)
+    - This lab will guide you through ...(desc coming soon...)
 - Lab 2.4.
-    - This lab will guide you through ...(Tim please update)
+    - This lab will guide you through ...(desc coming soon...)
 - Lab 2.5.
-    - This lab will guide you through ...(Tim please update)
+    - This lab will guide you through ...(desc coming soon...)
 - Lab 2.6.
-    - This lab will guide you through ...(Tim please update)
+    - This lab will guide you through ...(desc coming soon...)
 
 
 # Contributing
