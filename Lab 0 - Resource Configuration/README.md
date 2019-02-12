@@ -61,10 +61,12 @@ Use the following steps to create an Iot Hub:
     <!-- ![Image](/images/lab-0-image3.2.png) -->
 
 6. On this screen, **S1: Standard Tier**.
-7. Click **Review + create** to review your choices.  
+
     * **Pricing and scale tier**: You can choose from several tiers depending on how many features you want and how many messages you send through your solution per day. The free tier is intended for testing and evaluation. It allows 500 devices to be connected to the IoT hub and up to 8,000 messages per day. Each Azure subscription can create one IoT Hub in the free tier.
 
     ![Image](/images/lab-0-image4.png)
+
+7. Click **Review + create** to review your choices.  
 
     <!-- ![Image](/images/lab-0-image5.png) -->
 
