@@ -3,6 +3,11 @@
 ## Estimated time to complete
 - TBD
 
+## Prerequisites
+- A Laptop. :smirk:
+- A Raspberry Pi. :smiley:
+- A Raspberry Pi SenseHAT (only required for 1 lab).
+
 ## Install Raspbian
 
 - Install Raspbian on your Pi.

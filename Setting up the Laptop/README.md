@@ -3,6 +3,9 @@
 ## Estimated time to complete
 - TBD
 
+## Prerequisites
+- A Laptop. :smile:
+
 ## Install Visual Studio Code
 
 ### Download Visual Studio Code

@@ -4,7 +4,7 @@
 This is an exclusive workshop to help developers get hands-on with Azure and IoT devices.
 
 ## Prerequisites
-- A Raspberry Pi
+- A Raspberry Pi.
 - A Raspberry Pi SenseHAT (only required for 1 lab)
 - Azure Subscription [Microsoft Azure Portal](https://portal.azure.com).
 
