@@ -43,7 +43,7 @@ namespace Company.Function
 
             string sCurrentStationID = null;
             string sLastStationID = null;
-            int iCounter = 0;
+            int iCounter = 1;
             
             // process each item in the list
             foreach (var doc in tripItems)
@@ -83,7 +83,7 @@ namespace Company.Function
                    tdGeoJson.features.Add(myFeatures);
                                        
                     // reset the counter
-                    iCounter = 0;
+                    iCounter = 1;
 
                 }
 
