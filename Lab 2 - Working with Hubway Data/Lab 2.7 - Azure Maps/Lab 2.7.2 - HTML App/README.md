@@ -1,63 +1,52 @@
-# Lab 2.6 - Setting up Blob Storage
+# Lab 2.7.2 - Create the Static HTML Page
 We need to document the scenario here
 
 
 ## Prerequisites
+1.  Lab 0 - Installing Azure Storage Explorer
+2.  
 
 
-## Create the Storage Account
+## Update the Code
 
+1. Copy the HubwayMap folder from solution to workspace
+2. From a command prompt, change directory to \workspace\Hubwaymap
+3. type code . and hit enter
+4. Enter your Azure Maps Subscription key atlas.setSubscriptionKey('Azure Maps subscription');
+   * From the Azure Portal, navigate to your Maps Deployment --> Map Service
+   * Select the Authentication menu item on the left
+   * Copy the Primary Key
+5.  Save the file
 
-Use the following steps to create a Storage Account:    
+## Azure Storage Explorer
 
-1. In a new browser window, sign in to the [Azure Portal][Azure-Portal].
+1.  Bring up Azure Storage Explorer
+2.  Add your account
+3.  Connect to Azure Storage
+    *  Select Add an Azure Account
+    *  Sign-In with your Azure credentials
+    *  OR
+    *  Select Use a Connection String
+    *  Enter a Display Name
+    *  Copy the Connection String from the Access Keys in the Azure Storage settings of the Portal
+4.  Apply
+5.  Select the Explorer Icon in the top left
+6.  Browse into Storage Accounts
+7.  Select your storage account that you previously created in Lab 2.6
+8.  Open the Blob Containers
+9.  Select $web
+10. Upload the hubwayplot.html file into $web
 
-2. In the Azure portal, and click Create a resource at the top left of the screen.
-3. Search for Azure Storage
-4. Select Storage Account by Microsoft
-5. Click Create at th bottom of the screen
-6. On the Basics page, fill in the fields:
-   * **Subscription** Select your subscription
-   * **Resource Group** Select the resource group you have been using.
-   * **Storage Account Name** Enter a unique name for your storage account.
-   * **Location** Select a location for the account.
-   * **Performance** Select Standard
-   * **Account Kind** Select StorageV2 (general purpose v2)
-   * **Replication** Select locally-redundant storage (LRS)
-   * **Access tier** Select Hot
-7. Select Review + Create 
-8. Select Create 
+## View the Page
 
-## Creating the Blob container
-1. In the Azure portal from the menu on the left, select Blobs under Blob service
-2. On the right, click +Container
-3. Enter a name for your blob container [ boston-hubway-data ]
-4. Select Private(no anonymous access)
-5. Click OK to create the container.
-
-## Enable the Static Web Site
-1.  Under Settings, select Static website
-2.  In the window, select Enabled
-3.  Select Save.
-   * Notice the $web folder that is created
-   * Take note of the Primary endpoint
-
-## Storage Explorer
-1.  Select Storage Explorer(preview)
-2.  Select BLOB CONTAINERS
-3. You should have two containers:
-   * $web
-   * boston-hubway-data 
+1.  Navigate to your storage account in the Azure Portal
+2.  Select Static website under Settings
+3.  Copy the primary endpoint
+    * https://mystorage.z20.web.core.windows.net/
+    * Append hubwayplot.html
+    * https://mystorage.z20.web.core.windows.net/hubwayplot.html
+4.  If you have data in CosmosDB, you should see that information plotted on the map
 
 
 ## Reference Sites
 
-[Create an Azure Storage Account][CreateAccount]
-
-[Azure Blob Storage][BlobStg]
-
-
-
-[BlobStg]: https://azure.microsoft.com/en-us/services/storage/blobs/
-
-[CreateAccount]: https://docs.microsoft.com/en-us/azure/storage/common/storage-quickstart-create-account?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json&tabs=azure-portal
