@@ -15,12 +15,12 @@
 
         > Note: You'll need a microSD Card Adapter for the MicroSD card.
     
-    - Insert & format the microSD Card using a SD formatting tool.
+    - Insert & do a FULL Format the microSD Card using a SD formatting tool.
         - Use [SD Memory Card Formatter](https://www.sdcard.org/downloads/formatter_4/eula_windows/index.html) tool.
     - Burn the file **2018-xxx.img** file to the microSD card.
         - Use [BalenaEtcher](https://www.balena.io/etcher/?ref=etcher_footer) burning tool.
     
-> 🚨 **EXTREMELY IMPORTANT** - Once flashing is complete, create a new empty text file named **ssh** (with no extension) in the **root folder** of the microSD card drive.  If this step is missed, you will **NOT** be able to SSH into the Rasberry Pi.
+> 🚨 **EXTREMELY IMPORTANT** - Once flashing is complete, create a new empty text file named **ssh** (with no extension) in the **root folder** of the microSD card drive (should be the next driver letter beyond what you have on your laptop, i.e. d:\ was mine).  If this step is missed, you will **NOT** be able to SSH into the Rasberry Pi.
 
 - Eject the microSD card and insert it into the slot on the Raspberry Pi.
 - Plug the Raspberry Pi into your network via RJ45 ethernet cable.
@@ -256,6 +256,11 @@ The following commands need to be run on the Raspberry Pi whilst connected over 
         - Change ownership: **``sudo chown pi:pi -R "/home/pi2/SimulatedDevice"``**
     - **```sudo mkdir "/home/pi2/SimulatedDevice/data"```**
         - Change ownership: **``sudo chown pi:pi -R "/home/pi2/SimulatedDevice/data"``**
+
+## How to Clone the microSD card
+- These steps will allow you use an existing image and configure it for each Raspberry Pi.
+If you want to read from an already crea
+
 
 ## Acknowledgements
 - These instructions were based off of the following blog, [Set up Raspian and .NET Core 2.0 on a Raspberry Pi](https://blogs.msdn.microsoft.com/david/2017/07/20/setting_up_raspian_and_dotnet_core_2_0_on_a_raspberry_pi/)
