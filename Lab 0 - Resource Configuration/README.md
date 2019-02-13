@@ -116,7 +116,7 @@ Use the following steps to create an Event Hub Namespace:
 
 ![Image](/images/lab-0-image16.png)
 
-4.  Type a name for your event hub, then click **Create**.  Consider hubwaytelemetry as an Event Hub Name.
+4.  Type a name for your event hub, then click **Create**.  Consider **hubwaytelemetry** as an Event Hub Name.
 
 ![Image](/images/lab-0-image17.png)
 
