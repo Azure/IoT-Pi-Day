@@ -81,48 +81,50 @@ Use the following steps to create an Event Hub Namespace:
 
 2. In the Azure portal click **+Create a resource** at the top left of the screen.
 
-![Image](/images/lab-0-image1.png)
+    ![Image](/images/lab-0-image1.png)
 
 3. Click **Integration** under Azure Marketplace and click **See All**.
 
-![Image](/images/lab-0-image10.png)
+    ![Image](/images/lab-0-image10.png)
 
-3. Click **Events Hubs**.
+4. Click **Events Hubs**.
 
-![Image](/images/lab-0-image11.png)
+    ![Image](/images/lab-0-image11.png)
 
-3. Click **Create** on the first screen for creating an Event Hub.
+5. Click **Create** on the first screen for creating an Event Hub.
 
-![Image](/images/lab-0-image12.png)
+    ![Image](/images/lab-0-image12.png)
 
-4. On the Create namespace page, fill in the fields adn click **Create**.
-   * **Name** Enter a name for the namespace. Consider LastName-pi-day-Event-Hub.
+6. On the Create namespace page, fill in the fields.
+   * **Name** Enter a name for the namespace. Consider **LastName-pi-day-EventHub**.
    * **Pricing Tier** Choose the pricing tier (Basic or Standard).
    * **Subscription** Select the subscription in which you want to create the namespace.
    * **Resource Group** Select a location for the namespace.
     > Note: You may have to wait a few minutes for the system to fully provision the resources.
 
-![Image](/images/lab-0-image13.png)
+    ![Image](/images/lab-0-image13.png)
 
-5. Refresh the Event Hubs page to see the event hub namespace. You can check the status of the event hub creation in the alerts. 
+7. Click **Create** to create an Event Hub.
+
+8. Refresh the Event Hubs page to see the event hub namespace. You can check the status of the event hub creation in the alerts. 
 
 ## Create an Event Hub
 
 1. Select the namespace. You see the home page for your Event Hubs namespace in the portal.
 
-![Image](/images/lab-0-image14.png)
+    ![Image](/images/lab-0-image14.png)
 
 2.  On the Event Hubs Namespace page, select **Event Hubs** in the left menu, then click **+ Event Hub**.
 
-![Image](/images/lab-0-image16.png)
+    ![Image](/images/lab-0-image16.png)
 
-4.  Type a name for your event hub, then click **Create**.  Consider **hubwaytelemetry** as an Event Hub Name.
+3.  Type a name for your event hub, then click **Create**.  Consider **hubwaytelemetry** as an Event Hub Name.
 
-![Image](/images/lab-0-image17.png)
+    ![Image](/images/lab-0-image17.png)
 
-5.  You can check the status of the event hub creation in alerts.
+4.  You can check the status of the event hub creation in alerts.
 
-![Image](/images/lab-0-image18.png)
+    ![Image](/images/lab-0-image18.png)
 
 ## Create a CosmosDB Account
 
@@ -136,7 +138,7 @@ Use the following steps to create an Azure Cosmos account:
 
 3. Select **Databases**, then **Azure Cosmos DB**.
 
-![Image](/images/lab-0-image20.png)
+    ![Image](/images/lab-0-image20.png)
 
 4. On the **Create Azure Cosmos DB Account** page, enter the basic settings for the new Azure Cosmos DB account.
 5. Select the Azure subscription that you want to use for this Azure Cosmos DB account.
@@ -146,13 +148,13 @@ Use the following steps to create an Azure Cosmos account:
 9. Select a geographic **Location** to host your Azure Cosmos DB account.
 10. Select **Review+Create**.
 
-![Image](/images/lab-0-image21.png)
+    ![Image](/images/lab-0-image21.png)
 
 11. Select **Create** on the Validate Success page.
 
-![Image](/images/lab-0-image22.png)
+    ![Image](/images/lab-0-image22.png)
 
-![Image](/images/lab-0-image23.png)
+    ![Image](/images/lab-0-image23.png)
 
 ## Create an Azure Map
 
