@@ -113,6 +113,13 @@ What are Azure Functions Core Tools? The Azure Functions Core Tools provide a lo
 **Linux**
 - See [Azure Functions Core Tools on the Mac](https://github.com/Azure/azure-functions-core-tools#linux)
 
+## Install Azure Storage Explorer
+What is Azure Storage Explorer?  This tool allows you to easily manage the contents of your storage account with Azure Storage Explorer.
+- To install, click [Azure Storage Explorer](https://azure.microsoft.com/en-us/features/storage-explorer/) to get started.
+- Select the correct **Operating System** in the dropdown.
+- Click **Download Storage Explorer free**.
+- Click **Run** to install.
+
 ## (Optional) Install Git
 What is Git? Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
 - Click [Git](https://git-scm.com/) to install.
