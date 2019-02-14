@@ -33,6 +33,7 @@ We need to document the scenario here
 5.  Select the Explorer Icon in the top left
 6.  Browse into Storage Accounts
 7.  Select your storage account that you previously created in Lab 2.6
+    - i.e. **hubwaydatastorage**
 8.  Open the Blob Containers
 9.  Select $web
 10. Upload the hubwayplot.html file into $web

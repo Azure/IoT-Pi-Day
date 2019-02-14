@@ -23,6 +23,8 @@
 9.  Enter the name of the database you created in Lab 2.4 - pi-day-cosmosdb.
 10. Enter the collection you created in Lan 2.4 - Tripdata.
 
+## 🚨 Content below this line is Under Construction 🚨
+
 ## Update the code
 1.  Update the code from the solution.
 

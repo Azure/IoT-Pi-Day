@@ -26,8 +26,8 @@ Select your IoT Hub from the Resource Blade
     ![Image](/images/lab-2.1-image1.png)
 
  3. Fill in the fields as follows.
-    - **Device ID**  Enter the Raspberry PI Hostname.
-        > Note: If you don't have one, ask a proctor. Should follow this format: **raspberrypi-<**cityabbrev>**<**nn**>**.
+    - **Device ID**  Enter the Device ID.
+        > Consider using the device hostname, i.e. **raspberrypi-<**cityabbrev>**<**nn**>**.
     - Make sure **Auto Generate Keys** is selected.
 
     ![Image](/images/lab-2.1-image2.png)

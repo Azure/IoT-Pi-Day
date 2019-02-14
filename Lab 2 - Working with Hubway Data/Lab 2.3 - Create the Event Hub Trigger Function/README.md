@@ -84,6 +84,8 @@ We will be using Visual Studio Code and the Azure Functions Extension.
 
 ## Update the code
 
+## 🚨 Content below this line is Under Construction 🚨
+
 1.  Change the body of the code to map the incoming JSON string to an output document for inserting into CosmosDB.
 
 ## Test the Function
