@@ -22,21 +22,24 @@ Use the following steps to create an Azure Function:
 
     ![Image](/images/lab-2.3-image1.png)
 
+<!-- Randy left off HERE -->
 
 4. Fill in the fields:
-   * **App name** Enter LastName-pi-day-Function-Apps
-   
-   * **Subscription**  Select your subscription.
-   * **Resource Group**  Select your resource Group.
-   * **OS** We are using Windows for these labs.
-   * **Hosting Plan**  Ensure Consumption plan is selected.  Hosting plan that defines how resources are allocated to your function app. In the default Consumption Plan, resources are added dynamically as required by your functions. In this serverless hosting, you only pay for the time your functions run. When you run in an App Service plan, you must manage the scaling of your function app.
+   - **App name**, enter **<**LastName**>-pi-day-functionapp**
+   - **Subscription**  Select your subscription.
+   - **Resource Group**  Select your resource Group.
+   - **OS** We are using Windows for these labs.
+   - **Hosting Plan**  Ensure **Consumption plan** is selected.
+        > Hosting plan that defines how resources are allocated to your function app. In the default Consumption Plan, resources are added dynamically as required by your functions. In this serverless hosting, you only pay for the time your functions run. When you run in an App Service plan, you must manage the scaling of your function app.
    * **Location**  Select the same location as before.
-   * **Runtime Stack** Select .NET
-   * **Storage** Create a storage account used by your function app. Storage account names must be between 3 and 24 characters in length and may contain numbers and lowercase letters only.  
-   * **Application Insights**  Select On.
-   * **Application Insights Location**  Same location.
-5. Select Create to provision and deploy the function app.
+   * **Runtime Stack** Select **.NET**
+   * **Storage** Create a storage account used by your function app, consider **functionappstorage**.
+        > Storage account names must be between 3 and 24 characters in length and may contain numbers and lowercase letters only.
+   * **Application Insights**, select On.
+   * **Application Insights Location**, select same location as before.
+5. Select **Create** to provision and deploy the function app.
 
+    ![Image](/images/lab-2.3-image2.png) 
 
 ## Create the EventHubTrigger Function
 
@@ -45,39 +48,86 @@ Use the Event Hubs trigger to respond to an event sent to an event hub event str
 When an Event Hubs trigger function is triggered, the message that is passed into the function a string type.
 
 We will be using Visual Studio Code and the Azure Functions Extension.
+1. Navigate to the Workspace created in [Setting up the Laptop](https://github.com/Azure/IoT-Pi-Day/tree/master/Setting%20up%20the%20Laptop).
+2. Open up a **Command Prompt** or **PowerShell** as an **Administrator**.
+    - Type **CD C:\Workspace\IoT-Pi-Day-master\IoT-Pi-Day-master\Lab 2 - Working with Hubway Data\Solution\HubwayFunctions**
+3.  Enter **code .** and press return.
+    > This brings up an instance on Visual Studio Code with HubwayFunctions selected as the working folder.
+3.  Press **Ctrl-Shift-P**.
+4.  Enter Azure Functions and select **Create New Project** from the list.
 
-1.  From a command line / powershell, change directory to \Workspace\HubwayFunctions.
+    ![Image](/images/lab-2.3-image3.png) 
 
-2.  Enter code . and press return.  This brings up an instance on Visual Studio Code with HubwayFunctions selected as the working folder.
-3.  Press Control Shift P
-4.  Enter Azure Functions and select Create New Project from the list.
-5.  Select the folder that will contain your function app - HubwayFunctions.
-6.  Select the project language -- in this case, C#.
-7.  Select the Restore button on the lower right corner when it pops up.
-8.  Select the HubwayFunctions.csproj and change the TargetFramework to netcoreapp2.2
-9.  Save and close the file.
+5.  Select the folder that will contain your function app, **HubwayFunctions**.
+
+    ![Image](/images/lab-2.3-image4.png) 
+
+7.  Select the project language -- in this case, **C#**
+
+    ![Image](/images/lab-2.3-image6.png)
+
+8.  Select the **Yes** button to overwrite existing files.
+
+9.  Select the **Restore** button on the lower right corner when it pops up.
+
+10.  Select the **HubwayFunctions.csproj** from the left panel and change the TargetFramework to **netcoreapp2.2**.
+
+        ![Image](/images/lab-2.3-image7.png) 
+
+9.  **Save** and **Close** the file.
 
 ## Azure Credentials
 
-1.  Press Control Shift P
-2.  Enter Azure and select Sign in to Azure Cloud
+1.  Press **Ctrl-Shift-P**.
+2.  Enter **Azure** and select **Sign in to Azure Cloud**.
+
+    ![Image](/images/lab-2.3-image8.png) 
    
 ## Create the Event Hub Trigger
 
-1.  Press Control Shift P
+1. Press **Ctrl-Shift-P**.
+2. Enter **Azure Functions** and select **Create Function** from the list.
 
-2.  Enter Azure Functions and select Create Function
-3.  Select the Folder containting your function app
-4.  Select a function Template.
-    * Change the template filter to All
-5.  Select EventHubTrigger
-6.  Change the name from EventHubTriggerCSharp to HubwayEventHubTrigger.
-7.  Take the default Company.Function namespace and press enter.
+    ![Image](/images/lab-2.3-image9.png) 
+
+3. Select the folder containting your function app, **HubwayFunctions**.
+
+    ![Image](/images/lab-2.3-image4.png) 
+
+4. Select a function Template.
+    > Change the template filter to All
+
+    ![Image](/images/lab-2.3-image10.png) 
+
+5. Select EventHubTrigger
+
+    ![Image](/images/lab-2.3-image11.png) 
+
+6. Change the name from EventHubTriggerCSharp to **HubwayEventHubTrigger**.
+
+## 🚨 Tim Brown to review step #6.   🚨
+- Error: HubwayEventHubTrigger already exists.
+
+    This image TBD - ![Image](/images/lab-2.3-image12.png) 
+
+7. Select the default nameaspace **Company.Function**.
+
+    ![Image](/images/lab-2.3-image13.png)
+
 8.  Select an App Setting for your Event Hub:
-    * Select New App Setting
-    * Enter a key for your Event Hub - Hubway_EVENTHUB
-    * Enter the connection string for your event hub.   This can be found in the Azure Portal by selecting the Event Hub namespace  Go to Shared Access policies and select the RootManageSharedAccessKey.  Copy either connection string and press enter.
-    * Enter the name of the event hub you created earlier -- hubwaytelemetry.
+    * Select **+ New App Setting**.
+    * Enter the key **Hubway_EVENTHUB** for your Event Hub key and press **Enter**
+    
+    ![Image](/images/lab-2.3-image13.5.png)
+
+    * Paste in the connection string for your event hub and press **Enter**.
+        > This can be found in the Azure Portal by selecting the Event Hub namespace  Go to **Shared Access policies** and select the **RootManageSharedAccessKey**.  Copy the **Connection string-primary key**.
+
+    ![Image](/images/lab-2.3-image14.png)
+
+    * Enter the name of the event hub you created earlier -- **hubwaytelemetry**.
+
+    ![Image](/images/lab-2.3-image15.png)
 
 ## Test the Function
 1.  Press F5 from within VS Code
