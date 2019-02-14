@@ -98,43 +98,46 @@ We will be using Visual Studio Code and the Azure Functions Extension.
 
 3. Select the folder containting your function app, **HubwayFunctions**.
 
-    ![Image](/images/lab-2.3-image4.png) 
+    ![Image](/images/lab-2.3-image10.png) 
 
 4. Select a function Template.
     > Change the template filter to All
 
-    ![Image](/images/lab-2.3-image10.png) 
-
-5. Select EventHubTrigger
-
     ![Image](/images/lab-2.3-image11.png) 
+    ![Image](/images/lab-2.3-image12.png) 
+
+5. Select **EventHubTrigger**
+
+    ![Image](/images/lab-2.3-image13.png) 
 
 6. Change the name from EventHubTriggerCSharp to **HubwayEventHubTrigger**.
 
-    ![Image](/images/lab-2.3-image12.png) 
+    ![Image](/images/lab-2.3-image14.png) 
 
 7. Select the default nameaspace **Company.Function**.
 
-    ![Image](/images/lab-2.3-image13.png)
+    ![Image](/images/lab-2.3-image15.png)
 
 8.  Select an App Setting for your Event Hub:
     * Select **+ New App Setting**.
     * Enter the key **Hubway_EVENTHUB** for your Event Hub key and press **Enter**
     
-    ![Image](/images/lab-2.3-image13.5.png)
+    ![Image](/images/lab-2.3-image16.png)
 
     * Paste in the connection string for your event hub and press **Enter**.
         > This can be found in the Azure Portal by selecting the Event Hub namespace  Go to **Shared Access policies** and select the **RootManageSharedAccessKey**.  Copy the **Connection string-primary key**.
 
-    ![Image](/images/lab-2.3-image14.png)
+    ![Image](/images/lab-2.3-image17.png)
 
     * Enter the name of the event hub you created earlier -- **hubwaytelemetry**.
 
-    ![Image](/images/lab-2.3-image15.png)
+    ![Image](/images/lab-2.3-image18.png)
 
 ## Test the Function
-1.  Press F5 from within VS Code
-2.  TBD : You should see...
+1.  From **Visual Studio Code**, press **F5**.
+2.  TBD : Required Image goes HERE
+
+### 🚨 Image goes HERE 🚨
 
 ## Add the CosmosDB Binding
 
@@ -149,7 +152,6 @@ We will be using Visual Studio Code and the Azure Functions Extension.
 
 ## Test the Function
 1.  Press F5 from within VS Code
-
 
 
 ## Reference Sites
