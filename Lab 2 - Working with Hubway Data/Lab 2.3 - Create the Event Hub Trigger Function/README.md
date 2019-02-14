@@ -105,10 +105,13 @@ We will be using Visual Studio Code and the Azure Functions Extension.
 
 6. Change the name from EventHubTriggerCSharp to **HubwayEventHubTrigger**.
 
+## 🚨 --------------------------------   🚨
 ## 🚨 Tim Brown to review step #6.   🚨
 - Error: HubwayEventHubTrigger already exists.
 
     This image TBD - ![Image](/images/lab-2.3-image12.png) 
+
+## 🚨 --------------------------------   🚨
 
 7. Select the default nameaspace **Company.Function**.
 
