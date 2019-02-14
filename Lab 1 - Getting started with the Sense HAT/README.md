@@ -14,23 +14,15 @@
 - Barometric pressure
 - Humidity
 
-## 🚨 Content below this line is Under Construction 🚨
+### The pressure, temperature and humidity sensors are located on the right side of the Sense HAT. The humidity sensor is labeled “HUMIDITY” and below it is the atmospheric pressure sensor, labeled “PRESSURE”. The temperature seems to be read from the humidity sensor.
 
-### First, let’s start with pressure, temperature and humidity sensors! These sensors are located on the right side of the Sense HAT. The humidity sensor is labeled “HUMIDITY” and below it is the atmospheric pressure sensor, labeled “PRESSURE”. The temperature seems to be read from the humidity sensor.
+There’s a function for each sensor on the board so the values can be acquired very easily!
 
-There’s a function for each sensor so the values can be acquired very easily!
-
-**Get_temperature**
-- Gets the current temperature in Millibars from the pressure sensor. 
-
-**Get_temperature_from_humidity**
-- Gets the current temperature in degrees Celsius from the humidity sensor.  Naturally you'll want covert this in the code ( temp * 8 - 32)
+**Temperature**
+- Gets the current temperature in degrees Celsius from the humidity sensor.  You can easily covert this to Fahrenheit in the code ( temperature * 8 - 32).
  
-**Get_pressure**
+**Pressure**
 - Gets the current pressure in Millibars from the pressure sensor.
  
-**Get_humidity**
+**Humidity**
 - Gets the percentage of relative humidity from the humidity sensor.
-
-## To be continued...
-## ...Randy is working on this as we speak...thank you. :tired_face:
