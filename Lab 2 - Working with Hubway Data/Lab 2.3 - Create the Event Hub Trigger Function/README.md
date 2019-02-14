@@ -84,12 +84,6 @@ We will be using Visual Studio Code and the Azure Functions Extension.
 
 9.  **Save** and **Close** the file.
 
-
-
-## 🚨 Content below this line is currrently Under Construction 🚨
-
-
-
 ## Create the Event Hub Trigger
 
 1. From **Visual Studio Code**, press **Ctrl-Shift-P**.
