@@ -4,43 +4,15 @@ TBD - We need to document the scenario here
 ## Prerequisites
 1.  The Event Hub Namespace and Event Hub instance must already be created, see [Lab 0 - Resource Configuration](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%200%20-%20Resource%20Configuration)
 
+## Estimated time to complete
+- TBD
+
 ## Create an Iot Hub
-> Note: If you already created your Iot Hub, skip to the section Configuration and Settings
+> Note: If you already created your Iot Hub, skip to the section **Configuration and Settings**.
 
 Use the following steps to create an Iot Hub:    
 
-1. In a new browser window, sign in to the [Microsoft Azure Portal](https://portal.azure.com).
-
-2. In the Azure portal click **+Create a resource** at the top left of the screen.
-
-    ![Image](/images/lab-0-image1.png)
-
-3. Click **Internet of Things** under Azure Marketplace.
-
-3. Click **Iot Hub** from the list on the right. You see the first screen for creating an IoT hub.
-
-    ![Image](/images/lab-0-image2.png)
-
-4. Fill in the fields.
-   * **Subscription**: Select the subscription to use for your IoT hub.
-   * **Resource Group**: You can create a new resource group or use an existing one. To create a new one, click Create new and fill in the name you want to use. To use an existing resource group, click Use existing and select the resource group from the dropdown list.
-   * **Region**: This is the region in which you want your hub to be located. Select the location closest to you from the dropdown list.
-   * **IoT Hub Name**: Put in the name for your IoT Hub. This name must be globally unique. A recommendation is LastName-pi-day-IoT-Hub.
-   * Click **Next: Size and scale** to continue creating your IoT hub.
-
-    ![Image](/images/lab-0-image3.png)
-
-    <!-- ![Image](/images/lab-0-image3.2.png) -->
-
-6. On this screen, **S1: Standard Tier**.
-7. Click **Review + create** to review your choices.  
-    * **Pricing and scale tier**: You can choose from several tiers depending on how many features you want and how many messages you send through your solution per day. The free tier is intended for testing and evaluation. It allows 500 devices to be connected to the IoT hub and up to 8,000 messages per day. Each Azure subscription can create one IoT Hub in the free tier.
-
-    ![Image](/images/lab-0-image4.png)
-
-    <!-- ![Image](/images/lab-0-image5.png) -->
-
-8. After reviewing the screen, click **Create**.
+- To create an IoT Hub, see [Lab 0 - Resource Configuration, Section Create an IoT Hub](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%200%20-%20Resource%20Configuration#create-an-iot-hub)
 
 ## Configuration and Settings
 
