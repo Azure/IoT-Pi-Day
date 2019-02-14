@@ -4,11 +4,15 @@ We need to document the scenario here
 ## Prerequisites
 1. The Laptop is setup correctly, see [Setting up the Laptop](https://github.com/Azure/IoT-Pi-Day/tree/master/Setting%20up%20the%20Laptop).
 
+2. The Resource Configuation Lab is completed, see [Lab 0 - Resource Configuration](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%200%20-%20Resource%20Configuration)
+
+<!--
 2.  The Event Hub Namespace and Event Hub instance must already be created.
 3.  CosmosDB implementing the SQL APi and Tripdata collection must already be created.
 4.  Visual Studio Code and listed extenstions are installed.
 5.  The IoT Hub must be created and configured
 6.  Ensure that you created the directory SimulatedDevice on the Raspberry PI.  This project will be copied into this directory.
+-->
 
 ## Estimated time to complete
 - TBD
