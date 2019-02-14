@@ -47,7 +47,7 @@ Use the following steps to create an Azure Function:
 2. Press **Ctrl-Shift-P**.
 2. Enter **Azure** and select **Sign in to Azure Cloud**.
 
-    ![Image](/images/lab-2.3-image8.png) 
+    ![Image](/images/lab-2.3-image3.png) 
 
 ## Create the EventHubTrigger Function Project
 
@@ -56,35 +56,42 @@ Use the Event Hubs trigger to respond to an event sent to an event hub event str
 We will be using Visual Studio Code and the Azure Functions Extension.
 1. Navigate to the Workspace created in [Setting up the Laptop](https://github.com/Azure/IoT-Pi-Day/tree/master/Setting%20up%20the%20Laptop).
 2. Open up a **Command Prompt** or **PowerShell** as an **Administrator**.
-    - Type **CD C:\Workspace\IoT-Pi-Day-master\IoT-Pi-Day-master\Lab 2 - Working with Hubway Data\Solution\HubwayFunctions**
+    - Type **CD C:\Workspace\IoT-Pi-Day-master\IoT-Pi-Day-master\Lab 2 - Working with Hubway Data\Workspace\HubwayFunctions**
 3.  Enter **code .** and press return.
     > This brings up an instance on Visual Studio Code with HubwayFunctions selected as the working folder.
 3.  Press **Ctrl-Shift-P**.
 4.  Enter Azure Functions and select **Create New Project** from the list.
 
-    ![Image](/images/lab-2.3-image3.png) 
-
-5.  Select the folder that will contain your function app, **HubwayFunctions**.
-
     ![Image](/images/lab-2.3-image4.png) 
 
-7.  Select the project language -- in this case, **C#**
+5.  Select the folder that will contain your function app, **HubwayFunctions** and press **Enter**.
+
+    ![Image](/images/lab-2.3-image5.png) 
+
+6.  Select the project language -- in this case, **C#**
 
     ![Image](/images/lab-2.3-image6.png)
 
-8.  Select the **Yes** button to overwrite existing files.
+    > You should see the message Finshed creating project.
+    Select the **Restore** button on the lower right corner when it pops up.
 
-9.  Select the **Restore** button on the lower right corner when it pops up.
+    ![Image](/images/lab-2.3-image7.png)
 
 10.  Select the **HubwayFunctions.csproj** from the left panel and change the TargetFramework to **netcoreapp2.2**.
 
-        ![Image](/images/lab-2.3-image7.png) 
+    ![Image](/images/lab-2.3-image8.png) 
 
 9.  **Save** and **Close** the file.
 
+
+
+## 🚨 Content below this line is currrently Under Construction 🚨
+
+
+
 ## Create the Event Hub Trigger
 
-1. Press **Ctrl-Shift-P**.
+1. From **Visual Studio Code**, press **Ctrl-Shift-P**.
 2. Enter **Azure Functions** and select **Create Function** from the list.
 
     ![Image](/images/lab-2.3-image9.png) 
@@ -104,13 +111,7 @@ We will be using Visual Studio Code and the Azure Functions Extension.
 
 6. Change the name from EventHubTriggerCSharp to **HubwayEventHubTrigger**.
 
-## 🚨 --------------------------------   🚨
-## 🚨 Tim Brown to review step #6.   🚨
-- Error: HubwayEventHubTrigger already exists.
-
-    This image TBD - ![Image](/images/lab-2.3-image12.png) 
-
-## 🚨 --------------------------------   🚨
+    ![Image](/images/lab-2.3-image12.png) 
 
 7. Select the default nameaspace **Company.Function**.
 
