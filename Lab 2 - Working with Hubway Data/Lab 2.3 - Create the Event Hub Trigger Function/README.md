@@ -41,6 +41,14 @@ Use the following steps to create an Azure Function:
 
     ![Image](/images/lab-2.3-image2.png) 
 
+## Azure Credentials
+
+1. From **Visual Studio Code**, login to your Azure account.
+2. Press **Ctrl-Shift-P**.
+2. Enter **Azure** and select **Sign in to Azure Cloud**.
+
+    ![Image](/images/lab-2.3-image8.png) 
+
 ## Create the EventHubTrigger Function Project
 
 Use the Event Hubs trigger to respond to an event sent to an event hub event stream. You must have read access to the event hub to set up the trigger. When an Event Hubs trigger function is triggered, the message that is passed into the function a string type.
@@ -74,13 +82,6 @@ We will be using Visual Studio Code and the Azure Functions Extension.
 
 9.  **Save** and **Close** the file.
 
-## Azure Credentials
-
-1.  Press **Ctrl-Shift-P**.
-2.  Enter **Azure** and select **Sign in to Azure Cloud**.
-
-    ![Image](/images/lab-2.3-image8.png) 
-   
 ## Create the Event Hub Trigger
 
 1. Press **Ctrl-Shift-P**.
