@@ -95,8 +95,7 @@ We will be using Visual Studio Code and the Azure Functions Extension.
 
     ![Image](/images/lab-2.3-image10.png) 
 
-4. Select a function Template.
-    > Change the template filter to All
+4. Select a function Template and select **All**.
 
     ![Image](/images/lab-2.3-image11.png) 
     ![Image](/images/lab-2.3-image12.png) 
