@@ -1,22 +1,28 @@
 # Lab 2.3 - Create a Function App and Event Hub Trigger Function
 We need to document the scenario here
 
-
 ## Prerequisites
-1.  The Event Hub Namespace and Event Hub instance must already be created.
-2.  CosmosDB implementing the SQL APi and Tripdata collection mu already be created.
-3.  Visual Studio Code and listed extenstions are installed.
+1. The Event Hub Namespace must already be created, see [Lab 0 - Resource Configuration, section Create an Event Hub namespace](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%200%20-%20Resource%20Configuration#create-an-event-hub-namespace)
+2. The Event Hub must already be creaated, see [Lab 0 - Resource Configuration, section Create an Event Hub](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%200%20-%20Resource%20Configuration#create-an-event-hub-namespace)
+3. The CosmosDB Account must already be created, see [Lab 0 - Resource Configuration, section Create a CosmosDB Account](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%200%20-%20Resource%20Configuration#create-a-cosmosdb-account)
+4. The Laptop is setup correctly, see [Setting up the Laptop](https://github.com/Azure/IoT-Pi-Day/tree/master/Setting%20up%20the%20Laptop).
 
 ## Create a function app from the Azure portal
 
-Note:  If you already created your account, skip to the section Configuration and Settings
+Use the following steps to create an Azure Function:    
+1. In a new browser window, sign in to the [Microsoft Azure Portal](https://portal.azure.com).
 
-Use the following steps to create an Iot Hub:    
+2. In the Azure portal click **+Create a resource** at the top left of the screen.
 
 1. In a new browser window, sign in to the [Azure Portal][Azure-Portal].
 
-2. Choose +Create a resource, then choose Compute.
-3. Select Function App on the right.
+2. Click **+ Create a resource**.
+3. Click **Compute**.
+3. Select **Function App** on the right panel.
+
+    ![Image](/images/lab-2.3-image1.png)
+
+
 4. Fill in the fields:
    * **App name** Enter LastName-pi-day-Function-Apps
    

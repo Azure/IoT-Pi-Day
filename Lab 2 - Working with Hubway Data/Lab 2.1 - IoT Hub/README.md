@@ -2,17 +2,10 @@
 TBD - We need to document the scenario here
 
 ## Prerequisites
-- The Event Hub Namespace and Event Hub instance must already be created, see [Lab 0 - Resource Configuration](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%200%20-%20Resource%20Configuration)
+- The Iot Hub must already be created, see [Lab 0 - Resource Configuration, Section Create an IoT Hub](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%200%20-%20Resource%20Configuration#create-an-iot-hub)
 
 ## Estimated time to complete
 - TBD
-
-## Create an Iot Hub
-> Note: If you already created your Iot Hub, skip to the section **Configuration and Settings**.
-
-Use the following steps to create an Iot Hub:    
-
-- To create an IoT Hub, see [Lab 0 - Resource Configuration, Section Create an IoT Hub](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%200%20-%20Resource%20Configuration#create-an-iot-hub)
 
 ## Configuration and Settings
 
