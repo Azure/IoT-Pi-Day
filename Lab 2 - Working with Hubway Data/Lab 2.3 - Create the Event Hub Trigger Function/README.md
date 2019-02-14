@@ -79,7 +79,8 @@ We will be using Visual Studio Code and the Azure Functions Extension.
 
 10.  Select the **HubwayFunctions.csproj** from the left panel and change the TargetFramework to **netcoreapp2.2**.
 
-    ![Image](/images/lab-2.3-image8.png) 
+
+       ![Image](/images/lab-2.3-image8.png) 
 
 9.  **Save** and **Close** the file.
 
