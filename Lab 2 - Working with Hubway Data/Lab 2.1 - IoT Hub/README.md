@@ -61,10 +61,10 @@ Select your IoT Hub from the Resource Blade
     - **Endpoint**, select the **Event Hub name** from the drop down such as **HubwayTelemetryRoute**.
     - **Data Source**, select **Device Telemetry Messages**.
     - **Routing Query**: enter **```RoutingProperty = 'Hubway' ```**.
-9. Click **Save**.
 
     ![Image](/images/lab-2.1-image6.png)
 
+9. Click **Save**.
 
 ## Reference Sites
 
