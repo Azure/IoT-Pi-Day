@@ -9,8 +9,10 @@ TBD - We need to document the scenario here
 
 ## Configuration and Settings
 
-Select your IoT Hub from the Resource Blade
+1. Select your IoT Hub from the Resource Blade
 
+    ![Image](/images/lab-2.1-image0.png)
+    
 ## Add your Raspberry Pi to your IoT Hub.
 
 1.  Select **IoT Devices** from the Iot Hub Blade.
