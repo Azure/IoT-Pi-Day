@@ -6,25 +6,26 @@ string myEventHubMessage, [CosmosDB(databaseName: "Hubway",collectionName: "Trip
 
 Snippet Two:                
                 
-               string myEventHubMessage = Encoding.UTF8.GetString(eventData.Body.Array, eventData.Body.Offset, eventData.Body.Count);
+            string myEventHubMessage = Encoding.UTF8.GetString(eventData.Body.Array, eventData.Body.Offset, eventData.Body.Count);
 
-               log.LogInformation($"C# Event Hub trigger function processed a message: {myEventHubMessage}");
-                    
+            log.LogInformation($"C# Event Hub trigger function processed a message: {myEventHubMessage}");
+            
+            dynamic msg = JObject.Parse(myEventHubMessage);
 
-                outputDocument = new  {startTime = msg.GetValue("starttime").ToString(), 
-                           stopTime = msg.GetValue("stoptime").ToString(),
-                           tripDuration = msg.GetValue("tripduration").ToString(),
-                           startStationID = msg.GetValue("start_station_id").ToString(),
-                           startStationName = msg.GetValue("start_station_name").ToString(),
-                           startStationLatitiude = msg.GetValue("start_station_latitude").ToString(),
-                           startStationLongitude = msg.GetValue("start_station_longitude").ToString(),
-                           endStationID = msg.GetValue("end_station_id").ToString(),
-                           endStationName = msg.GetValue("end_station_name").ToString(),
-                           endStationLatitude = msg.GetValue("end_station_latitude").ToString(),
-                           endStationLongitude = msg.GetValue("end_station_longitude").ToString(),
-                           bikeID = msg.GetValue("bikeid").ToString(),
-                           userType = msg.GetValue("usertype").ToString(),
-                           gender = msg.GetValue("gender").ToString()};
+            outputDocument = new  {startTime = msg.GetValue("starttime").ToString(), 
+                        stopTime = msg.GetValue("stoptime").ToString(),
+                        tripDuration = msg.GetValue("tripduration").ToString(),
+                        startStationID = msg.GetValue("start_station_id").ToString(),
+                        startStationName = msg.GetValue("start_station_name").ToString(),
+                        startStationLatitiude = msg.GetValue("start_station_latitude").ToString(),
+                        startStationLongitude = msg.GetValue("start_station_longitude").ToString(),
+                        endStationID = msg.GetValue("end_station_id").ToString(),
+                        endStationName = msg.GetValue("end_station_name").ToString(),
+                        endStationLatitude = msg.GetValue("end_station_latitude").ToString(),
+                        endStationLongitude = msg.GetValue("end_station_longitude").ToString(),
+                        bikeID = msg.GetValue("bikeid").ToString(),
+                        userType = msg.GetValue("usertype").ToString(),
+                        gender = msg.GetValue("gender").ToString()};
 						   
 						   
 Lab 2.5 Function Trigger, CosmosDB

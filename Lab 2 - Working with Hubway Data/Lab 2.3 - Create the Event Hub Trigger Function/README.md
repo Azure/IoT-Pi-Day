@@ -151,6 +151,10 @@ We will be using Visual Studio Code and the Azure Functions Extension.
 
     ![Image](/images/lab-2.3-image21.png)
 
+2. Add the following using statwment to the top of the file, **using Newtonsoft.Json.Linq;**.
+
+    ![Image](/images/lab-2.3-image21.5.png) 
+
 2. Decorate the function with the CosmosDB Bindings.
 3. From **Visual Studio Code**, click on file **Snippets.txt** to open in editor.
 4. Highlight the entire line under **Snippet One:**
@@ -168,19 +172,44 @@ We will be using Visual Studio Code and the Azure Functions Extension.
 
     > For reference, refer to the file **HubwayEventHubTrigger.cs** found under the [Lab 2 - Working with Hubway Data/Solution](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Solution/HubwayFunctions) folder.
 
-
-8.  Update the Event Hub Trigger, add **```, ConsumerGroup = "hubwaycg"```** right after the Connection = "Hubway_EVENTHUB".
+8.  Update the Event Hub Trigger by adding **```, ConsumerGroup = "hubwaycg"```** right after the Connection = "Hubway_EVENTHUB".
     > Don't forget to add the comma.
 
     ![Image](/images/lab-2.3-image25.png)
+
+9. From Visual Studio Code, press **Cntl-Shift-`** to open a new Terminal window
+10. Press **Enter** to get the prompt.
+
+11. To  resolve dependancies, type the following at the terminal command prompt.
+    - **``dotnet add package Microsoft.Azure.WebJobs.Extensions.CosmosDB --version 3.0.3``**
 
 
 ## 🚨 Content below this line is Under Construction 🚨
 
 ## Update the code for CosmosDB
-1.  Replace the body of code from snippets.txt
 
 1.  Change the body of the code to map the incoming JSON string to an output document for inserting into CosmosDB.
+
+3. From **Visual Studio Code**, click on file **Snippets.txt** to open in editor.
+4. Highlight the entire section under **Snippet Two:**
+
+    ![Image](/images/lab-2.3-image26.png)
+
+5. Click on the file **HubwayEventHubTrigger.cs** in the editor, if it's not alreday opened.
+6. Scroll the file to the right and highlight everything between the **{** and **}** braces.
+
+    ![Image](/images/lab-2.3-image27.png)
+
+7. Paste in the code copied from the **Snippet Two:** section above.
+
+    ![Image](/images/lab-2.3-image28.png) 
+
+    > For reference, refer to the file **HubwayEventHubTrigger.cs** found under the [Lab 2 - Working with Hubway Data/Solution](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Solution/HubwayFunctions) folder.
+
+3. Modify the **Public static** trigger by removing the keywords **async Task** and adding **void**.
+    
+    ![Image](/images/lab-2.3-image30.png)
+    ![Image](/images/lab-2.3-image31.png)
 
 ## Deploy your Project
 1.  Press F5 from within VS Code
