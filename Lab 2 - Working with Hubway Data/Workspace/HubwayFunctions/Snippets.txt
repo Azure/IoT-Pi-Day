@@ -1,6 +1,13 @@
-Snippet One:                
+Snippet One:
+
+string myEventHubMessage, [CosmosDB(databaseName: "Hubway",collectionName: "Tripdata",ConnectionStringSetting = "cosmosDB_DOCUMENTDB")] out dynamic outputDocument
+
+Snippet Two:                
                 
-                log.LogInformation("We have c# generated JSON");
+               string myEventHubMessage = Encoding.UTF8.GetString(eventData.Body.Array, eventData.Body.Offset, eventData.Body.Count);
+
+               log.LogInformation($"C# Event Hub trigger function processed a message: {myEventHubMessage}");
+                    
 
                 outputDocument = new  {startTime = msg.GetValue("starttime").ToString(), 
                            stopTime = msg.GetValue("stoptime").ToString(),
@@ -16,5 +23,3 @@ Snippet One:
                            bikeID = msg.GetValue("bikeid").ToString(),
                            userType = msg.GetValue("usertype").ToString(),
                            gender = msg.GetValue("gender").ToString()};
-
-Snippet Two:
