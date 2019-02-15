@@ -26,6 +26,7 @@
 ## 🚨 Content below this line is Under Construction 🚨
 
 ## Update the code
-1.  Update the code from the solution.
+1.  Update the code from the Snippet.txt.
+2.  Replace your Azure Maps Subscription Key
 
 
