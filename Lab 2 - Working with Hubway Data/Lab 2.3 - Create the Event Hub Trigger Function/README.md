@@ -140,9 +140,9 @@ We will be using Visual Studio Code and the Azure Functions Extension.
     <!--
     ![Image](/images/lab-2.3-image20.png)
     -->
-    ![Image](/images/ImageComingSoon.jpg)
+    ![Image](/images/missing-image.png)
 
-5. From **Visual Studio Code**,, press **Cntl-C** to stop.
+5. From **Visual Studio Code**, press **Cntl-C** to stop.
 
 
 ## COnfigure Bindings
