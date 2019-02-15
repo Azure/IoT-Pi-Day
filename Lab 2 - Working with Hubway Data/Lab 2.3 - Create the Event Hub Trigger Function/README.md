@@ -133,18 +133,19 @@ We will be using Visual Studio Code and the Azure Functions Extension.
 
 ### 🚨 Image goes HERE 🚨
 
-## Add the CosmosDB Binding
+## COnfigure Bindings
 
-1.  First decorate the function with the CosmosDB Binding -- refer to the Solution provided as a reference.
+1.  First decorate the function with the CosmosDB Binding -- refer to the Snippets.txt provided.
 2.  Update the Event Hub Trigger -- add ConsumerGroup = "hubwaycg".
 
 ## Update the code
+1.  Replace the body of code from snippets.txt
 
 ## 🚨 Content below this line is Under Construction 🚨
 
 1.  Change the body of the code to map the incoming JSON string to an output document for inserting into CosmosDB.
 
-## Test the Function
+## Deploy your Project
 1.  Press F5 from within VS Code
 
 
