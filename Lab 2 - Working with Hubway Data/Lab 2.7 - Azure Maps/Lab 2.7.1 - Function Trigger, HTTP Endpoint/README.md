@@ -24,7 +24,13 @@ From within Visual Studio Code:
     * In the Azure Portal, navigate to your CosmosDB Account
     * Select the Keys menu item
     * Copy the PRIMARY READ-ONLY KEY from the Read-Only Keys tab
-3.  Review the code.
+3.  Update your Azure Maps Subscription Key
+    * From the Azure Portal, navigate to your Maps Deployment --> Map Service
+    * Select the Authentication menu item on the left
+    * Copy the Primary Key
+    * Replace with your key atlas.setSubscriptionKey('Azure Maps subscription');
+ 
+4.  Review the code.
 
 ## Update the Function App
 
