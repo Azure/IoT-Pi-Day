@@ -196,7 +196,7 @@ We will be using Visual Studio Code and the Azure Functions Extension.
     ![Image](/images/lab-2.3-image26.png)
 
 5. Click on the file **HubwayEventHubTrigger.cs** in the editor, if it's not alreday opened.
-6. Scroll the file to the right and highlight everything between the **{** and **}** braces.
+6. Highlight everything between the **{** and **}** braces.
 
     ![Image](/images/lab-2.3-image27.png)
 
@@ -212,7 +212,38 @@ We will be using Visual Studio Code and the Azure Functions Extension.
     ![Image](/images/lab-2.3-image31.png)
 
 ## Deploy your Project
-1.  Press F5 from within VS Code
+In order to properly deploy Dot Net Core 2.2 code, the settings file must be updated.
+1. From **Visual Studio Code**, open the **settings.json** file found under **.vscode**.
+2. Change the **azureFunctions.deploySubpath** to **netcoreapp2.2**.
+
+    ![Image](/images/lab-2.3-image31.5.png) 
+
+3. Press **Ctrl-S** to save the file.
+4. Press **Ctrl-Shift-P**, enter **Azure Functions** and select **Deploy to Function App**.
+
+    ![Image](/images/lab-2.3-image32.png) 
+
+5. Select the **Function App name** created in Lab 0
+
+    ![Image](/images/lab-2.3-image33.png) 
+
+6. For the message **Are you sure...**, click **Deploy**.
+
+    ![Image](/images/lab-2.3-image34.png)
+
+7. After a successful deployment, click **Stream Logs**.
+
+    ![Image](/images/lab-2.3-image35.png)
+
+8. Telnet into the Raspberry Pi using SSH and login.
+9. Once you are logged in, type **cd SimulatedDevice**.
+10. Exectute the code, type **./simulated-device**.
+
+    > Refer to Lab 2.1.1 - Send Hubway data to Iot Hub, section [Run the code from the Raspberry PI](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.1%20-%20IoT%20Hub/Lab%202.1.1%20-%20Send%20Hubway%20Data%20to%20Iot%20Hub#run-the-code-from-the-raspberry-pi)
+
+    > Note: If all went well, you should see each record in JSON format being sent up to the IoT Hub.
+
+    ![Image](/images/lab-2.3-image36.png)
 
 
 ## Reference Sites
