@@ -241,9 +241,12 @@ In order to properly deploy Dot Net Core 2.2 code, the settings file must be upd
 
     > Refer to Lab 2.1.1 - Send Hubway data to Iot Hub, section [Run the code from the Raspberry PI](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.1%20-%20IoT%20Hub/Lab%202.1.1%20-%20Send%20Hubway%20Data%20to%20Iot%20Hub#run-the-code-from-the-raspberry-pi)
 
-    > Note: If all went well, you should see each record in JSON format being sent up to the IoT Hub.
+11. If all went well, you should see each record in JSON format being sent up to the IoT Hub from Visual Studio Code.
 
     ![Image](/images/lab-2.3-image36.png)
+    ![Image](/images/lab-2.3-image20.png)
+
+12. From **Visual Studio Code**, press **Cntl-C** to stop.
 
 
 ## Reference Sites
