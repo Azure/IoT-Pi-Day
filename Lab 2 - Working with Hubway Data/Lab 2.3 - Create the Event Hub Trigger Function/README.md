@@ -136,12 +136,11 @@ We will be using Visual Studio Code and the Azure Functions Extension.
 
     > Refer to Lab 2.1.1 - Send Hubway data to Iot Hub, section [Run the code from the Raspberry PI](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.1%20-%20IoT%20Hub/Lab%202.1.1%20-%20Send%20Hubway%20Data%20to%20Iot%20Hub#run-the-code-from-the-raspberry-pi)
 
-    > Note: If all went well, you should see each record in JSON format being sent up to the IoT Hub.
+    <!--  ![Image](/images/missing-image.png) -->
 
-    <!--
-    ![Image](/images/lab-2.3-image20.png)
-    -->
-    ![Image](/images/missing-image.png)
+6. If all went well, you should see each record in JSON format being sent up to the IoT Hub from Visual Studio Code.
+
+![Image](/images/lab-2.3-image20.png)
 
 5. From **Visual Studio Code**, press **Cntl-C** to stop.
 
