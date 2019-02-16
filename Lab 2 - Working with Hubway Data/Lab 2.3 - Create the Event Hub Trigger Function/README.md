@@ -151,7 +151,7 @@ We will be using Visual Studio Code and the Azure Functions Extension.
 
     ![Image](/images/lab-2.3-image21.png)
 
-2. Add the following using statwment to the top of the file, **using Newtonsoft.Json.Linq;**.
+2. Add the following using statement to the top of the file, **using Newtonsoft.Json.Linq;**.
 
     ![Image](/images/lab-2.3-image21.5.png) 
 
@@ -172,7 +172,7 @@ We will be using Visual Studio Code and the Azure Functions Extension.
 
     > For reference, refer to the file **HubwayEventHubTrigger.cs** found under the [Lab 2 - Working with Hubway Data/Solution](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Solution/HubwayFunctions) folder.
 
-8.  Update the Event Hub Trigger by adding **```, ConsumerGroup = "hubwaycg"```** right after the Connection = "Hubway_EVENTHUB".
+8.  Update the Event Hub Trigger by adding **```, ConsumerGroup = "hubwaycg"```** right after Connection = "Hubway_EVENTHUB".
     > Don't forget to add the comma.
 
     ![Image](/images/lab-2.3-image25.png)
@@ -183,8 +183,7 @@ We will be using Visual Studio Code and the Azure Functions Extension.
 11. To  resolve dependancies, type the following at the terminal command prompt.
     - **``dotnet add package Microsoft.Azure.WebJobs.Extensions.CosmosDB --version 3.0.3``**
 
-
-## 🚨 Content below this line is Under Construction 🚨
+<!-- ## 🚨 Content below this line is Under Construction 🚨 -->
 
 ## Update the code for CosmosDB
 
@@ -223,7 +222,8 @@ In order to properly deploy Dot Net Core 2.2 code, the settings file must be upd
 
     ![Image](/images/lab-2.3-image32.png) 
 
-5. Select the **Function App name** created in Lab 0
+5. Select the **Function App name** created in the above section **Create a function app from the Azure portal**.
+    > i.e. <LastName>-pi-day-functionapp.
 
     ![Image](/images/lab-2.3-image33.png) 
 
