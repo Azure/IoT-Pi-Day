@@ -1,4 +1,4 @@
-# Lab 2.1 - Setting up Iot Hub
+# Lab 2.1 - Setting up Iot Hub Device
 TBD - We need to document the scenario here
 
 ## Prerequisites

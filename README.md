@@ -42,7 +42,7 @@ As you create an end-to-end IoT application in a day, you’ll see how easy it i
     > Note: This does NOT require a Raspberry Pi SenseHAT.
 
 ## Lab 2 - Working with Hubway Data
-- Lab 2.1 - IoT Hub
+- Lab 2.1 - Setting up Iot Hub Device
     - This lab will guide you through ...(desc coming soon...)
 - Lab 2.2 - Event Hub
     - This lab will guide you through ...(desc coming soon...)
