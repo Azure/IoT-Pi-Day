@@ -56,8 +56,8 @@ Use the Event Hubs trigger to respond to an event sent to an event hub event str
 We will be using Visual Studio Code and the Azure Functions Extension.
 1. Navigate to the Workspace created in [Setting up the Laptop](https://github.com/Azure/IoT-Pi-Day/tree/master/Setting%20up%20the%20Laptop).
 2. Open up a **Command Prompt** or **PowerShell** as an **Administrator**.
-    - Type **CD C:\Workspace\IoT-Pi-Day-master\IoT-Pi-Day-master\Lab 2 - Working with Hubway Data\Workspace\HubwayFunctions**
-3.  Enter **code .** and press return.
+    - Type **```CD C:\Workspace\IoT-Pi-Day-master\IoT-Pi-Day-master\Lab 2 - Working with Hubway Data\Workspace\HubwayFunctions```**
+3.  Enter **```code .```** and press return.
     > This brings up an instance on Visual Studio Code with HubwayFunctions selected as the working folder.
 3.  Press **Ctrl-Shift-P**.
 4.  Enter Azure Functions and select **Create New Project** from the list.
