@@ -223,7 +223,7 @@ In order to properly deploy Dot Net Core 2.2 code, the settings file must be upd
     ![Image](/images/lab-2.3-image32.png) 
 
 5. Select the **Function App name** created in the above section **Create a function app from the Azure portal**.
-    > i.e. <LastName>-pi-day-functionapp.
+    > i.e. **<**LastName**>-pi-day-functionapp**.
 
     ![Image](/images/lab-2.3-image33.png) 
 
