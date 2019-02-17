@@ -8,4 +8,24 @@
 - Ride - Take a quick one-way trip or a leisurely ride around town. Commute to work or school, run errands and explore the city.
 - Return - Return your bike to any station. Slide the bike firmly into an empty dock and wait for the green light to make sure it's locked.
 
-## Coming soon...
+## Lab 2 - Working with Hubway Data
+- **Lab 2.1** - Setting up Iot Hub Device
+    - This lab will guide you through ...(desc coming soon...)
+    - **Lab 2.1.1** - Send Hubway Data to Iot Hub
+        - This lab will guide you through ...(desc coming soon...)
+- **Lab 2.2** - Setting up Event Hub
+    - This lab will guide you through ...(desc coming soon...)
+- **Lab 2.3** - Create the Event Hub Trigger Function
+    - This lab will guide you through ...(desc coming soon...)
+- **Lab 2.4** - Setting up CosmosDB
+    - This lab will guide you through ...(desc coming soon...)
+- **Lab 2.5** - Create the CosmosDB Trigger Function
+    - This lab will guide you through ...(desc coming soon...)
+- **Lab 2.6** - Setting up Blob Storage
+    - This lab will guide you through ...(desc coming soon...)
+- **Lab 2.7** - Working with Azure Maps
+    - This lab will guide you through ...(desc coming soon...)
+    - **Lab 2.7.1** - Create the HTTP Trigger Function
+        - This lab will guide you through ...(desc coming soon...)
+    - **Lab 2.7.2** - Create the Static HTML Page
+        - This lab will guide you through ...(desc coming soon...)

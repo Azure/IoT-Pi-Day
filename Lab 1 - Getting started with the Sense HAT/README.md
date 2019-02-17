@@ -26,3 +26,12 @@ There’s a function for each sensor on the board so the values can be acquired 
  
 **Humidity**
 - Gets the percentage of relative humidity from the humidity sensor.
+
+## Lab 1 - Getting Started with the SenseHAT
+- **Lab 1.1** - Reading SenseHat Data 
+    - This lab will guide you through updating code, deploying code to  the device, running code on the device, and sending **Real** sensor data to Azure IoT Hub.
+    > This **requires** a Raspberry Pi SenseHAT.
+- **Lab 1.2** - Simulated SenseHat Data (Optional)
+    - This lab will guide you through updating code, deploying code to the device, running code on the device, and sending **Simulated** sensor data to Azure IoT Hub.
+    > This **does NOT** require a Raspberry Pi SenseHAT.
+    
