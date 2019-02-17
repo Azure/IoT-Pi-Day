@@ -58,7 +58,7 @@ As you create an end-to-end IoT application in a day, you’ll see how easy it i
     - This lab will guide you through ...(desc coming soon...)
 - **Lab 2.7** - Working with Azure Maps
     - This lab will guide you through ...(desc coming soon...)
-    - **Lab 2.7.1** - Create the HTTP Function Trigger
+    - **Lab 2.7.1** - Create the HTTP Trigger Function
         - This lab will guide you through ...(desc coming soon...)
     - **Lab 2.7.2** - Create the Static HTML Page
         - This lab will guide you through ...(desc coming soon...)
