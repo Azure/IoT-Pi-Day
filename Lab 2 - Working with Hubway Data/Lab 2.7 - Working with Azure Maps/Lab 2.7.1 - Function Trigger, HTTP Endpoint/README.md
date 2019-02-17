@@ -1,5 +1,4 @@
-# Lab 2.7.1 - Create a HTTP Function
-
+# Lab 2.7.1 - Create the HTTP Function Trigger
 
 ## Prerequisites
 
