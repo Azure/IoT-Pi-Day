@@ -36,10 +36,10 @@ As you create an end-to-end IoT application in a day, you’ll see how easy it i
 ## Lab 1 - Getting Started with the SenseHAT
 - **Lab 1.1** - Reading SenseHat Data 
     - This lab will guide you through updating code, deploying code to  the device, running code on the device, and sending **Real** sensor data to Azure IoT Hub.
-    > Note: This requires a Raspberry Pi SenseHAT.
+    > This **requires** a Raspberry Pi SenseHAT.
 - **Lab 1.2** - Simulated SenseHat Data (Optional)
     - This lab will guide you through updating code, deploying code to the device, running code on the device, and sending **Simulated** sensor data to Azure IoT Hub.
-    > Note: This does NOT require a Raspberry Pi SenseHAT.
+    > This **does NOT** require a Raspberry Pi SenseHAT.
 
 ## Lab 2 - Working with Hubway Data
 - **Lab 2.1** - Setting up Iot Hub Device
