@@ -1,4 +1,4 @@
-# Lab 2.5 - Create a CosmosDB Function
+# Lab 2.5 - Create a CosmosDB Trigger Function
 
 
 ## Prerequisites

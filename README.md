@@ -34,29 +34,34 @@ As you create an end-to-end IoT application in a day, you’ll see how easy it i
 - This lab will guide you through setting up the neccessary Azure services in preparation for the following labs.
 
 ## Lab 1 - Getting Started with the SenseHAT
-- Lab 1.1.
+- Lab 1.1 - Reading SenseHat Data 
     - This lab will guide you through updating code, deploying code to  the device, running code on the device, and sending **Real** sensor data to Azure IoT Hub.
     > Note: This requires a Raspberry Pi SenseHAT.
-- Lab 1.2 (Optional).
+- Lab 1.2 - Simulated SenseHat Data (Optional)
     - This lab will guide you through updating code, deploying code to the device, running code on the device, and sending **Simulated** sensor data to Azure IoT Hub.
     > Note: This does NOT require a Raspberry Pi SenseHAT.
 
 ## Lab 2 - Working with Hubway Data
 - Lab 2.1 - Setting up Iot Hub Device
     - This lab will guide you through ...(desc coming soon...)
-- Lab 2.2 - Event Hub
+    - **Lab 2.1.1** - Send Hubway Data to Iot Hub
+        - This lab will guide you through ...(desc coming soon...)
+- Lab 2.2 - Setting up Event Hub
     - This lab will guide you through ...(desc coming soon...)
-- Lab 2.3 - Event Hub Trigger
+- Lab 2.3 - Create the Event Hub Trigger Function
     - This lab will guide you through ...(desc coming soon...)
-- Lab 2.4 - CosmosDB
+- Lab 2.4 - Setting up CosmosDB
     - This lab will guide you through ...(desc coming soon...)
-- Lab 2.5 - CosmosDB Trigger
+- Lab 2.5 - Create a CosmosDB Trigger Function
     - This lab will guide you through ...(desc coming soon...)
-- Lab 2.6 - Storage
+- Lab 2.6 - Setting up Blob Storage
     - This lab will guide you through ...(desc coming soon...)
-- Lab 2.7 - Azure Maps
+- Lab 2.7 - Working with Azure Maps
     - This lab will guide you through ...(desc coming soon...)
-
+    - **Lab 2.7.1** - Create a HTTP Function
+        - This lab will guide you through ...(desc coming soon...)
+    - **Lab 2.7.2** - Create a Static HTML Page
+        - This lab will guide you through ...(desc coming soon...)
 
 # Contributing
 
