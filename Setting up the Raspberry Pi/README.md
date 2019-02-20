@@ -117,7 +117,29 @@ The following commands need to be run on the Raspberry Pi whilst connected over 
     - Select **Finish**
     - Type **```sudo cat /etc/timezone```** to verify.
 
-## Enable WiFi (Optional)
+
+## Enable WiFi - Option 1
+- Entering the following informaiton into a new text file.
+- Create a new text file usng Notepad.
+- Cut-n-paste the following.
+
+    ```
+    country=US
+    ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+    update_config=1
+
+    network={
+        ssid="XXXXX"
+        scan_ssid=1
+        psk="XXXXX"
+        key_mgmt=WPA-PSK
+    }
+    ```
+- Update the **ssid** to yours, keeping the quotes.
+- Update the **psk** to password for SSID, keeping the quotes.
+- From Notepad, **File-Save-As** the file-as **wpa_supplicant.conf**, then and copy it to the **root folder** of the microSD card drive (should be the next driver letter beyond what you have on your laptop, i.e. d:\ was mine).
+
+## Enable WiFi - Option 2
 - Entering the following command to run raspi-config
     - **```sudo raspi-config```**
     - Select **Network Options**
