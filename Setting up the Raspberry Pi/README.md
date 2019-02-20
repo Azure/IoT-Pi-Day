@@ -272,7 +272,6 @@ The following commands need to be run on the Raspberry Pi whilst connected over 
     - **```sudo mkdir "/home/pi1/SimulatedDevice"```**
         - Change ownership: **``sudo chown pi1:pi1 -R "/home/pi1/SimulatedDevice"``**
     - **```sudo mkdir "/home/pi1/SimulatedDevice/data"```**
-        - Change ownership: **``sudo chown pi1:pi1 -R "/home/pi1/SimulatedDevice/data"``**
 
    **User: Pi2**
     - **```sudo mkdir "/home/pi2/SenseHATDotNetCore"```**
@@ -282,7 +281,6 @@ The following commands need to be run on the Raspberry Pi whilst connected over 
     - **```sudo mkdir "/home/pi2/SimulatedDevice"```**
         - Change ownership: **``sudo chown pi2:pi2 -R "/home/pi2/SimulatedDevice"``**
     - **```sudo mkdir "/home/pi2/SimulatedDevice/data"```**
-        - Change ownership: **``sudo chown pi2:pi2 -R "/home/pi2/SimulatedDevice/data"``**
 
 ## How to Clone the microSD card
 - These steps will allow you use an existing image and configure it for each Raspberry Pi.
