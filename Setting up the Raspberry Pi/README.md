@@ -290,6 +290,7 @@ The following commands need to be run on the Raspberry Pi whilst connected over 
 **Read Image**
 - Insert the already configured microSD Card into the microSD card Adapter.
 - Insert the Adapter into your Laptop.
+- Download and install [Win32DiskImager](https://sourceforge.net/projects/win32diskimager/files/latest/download).
 - Run **Win32DiskImager.exe**.
     > It may give an error message on startup, but you can often ignore it.
 - Ensure the device drop down box has the drive your card is inserted into. 
