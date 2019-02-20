@@ -119,9 +119,8 @@ The following commands need to be run on the Raspberry Pi whilst connected over 
 
 
 ## Enable WiFi - Option 1
-- Entering the following informaiton into a new text file.
-- Create a new text file usng Notepad.
-- Cut-n-paste the following.
+- Entering the following information into a new text file.
+- Create a new text file usng Notepad, then cut-n-paste the following.
 
     ```
     country=US
@@ -137,7 +136,7 @@ The following commands need to be run on the Raspberry Pi whilst connected over 
     ```
 - Update the **ssid** to yours, keeping the quotes.
 - Update the **psk** to password for SSID, keeping the quotes.
-- From Notepad, **File-Save-As** the file-as **wpa_supplicant.conf**, then and copy it to the **root folder** of the microSD card drive (should be the next driver letter beyond what you have on your laptop, i.e. d:\ was mine).
+- Click **File-Save-As** the file-as **```wpa_supplicant.conf```** and save it to the **root folder** of the microSD card drive (should be the next driver letter beyond what you have on your laptop, i.e. d:\ was mine).
 
 ## Enable WiFi - Option 2
 - Entering the following command to run raspi-config
