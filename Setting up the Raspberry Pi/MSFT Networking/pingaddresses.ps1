@@ -1,7 +1,7 @@
 $prefix = "192.168.10." # Set your local guest wi-fi network IP prefix here
 $addressCount = 254
 $i = 1
-$fileURL = "https://raw.githubusercontent.com/Azure/IoT-Pi-Day/master/Networking/piMaclist.csv"
+$fileURL = "https://raw.githubusercontent.com/Azure/IoT-Pi-Day/master/Setting%20up%20the%20Raspberry%20Pi/MSFT%20Networking/piMaclist.csv"
 
 # // Grab master CSV list from GitHub and convert URL object content to CSV
 
