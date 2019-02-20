@@ -114,13 +114,13 @@ We need to execute two copy commands
         scp.exe -r .\bin\Debug\netcoreapp2.2\linux-arm\publish\* pi@raspberrypi-rpagels:/home/pi/SimulatedDevice
 
 3. When prompted to continue to connect, type **yes**.
-4. Type in the raspberry pi **password**.
+4. Type in the raspberry pi password **Password.1.!!**
 
 5.  Type **scp.exe -r .\data\\\* <**username**>@<**device ip address or device name**>:/home/<**username**>/SimulatedDevice/data**
 
         scp.exe -r .\data\* pi@raspberrypi-rpagels:/home/pi/SimulatedDevice/data
 
-5. Type in **iotpiday** as the password.
+5. Type in **Password.1.!!** as the password.
 
 ## Run the code from the Raspberry PI
 
