@@ -247,7 +247,7 @@ The following commands need to be run on the Raspberry Pi whilst connected over 
     - **```sudo adduser pi2```**
     - **```sudo usermod -a -G pi2,adm,sudo,audio,video,plugdev,users,input,netdev,spi,i2c,gpio pi2```**
 
-    > Note: During account created, when prompted for a new password, **Password.1.!!**.
+    > Note: During account creation, use **Password.1.!!** as the password when prompted for a new password.
 <!--
 - Elevate permissions to run Docker containers
     - **```sudo usermod -a -G docker pi1```**
