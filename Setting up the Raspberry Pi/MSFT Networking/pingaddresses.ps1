@@ -22,9 +22,7 @@ while ($i -le $addressCount)
 
 foreach ($device in $inputFile) {
 
-    if ($device = "") { continue } # // skip if the line is blank
-
-    $piDevice = arp -a | select-string $device.MacAddress |% { $_.ToString().Trim().Split(" ")[0] }
+    $piDevice = arp -a | select-string $device.MacAddress | foreach { $_.ToString().Trim().Split(" ")[0] }
     Write-Host $device.DeviceName  " "  $piDevice
 
 }
