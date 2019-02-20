@@ -266,23 +266,23 @@ The following commands need to be run on the Raspberry Pi whilst connected over 
 
     **User: Pi1**
     - **```sudo mkdir "/home/pi1/SenseHATDotNetCore"```**
-        - Change ownership: **```sudo chown pi:pi -R "/home/pi1/SenseHATDotNetCore"```**
+        - Change ownership: **```sudo chown pi1:pi1 -R "/home/pi1/SenseHATDotNetCore"```**
     - **```sudo mkdir "/home/pi1/SenseHATDotNetCoreSimulation"```**
-        - Change ownership: **```sudo chown pi:pi -R "/home/pi1/SenseHATDotNetCoreSimulation"```**
+        - Change ownership: **```sudo chown pi1:pi1 -R "/home/pi1/SenseHATDotNetCoreSimulation"```**
     - **```sudo mkdir "/home/pi1/SimulatedDevice"```**
-        - Change ownership: **``sudo chown pi:pi -R "/home/pi1/SimulatedDevice"``**
+        - Change ownership: **``sudo chown pi1:pi1 -R "/home/pi1/SimulatedDevice"``**
     - **```sudo mkdir "/home/pi1/SimulatedDevice/data"```**
-        - Change ownership: **``sudo chown pi:pi -R "/home/pi1/SimulatedDevice/data"``**
+        - Change ownership: **``sudo chown pi1:pi1 -R "/home/pi1/SimulatedDevice/data"``**
 
    **User: Pi2**
     - **```sudo mkdir "/home/pi2/SenseHATDotNetCore"```**
-        - Change ownership: **```sudo chown pi:pi -R "/home/pi2/SenseHATDotNetCore"```**
+        - Change ownership: **```sudo chown pi2:pi2 -R "/home/pi2/SenseHATDotNetCore"```**
     - **```sudo mkdir "/home/pi2/SenseHATDotNetCoreSimulation"```**
-        - Change ownership: **```sudo chown pi:pi -R "/home/pi2/SenseHATDotNetCoreSimulation"```**
+        - Change ownership: **```sudo chown pi2:pi2 -R "/home/pi2/SenseHATDotNetCoreSimulation"```**
     - **```sudo mkdir "/home/pi2/SimulatedDevice"```**
-        - Change ownership: **``sudo chown pi:pi -R "/home/pi2/SimulatedDevice"``**
+        - Change ownership: **``sudo chown pi2:pi2 -R "/home/pi2/SimulatedDevice"``**
     - **```sudo mkdir "/home/pi2/SimulatedDevice/data"```**
-        - Change ownership: **``sudo chown pi:pi -R "/home/pi2/SimulatedDevice/data"``**
+        - Change ownership: **``sudo chown pi2:pi2 -R "/home/pi2/SimulatedDevice/data"``**
 
 ## How to Clone the microSD card
 - These steps will allow you use an existing image and configure it for each Raspberry Pi.
