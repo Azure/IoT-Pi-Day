@@ -31,7 +31,7 @@
 
     ![Image](/images/lab-2.5-image6.png) 
 
-7. Select the default nameaspace **Company.Function**.
+7. Select the default namespace **Company.Function**.
 
     ![Image](/images/lab-2.5-image7.png)
 
@@ -41,7 +41,7 @@
     
     ![Image](/images/lab-2.5-image8.png)
 
-9.  Enter the name of the **database** you created in **Lab 2.4**.
+9.  Enter the name of the **CosmosDB Account** you created in **Lab 2.4**.
     > i.e. **<**LastName**>-pi-day-functionapp**.
 
     ![Image](/images/lab-2.5-image9.png)
@@ -60,23 +60,23 @@
 
 1.  Change the body of the code to map the incoming JSON string to an output document for inserting into CosmosDB.
 
-3. From **Visual Studio Code**, click on file **Snippets.txt** to open in editor.
-4. Highlight the entire section under **Snippet Three:**
+2. From **Visual Studio Code**, click on file **Snippets.txt** to open in editor.
+3. Highlight the entire section under **Snippet Three:**
 
     ![Image](/images/lab-2.5-image12.png)
 
-5. Click on the file **HubwayCosmosDBTrigger.cs** in the editor, if it's not alreday opened.
-6. Highlight everything between the **{** and **}** braces.
+4. Click on the file **HubwayCosmosDBTrigger.cs** in the editor, if it's not alreday opened.
+5. Highlight everything between the **{** and **}** braces.
 
     ![Image](/images/lab-2.5-image13.png)
 
-7. Paste in the code copied from the **Snippet Three:** section above.
+6. Paste in the code copied from the **Snippet Three:** section above.
 
     ![Image](/images/lab-2.5-image14.png) 
 
     > For reference, refer to the file **HubwayCosmosDBTrigger.cs** found under the [Lab 2 - Working with Hubway Data/Solution](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Solution/HubwayFunctions) folder.
 
-8. Modify the **Public static** trigger by removing the keywords **async Task** and adding **void**.
+7. Modify the **Public static** trigger by addding the keywords **async**.
     
     ![Image](/images/lab-2.5-image15.png)
     ![Image](/images/lab-2.5-image16.png) 
@@ -97,7 +97,7 @@
 
     ![Image](/images/lab-2.5-image20.png) 
 
-        > This can be found in the Azure Portal by selecting the Azure Maps Account. Go to  **Settings**, **Authentication**, then **Shared Key Authentication**.  Copy the **Primary Key**.
+    > This can be found in the Azure Portal by selecting the Azure Maps Account. Go to  **Settings**, **Authentication**, then **Shared Key Authentication**.  Copy the **Primary Key**.
 
     ![Image](/images/lab-2.5-image21.png)
 
