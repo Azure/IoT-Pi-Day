@@ -22,8 +22,6 @@ Use the following steps to create an Azure Function:
 
     ![Image](/images/lab-2.3-image1.png)
 
-<!-- Randy left off HERE -->
-
 4. Fill in the fields:
    - **App name**, enter **<**LastName**>-pi-day-functionapp**
    - **Subscription**  Select your subscription.

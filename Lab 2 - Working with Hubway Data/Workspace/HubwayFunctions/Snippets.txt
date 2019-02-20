@@ -6,8 +6,6 @@ string myEventHubMessage, [CosmosDB(databaseName: "Hubway",collectionName: "Trip
 
 Snippet Two:                
                 
-            string myEventHubMessage = Encoding.UTF8.GetString(eventData.Body.Array, eventData.Body.Offset, eventData.Body.Count);
-
             log.LogInformation($"C# Event Hub trigger function processed a message: {myEventHubMessage}");
             
             dynamic msg = JObject.Parse(myEventHubMessage);
@@ -37,8 +35,6 @@ Snippet One:
 
                 foreach (var doc in input)
                 {
-                    //log.LogInformation("Start Station Latitude: " + doc.GetPropertyValue<string>("startStationLatitiude"));
-
                     lat = doc.GetPropertyValue<string>("startStationLatitiude");
                     lon = doc.GetPropertyValue<string>("startStationLongitude");
 
