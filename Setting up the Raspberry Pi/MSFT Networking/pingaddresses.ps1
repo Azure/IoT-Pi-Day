@@ -1,4 +1,4 @@
-$prefix = "192.168.10." # Set your local guest wi-fi network IP prefix here
+$prefix = "192.168.10." # // Set your local guest wi-fi network IP prefix here
 $addressCount = 254
 $i = 1
 $fileURL = "https://raw.githubusercontent.com/Azure/IoT-Pi-Day/master/Setting%20up%20the%20Raspberry%20Pi/MSFT%20Networking/piMaclist.csv"
@@ -21,6 +21,8 @@ while ($i -le $addressCount)
 # // Loop through all devices in list and match IP address to MAC and return device name and IP
 
 foreach ($device in $inputFile) {
+
+    if ($device = "") { continue } # // skip if the line is blank
 
     $piDevice = arp -a | select-string $device.MacAddress |% { $_.ToString().Trim().Split(" ")[0] }
     Write-Host $device.DeviceName  " "  $piDevice
