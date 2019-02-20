@@ -72,7 +72,7 @@ Note:  If this is the first time logging into Azure from Visual Studio Code.
         scp.exe -r .\bin\Debug\netcoreapp2.2\linux-arm\publish\* pi@raspberrypi-rpagels:/home/pi/SenseHATDotNetCore
 
 3. When prompted to continue to connect, type **yes**.
-4. Type in **iotpiday** as the password.
+4. Type in **Password.1.!!** as the password.
 
 ## Run the code from the Raspberry Pi
 
@@ -83,7 +83,7 @@ Note:  If this is the first time logging into Azure from Visual Studio Code.
         - Click [Download PuTTY](https://www.putty.org/) and click **Download it here** to download the latest version. Use the **MSI Windows Installer - 64-bit**.
         - Click **Run** to accept the default prompts.
         - Run **PuTTY** and enter the IP address of the Raspberry Pi and click Open. Accept the message about keys.
-        - Enter <**username**> as the logon name, and **iotpiday** as the password.
+        - Enter <**username**> as the logon name, and **Password.1.!!** as the password.
 
 - **Option 2** - Use Windows 10
     - Click [How to Enable and Use Windows 10’s New Built-in SSH Commands](https://www.howtogeek.com/336775/how-to-enable-and-use-windows-10s-built-in-ssh-commands/)
