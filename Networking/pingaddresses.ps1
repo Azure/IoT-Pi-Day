@@ -1,6 +1,15 @@
-$prefix = "192.168.10."
+$prefix = "192.168.10." # Set your local guest wi-fi network IP prefix here
 $addressCount = 254
 $i = 1
+$fileURL = "https://raw.githubusercontent.com/Azure/IoT-Pi-Day/master/Networking/piMaclist.csv"
+
+# // Grab master CSV list from GitHub and convert URL object content to CSV
+
+$inputFile = Invoke-WebRequest $fileURL
+$inputFile = $inputFile.Content
+$inputFile = ConvertFrom-Csv -InputObject $inputFile
+
+# // Ping all network devices to build local arp table
 
 do { 
     ping $prefix$i -n 1 -w 2 | Out-Null
@@ -9,12 +18,11 @@ do {
     }
 while ($i -le $addressCount)
 
-$inputFile = Import-Csv "piMaclist.csv"
+# // Loop through all devices in list and match IP address to MAC and return device name and IP
 
 foreach ($device in $inputFile) {
 
-    arp -a | select-string $device.MacAddress |% { $_.ToString().Trim().Split(" ")[0] }
+    $piDevice = arp -a | select-string $device.MacAddress |% { $_.ToString().Trim().Split(" ")[0] }
+    Write-Host $device.DeviceName  " "  $piDevice
 
 }
-
-
