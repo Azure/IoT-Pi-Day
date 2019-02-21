@@ -65,18 +65,21 @@ We need to document the scenario here
 2.  Select **Static website** under **Settings**
 3.  Copy the primary endpoint
     - i.e. **https://mystorage.z20.web.core.windows.net/**
-    - Append **hubwayplot.html**.
+    - Append **hubwayplot.html** to the end of it.
+    - Copy the entire thing to the clipboard.
 
     > The URL should look something like this:
     **```https://mystorage.z20.web.core.windows.net/hubwayplot.html```**
 
+4. Open up a new browswer window and paste in the URL.
 
+    ![Image](/images/lab-2.7.2-image10.png) 
+
+    > If you have data in CosmosDB, you should see that information plotted on the map. Yeah!!! :smiley:
+
+<!--
 ## 🚨 Content below this line is Under Cons***truction 🚨
-
-
-4.  If you have data in CosmosDB, you should see that information plotted on the map
-
-
+-->
 
 
 ## Reference Sites
