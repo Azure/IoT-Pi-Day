@@ -143,7 +143,7 @@ We will be using Visual Studio Code and the Azure Functions Extension.
 5. From **Visual Studio Code**, press **Cntl-C** to stop.
 
 
-## Configure Tigger Bindings
+## Configure Trigger Bindings
 
 1. From **Visual Studio Code**, double-click on file **HubwayEventHubTrigger.cs** to open in the editor, if it's not alreday opened.
 
