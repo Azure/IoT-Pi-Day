@@ -10,7 +10,19 @@ We need to document the scenario here
 
 ## 🚨 Content below this line is Under Construction 🚨
 
-1. Copy the HubwayMap folder from solution to workspace
+1. Using File Explorer, **<*Right-Click*>** and **Copy** the **HubwayMap** folder from solution.
+
+    ![Image](/images/lab-2.7.2-image1.png) 
+
+2. Using File Explorer, **Paste** into your workspace folder.
+    > Refer to **Lab 0 - Resource Configuration** section **[Download the Repo](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%200%20-%20Resource%20Configuration#download-the-repo)**.
+
+    ![Image](/images/lab-2.7.2-image2.png)
+
+3. Open up a **Command Prompt** as an **Administrator**.
+4. Type **cd C:\Workspace\IoT-Pi-Day-master\IoT-Pi-Day-master\Lab 2 - Working with Hubway Data\Workspace\HubwayMap** to change to the Hubwaymap folder.
+
+
 2. From a command prompt, change directory to \workspace\Hubwaymap
 3. type code . and hit enter
 4. Enter your Azure Maps Subscription key atlas.setSubscriptionKey('Azure Maps subscription');
