@@ -1,9 +1,8 @@
 # Lab 2.7.2 - Create the Static HTML Page
 We need to document the scenario here
 
-
 ## Prerequisites
-1. Azure Storage Explorer must already be created, see [Lab 0 - Resource Configuration, section Create a CosmosDB Account](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%200%20-%20Resource%20Configuration#create-a-cosmosdb-account)
+1. Azure Storage Explorer must already be created, see [Lab 0 - Resource Configuration, section Create an Azure Map](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%200%20-%20Resource%20Configuration#create-an-azure-map)
 2. Lab 2.4 is completed, see [Lab 2.4 - Setting up CosmosDB](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.4%20-%20Setting%20up%20CosmosDB)
 
 ## Update the Code
@@ -19,27 +18,17 @@ We need to document the scenario here
 
 3. Open up a **Command Prompt** as an **Administrator**.
 4. Type **cd C:\Workspace\IoT-Pi-Day-master\IoT-Pi-Day-master\Lab 2 - Working with Hubway Data\Workspace\HubwayMap** to change to the Hubwaymap folder.
+5. Type **code .** and press enter.
+6. Open file **hubwayplot.html** an update the **Azure Maps subscription** key Azure Maps Subscription key.
+
+    ![Image](/images/lab-2.7.2-image3.png)
+
+    > From the Azure Portal, navigate to your Azure Maps Account deployment. Click on **Authentication** under **Settings**.  Locate and copy to clipboard, **Primary** key
+
+8. Press **Ctrl+S** to save the file.
+
 
 ## 🚨 Content below this line is Under Construction 🚨
-
-
-2. From a command prompt, change directory to \workspace\Hubwaymap
-3. type code . and hit enter
-4. Enter your Azure Maps Subscription key atlas.setSubscriptionKey('Azure Maps subscription');
-   * From the Azure Portal, navigate to your Maps Deployment --> Map Service
-   * Select the Authentication menu item on the left
-   * Copy the Primary Key
-5.  Save the file
-
-
-3.  🚨 Update your Azure Maps Subscription Key
-    * From the Azure Portal, navigate to your Maps Deployment --> Map Service
-    * Select the Authentication menu item on the left
-    * Copy the Primary Key
-    * Replace with your key atlas.setSubscriptionKey('Azure Maps subscription');
-
-    > For reference, refer to the file **HubwayHttpTrigger.cs** found under the [Lab 2 - Working with Hubway Data/Solution](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Solution/HubwayFunctions) folder.
-
 
 
 ## Azure Storage Explorer
