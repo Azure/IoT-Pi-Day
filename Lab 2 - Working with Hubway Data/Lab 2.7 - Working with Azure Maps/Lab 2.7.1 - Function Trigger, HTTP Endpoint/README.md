@@ -42,13 +42,13 @@ From within Visual Studio Code:
 
 ## Notice
 
-The **Return value** and **Input bindings** for this function.  Scroll down and notice the following two things.
+Scroll down and notice the following things, the **Return value** and **Input bindings** for this function.  
 
 3. The function's **Return Value** is returning a **Static Task**, this will change.
 
 ![Image](/images/lab-2.7.1-image10.png)
 
-4. The function doees not have any **Input Bindings**, this will change.
+4. The function does not have any **Input Bindings**, this will change.
 
 ![Image](/images/lab-2.7.1-image11.png) 
 
@@ -71,7 +71,8 @@ The **Return value** and **Input bindings** for this function.  Scroll down and 
 
 ![Image](/images/lab-2.7.1-image13.png) 
 
-🚨 Randy/Tim needs to update step #11.
+🚨 Randy/Tim needs to update step 11 with the correct Lab.
+
 11. .Replace the ConnectionStringSetting = "**Shared_Access_Key_DOCUMENTDB**" with your CosmosDB connection string you created in **Lab 2.???**.
 
     > i.e. **<**LastName**>-pi-day-CosmosDB_DOCUMENTDB**.
