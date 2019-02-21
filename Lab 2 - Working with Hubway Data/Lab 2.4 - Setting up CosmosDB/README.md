@@ -12,7 +12,7 @@ You can now use the Data Explorer tool in the Azure portal to create a database 
 
 1. From the Azure Portal menu, select **Azure CosmosDB**.
 2. Select your CosmosDB account created earlier.
-    - i.e. **Lastname-pi-day-cosmosdb** from the list.
+    - i.e. **<**Lastname**>-pi-day-cosmosdb** from the list.
 
     ![Image](/images/lab-2.4-image1.png)
 

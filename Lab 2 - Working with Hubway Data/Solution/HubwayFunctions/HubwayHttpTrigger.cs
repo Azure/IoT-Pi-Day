@@ -13,9 +13,8 @@ namespace Company.Function
     {
         [FunctionName("HubwayHttpTrigger")]
         //public static IActionResult Run(
-            public static  TripDataGeoJson  Run(
-            [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post",
-                Route = null)]HttpRequest req,
+            public static TripDataGeoJson Run(
+            [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post",  Route = null)]HttpRequest req,
             [CosmosDB(
                 databaseName: "Hubway",
                 collectionName: "Tripdata",

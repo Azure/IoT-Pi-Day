@@ -12,7 +12,7 @@ We need to document the scenario here
 
 1. From the Azure Portal menu, select **Event Hubs**.
 1. Select your event hub created earlier.
-    - i.e. **Lastname-pi-day-EventHub** from the list.
+    - i.e. **<**Lastname**>-pi-day-EventHub** from the list.
 
     ![Image](/images/lab-2.2-image1.png)
 
