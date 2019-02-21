@@ -43,21 +43,25 @@ From within Visual Studio Code:
 ## 🚨 Content below this line is Under Construction 🚨
 
 
-2.  Replace the ConnectionStringSetting = "Shared_Access_Key_DOCUMENTDB" with your CosmosDB key
+2. 🚨 Replace the ConnectionStringSetting = "Shared_Access_Key_DOCUMENTDB" with your CosmosDB key
 
 
     * In the Azure Portal, navigate to your CosmosDB Account
     * Select the Keys menu item
     * Copy the PRIMARY READ-ONLY KEY from the Read-Only Keys tab
-3.  Update your Azure Maps Subscription Key
+
+
+3.  🚨 Update your Azure Maps Subscription Key
     * From the Azure Portal, navigate to your Maps Deployment --> Map Service
     * Select the Authentication menu item on the left
     * Copy the Primary Key
     * Replace with your key atlas.setSubscriptionKey('Azure Maps subscription');
- 
+
+    > For reference, refer to the file **HubwayHttpTrigger.cs** found under the [Lab 2 - Working with Hubway Data/Solution](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Solution/HubwayFunctions) folder.
+
 4.  Review the code.
 
-## Update the Function App
+## Deploy the Function App
 
 From within Visual Studio Code:
 
