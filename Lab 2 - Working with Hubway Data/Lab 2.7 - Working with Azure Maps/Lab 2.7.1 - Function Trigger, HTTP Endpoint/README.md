@@ -8,19 +8,44 @@
 
 From within Visual Studio Code:
 
-1.  Press Control Shift P
+1. From **Visual Studio Code**, press **Ctrl-Shift-P**.
+2. Enter **Azure Functions** and select **Create Function** from the list.
 
-2.  Enter Azure Functions and select Create Function
-3.  Select the Folder containing your function app
-4.  Select HTTPTrigger
-5.  Change the name to HubwayHTTPTrigger.
-6.  Take the default Company.Function namespace and press enter.
-7.  Set the access rights to Anonymous
+    ![Image](/images/lab-2.7.1-image1.png) 
 
+3. Select the folder containting your function app, **HubwayFunctions**.
+
+    ![Image](/images/lab-2.7.1-image2.png) 
+
+4. Select **HttpTrigger**
+
+    ![Image](/images/lab-2.7.1-image3.png) 
+
+5. Change the name from HttpTriggerCSharp to **HubwayHTTPTrigger**.
+
+    ![Image](/images/lab-2.7.1-image4.png) 
+
+6. Select the default namespace **Company.Function**.
+
+    ![Image](/images/lab-2.7.1-image5.png)
+
+7.  Set the access rights to **Anonymous**.
+
+    ![Image](/images/lab-2.7.1-image6.png)
 
 ## Update the code
 1.  Update the code from the solution.
+2. Open **HubwayHTTPTrigger.cs** if it's not already opened.
+
+    ![Image](/images/lab-2.7.1-image7.png)
+
+
+## 🚨 Content below this line is Under Construction 🚨
+
+
 2.  Replace the ConnectionStringSetting = "Shared_Access_Key_DOCUMENTDB" with your CosmosDB key
+
+
     * In the Azure Portal, navigate to your CosmosDB Account
     * Select the Keys menu item
     * Copy the PRIMARY READ-ONLY KEY from the Read-Only Keys tab
