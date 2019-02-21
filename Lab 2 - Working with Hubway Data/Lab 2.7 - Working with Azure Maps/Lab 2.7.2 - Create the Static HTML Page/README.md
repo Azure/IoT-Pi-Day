@@ -8,8 +8,6 @@ We need to document the scenario here
 
 ## Update the Code
 
-## 🚨 Content below this line is Under Construction 🚨
-
 1. Using File Explorer, **<*Right-Click*>** and **Copy** the **HubwayMap** folder from solution.
 
     ![Image](/images/lab-2.7.2-image1.png) 
@@ -21,6 +19,8 @@ We need to document the scenario here
 
 3. Open up a **Command Prompt** as an **Administrator**.
 4. Type **cd C:\Workspace\IoT-Pi-Day-master\IoT-Pi-Day-master\Lab 2 - Working with Hubway Data\Workspace\HubwayMap** to change to the Hubwaymap folder.
+
+## 🚨 Content below this line is Under Construction 🚨
 
 
 2. From a command prompt, change directory to \workspace\Hubwaymap
