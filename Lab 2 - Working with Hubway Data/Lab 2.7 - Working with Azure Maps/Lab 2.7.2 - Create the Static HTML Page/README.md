@@ -27,39 +27,50 @@ We need to document the scenario here
 
 8. Press **Ctrl+S** to save the file.
 
-
-## 🚨 Content below this line is Under Construction 🚨
-
-
 ## Azure Storage Explorer
 
-1.  Bring up Azure Storage Explorer
-2.  Add your account
-3.  Connect to Azure Storage
-    *  Select Add an Azure Account
-    *  Sign-In with your Azure credentials
-    *  OR
-    *  Select Use a Connection String
-    *  Enter a Display Name
-    *  Copy the Connection String from the Access Keys in the Azure Storage settings of the Portal
-4.  Apply
-5.  Select the Explorer Icon in the top left
-6.  Browse into Storage Accounts
-7.  Select your storage account that you previously created in Lab 2.6
+1. Launch the Azure Storage Explorer.
+
+    ![Image](/images/lab-2.7.2-image4.png) 
+
+2. Connect to Azure Storage.
+3. Select Add an Azure Account in the top left.
+    
+    ![Image](/images/lab-2.7.2-image5.png) 
+
+    - Sign-In with your Azure credentials
+        - OR
+    - Select Use a Connection String
+    - Enter a Display Name
+    - Copy the **Connection String** from the **Access Keys** in the Azure Storage settings from the Azure Portal.
+
+    > From the Azure Portal, navigate to your Azure Storage Account. Click on **Access Keys** under **Settings**.  Locate and copy to clipboard, **Connection String** under **key1**.
+
+    ![Image](/images/lab-2.7.2-image6.png) 
+
+4.  Click **Apply**.
+5.  Select the **Explorer Icon** in the top left.
+6.  Browse into **Storage Accounts**.
+7.  Select your storage account that you previously created in **Lab 2.6**.
     - i.e. **hubwaydatastorage**
 8.  Open the Blob Containers
-9.  Select $web
-10. Upload the hubwayplot.html file into $web
+9.  Select **$web**
+10. Upload the **hubwayplot.html** file into **$web**
+
+    ![Image](/images/lab-2.7.2-image7.png) 
 
 ## View the Page
 
-1.  Navigate to your storage account in the Azure Portal
-2.  Select Static website under Settings
+1. Navigate to your storage account in the Azure Portal.    
+2.  Select **Static website** under **Settings**
 3.  Copy the primary endpoint
-    * https://mystorage.z20.web.core.windows.net/
+    - i.e. **https://mystorage.z20.web.core.windows.net/**
     * Append hubwayplot.html
     * https://mystorage.z20.web.core.windows.net/hubwayplot.html
 4.  If you have data in CosmosDB, you should see that information plotted on the map
+
+## 🚨 Content below this line is Under Construction 🚨
+
 
 
 ## Reference Sites
