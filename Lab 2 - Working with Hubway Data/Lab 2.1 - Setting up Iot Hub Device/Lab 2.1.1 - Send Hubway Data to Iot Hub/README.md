@@ -32,7 +32,7 @@ From the Visual Studio Code
 
 2.  Test the basic Hello World Application from within VS Code
     * Press **Cntl-Shift-U** to view the output window. 
-    * Press **Cntl-F5** to run without debugging.
+    * Press **F5** to run with debugging.
     * When prompted in VS Code to add assets, click **Yes**.
     * You should see **Hello World!** printed in the debug console
     * Once your are satisifed your environment works, remove the program.cs file.
@@ -62,7 +62,7 @@ Note:  If this is the first time logging into Azure from Visual Studio Code.
 4.  Copy the contents of \Solution\IotProject\simulated-device.cs into your new file.
 5. Press **Cntrl-S** to save the file.
 
-6. From Visual Studio Code, press **Cntl-Shift-`** to open a new Terminal window
+6. From Visual Studio Code, click on **Terminal** in the top menu and select **New Terminal** to open a new terminal window below.
 7. Press **Enter** to get the prompt.
 
 8. To  resolve dependancies, type the following at the terminal command prompt.
@@ -87,11 +87,11 @@ Note:  If this is the first time logging into Azure from Visual Studio Code.
 1. Make sure the Output window is displayed in the bottom panel of Visual studio Code.
     > Note: Press **Cntl-Shift-U** to view the output window. 
 
-2. Press **F5** to run without debugging.
+2. Press **F5** to run with debugging.
 
     > Note: If all went well, you should see each record in JSON format being sent up to the IoT Hub.
 
-3.  Press **Shift-F5** to stop.
+3.  Press **Cntrl-F5** to stop.
 
     ![Image](/images/lab-2.1.1-image4.png)
 
