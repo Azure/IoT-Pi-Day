@@ -71,6 +71,8 @@ We need to document the scenario here
     > The URL should look something like this:
     **```https://mystorage.z20.web.core.windows.net/hubwayplot.html```**
 
+    ![Image](/images/lab-2.7.2-image8.png) 
+
 4. Open up a new browswer window and paste in the URL.
 
     ![Image](/images/lab-2.7.2-image10.png) 
