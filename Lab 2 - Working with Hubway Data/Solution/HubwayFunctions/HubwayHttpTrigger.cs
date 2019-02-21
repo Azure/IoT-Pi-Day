@@ -18,7 +18,7 @@ namespace Company.Function
             [CosmosDB(
                 databaseName: "Hubway",
                 collectionName: "Tripdata",
-                ConnectionStringSetting = "Shared_Access_Key_DOCUMENTDB",
+                ConnectionStringSetting = "rpagels-pi-day-cosmosdb_DOCUMENTDB",
                 SqlQuery = "SELECT * FROM c order by c.startStationID")]
                 IEnumerable<TripItems> tripItems,
             ILogger log)

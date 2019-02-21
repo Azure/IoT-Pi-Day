@@ -8,6 +8,8 @@ We need to document the scenario here
 
 ## Update the Code
 
+## 🚨 Content below this line is Under Construction 🚨
+
 1. Copy the HubwayMap folder from solution to workspace
 2. From a command prompt, change directory to \workspace\Hubwaymap
 3. type code . and hit enter
@@ -16,6 +18,17 @@ We need to document the scenario here
    * Select the Authentication menu item on the left
    * Copy the Primary Key
 5.  Save the file
+
+
+3.  🚨 Update your Azure Maps Subscription Key
+    * From the Azure Portal, navigate to your Maps Deployment --> Map Service
+    * Select the Authentication menu item on the left
+    * Copy the Primary Key
+    * Replace with your key atlas.setSubscriptionKey('Azure Maps subscription');
+
+    > For reference, refer to the file **HubwayHttpTrigger.cs** found under the [Lab 2 - Working with Hubway Data/Solution](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Solution/HubwayFunctions) folder.
+
+
 
 ## Azure Storage Explorer
 
