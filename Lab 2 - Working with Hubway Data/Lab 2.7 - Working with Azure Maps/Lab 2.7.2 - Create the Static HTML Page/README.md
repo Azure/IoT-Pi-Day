@@ -63,17 +63,19 @@ We need to document the scenario here
 
 1. Navigate to your storage account in the Azure Portal.    
 2.  Select **Static website** under **Settings**
-3.  Copy the primary endpoint
+3.  Copy the primary endpoint.
     - i.e. **https://mystorage.z20.web.core.windows.net/**
-    - Append **hubwayplot.html** to the end of it.
-    - Copy the entire thing to the clipboard.
+
+    ![Image](/images/lab-2.7.2-image8.png) 
+
+4. Copy the entire URL to the clipboard.
+5. Open up a new browswer window and paste in the URL.
+6. Append **hubwayplot.html** to the end of it.
 
     > The URL should look something like this:
     **```https://mystorage.z20.web.core.windows.net/hubwayplot.html```**
 
-    ![Image](/images/lab-2.7.2-image8.png) 
-
-4. Open up a new browswer window and paste in the URL.
+7. Press **Enter** to see the data points on the map.
 
     ![Image](/images/lab-2.7.2-image10.png) 
 
