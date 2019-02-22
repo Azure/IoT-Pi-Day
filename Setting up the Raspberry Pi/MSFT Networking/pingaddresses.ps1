@@ -1,6 +1,12 @@
-$prefix = "10.104.68." # // Set your local guest wi-fi network IP prefix here
-$addressCount = 1022
+$prefix = "10.104." # // Set your local guest wi-fi network IP prefix here
+$suffix = 68 # // Set your local guest wi-fi network IP suffix here (10.104.68)
+
 $i = 1
+$loop = 1
+$loopCount = 4
+$totalCount = 1
+$addressCount = 254 * $loopCount
+
 $fileURL = "https://raw.githubusercontent.com/Azure/IoT-Pi-Day/master/Setting%20up%20the%20Raspberry%20Pi/MSFT%20Networking/piMaclist.csv"
 $deviceList = @()
 
@@ -19,14 +25,26 @@ $inputFile = ConvertFrom-Csv -InputObject $inputFile
 
 # // Ping all network devices to build local arp table
 
-do { 
+do {
 
-    ping $prefix$i -n 1 -w 2 | Out-Null
-    Write-Progress -Activity "Finding devices" -CurrentOperation $prefix$i -PercentComplete (($i / $addressCount) * 100)
-    $i ++
+    do { 
+
+        ping $prefix$suffix"."$i -n 1 -w 2 | Out-Null
+        Write-Progress -Activity "Finding devices" -CurrentOperation $prefix$suffix"."$i -PercentComplete (($totalCount / $addressCount) * 100)
+        $i ++
+        $totalCount ++
+
+        }
+
+    while ($i -le 254)
+
+    $loop ++
+    $suffix ++
+    $i = 1
 
     }
-while ($i -le $addressCount)
+
+while ($loop -le $loopCount)
 
 # // Loop through all devices in list and match IP address to MAC and return device name and IP
 
