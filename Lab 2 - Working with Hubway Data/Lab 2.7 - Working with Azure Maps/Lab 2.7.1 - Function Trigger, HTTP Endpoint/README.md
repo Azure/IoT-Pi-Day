@@ -108,7 +108,6 @@ From within Visual Studio Code:
 
     > The function is now deployed. ![Image](/images/lab-2.7.1-image22.6.png) 
 
-
 4. In the Azure Portal, navigate to your **Function App**.
     > Refer to [Lab 2.3 - Create a Function App and Event Hub Trigger Function](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.3%20-%20Create%20the%20Event%20Hub%20Trigger%20Function)
 
