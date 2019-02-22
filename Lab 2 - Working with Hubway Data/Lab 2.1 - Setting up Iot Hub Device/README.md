@@ -39,7 +39,7 @@ TBD - We need to document the scenario here
 5.  Fill in the fields:
     - **Endpoint Name**, enter **HubwayTelemetryRoute**.
     - **Event Hub Namespace**, select your event hub namespace created early in the drop down.
-        - i.e. **Lastname-pi-day-EventHub**.
+        - i.e. **<**Lastname**>-pi-day-EventHub**.
     - **Event Hub Instance**, select your event hub instance created from Lab 0 in the drop down.
         - i.e. **hubwaytelemetry** from the drop down.
 

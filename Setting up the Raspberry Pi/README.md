@@ -138,6 +138,8 @@ The following commands need to be run on the Raspberry Pi whilst connected over 
 - Update the **psk** to password for SSID, keeping the quotes.
 - Click **File-Save-As** and enter **```wpa_supplicant.conf```** as the name and save it to the **root folder** of the microSD card drive.
     > Should be the next driver letter beyond what you have on your laptop, i.e. d:\ was mine.
+- Entering the following command to disable power saver mode.
+    - **```sudo iw dev wlan0 set power_save off```**.
 
 ## Enable WiFi - Option 2
 - Entering the following command to run raspi-config
@@ -149,6 +151,8 @@ The following commands need to be run on the Raspberry Pi whilst connected over 
     - Enter **Passphrase**
     - Select **Ok**
     - Select **Finish**
+- Entering the following command to disable power saver mode.
+    - **```sudo iw dev wlan0 set power_save off```**.
 
 ## Change the Device Name
 - Entering the following command to change the device name using the city abbrev. in table below using number scheme 01 through 10.

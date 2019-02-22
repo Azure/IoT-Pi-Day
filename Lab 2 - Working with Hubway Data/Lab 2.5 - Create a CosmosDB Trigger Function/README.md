@@ -122,7 +122,5 @@
 18. If everything worked, you will see the following in the Visual Studio Code output window.
 
     ![Image](/images/lab-2.5-image26.png)
-    
-<!--
-## 🚨 Content below this line is Under Construction 🚨
--->
+
+
