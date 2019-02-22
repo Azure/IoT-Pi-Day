@@ -56,7 +56,7 @@ As you create an end-to-end IoT application in a day, you’ll see how easy it i
     - This lab will guide you through ...(desc coming soon...)
 - **Lab 2.5** - Create the CosmosDB Trigger Function
     - This lab will guide you through ...(desc coming soon...)
-- **Lab 2.6** - Setting up Blob Storage
+- **Lab 2.6** - Configure Storage
     - This lab will guide you through ...(desc coming soon...)
 - [**Lab 2.7** - Working with Azure Maps](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.7%20-%20Working%20with%20Azure%20Maps)
     - This lab will guide you through ...(desc coming soon...)

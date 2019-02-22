@@ -19,7 +19,7 @@
     - This lab will guide you through ...(desc coming soon...)
 - **Lab 2.5** - Create the CosmosDB Trigger Function
     - This lab will guide you through ...(desc coming soon...)
-- **Lab 2.6** - Setting up Blob Storage
+- **Lab 2.6** - Configure Storage
     - This lab will guide you through ...(desc coming soon...)
 - **Lab 2.7** - Working with Azure Maps
     - This lab will guide you through ...(desc coming soon...)
