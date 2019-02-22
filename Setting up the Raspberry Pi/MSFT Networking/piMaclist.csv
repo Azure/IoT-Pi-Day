@@ -10,8 +10,7 @@ raspberrypi-det-08,xx-xx-xx-xx-xx-xx
 raspberrypi-det-09,xx-xx-xx-xx-xx-xx
 raspberrypi-det-10,xx-xx-xx-xx-xx-xx
 raspberrypi-det-11,xx-xx-xx-xx-xx-xx
-raspberrypi-det-12,xx-xx-xx-xx-xx-xx
-,
+
 raspberrypi-pit-01,xx-xx-xx-xx-xx-xx
 raspberrypi-pit-02,xx-xx-xx-xx-xx-xx
 raspberrypi-pit-03,xx-xx-xx-xx-xx-xx
@@ -23,8 +22,7 @@ raspberrypi-pit-08,xx-xx-xx-xx-xx-xx
 raspberrypi-pit-09,xx-xx-xx-xx-xx-xx
 raspberrypi-pit-10,xx-xx-xx-xx-xx-xx
 raspberrypi-pit-11,xx-xx-xx-xx-xx-xx
-raspberrypi-pit-12,xx-xx-xx-xx-xx-xx
-,
+
 raspberrypi-cle-01,b8:27:eb:0d:bd:20
 raspberrypi-cle-02,b8:27:eb:55:3b:80
 raspberrypi-cle-03,b8:27:eb:0c:24:c6
@@ -36,8 +34,7 @@ raspberrypi-cle-08,b8:27:eb:88:d9:b0
 raspberrypi-cle-09,b8:27:eb:92:ea:3c
 raspberrypi-cle-10,b8:27:eb:ce:75:14
 raspberrypi-cle-11,b8:27:eb:66:2f:c4
-,
-,
+
 raspberrypi-cin-01,xx-xx-xx-xx-xx-xx
 raspberrypi-cin-02,xx-xx-xx-xx-xx-xx
 raspberrypi-cin-03,xx-xx-xx-xx-xx-xx
@@ -49,8 +46,7 @@ raspberrypi-cin-08,xx-xx-xx-xx-xx-xx
 raspberrypi-cin-09,xx-xx-xx-xx-xx-xx
 raspberrypi-cin-10,xx-xx-xx-xx-xx-xx
 raspberrypi-cin-11,xx-xx-xx-xx-xx-xx
-raspberrypi-cin-12,xx-xx-xx-xx-xx-xx
-,
+
 raspberrypi-ind-01,b8-27-eb-2a-e2-43
 raspberrypi-ind-02,b8-27-eb-2a-e2-xx
 raspberrypi-ind-03,b8-27-eb-2a-e2-xx
@@ -62,4 +58,3 @@ raspberrypi-ind-08,b8-27-eb-2a-e2-xx
 raspberrypi-ind-09,b8-27-eb-2a-e2-xx
 raspberrypi-ind-10,b8-27-eb-2a-e2-xx
 raspberrypi-ind-11,b8-27-eb-2a-e2-xx
-raspberrypi-ind-12,b8-27-eb-2a-e2-xx
