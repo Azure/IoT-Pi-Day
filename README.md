@@ -52,7 +52,7 @@ As you create an end-to-end IoT application in a day, you’ll see how easy it i
     - This lab will guide you through ...(desc coming soon...)
 - **Lab 2.3** - Create the Event Hub Trigger Function
     - This lab will guide you through ...(desc coming soon...)
-- **Lab 2.4** - Setting up CosmosDB
+- **Lab 2.4** - TBD
     - This lab will guide you through ...(desc coming soon...)
 - **Lab 2.5** - Create the CosmosDB Trigger Function
     - This lab will guide you through ...(desc coming soon...)
