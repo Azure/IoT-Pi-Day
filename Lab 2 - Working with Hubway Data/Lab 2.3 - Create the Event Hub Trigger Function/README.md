@@ -81,10 +81,7 @@ We will be using Visual Studio Code and the Azure Functions Extension.
 
 9.  **Save** and **Close** the file.
 
-?. 🚨🚨🚨 - Randy to Check
-Check here. Is there where the message pops up, AzureWebJobsStorage?
-local.settings.json
-
+🚨🚨🚨 - Randy: Check: for the the message pop up - AzureWebJobsStorage? This will need to be manuall added to the local.settings.json file.
 
 ## Create the Event Hub Trigger
 
@@ -196,9 +193,9 @@ local.settings.json
 
     ![Image](/images/lab-2.3-image25.2.png) 
 
-15. **Paste** in the connection string between the quotes on the **Hubway_EVENTHUB** line.
+15. In the file **local.settings.json**, **Paste** in the connection string between the quotes on the **Hubway_EVENTHUB** line.
 
-    > The connection string line will appear longer than this image.
+    > The connection string line will appear longer than this screen shot.
 
     ![Image](/images/lab-2.3-image25.3.png) 
 
