@@ -126,6 +126,11 @@ We will be using Visual Studio Code and the Azure Functions Extension.
 
     ![Image](/images/lab-2.3-image18.png)
 
+## Confirm
+Inspect the local.settings.json file.
+Make sure the **Hubway_EVENTHUB** is mapped with connection.
+Make sure the **Hubway_EVENTHUB** is mapped with connection.
+
 ## Test the Function
 1. To execute the code, from **Visual Studio Code**, press **F5**.
 2. Telnet into the Raspberry Pi using SSH and login.
@@ -174,6 +179,19 @@ We will be using Visual Studio Code and the Azure Functions Extension.
     > Don't forget to add the comma.
 
     ![Image](/images/lab-2.3-image25.png)
+
+?. 🚨 Make note of the CosmosDB connection string. What is the binding called?
+GO out to Azure Portal
+Grag the Connection STring from CosmosDB, Keys, RootManageSharedAccessKey.
+Copy Primary Connection String from the Read-write keys tab.
+From VSC, open filed local.settings.json.
+Insert it.
+
+i.e.
+cosmosDB_DOCUMENTDB = "BLAH BLAH".
+
+Randy = Fix screen shot lab-2.7.1-image13.png.
+
 
 9. From Visual Studio Code, press **Cntl-Shift-`** to open a new Terminal window
 10. Press **Enter** to get the prompt.
