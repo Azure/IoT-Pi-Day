@@ -1,5 +1,5 @@
-$prefix = "10.84.27." # // Set your local guest wi-fi network IP prefix here
-$addressCount = 254
+$prefix = "10.104.68." # // Set your local guest wi-fi network IP prefix here
+$addressCount = 1022
 $i = 1
 $fileURL = "https://raw.githubusercontent.com/Azure/IoT-Pi-Day/master/Setting%20up%20the%20Raspberry%20Pi/MSFT%20Networking/piMaclist.csv"
 $deviceList = @()
