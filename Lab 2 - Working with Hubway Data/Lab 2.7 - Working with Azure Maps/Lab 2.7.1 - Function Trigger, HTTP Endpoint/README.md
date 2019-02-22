@@ -100,8 +100,36 @@ From within Visual Studio Code:
 
     ![Image](/images/lab-2.7.1-image22.png)
 
-4. After a successful deployment, click **Stream Logs**.
+    > The function is now deploying...![Image](/images/lab-2.7.1-image22.4.png) 
+
+4. For the message **Deployment to...** message, click **View Output**.
+
+    ![Image](/images/lab-2.7.1-image22.5.png)
+
+    > The function is now deployed. ![Image](/images/lab-2.7.1-image22.6.png) 
+
+
+4. In the Azure Portal, navigate to your **Function App**.
+    > Refer to [Lab 2.3 - Create a Function App and Event Hub Trigger Function](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.3%20-%20Create%20the%20Event%20Hub%20Trigger%20Function)
 
     ![Image](/images/lab-2.7.1-image23.png)
+
+5. Click on the **HubWayHttpTrigger** created.
+6. Click on **Get function URL**.
+
+    ![Image](/images/lab-2.7.1-image24.png)
+
+7. Click on **Copy** to copy the URL to clipboard.
+
+    ![Image](/images/lab-2.7.1-image25.png) 
+
+8. Open a new tab in the browser, **Paste** in the URL, and press **Enter**.
+
+    > This function is now reading TripData from CosmosDB. You will see the following output.
+
+    🚨 Randy/Tim needs to update with correct screenshot for image: lab-2.7.1-image30.png.
+
+    ![Image](/images/missing-image.png)  
+
 
 ## Reference Sites
