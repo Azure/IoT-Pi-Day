@@ -34,17 +34,19 @@ As you create an end-to-end IoT application in a day, you’ll see how easy it i
 - This lab will guide you through setting up the neccessary Azure services in preparation for the following labs.
 
 ## Lab 1 - Getting Started with the SenseHAT
-- **Lab 1.1** - Reading SenseHat Data 
-    - This lab will guide you through updating code, deploying code to  the device, running code on the device, and sending **Real** sensor data to Azure IoT Hub.
-    > This **requires** a Raspberry Pi SenseHAT.
-- **Lab 1.2** - Simulated SenseHat Data (Optional)
-    - This lab will guide you through updating code, deploying code to the device, running code on the device, and sending **Simulated** sensor data to Azure IoT Hub.
-    > This **does NOT** require a Raspberry Pi SenseHAT.
+- [**Lab 1** - Getting started with the Sense HAT](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%201%20-%20Getting%20started%20with%20the%20Sense%20HAT)
+    - [**Lab 1.1** - Reading SenseHat Data](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%201%20-%20Getting%20started%20with%20the%20Sense%20HAT/Lab%201.1%20-%20Reading%20SenseHat%20Data)
+        - This lab will guide you through updating code, deploying code to  the device, running code on the device, and sending **Real** sensor data to Azure IoT Hub.
+        > This **requires** a Raspberry Pi SenseHAT.
+    - [**Lab 1.2** - Simulated SenseHat Data (Optional)](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%201%20-%20Getting%20started%20with%20the%20Sense%20HAT/Lab%201.2%20-%20Simulated%20SenseHat%20Data)
+        - This lab will guide you through updating code, deploying code to the device, running code on the device, and sending **Simulated** sensor data to Azure IoT Hub.
+        > This **does NOT** require a Raspberry Pi SenseHAT.
+ 
 
 ## Lab 2 - Working with Hubway Data
-- **Lab 2.1** - Setting up Iot Hub Device
+- [**Lab 2.1** - Setting up Iot Hub Device](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.1%20-%20Setting%20up%20Iot%20Hub%20Device)
     - This lab will guide you through ...(desc coming soon...)
-    - **Lab 2.1.1** - Send Hubway Data to Iot Hub
+    - [**Lab 2.1.1** - Send Hubway Data to Iot Hub](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.1%20-%20Setting%20up%20Iot%20Hub%20Device/Lab%202.1.1%20-%20Send%20Hubway%20Data%20to%20Iot%20Hub)
         - This lab will guide you through ...(desc coming soon...)
 - **Lab 2.2** - Setting up Event Hub
     - This lab will guide you through ...(desc coming soon...)
@@ -56,13 +58,13 @@ As you create an end-to-end IoT application in a day, you’ll see how easy it i
     - This lab will guide you through ...(desc coming soon...)
 - **Lab 2.6** - Setting up Blob Storage
     - This lab will guide you through ...(desc coming soon...)
-- **Lab 2.7** - Working with Azure Maps
+- [**Lab 2.7** - Working with Azure Maps](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.7%20-%20Working%20with%20Azure%20Maps)
     - This lab will guide you through ...(desc coming soon...)
-    - **Lab 2.7.1** - Create the HTTP Trigger Function
+    - [**Lab 2.7.1** - Create the HTTP Trigger Function](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.7%20-%20Working%20with%20Azure%20Maps/Lab%202.7.1%20-%20Function%20Trigger%2C%20HTTP%20Endpoint)
         - This lab will guide you through ...(desc coming soon...)
-    - **Lab 2.7.2** - Create the Static HTML Page
+    - [**Lab 2.7.2** - Create the Static HTML Page](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.7%20-%20Working%20with%20Azure%20Maps/Lab%202.7.2%20-%20Create%20the%20Static%20HTML%20Page)
         - This lab will guide you through ...(desc coming soon...)
-
+        
 # Contributing
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
