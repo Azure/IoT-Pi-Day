@@ -126,7 +126,8 @@ We will be using Visual Studio Code and the Azure Functions Extension.
 
     ![Image](/images/lab-2.3-image18.png)
 
-## Confirm
+## Confirm the EventHub Connection string
+?. 🚨🚨🚨 
 Inspect the local.settings.json file.
 Make sure the **Hubway_EVENTHUB** is mapped with connection.
 Make sure the **Hubway_EVENTHUB** is mapped with connection.
@@ -146,7 +147,6 @@ Make sure the **Hubway_EVENTHUB** is mapped with connection.
 ![Image](/images/lab-2.3-image20.png)
 
 5. From **Visual Studio Code**, press **Cntl-C** to stop.
-
 
 ## Configure Trigger Bindings
 
@@ -180,7 +180,7 @@ Make sure the **Hubway_EVENTHUB** is mapped with connection.
 
     ![Image](/images/lab-2.3-image25.png)
 
-?. 🚨 Make note of the CosmosDB connection string. What is the binding called?
+?. 🚨🚨🚨 Make note of the CosmosDB connection string. What is the binding called?
 GO out to Azure Portal
 Grag the Connection STring from CosmosDB, Keys, RootManageSharedAccessKey.
 Copy Primary Connection String from the Read-write keys tab.
@@ -188,9 +188,7 @@ From VSC, open filed local.settings.json.
 Insert it.
 
 i.e.
-cosmosDB_DOCUMENTDB = "BLAH BLAH".
-
-Randy = Fix screen shot lab-2.7.1-image13.png.
+cosmosdb_DOCUMENTDB = "BLAH BLAH".
 
 
 9. From Visual Studio Code, press **Cntl-Shift-`** to open a new Terminal window
