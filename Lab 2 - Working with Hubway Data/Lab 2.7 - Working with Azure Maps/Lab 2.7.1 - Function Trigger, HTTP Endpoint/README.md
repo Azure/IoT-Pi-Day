@@ -71,17 +71,8 @@ Scroll down and notice the following things, the **Return value** and **Input bi
 
 ![Image](/images/lab-2.7.1-image13.png) 
 
-🚨 Randy/Tim needs to update step 11 with the correct Lab.
-
-11. Replace the ConnectionStringSetting = "**Shared_Access_Key_DOCUMENTDB**" with your CosmosDB connection string you created in **Lab 2.???**.
-
-    > i.e. **<**LastName**>-pi-day-CosmosDB_DOCUMENTDB**.
-
-<!-- ![Image](/images/lab-2.7.1-image14.png)  -->
-![Image](/images/lab-2.7.1-image15.png) 
-
-12. Press **Ctrl+S** to save file.
-13. Review the code.
+11. Press **Ctrl+S** to save file.
+12. Review the code.
 
 ## Deploy the Function App
 

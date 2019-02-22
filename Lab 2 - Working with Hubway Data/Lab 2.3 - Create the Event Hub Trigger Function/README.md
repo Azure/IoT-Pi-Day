@@ -77,10 +77,14 @@ We will be using Visual Studio Code and the Azure Functions Extension.
 
 10.  Select the **HubwayFunctions.csproj** from the left panel and change the TargetFramework to **netcoreapp2.2**.
 
-
        ![Image](/images/lab-2.3-image8.png) 
 
 9.  **Save** and **Close** the file.
+
+?. 🚨🚨🚨 - Randy to Check
+Check here. Is there where the message pops up, AzureWebJobsStorage?
+local.settings.json
+
 
 ## Create the Event Hub Trigger
 
@@ -126,6 +130,10 @@ We will be using Visual Studio Code and the Azure Functions Extension.
 
     ![Image](/images/lab-2.3-image18.png)
 
+9. Open the file **local.settings.json** file and confirm the **Hubway_EVENTHUB** connection string has been added.
+
+    ![Image](/images/lab-2.3-image19.png)
+
 ## Test the Function
 1. To execute the code, from **Visual Studio Code**, press **F5**.
 2. Telnet into the Raspberry Pi using SSH and login.
@@ -141,7 +149,6 @@ We will be using Visual Studio Code and the Azure Functions Extension.
 ![Image](/images/lab-2.3-image20.png)
 
 5. From **Visual Studio Code**, press **Cntl-C** to stop.
-
 
 ## Configure Trigger Bindings
 
@@ -175,11 +182,32 @@ We will be using Visual Studio Code and the Azure Functions Extension.
 
     ![Image](/images/lab-2.3-image25.png)
 
-9. From Visual Studio Code, press **Cntl-Shift-`** to open a new Terminal window
-10. Press **Enter** to get the prompt.
+9. Open the file **local.settings.json** to manually add the **cosmosdb_DOCUMENTDB** connection string.
+10. Place your cursor in front of the **Hubway_EVENTHUB** entry, and press **Enter** to insert a new line.
+11. Enter the following line.
 
-11. To  resolve dependancies, type the following at the terminal command prompt.
-    - **``dotnet add package Microsoft.Azure.WebJobs.Extensions.CosmosDB --version 3.0.3``**
+    > **```"cosmosdb_DOCUMENTDB": "",```**
+
+    ![Image](/images/lab-2.3-image25.1.png)
+
+12. From the Azure Portal, navigate to your **CosmosDB** account.
+13. Click on **Keys** under Settings.
+14. Copy the **Primary Connection String** on the **Read-write keys** tab.
+
+    ![Image](/images/lab-2.3-image25.2.png) 
+
+15. **Paste** in the connection string between the quotes on the **Hubway_EVENTHUB** line.
+
+    > The connection string line will appear longer than this image.
+
+    ![Image](/images/lab-2.3-image25.3.png) 
+
+16. From Visual Studio Code, click on **Terminal** in the top menu and select **New Terminal** to open a new terminal window below.
+
+17. Press **Enter** to get the prompt.
+
+18. To  resolve dependancies, type the following at the terminal command prompt.
+    > **```dotnet add package Microsoft.Azure.WebJobs.Extensions.CosmosDB --version 3.0.3```**
 
 <!-- ## 🚨 Content below this line is Under Construction 🚨 -->
 

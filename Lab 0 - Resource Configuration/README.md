@@ -206,6 +206,39 @@ Use the following steps to create an Azure Map:
 
     ![Image](/images/lab-0-image32.png)
 
+## Create the Storage Account
+
+Use the following steps to create a Storage Account:    
+
+1. In a new browser window, sign in to the [Microsoft Azure Portal](https://portal.azure.com).
+
+2. In the Azure portal click **+Create a resource** at the top left of the screen.
+
+3. Click **Storage** under Azure Marketplace.
+
+4. Click **Storage Account** from the list on the right. You will see the first screen for creating a Storage Account.
+
+    ![Image](/images/lab-2.6-image1.png)
+
+5. On the **Create Storage Account** page, fill in the fields:
+   - **Subscription** Select your subscription.
+   - **Resource Group** Select the resource group you have been using.
+   - **Storage Account Name** Enter a unique name for your storage account.
+        - Consider using **hubwaydatastorage**.
+   - **Location** Select a location for the account.
+   - **Performance** Select Standard.
+   - **Account Kind** Select StorageV2 (general purpose v2).
+   - **Replication** Select locally-redundant storage (LRS).
+   - **Access tier** Select Hot.
+
+    ![Image](/images/lab-2.6-image2.png) 
+
+6. Select **Review + Create**.
+7. Select **Create**.
+8. Click **Go to resource** when the deployment is complete.
+
+    ![Image](/images/lab-2.6-image3.png)
+
 <!--
 ## Add a Collection
 You can now use the Data Explorer tool in the Azure portal to create a database and collection.
