@@ -82,6 +82,11 @@ We will be using Visual Studio Code and the Azure Functions Extension.
 
 9.  **Save** and **Close** the file.
 
+
+Check here. Is there where the message pops up, AzureWebJobsStorage?
+local.settings.json
+
+
 ## Create the Event Hub Trigger
 
 1. From **Visual Studio Code**, press **Ctrl-Shift-P**.
@@ -187,8 +192,7 @@ Copy Primary Connection String from the Read-write keys tab.
 From VSC, open filed local.settings.json.
 Insert it.
 
-i.e.
-cosmosdb_DOCUMENTDB = "BLAH BLAH".
+This must be called **cosmosdb_DOCUMENTDB** = "BLAH BLAH".
 
 
 9. From Visual Studio Code, press **Cntl-Shift-`** to open a new Terminal window
