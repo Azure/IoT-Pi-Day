@@ -115,13 +115,15 @@ We will be using Visual Studio Code and the Azure Functions Extension.
     
         ![Image](/images/lab-2.3-image16.png)
 
+    - Go to the Azure Portal and select the Event Hub namespace.
+    - Click on **Shared Access policies** and select the **RootManageSharedAccessKey**.
+    - Copy the **Connection string-primary key**.
+
+        ![Image](/images/lab-2.3-image17.2.png)
+
     - Paste in the **connection string** for your event hub and press **Enter**.
 
         ![Image](/images/lab-2.3-image17.png)
-
-        > This can be found in the Azure Portal by selecting the Event Hub namespace  Go to **Shared Access policies** and select the **RootManageSharedAccessKey**.  Copy the **Connection string-primary key**.
-
-        ![Image](/images/lab-2.3-image17.2.png)
 
     - Enter the name of the event hub you created earlier, **hubwaytelemetry**.
 
