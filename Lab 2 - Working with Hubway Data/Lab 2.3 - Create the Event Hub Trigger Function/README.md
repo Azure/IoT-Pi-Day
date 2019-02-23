@@ -81,8 +81,6 @@ We will be using Visual Studio Code and the Azure Functions Extension.
 
 9.  **Save** and **Close** the file.
 
-🚨🚨🚨 - Randy: Check: for the the message pop up - AzureWebJobsStorage? This will need to be manuall added to the local.settings.json file.
-
 ## Create the Event Hub Trigger
 
 1. From **Visual Studio Code**, press **Ctrl-Shift-P**.
@@ -127,9 +125,27 @@ We will be using Visual Studio Code and the Azure Functions Extension.
 
     ![Image](/images/lab-2.3-image18.png)
 
-9. Open the file **local.settings.json** file and confirm the **Hubway_EVENTHUB** connection string has been added.
+9. When you get the message for **AzureWebJobsStorage**, click **Skip for now**.
 
-    ![Image](/images/lab-2.3-image19.png)
+    ![Image](/images/lab-2.3-image18.1.png)
+
+10. Open the file **local.settings.json** file.
+11. Confirm the **Hubway_EVENTHUB** connection string has been added.
+
+    ![Image](/images/lab-2.3-image19.png) 
+
+12. Manually add the **AzureWebJobsStorage** connection string.
+    - From the Azure Portal, navigate to your **Storage** account.
+    - Click on **Access Keys** under Settings.
+    - Copy the **Connection String** under **key1**.
+
+        ![Image](/images/lab-2.3-image19.2.png)  
+
+13. In the file **local.settings.json**, **Paste** in the connection string between the quotes on the **AzureWebJobsStorage** line.
+
+    > The connection string line will appear longer than this screen shot.
+
+    ![Image](/images/lab-2.3-image19.4.png)  
 
 ## Test the Function
 1. To execute the code, from **Visual Studio Code**, press **F5**.
