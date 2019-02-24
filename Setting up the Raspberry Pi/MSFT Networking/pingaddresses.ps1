@@ -1,20 +1,54 @@
-$prefix = "10.104." # // Set your local guest wi-fi network IP prefix here
-$suffix = 68 # // Set your local guest wi-fi network IP suffix here (10.104.68)
+Param(
+    [Parameter(Position=0,Mandatory)]
+    [ValidateSet("buf","cin","cle","det","ind","pit")]
+    [string]$city=$(throw "Enter your 3 letter city identifier: buf | cin | cle | det | ind | pit"),
+    [Parameter(Position=1,Mandatory)]
+    [string]$ipaddress,
+    [Parameter(Position=2,Mandatory)]
+    [string]$subnetMask
+)
+function toBinary ($dottedDecimal){
+    $dottedDecimal.split(".") | %{$binary=$binary + $([convert]::toString($_,2).padleft(8,"0"))}
+    return $binary
+   }
+   function toDottedDecimal ($binary){
+    do {$dottedDecimal += "." + [string]$([convert]::toInt32($binary.substring($i,8),2)); $i+=8 } while ($i -le 24)
+    return $dottedDecimal.substring(1)
+   }
+  
+   $ipaddress = toBinary $ipaddress
+   $subnetMask = toBinary $subnetMask
+   #how many bits are the network ID
+
+   $netBits=$subnetMask.indexOf("0")
+ 
+   if(($ipaddress.length -ne 32) -or ($ipaddress.substring($netBits) -eq "00000000") -or ($ipaddress.substring($netBits) -eq "11111111")) {
+    Write-Warning "IP Address is invalid!"
+    Exit
+
+   if(($subnetMask.length -ne 32) -or ($subnetMask.substring($netBits).contains("1") -eq $true)) {
+    Write-Warning "Subnet Mask is invalid!"
+    Exit
+   }
+
+   }
+
+   $firstAddress = toDottedDecimal $($ipaddress.substring(0,$netBits).padright(31,"0") + "1")
+   $lastAddress = toDottedDecimal $($ipaddress.substring(0,$netBits).padright(31,"1") + "0")
+
+   $prefix = $firstAddress.split(".")[0] + "." + $firstAddress.split(".")[1] + "."
+   $suffix = [convert]::ToInt32($firstAddress.split(".")[2])
 
 $i = 1
 $loop = 1
-$loopCount = 1
+$loopCount = [convert]::ToInt32($lastAddress.split(".")[2]) - $suffix
+if ($loopCount -le 0) { $loopCount = 1}
 $totalCount = 1
-$addressCount = 10 * $loopCount
+$addressCount = 254 * $loopCount
 
 $fileURL = "https://raw.githubusercontent.com/Azure/IoT-Pi-Day/master/Setting%20up%20the%20Raspberry%20Pi/MSFT%20Networking/piMaclist.csv"
 
-$deviceListBuf = @()
-$deviceListCin = @()
-$deviceListCle = @()
-$deviceListDet = @()
-$deviceListInd = @()
-$deviceListPit = @()
+$deviceList = @()
 
 $storageAccountName = "glrpiday"
 $storageAccountKey = $env:pidayblob
@@ -24,7 +58,7 @@ $ctx = New-AzStorageContext -StorageAccountName $storageAccountName -StorageAcco
 $Header = @"
 <style>
 TABLE {border-width: 2px; border-style: solid; border-color: blue; border-collapse: collapse;}
-TD {border-width: 2px; padding: 2px; text-align: center; border-style: solid; border-color: blue;}
+TD {border-width: 2px; padding: 10px; text-align: center; border-style: solid; border-color: blue;}
 </style>
 "@
 
@@ -47,7 +81,7 @@ do {
 
         }
 
-    while ($i -le $addressCount)
+    while ($i -le 254)
 
     $loop ++
     $suffix ++
@@ -55,15 +89,14 @@ do {
 
     }
 
-while ($loop -le $loopCount)
-
-Clear-Host
+while ($loop -lt $loopCount)
 
 # // Loop through all devices in list and match IP address to MAC and return device name and IP
 
 foreach ($device in $inputFile) {
 
     if ($device.DeviceName -eq "") { continue }
+    if ($device.DeviceName.split("-")[1] -ne $city) { continue }
 
     $piIP = arp -a | select-string $device.MacAddress | foreach { $_.ToString().Trim().Split(" ")[0] }
 
@@ -74,37 +107,17 @@ foreach ($device in $inputFile) {
     $deviceObj | Add-Member -NotePropertyName IPAddress -NotePropertyValue $piIP
     $deviceObj | Add-Member -NotePropertyName ConnectString -NotePropertyValue $connectString
 
-    If ($deviceObj.DeviceName.split("-")[1] -eq "buf") { $deviceListBuf += $deviceObj }
-    If ($deviceObj.DeviceName.split("-")[1] -eq "cin") { $deviceListCin += $deviceObj }
-    If ($deviceObj.DeviceName.split("-")[1] -eq "cle") { $deviceListCle += $deviceObj }
-    If ($deviceObj.DeviceName.split("-")[1] -eq "det") { $deviceListDet += $deviceObj }
-    If ($deviceObj.DeviceName.split("-")[1] -eq "ind") { $deviceListInd += $deviceObj }
-    If ($deviceObj.DeviceName.split("-")[1] -eq "pit") { $deviceListPit += $deviceObj }
-    
+    $deviceList += $deviceObj
+
     Write-Host $device.DeviceName  " "  $piIP
 
 }
 
 # // Create HTML file with device name and IP address
 
-$deviceListBuf | ConvertTo-Html -Head $Header | Out-File buf.html
-$deviceListCin | ConvertTo-Html -Head $Header | Out-File cin.html
-$deviceListCle | ConvertTo-Html -Head $Header | Out-File cle.html
-$deviceListDet | ConvertTo-Html -Head $Header | Out-File det.html
-$deviceListInd | ConvertTo-Html -Head $Header | Out-File ind.html
-$deviceListPit | ConvertTo-Html -Head $Header | Out-File pit.html
+$deviceList | ConvertTo-Html -Head $Header | Out-File "$city.html"
 
 # // Write files to Azure Blob storage
 
-Set-AzStorageBlobContent -File "buf.html" -Container $containerName -Blob "city/buf.html" -Properties @{"ContentType" = "text/html"} -Context $ctx -Force
-Remove-Item "buf.html" -Force
-Set-AzStorageBlobContent -File "cin.html" -Container $containerName -Blob "city/cin.html" -Properties @{"ContentType" = "text/html"} -Context $ctx -Force
-Remove-Item "cin.html" -Force
-Set-AzStorageBlobContent -File "cle.html" -Container $containerName -Blob "city/cle.html" -Properties @{"ContentType" = "text/html"} -Context $ctx -Force
-Remove-Item "cle.html" -Force
-Set-AzStorageBlobContent -File "det.html" -Container $containerName -Blob "city/det.html" -Properties @{"ContentType" = "text/html"} -Context $ctx -Force
-Remove-Item "det.html" -Force
-Set-AzStorageBlobContent -File "ind.html" -Container $containerName -Blob "city/ind.html" -Properties @{"ContentType" = "text/html"} -Context $ctx -Force
-Remove-Item "ind.html" -Force
-Set-AzStorageBlobContent -File "pit.html" -Container $containerName -Blob "city/pit.html" -Properties @{"ContentType" = "text/html"} -Context $ctx -Force
-Remove-Item "pit.html" -Force
+Set-AzStorageBlobContent -File "$city.html" -Container $containerName -Blob "city/$city.html" -Properties @{"ContentType" = "text/html"} -Context $ctx -Force
+Remove-Item "$city.html" -Force
