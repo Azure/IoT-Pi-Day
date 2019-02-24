@@ -3,12 +3,23 @@ $suffix = 68 # // Set your local guest wi-fi network IP suffix here (10.104.68)
 
 $i = 1
 $loop = 1
-$loopCount = 4
+$loopCount = 1
 $totalCount = 1
-$addressCount = 254 * $loopCount
+$addressCount = 10 * $loopCount
 
 $fileURL = "https://raw.githubusercontent.com/Azure/IoT-Pi-Day/master/Setting%20up%20the%20Raspberry%20Pi/MSFT%20Networking/piMaclist.csv"
-$deviceList = @()
+
+$deviceListBuf = @()
+$deviceListCin = @()
+$deviceListCle = @()
+$deviceListDet = @()
+$deviceListInd = @()
+$deviceListPit = @()
+
+$storageAccountName = "glrpiday"
+$storageAccountKey = $env:pidayblob
+$containerName = "`$web"
+$ctx = New-AzStorageContext -StorageAccountName $storageAccountName -StorageAccountKey $storageAccountKey
 
 $Header = @"
 <style>
@@ -36,7 +47,7 @@ do {
 
         }
 
-    while ($i -le 254)
+    while ($i -le $addressCount)
 
     $loop ++
     $suffix ++
@@ -45,6 +56,8 @@ do {
     }
 
 while ($loop -le $loopCount)
+
+Clear-Host
 
 # // Loop through all devices in list and match IP address to MAC and return device name and IP
 
@@ -61,12 +74,37 @@ foreach ($device in $inputFile) {
     $deviceObj | Add-Member -NotePropertyName IPAddress -NotePropertyValue $piIP
     $deviceObj | Add-Member -NotePropertyName ConnectString -NotePropertyValue $connectString
 
-    $deviceList += $deviceObj
-
+    If ($deviceObj.DeviceName.split("-")[1] -eq "buf") { $deviceListBuf += $deviceObj }
+    If ($deviceObj.DeviceName.split("-")[1] -eq "cin") { $deviceListCin += $deviceObj }
+    If ($deviceObj.DeviceName.split("-")[1] -eq "cle") { $deviceListCle += $deviceObj }
+    If ($deviceObj.DeviceName.split("-")[1] -eq "det") { $deviceListDet += $deviceObj }
+    If ($deviceObj.DeviceName.split("-")[1] -eq "ind") { $deviceListInd += $deviceObj }
+    If ($deviceObj.DeviceName.split("-")[1] -eq "pit") { $deviceListPit += $deviceObj }
+    
     Write-Host $device.DeviceName  " "  $piIP
 
 }
 
 # // Create HTML file with device name and IP address
 
-$deviceList | ConvertTo-Html -Head $Header | Out-File city.html
+$deviceListBuf | ConvertTo-Html -Head $Header | Out-File buf.html
+$deviceListCin | ConvertTo-Html -Head $Header | Out-File cin.html
+$deviceListCle | ConvertTo-Html -Head $Header | Out-File cle.html
+$deviceListDet | ConvertTo-Html -Head $Header | Out-File det.html
+$deviceListInd | ConvertTo-Html -Head $Header | Out-File ind.html
+$deviceListPit | ConvertTo-Html -Head $Header | Out-File pit.html
+
+# // Write files to Azure Blob storage
+
+Set-AzStorageBlobContent -File "buf.html" -Container $containerName -Blob "city/buf.html" -Properties @{"ContentType" = "text/html"} -Context $ctx -Force
+Remove-Item "buf.html" -Force
+Set-AzStorageBlobContent -File "cin.html" -Container $containerName -Blob "city/cin.html" -Properties @{"ContentType" = "text/html"} -Context $ctx -Force
+Remove-Item "cin.html" -Force
+Set-AzStorageBlobContent -File "cle.html" -Container $containerName -Blob "city/cle.html" -Properties @{"ContentType" = "text/html"} -Context $ctx -Force
+Remove-Item "cle.html" -Force
+Set-AzStorageBlobContent -File "det.html" -Container $containerName -Blob "city/det.html" -Properties @{"ContentType" = "text/html"} -Context $ctx -Force
+Remove-Item "det.html" -Force
+Set-AzStorageBlobContent -File "ind.html" -Container $containerName -Blob "city/ind.html" -Properties @{"ContentType" = "text/html"} -Context $ctx -Force
+Remove-Item "ind.html" -Force
+Set-AzStorageBlobContent -File "pit.html" -Container $containerName -Blob "city/pit.html" -Properties @{"ContentType" = "text/html"} -Context $ctx -Force
+Remove-Item "pit.html" -Force
