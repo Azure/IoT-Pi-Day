@@ -81,8 +81,6 @@ We will be using Visual Studio Code and the Azure Functions Extension.
 
 9.  **Save** and **Close** the file.
 
-🚨🚨🚨 - Randy: Check: for the the message pop up - AzureWebJobsStorage? This will need to be manuall added to the local.settings.json file.
-
 ## Create the Event Hub Trigger
 
 1. From **Visual Studio Code**, press **Ctrl-Shift-P**.
@@ -115,21 +113,44 @@ We will be using Visual Studio Code and the Azure Functions Extension.
     - Select **+ New App Setting**.
     - Enter the key **Hubway_EVENTHUB** for your Event Hub key and press **Enter**
     
-    ![Image](/images/lab-2.3-image16.png)
+        ![Image](/images/lab-2.3-image16.png)
 
-    - Paste in the connection string for your event hub and press **Enter**.
+    - Go to the Azure Portal and select the Event Hub namespace.
+    - Click on **Shared Access policies** and select the **RootManageSharedAccessKey**.
+    - Copy the **Connection string-primary key**.
 
-        > This can be found in the Azure Portal by selecting the Event Hub namespace  Go to **Shared Access policies** and select the **RootManageSharedAccessKey**.  Copy the **Connection string-primary key**.
+        ![Image](/images/lab-2.3-image17.2.png)
 
-    ![Image](/images/lab-2.3-image17.png)
+    - Paste in the **connection string** for your event hub and press **Enter**.
+
+        ![Image](/images/lab-2.3-image17.png)
 
     - Enter the name of the event hub you created earlier, **hubwaytelemetry**.
 
-    ![Image](/images/lab-2.3-image18.png)
+        ![Image](/images/lab-2.3-image18.png)
 
-9. Open the file **local.settings.json** file and confirm the **Hubway_EVENTHUB** connection string has been added.
+    - When you get the message for **AzureWebJobsStorage**, click **Skip for now**.
 
-    ![Image](/images/lab-2.3-image19.png)
+        ![Image](/images/lab-2.3-image18.1.png)
+
+9. Verify the **Hubway_EVENTHUB** connection string.
+    - Open the file **local.settings.json** file.
+    - Confirm the **Hubway_EVENTHUB** connection string has been added.
+
+        ![Image](/images/lab-2.3-image19.png) 
+
+10. Manually add the **AzureWebJobsStorage** connection string.
+    - From the Azure Portal, navigate to your **Storage** account.
+    - Click on **Access Keys** under Settings.
+    - Copy the **Connection String** under **key1**.
+
+        ![Image](/images/lab-2.3-image19.2.png)  
+
+    - In the file **local.settings.json**, **Paste** in the connection string between the quotes on the **AzureWebJobsStorage** line.
+
+        > The connection string line will appear longer than this screen shot.
+
+        ![Image](/images/lab-2.3-image19.4.png)  
 
 ## Test the Function
 1. To execute the code, from **Visual Studio Code**, press **F5**.
