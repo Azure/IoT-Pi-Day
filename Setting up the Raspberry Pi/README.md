@@ -34,14 +34,19 @@
 - Plug power into the Raspberry Pi.
 - Wait 4-5 min for it to fully boot up.
     - Grab another cup of joe! :coffee: while you wait.
-- Locate the IP address which has been assigned by your DHCP server to the Raspberry Pi and make note of it.
+
+## Find the IP Address for the Raspberry Pi
+Locate the IP address which has been assigned by your DHCP server to the Raspberry Pi and make note of it.
 
 - Option 1: Open a Command Prompt as an Administrator.
     - type: **ping -c 1 raspberrypi.local** to get it.
-- Option 2: open up browser to your routers home page.
+- Option 2: Open up browser to your routers home page.
     - ie. http://192.168.1.254 and list out your devices.
 
         ![Image](/images/settingupthepi-1.png)
+
+- Option 3: Use MSFT IT tool where we can search MAC address to find the IP.
+    - [MAC-IP Search](https://nmtools/SwitchTools/MAC-IPHuntTool.aspx).
 
 ## Telnet into the Raspberry Pi using SSH
 
