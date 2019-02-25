@@ -1,16 +1,21 @@
 Param(
     [Parameter(Position=0,Mandatory)]
     [ValidateSet("buf","cin","cle","det","ind","pit")]
-    [string]$city=$(throw "Enter your 3 letter city identifier: buf | cin | cle | det | ind | pit"),
+    [string]$city,
     [Parameter(Position=1,Mandatory)]
     [string]$ipaddress,
     [Parameter(Position=2,Mandatory)]
     [string]$subnetMask
 )
+
+# // Function to convert IP address to binary to find range to scan
+
 function toBinary ($dottedDecimal){
     $dottedDecimal.split(".") | %{$binary=$binary + $([convert]::toString($_,2).padleft(8,"0"))}
     return $binary
    }
+
+   # // Function to convert subnet mask to decimal to identify network range to scan
    function toDottedDecimal ($binary){
     do {$dottedDecimal += "." + [string]$([convert]::toInt32($binary.substring($i,8),2)); $i+=8 } while ($i -le 24)
     return $dottedDecimal.substring(1)
@@ -18,7 +23,8 @@ function toBinary ($dottedDecimal){
   
    $ipaddress = toBinary $ipaddress
    $subnetMask = toBinary $subnetMask
-   #how many bits are the network ID
+
+   # // how many bits are the network ID
 
    $netBits=$subnetMask.indexOf("0")
  
@@ -41,14 +47,19 @@ function toBinary ($dottedDecimal){
 
 $i = 1
 $loop = 1
-$loopCount = [convert]::ToInt32($lastAddress.split(".")[2]) - $suffix
-if ($loopCount -le 0) { $loopCount = 1}
+
+# // Determine how many times to loop the ping script based on IP and subnet
+
+$loopCount = ([convert]::ToInt32($lastAddress.split(".")[2]) - $suffix) + 1
+
 $totalCount = 1
 $addressCount = 254 * $loopCount
 
 $fileURL = "https://raw.githubusercontent.com/Azure/IoT-Pi-Day/master/Setting%20up%20the%20Raspberry%20Pi/MSFT%20Networking/piMaclist.csv"
 
 $deviceList = @()
+
+# // Set variables and storage context to upload to Azure blob
 
 $storageAccountName = "glrpiday"
 $storageAccountKey = $env:pidayblob
@@ -89,7 +100,7 @@ do {
 
     }
 
-while ($loop -lt $loopCount)
+while ($loop -le $loopCount)
 
 # // Loop through all devices in list and match IP address to MAC and return device name and IP
 
