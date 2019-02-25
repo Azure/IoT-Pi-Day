@@ -36,7 +36,7 @@
     - Grab another cup of joe! :coffee: while you wait.
 
 ## Find the IP Address for the Raspberry Pi
-- Locate the IP address which has been assigned by your DHCP server to the Raspberry Pi and make note of it.
+Locate the IP address which has been assigned by your DHCP server to the Raspberry Pi and make note of it.
 
 - Option 1: Open a Command Prompt as an Administrator.
     - type: **ping -c 1 raspberrypi.local** to get it.
