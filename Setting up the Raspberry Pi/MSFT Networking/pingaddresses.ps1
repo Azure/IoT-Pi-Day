@@ -111,12 +111,21 @@ foreach ($device in $inputFile) {
 
     $piIP = arp -a | select-string $device.MacAddress | foreach { $_.ToString().Trim().Split(" ")[0] }
 
-    if ($piIP -eq $null) {$piIP = "Device Not Found"; $connectString = ""} else {$connectString = "ssh pi@$piIP"}
+    if ($piIP -eq $null) {
+        $piIP = "Device Not Found"
+        $connectStringU1 = ""
+        $connectStringU2 = ""
+    } 
+    else {
+        $connectStringU1 = "ssh pi1@$piIP"
+        $connectStringU2 = "ssh pi2@$piIP"
+    }
 
     $deviceObj = New-Object System.Object
     $deviceObj | Add-Member -NotePropertyName DeviceName -NotePropertyValue $device.DeviceName
     $deviceObj | Add-Member -NotePropertyName IPAddress -NotePropertyValue $piIP
-    $deviceObj | Add-Member -NotePropertyName ConnectString -NotePropertyValue $connectString
+    $deviceObj | Add-Member -NotePropertyName User1_ConnectString -NotePropertyValue $connectStringU1
+    $deviceObj | Add-Member -NotePropertyName User2_ConnectString -NotePropertyValue $connectStringU2
 
     $deviceList += $deviceObj
 
