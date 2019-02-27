@@ -66,8 +66,9 @@ $loop = 1
 
 $loopCount = ([convert]::ToInt32($lastAddress.split(".")[2]) - $suffix) + 1
 
+$addressesPerNet = $lastAddress.split(".")[3]
 $totalCount = 1
-$addressCount = 254 * $loopCount
+$addressCount = $addressesPerNet * $loopCount
 
 $fileURL = "https://raw.githubusercontent.com/Azure/IoT-Pi-Day/master/Setting%20up%20the%20Raspberry%20Pi/MSFT%20Networking/piMaclist.csv"
 
@@ -108,7 +109,7 @@ do {
 
         }
 
-    while ($i -le 254)
+    while ($i -le $addressesPerNet)
 
     $loop ++
     $suffix ++
