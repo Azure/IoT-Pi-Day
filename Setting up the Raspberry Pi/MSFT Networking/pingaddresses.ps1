@@ -1,12 +1,26 @@
-Param(
-    [Parameter(Position=0,Mandatory)]
-    [ValidateSet("buf","cin","cle","det","ind","pit")]
-    [string]$city,
-    [Parameter(Position=1,Mandatory)]
-    [string]$ipaddress,
-    [Parameter(Position=2,Mandatory)]
-    [string]$subnetMask
+[CmdletBinding()]
+    Param(
+        [Parameter(Position=0,Mandatory)]
+        [ValidateSet("cin","cle","det","ind","pit", "roc")]
+        [string]$city,
+        [Parameter(Position=1,Mandatory)]
+        [string]$ipaddress,
+        [Parameter(Position=2,Mandatory)]
+        [string]$subnetMask
 )
+
+# // Check for storage account key variable, if empty launch OneNote with key
+
+if ($env:pidayblob -eq $null) { 
+    write-host " "
+    write-host "Please set an environmental variable named: pidayblob"
+    write-host "Set the value of pidayblob equal to the storage account key"
+    write-host " "
+    write-host "Launching browser with link to key in OneNote..."
+    Start-Sleep -seconds 5
+    start "https://microsoft.sharepoint.com/teams/GLRIntelligentCloudBusiness/_layouts/15/WopiFrame.aspx?sourcedoc={1a1dd006-1921-47cc-982f-17ffc28ec578}&action=edit&wd=target%28Resources.one%7Cbff86843-f761-4bf8-846c-6945cd981ce3%2FNetworking%20Data%7C05f4db38-e8cc-4c78-9e95-cff2945afdc1%2F%29&wdorigin=703"
+    exit
+}
 
 # // Function to convert IP address to binary to find range to scan
 
@@ -72,6 +86,8 @@ TABLE {border-width: 2px; border-style: solid; border-color: blue; border-collap
 TD {border-width: 2px; padding: 10px; text-align: center; border-style: solid; border-color: blue;}
 </style>
 "@
+
+$htmlScript = "<script src=`"https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js`"></script>"
 
 # // Grab master CSV list from GitHub and convert URL object content to CSV
 
@@ -141,3 +157,7 @@ $deviceList | ConvertTo-Html -Head $Header | Out-File "$city.html"
 
 Set-AzStorageBlobContent -File "$city.html" -Container $containerName -Blob "city/$city.html" -Properties @{"ContentType" = "text/html"} -Context $ctx -Force
 Remove-Item "$city.html" -Force
+
+# // Launch web page with Pi Day device IP addresses
+
+Start-Process https://glrpiday.z20.web.core.windows.net/
