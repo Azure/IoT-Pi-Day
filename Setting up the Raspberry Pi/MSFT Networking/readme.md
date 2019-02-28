@@ -40,13 +40,15 @@ Add the MAC address of the device to the matching host name that you assigned ab
 
 In order for the devices to connect to the MSFT Guest network the Pi devices need to have their MAC addresses white listed. On the Microsoft corp network head to https://openwifi/
 
+Add the device MAC addresses and give a name to the event. 
+
 ![Image](/images/network/openwifi1.jpg)
 
-Add the device MAC addresses and give a name to the event. Once you click register you should see a page indicating the device was successfully white listed.
+Once you click register you should see a page indicating the device was successfully white listed.
 
 ![Image](/images/network/openwifi2.jpg)
 
-If you click on "Manage" you will be able to see all the devices you have registered and the device expiration date.
+If you click on "Manage MAC" you will be able to see all the devices you have registered and the device expiration date.
 
 ![Image](/images/network/openwifi3.jpg)
 
