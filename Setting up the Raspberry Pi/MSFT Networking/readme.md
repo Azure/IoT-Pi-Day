@@ -32,13 +32,23 @@ Add the MAC address of the device to the matching host name that you assigned ab
 
 ![Image](/images/network/editCSV.jpg)
 
-- Note: Linux formats the MAC address with a : delimiter, but the PowerShell script does not take this into account. So if you have a : separated MAC when you add it to the CSV file make sure to separate the elements with a -
+- Note: Linux formats the MAC address with a : delimiter, but the PowerShell script does not take this into account. So if you have a : separated MAC when you add it to the CSV file make sure to separate the elements with a - I may fix this via the script but have not commited to it yet.
 
 ![Image](/images/network/editCSV2.jpg)
 
+# Register the device on the MSFT Guest Network
 
+In order for the devices to connect to the MSFT Guest network the Pi devices need to have their MAC addresses white listed. On the Microsoft corp network head to https://openwifi/
 
+![Image](/images/network/openwifi1.jpg)
 
+Add the device MAC addresses and give a name to the event. Once you click register you should see a page indicating the device was successfully white listed.
+
+![Image](/images/network/openwifi2.jpg)
+
+If you click on "Manage" you will be able to see all the devices you have registered and the device expiration date.
+
+![Image](/images/network/openwifi3.jpg)
 
 
 Pi Day Site: (https://glrpiday.z20.web.core.windows.net/)
