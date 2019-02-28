@@ -44,15 +44,9 @@ Add the device MAC addresses and give a name to the event.
 
 ![Image](/images/network/openwifi1.jpg)
 
-
-
-
  - Once you click register you should see a page indicating the device was successfully white listed.
 
 ![Image](/images/network/openwifi2.jpg)
-
-
-
 
 - If you click on "Manage MAC" you will be able to see all the devices you have registered and the device expiration date.
 
@@ -90,10 +84,12 @@ The local event host should connect their laptop to the Microsoft guest network 
 Once you have connected to the local MSFT Guest network open a PowerShell prompt and type: ipconfig
 Look for the network IP address and subnet mask for the guest network at your office location.
 
-You will then enter the IP address and subnet mask into the PowerShell script
+This is the final step where you will run the script downloaded locally and use your local city identifier (cin, cle, det, ind, pit, roc), the IP address identified from ipconfig output, and the subnet mask from the same output. Navigate to where you download the script and run it (this is the Indianapolis syntax): ./pingipaddresses ind 10.104.70.8 255.255.252.0
 
 ![Image](/images/network/laptopguest2.jpg)
 
+The script will run and identify locally connected devices. If the devices are not identified power them off/on physically and re-run the script. The data is accessible over a public endpoint hosted as a static website on Azure Blob storage: [Pi Day Site](https://glrpiday.z20.web.core.windows.net/)
 
+The script will launch the site, but users on their local devices will also be able to access. Click on the city for your event to see which devices are online and accessible. There are also connect strings for each user of the device for the labs.
 
-Pi Day Site: (https://glrpiday.z20.web.core.windows.net/)
+![Image](/images/network/pidaysite.jpg)
