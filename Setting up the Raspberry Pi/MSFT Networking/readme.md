@@ -14,26 +14,31 @@ From here you can find the IP address (and perhaps MAC) assigned to your Pi devi
 
 Once you find the device validate you can connect to it by opening a PowerShell prompt and pinging the assigned IP:
 
+- Note: If you do not see a listing for the device in your home router or the device does not respond to ping after it has booted (green light on the board stops blinking) press the on/off switch on the Pi power adapter, wait until the green light stops flashing, and then check again.
+
 ![Image](/images/network/pingaddress.jpg)
 
 You can also issue an "arp -a" to find the MAC address of the device:
 
 ![Image](/images/network/arp.jpg)
 
-At this point you should SSH into the device and update the host name per the steps here: 
+At this point you should SSH into the device and [update the host name](https://github.com/Azure/IoT-Pi-Day/tree/master/Setting%20up%20the%20Raspberry%20Pi#change-the-device-name).
 
-Linux formats the MAC address with a : delimiter, but the PowerShell script does not take that into account. So if you have a : separated MAC when you add it to the CSV file make sure to separate the elements with a -
+- Note: It is advisable to physically label the Pi devices after you rename them in order to identify which device is which in the event we need to troubleshoot a specific device.
 
-It may be advisable to label the Pi devices after you rename them in order to identify which device is which in the event we need to troubleshoot a specific device.
+# Adding the Pi MAC address to the CSV file
 
-- Note: I have noticed the device will sometimes not connect at first boot. Power on the Pi, wait until the green light stops blinking, press the power button off/on, wait until green li
+Add the MAC address of the device to the matching host name that you assigned above to the following CSV file. You can edit this natively in GitHub.
 
-## Estimated time to complete
+![Image](/images/network/editCSV.jpg)
+
+- Note: Linux formats the MAC address with a : delimiter, but the PowerShell script does not take this into account. So if you have a : separated MAC when you add it to the CSV file make sure to separate the elements with a -
+
+![Image](/images/network/editCSV2.jpg)
 
 
-This is the per-city network script that will scan the local MSFT Guest network for devices, issue an ARP request, match MAC address to IP, and then dump the results into an HTML file that can be displayed in the event cities to identify assigned IP to Pi devices.
 
-The first step 
+
 
 
 Pi Day Site: (https://glrpiday.z20.web.core.windows.net/)
