@@ -44,9 +44,15 @@ Add the device MAC addresses and give a name to the event.
 
 ![Image](/images/network/openwifi1.jpg)
 
+
+
+
  - Once you click register you should see a page indicating the device was successfully white listed.
 
 ![Image](/images/network/openwifi2.jpg)
+
+
+
 
 - If you click on "Manage MAC" you will be able to see all the devices you have registered and the device expiration date.
 
@@ -54,9 +60,24 @@ Add the device MAC addresses and give a name to the event.
 
 # Event Day Settings
 
-Download the following PowerShell script and place it on your local device.
+Download the Pi Day MAC to IP PowerShell script below and place it on your local computer (Right click and choose "save link as").
 
 [Pi Day MAC to IP Script](https://raw.githubusercontent.com/Azure/IoT-Pi-Day/master/Setting%20up%20the%20Raspberry%20Pi/MSFT%20Networking/pingaddresses.ps1)
+
+You will need to create an environmental variable on your local computer with the Azure Blob Storage Account Access Key. The environmental variable should be named "pidayblob" and the key value can be found and copied/pasted from the event OneNote [Storage Account Key](https://microsoft.sharepoint.com/teams/GLRIntelligentCloudBusiness/_layouts/15/WopiFrame.aspx?sourcedoc={1a1dd006-1921-47cc-982f-17ffc28ec578}&action=edit&wd=target%28Resources.one%7Cbff86843-f761-4bf8-846c-6945cd981ce3%2FNetworking%20Data%7C05f4db38-e8cc-4c78-9e95-cff2945afdc1%2F%29&wdorigin=703).
+
+- Click the start menu and type environmental
+
+![Image](/images/network/variable1.jpg)
+
+- Click on "Environmental Variables"
+
+![Image](/images/network/variable2.jpg)
+
+- Create the pidayblob variable and set the value to the key from the OneNote
+
+![Image](/images/network/variable3.jpg)
+
 
 On the day of the event or the day prior you will need to replace the wpa_supplicant.conf file on each device SD card from your home network config (used to obtain the MAC address) to the MSFT Guest network. You can copy and paste the contents of the [proper config file here](https://raw.githubusercontent.com/Azure/IoT-Pi-Day/master/Setting%20up%20the%20Raspberry%20Pi/MSFT%20Networking/wpa_supplicant.conf) into a new wpa_supplicant.conf file.
 
