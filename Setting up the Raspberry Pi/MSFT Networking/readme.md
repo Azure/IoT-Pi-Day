@@ -28,7 +28,7 @@ At this point you should SSH into the device and [update the host name](https://
 
 # Adding the Pi MAC address to the CSV file
 
-Add the MAC address of the device to the matching host name that you assigned above to the following CSV file. You can edit this natively in GitHub.
+Add the MAC address of the device to the matching host name that you assigned above to the following CSV file [GitHub MAC CSV File](https://github.com/Azure/IoT-Pi-Day/blob/master/Setting%20up%20the%20Raspberry%20Pi/MSFT%20Networking/piMaclist.csv). You can edit this natively in GitHub.
 
 ![Image](/images/network/editCSV.jpg)
 
