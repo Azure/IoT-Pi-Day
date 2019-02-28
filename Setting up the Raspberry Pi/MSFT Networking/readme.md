@@ -52,5 +52,27 @@ Add the device MAC addresses and give a name to the event.
 
 ![Image](/images/network/openwifi3.jpg)
 
+# Event Day Settings
+
+Download the following PowerShell script and place it on your local device.
+
+[Pi Day MAC to IP Script](https://raw.githubusercontent.com/Azure/IoT-Pi-Day/master/Setting%20up%20the%20Raspberry%20Pi/MSFT%20Networking/pingaddresses.ps1)
+
+On the day of the event or the day prior you will need to replace the wpa_supplicant.conf file on each device SD card from your home network config (used to obtain the MAC address) to the MSFT Guest network. You can copy and paste the contents of the [proper config file here](https://raw.githubusercontent.com/Azure/IoT-Pi-Day/master/Setting%20up%20the%20Raspberry%20Pi/MSFT%20Networking/wpa_supplicant.conf) into a new wpa_supplicant.conf file.
+
+Drag and drop that file to the root of the SD card the same way as for the intial home config.
+
+The local event host should connect their laptop to the Microsoft guest network in order to be on the same broadcast domain as the Pi devices.
+
+![Image](/images/network/laptopguest.jpg)
+
+Once you have connected to the local MSFT Guest network open a PowerShell prompt and type: ipconfig
+Look for the network IP address and subnet mask for the guest network at your office location.
+
+You will then enter the IP address and subnet mask into the PowerShell script
+
+![Image](/images/network/laptopguest2.jpg)
+
+
 
 Pi Day Site: (https://glrpiday.z20.web.core.windows.net/)
