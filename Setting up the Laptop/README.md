@@ -120,6 +120,7 @@ What is Azure Storage Explorer?  This tool allows you to easily manage the conte
 - Click **Download Storage Explorer free**.
 - Click **Run** to install.
 
+<!--
 ## (Optional) Install Git
 What is Git? Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
 - Click [Git](https://git-scm.com/) to install.
@@ -142,3 +143,5 @@ What is GitHub Desktop? GitHub Desktop extends your GitHub workflow beyond your 
 **MacOS**
 - Click **Download for macOS** and **Open** the file **GitHubDesktop.zip**.
 - Select all the defaults.
+
+-->
