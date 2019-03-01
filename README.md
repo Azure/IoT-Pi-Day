@@ -44,23 +44,23 @@ As you create an end-to-end IoT application in a day, you’ll see how easy it i
  
 
 ## Lab 2 - Working with Hubway Data
-- [**Lab 2.0** - Setting up Iot Hub Device](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.0%20-%20Setting%20up%20Iot%20Hub%20Device)
-- [**Lab 2.1** - Send Hubway Data to Iot Hub](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.1%20-%20Send%20Hubway%20Data%20to%20Iot%20Hub)
-- **Lab 2.2** - Setting up Event Hub
+- [**Lab 2.1** - Setting up Iot Hub Device](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.0%20-%20Setting%20up%20Iot%20Hub%20Device)
+- [**Lab 2.2** - Send Hubway Data to Iot Hub](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.1%20-%20Send%20Hubway%20Data%20to%20Iot%20Hub)
+- **Lab 2.3** - Setting up Event Hub
     - This lab will guide you through ...(desc coming soon...)
-- **Lab 2.3** - Create the Event Hub Trigger Function
+- **Lab 2.4** - Create the Event Hub Trigger Function
     - This lab will guide you through ...(desc coming soon...)
-- **Lab 2.4** - TBD
+- **Lab 2.5** - TBD
     - This lab will guide you through ...(desc coming soon...)
-- **Lab 2.5** - Create the CosmosDB Trigger Function
+- **Lab 2.6** - Create the CosmosDB Trigger Function
     - This lab will guide you through ...(desc coming soon...)
-- **Lab 2.6** - Configure Storage
+- **Lab 2.7** - Configure Storage
     - This lab will guide you through ...(desc coming soon...)
-- [**Lab 2.7** - Working with Azure Maps](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.7%20-%20Working%20with%20Azure%20Maps)
+- [**Lab 2.8** - Working with Azure Maps](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.7%20-%20Working%20with%20Azure%20Maps)
     - This lab will guide you through ...(desc coming soon...)
-    - [**Lab 2.7.1** - Create the HTTP Trigger Function](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.7%20-%20Working%20with%20Azure%20Maps/Lab%202.7.1%20-%20Function%20Trigger%2C%20HTTP%20Endpoint)
+    - [**Lab 2.8.1** - Create the HTTP Trigger Function](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.7%20-%20Working%20with%20Azure%20Maps/Lab%202.7.1%20-%20Function%20Trigger%2C%20HTTP%20Endpoint)
         - This lab will guide you through ...(desc coming soon...)
-    - [**Lab 2.7.2** - Create the Static HTML Page](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.7%20-%20Working%20with%20Azure%20Maps/Lab%202.7.2%20-%20Create%20the%20Static%20HTML%20Page)
+    - [**Lab 2.8.2** - Create the Static HTML Page](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.7%20-%20Working%20with%20Azure%20Maps/Lab%202.7.2%20-%20Create%20the%20Static%20HTML%20Page)
         - This lab will guide you through ...(desc coming soon...)
         
 # Contributing
