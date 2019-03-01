@@ -1,4 +1,4 @@
-# Lab 2.1 - Send Hubway data to Iot Hub
+# Lab 2.2 - Send Hubway data to Iot Hub
 We need to document the scenario here
 
 ## Prerequisites

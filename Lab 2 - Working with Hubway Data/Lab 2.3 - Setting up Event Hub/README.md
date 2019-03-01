@@ -1,4 +1,4 @@
-# Lab 2.2 - Setting up Event Hub
+# Lab 2.3 - Setting up Event Hub
 We need to document the scenario here
 
 ## Prerequisites
