@@ -1,4 +1,4 @@
-# Lab 2.1 - Setting up Iot Hub Device
+# Lab 2.1 - Define Message Routing for Device
 TBD - We need to document the scenario here
 
 ## Prerequisites
@@ -7,28 +7,6 @@ TBD - We need to document the scenario here
 
 ## Estimated time to complete
 - TBD
-
-## Configuration and Settings
-
-1. Select your IoT Hub from the Resource Blade
-
-    ![Image](/images/lab-2.1-image0.png)
-    
-## Add your Raspberry Pi to your IoT Hub.
-
-1.  Select **IoT Devices** from the Iot Hub Blade.
-2.  Click **Add**.
-
-    ![Image](/images/lab-2.1-image1.png)
-
- 3. Fill in the fields as follows.
-    - **Device ID**  Enter the Device ID.
-        > Consider using the device hostname, i.e. **raspberrypi-<**cityabbrev>**<**nn**>**.
-    - Make sure **Auto Generate Keys** is selected.
-
-    ![Image](/images/lab-2.1-image2.png)
-
-    - Click **Save**
 
 ## Message Routing - Define Custom End points and Routes
 1. Select **Message routing** from the **Iot Hub** Blade.

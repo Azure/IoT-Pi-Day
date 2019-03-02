@@ -73,6 +73,26 @@ An IoT Hub is the gateway to Azure IoT, a service that handles device management
 
 8. After reviewing the screen, click **Create**.
 
+## Add your Device to your IoT Hub.
+
+1. Select your IoT Hub from the Resource Blade
+
+    ![Image](/images/lab-2.1-image0.png)
+
+2.  Select **IoT Devices** from the Iot Hub Blade.
+3.  Click **Add**.
+
+    ![Image](/images/lab-2.1-image1.png)
+
+4. Fill in the fields as follows.
+    - **Device ID**  Enter the Device ID.
+        > Consider using the device hostname, i.e. **raspberrypi-<**cityabbrev>**<**nn**>**.
+    - Make sure **Auto Generate Keys** is selected.
+
+    ![Image](/images/lab-2.1-image2.png)
+
+    - Click **Save**
+
 ## Reference Sites
 
 [Azure-Portal](https://portal.azure.com/)
