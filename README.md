@@ -47,7 +47,7 @@ As you create an end-to-end IoT application in a day, you’ll see how easy it i
 
 ## Lab 2 - Working with Hubway Data
 - [**Lab 2.0** - Resource Configuration](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.0%20-%20Resource%20Configuration)
-    - This lab will guide you through setting up the neccessary Azure services in preparation for the following labs.
+    - This lab is a Prerequisite for Lab 2.
 
 - [**Lab 2.1** - Setting up Iot Hub Device](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.1%20-%20Setting%20up%20Iot%20Hub%20Device)
     - This lab will guide you through ...(desc coming soon...)
@@ -55,17 +55,18 @@ As you create an end-to-end IoT application in a day, you’ll see how easy it i
 - [**Lab 2.2** - Send Hubway Data to Iot Hub](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.2%20-%20Send%20Hubway%20Data%20to%20Iot%20Hub)
     - This lab will guide you through ...(desc coming soon...)
 
-- **Lab 2.3** - Setting up Event Hub
+- [**Lab 2.3** - Setting up Event Hub](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.3%20-%20Setting%20up%20Event%20Hub)
     - This lab will guide you through ...(desc coming soon...)
 
-- **Lab 2.4** - Create the Event Hub Trigger Function
+- [**Lab 2.4** - Create the Event Hub Trigger Function](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.4%20-%20Create%20the%20Event%20Hub%20Trigger%20Function)
     - This lab will guide you through ...(desc coming soon...)
 
-- **Lab 2.5** - Create the CosmosDB Trigger Function
+- [**Lab 2.5** - Create the CosmosDB Trigger Function](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.5%20-%20Create%20a%20CosmosDB%20Trigger%20Function)
     - This lab will guide you through ...(desc coming soon...)
 
-- **Lab 2.6** - Configure Storage
+- [**Lab 2.6** - Configure Storage](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.6%20-%20Configure%20Storage)
     - This lab will guide you through ...(desc coming soon...)
+
 - [**Lab 2.7** - Working with Azure Maps](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.7%20-%20Working%20with%20Azure%20Maps)
     - This lab will guide you through ...(desc coming soon...)
     
