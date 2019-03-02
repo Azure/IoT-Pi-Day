@@ -3,7 +3,6 @@ TBD - We need to document the scenario here
 
 ## Prerequisites
 1. Azure Subscription [Microsoft Azure Portal](https://portal.azure.com).
-2. The Resource Configuation Lab is completed, see [Lab 1.0 - Resource Configuration](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%200%20-%20Resource%20Configuration#create-an-iot-hub)
 
 ## Estimated time to complete
 - TBD

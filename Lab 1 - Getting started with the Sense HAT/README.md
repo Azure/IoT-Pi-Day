@@ -27,8 +27,13 @@ There’s a function for each sensor on the board so the values can be acquired 
 **Humidity**
 - Gets the percentage of relative humidity from the humidity sensor.
 
+## Prerequisites
+1. Azure Subscription [Microsoft Azure Portal](https://portal.azure.com).
+2.  The IoT Hub must be created and configured
+    - To create an IoT Hub, see [Lab 1.0 - Resource Configuration, Section Create an IoT Hub](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%201%20-%20Getting%20started%20with%20the%20Sense%20HAT/Lab%201.0%20-%20Resource%20Configuration#create-an-iot-hub)
+
 ## Lab 1 - Getting Started with the SenseHAT
-- [**Lab 1.0** - Resource Configuration]()
+- [**Lab 1.0** - Resource Configuration](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%201%20-%20Getting%20started%20with%20the%20Sense%20HAT/Lab%201.0%20-%20Resource%20Configuration)
     - This lab is a Prerequisite for Lab 1.
 
 - [**Lab 1.1** - Reading SenseHat Data](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%201%20-%20Getting%20started%20with%20the%20Sense%20HAT/Lab%201.1%20-%20Reading%20SenseHat%20Data)

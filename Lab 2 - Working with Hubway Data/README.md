@@ -8,8 +8,12 @@
 - Ride - Take a quick one-way trip or a leisurely ride around town. Commute to work or school, run errands and explore the city.
 - Return - Return your bike to any station. Slide the bike firmly into an empty dock and wait for the green light to make sure it's locked.
 
+## Prerequisites
+1. The Resource Configuation Lab is completed, see [Lab 1.0 - Resource Configuration]https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%200%20-%20Resource%20Configuration#create-an-iot-hub)
+2. The Resource Configuation Lab is completed, see [Lab 2.0 - Resource Configuration](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.0%20-%20Resource%20Configuration)
+
 ## Lab 2 - Working with Hubway Data
-- [**Lab 2.0** - Resource Configuration]()
+- [**Lab 2.0** - Resource Configuration](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.0%20-%20Resource%20Configuration)
     - This lab is a Prerequisite for Lab 2.
 
 - [**Lab 2.1** - Setting up Iot Hub Device](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.1%20-%20Setting%20up%20Iot%20Hub%20Device)
