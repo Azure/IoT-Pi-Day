@@ -5,7 +5,7 @@ TBD - We need to document the scenario here
 1. Azure Subscription [Microsoft Azure Portal](https://portal.azure.com) with rights to create a Resource group and resources.
 
 ## Estimated time to complete
-- TBD
+- 20 min
 
 ## Download the Repo
 The **Azure IoTPiDay Workshop** is setup to build out a real-life IoT scenario by capturing IoT data and ingesting it into the Azure Cloud. The GitHub repo contains all the lab files and code components we will be using for this full lab. As you work through the lab, you will need to reference the documents and items from this repo.  As such, it will be easier for you to download the repo contents onto your local computer for reference.
@@ -72,8 +72,10 @@ In this section, we will be creating an IOT Hub that we will use to connect to t
     ![Image](/images/lab-2.1-image1.png)
 
 4. Fill in the fields for the IoT Device as follows.
-    - **Device ID**, use the hostname of your IoT Device.
-        > i.e. **raspberrypi-<**cityabbrev>**<**number**>**.
+    - **Device ID**, use the hostname of your IoT Device, type **raspberrypi-<**cityabbrev>**<**number**>**.
+
+        > i.e. raspberrypi-det-000
+
     - Ensure **Auto Generate Keys** is selected.
 
     ![Image](/images/lab-2.1-image2.png)

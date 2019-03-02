@@ -8,10 +8,10 @@ TBD - We need to document the scenario here
 ## Estimated time to complete
 - 20 min
 
-## Create an Event Hub Namespace
+## Create an Event Hubs Namespace
 In this section, you will be creating a Event Hubs Namespace. An Event Hubs namespace provides a unique scoping container, referenced by its fully qualified domain name, in which you create one or more event hubs.
 
-Use the following steps to create an Event Hub Namespace:    
+Use the following steps to create an Event Hubs Namespace:    
 
 1. In a new browser window, sign in to the [Microsoft Azure Portal](https://portal.azure.com).
 
@@ -21,12 +21,12 @@ Use the following steps to create an Event Hub Namespace:
 
     ![Image](/images/lab-0-imagex.png)
 
-3. Select **Event Hubs** from the list.
-4. Click **Create** to create a IoT Hhub.
+4. Select **Event Hubs** from the list.
+5. Click **Create** to create a IoT Hub.
 
     ![Image](/images/lab-0-imagex.png)
 
-4. Fill in the fields.
+6. Fill in the fields.
 
    - **Name**, type in the name for your Event Hub Namespace. This name must be globally unique, type **<*lastname*>-piday-eventhub**.
 
@@ -42,7 +42,7 @@ Use the following steps to create an Event Hub Namespace:
 
    - Click **Create**.
   
-   - Refresh the Event Hubs page to see the event hub namespace. You can check the status of the event hub creation in the alerts. 
+    > You can watch the notification pane to validate that it created successfully.
 
 ## Create an Event Hub
 In this section, we will be creating an Azure Event Hub. An Event Hub is a highly scalable publish-subscribe service that can ingest millions of events per second and stream them into multiple applications. This lets you process and analyze the massive amounts of data produced by your connected devices and applications.
@@ -67,16 +67,16 @@ After the Event Hub deployment is complete, navigate to the Event Hub Namespace.
 ## Create a CosmosDB Account
 In this section, we will be creating a CosmosDB account that we will use to store the data collected during the labs.
 
-> Note:  If you already created your account, skip to the section **Add a Collection**.
+<!-- Note:  If you already created your account, skip to the section **Add a Collection**. -->
 
-Use the following steps to create an Azure Cosmos account:    
+Use the following steps to create an Azure CosmosDB account:    
 
 1. In the **Search the Marketplace** textbox, type **CosmosDB** and press **Enter**.
 
     ![Image](/images/lab-0-imagex.png)
 
 2. Select **Azure Cosmos DB** from the list.
-3. Click **Create** to create a IoT Hhub.
+3. Click **Create** to create a CosmosDB account.
 
     ![Image](/images/lab-0-imagex.png)
 
@@ -94,7 +94,7 @@ Use the following steps to create an Azure Cosmos account:
 
 5. Click **Review+Create**, then **Create** to create your Azure Cosmos DB Account.
 
-    > This may take a few minutes for deployment to finish.
+    > You can watch the notification pane to validate that it created successfully.
 
 ## Add a Collection to CosmosDB
 In this section we will be configuring the CosmosDB so that we can add data to it. You can now use the Data Explorer tool in the Azure portal to create a database and collection.
@@ -103,7 +103,7 @@ After the CosmosDB deployment is complete, navigate to the Cosmos DB Account.
 
 1. In the left side menu, click on **Resource Groups**.
 2. Select the resource group created previously. i.e. **<*lastname*>-piday-rg**.
-3. Click on the Cosmos DB Account that was just created, i.e. **<*lastname*>-piday-cosmosdb**.
+3. Click on the Cosmos DB Account created earlier, i.e. **<*lastname*>-piday-cosmosdb**.
 
     ![Image](/images/lab-0-imagex.png)
 
@@ -154,9 +154,7 @@ Use the following steps to create an Azure Map:
 
     - Check the box **I confirm...**.
 
-    - Select **Review+Create**.
-
-    - Select **Create**.
+    - Select **Review+Create**, then **Create**.
 
     ![Image](/images/lab-0-image32.png)
 
