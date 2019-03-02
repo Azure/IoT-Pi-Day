@@ -2,18 +2,18 @@
 TBD - We need to document the scenario here
 
 ## Prerequisites
-1. Azure Subscription [Microsoft Azure Portal](https://portal.azure.com).
+1. Azure Subscription [Microsoft Azure Portal](https://portal.azure.com) with rights to create a Resource group and resources.
 
 ## Estimated time to complete
 - TBD
 
 ## Download the Repo
-The **Azure IoTPiDay Workshop** is setup to build out a real-life IoT scenario by capturing IoT data and ingesting it into the Azure Cloud.
+The **Azure IoTPiDay Workshop** is setup to build out a real-life IoT scenario by capturing IoT data and ingesting it into the Azure Cloud. The GitHub repo contains all the lab files and code components we will be using for this full lab. As you work through the lab, you will need to reference the documents and items from this repo.  As such, it will be easier for you to download the repo contents onto your local computer for reference.
 
-- Open up a **Command Prompt** as an **Administrator**.
-- Create a working area on the hard drive.
-*    - Type **MKDIR C:\Workspace**.
-*    - Type **CD C:\Workspace**.
+1. Use Windows Explorer or open up a **Command Prompt** as an **Administrator**.
+2. From the Command promopt, create a working area on the hard drive.
+    - Type **MKDIR C:\Workspace**.
+    - Type **CD C:\Workspace**.
 - Open a browser and navigate to [github.com/Azure/IoT-Pi-Day](https://github.com/Azure/IoT-Pi-Day).
 - Click the button **Clone or download**.
 
@@ -32,58 +32,47 @@ The **Azure IoTPiDay Workshop** is setup to build out a real-life IoT scenario b
 
 - Click **Open in Desktop**.
 
-## Create an Iot Hub
+## Create an IoT Hub
 
-An IoT Hub is the gateway to Azure IoT, a service that handles device management, security, and communication among the connected devices.  Will be using an IoT Hub throughout this lab. Use the following steps to create an Iot Hub:    
+In this section, we will be creating an IOT Hub that we will use to connect to the Raspberry Pi device. An IoT Hub is the gateway to Azure IoT, a service that handles device management, security, and communication among the connected devices.  Will be using an IoT Hub throughout this lab. Use the following steps to create an Iot Hub:    
 
 1. In a new browser window, sign in to the [Microsoft Azure Portal](https://portal.azure.com).
 
 2. In the Azure portal click **+Create a resource** at the top left of the screen.
 
-![Image](/images/lab-0-image1.png)
+3. In the **Search the Marketplace** textbox, type **IoT** and press **Enter**.
 
-3. Click **Internet of Things** under Azure Marketplace.
+    ![Image](/images/lab-0-imagex.png)
 
-3. Click **Iot Hub** from the list on the right. You see the first screen for creating an IoT hub.
+3. Select **Iot Hub** from the list.
+4. Click **Create** to create a IoT Hhub.
 
-![Image](/images/lab-0-image2.png)
+    ![Image](/images/lab-0-imagex.png)
 
 4. Fill in the fields.
-   * **Subscription**: Select the subscription to use for your IoT hub.
-   * **Resource Group**: A resource group acts as a logical boundary for all the resources that we create for this Lab. Create a new one, click **Create new**, type **<*lastname*>-piday-rg**
-   * **Region**: This is the region in which you want your hub to be located. Select the location closest to you from the dropdown list.
-   * **IoT Hub Name**: Put in the name for your IoT Hub. This name must be globally unique, type **<*lastname*>-piday-iothub**.
-   * Click **Next: Size and scale** to continue creating your IoT hub.
+   - **Subscription**, select the subscription to use for your IoT Hub.
 
-    ![Image](/images/lab-0-image3.png)
+   - **Resource Group**, click **Create new** and type **<*lastname*>-piday-rg**
+   
+        > A resource group acts as a logical boundary for all the resources that we create for this Lab.
 
-    <!-- ![Image](/images/lab-0-image3.2.png) -->
+   - **Region**, This is the region in which you want your IoT Hub to be located. Select the location closest to you from the dropdown list and take note as they will use this region for all components through the day.
 
-6. On this screen, **S1: Standard Tier**.
+   - **IoT Hub Name**:, type in the name for your IoT Hub. This name must be globally unique, type **<*lastname*>-piday-iothub**.
+   - Click **Review + create**.
+   - If there are no issues, click **Create** to create your IoT hub.
 
-    * **Pricing and scale tier**: You can choose from several tiers depending on how many features you want and how many messages you send through your solution per day. The free tier is intended for testing and evaluation. It allows 500 devices to be connected to the IoT hub and up to 8,000 messages per day. Each Azure subscription can create one IoT Hub in the free tier.
+## Add your Device to IoT Hub
 
-    ![Image](/images/lab-0-image4.png)
+1. Once your IoT Hub deployment is complete, click **Go To Resource**.
 
-7. Click **Review + create** to review your choices.  
-
-    <!-- ![Image](/images/lab-0-image5.png) -->
-
-8. After reviewing the screen, click **Create**.
-
-## Add your Device to your IoT Hub.
-
-1. Select your IoT Hub from the Resource Blade
-
-    ![Image](/images/lab-2.1-image0.png)
-
-2.  Select **IoT Devices** from the Iot Hub Blade.
+2.  Click **IoT devices** under Explorers.
 3.  Click **Add**.
 
     ![Image](/images/lab-2.1-image1.png)
 
 4. Fill in the fields for the IoT Device as follows.
-    - **Device ID**,use the hostname of your IoT Device.
+    - **Device ID**, use the hostname of your IoT Device.
         > i.e. **raspberrypi-<**cityabbrev>**<**number**>**.
     - Ensure **Auto Generate Keys** is selected.
 
