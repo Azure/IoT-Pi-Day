@@ -23,7 +23,7 @@ We need to document the scenario here
 
 4. Type **```code .```** (that's **code space dot**) to open **simulated-device.csproj** with **Visual Studio Code**.
 
-    > Click **Restore** for the **There are unresolved dependencies** message.
+    > ?🚨? Click **Restore** for the **There are unresolved dependencies** message.
 
 ## Azure Credentials
 
@@ -37,21 +37,21 @@ This is only required if it's the first time you're logging into Azure from Visu
 
 ## Develop simulated-device code
 
-1. From Visual Studio Code, edit the **simulated-device.csproj** by clicking on the filename in the left panel.
+1. ?🚨? From Visual Studio Code, edit the **simulated-device.csproj** by clicking on the filename in the left panel.
 
-    > Click **Restore** for the **There are unresolved dependencies** message.
+    > ?🚨? Click **Restore** for the **There are unresolved dependencies** message.
 
-2. Press **Cntrl-S** to save the file.
+2. ?🚨? Press **Cntrl-S** to save the file.
 
-3. From Visual Studio Code, click on **Terminal** in the top menu and select **New Terminal** to open a new terminal window below.
-4. Press **Enter** to get the prompt.
+3. ?🚨? From Visual Studio Code, click on **Terminal** in the top menu and select **New Terminal** to open a new terminal window below.
+4. ?🚨? Press **Enter** to get the prompt.
 
-5. To update packages and resolve any dependancies, type the following at the terminal command prompt.
+5. ?🚨? To update packages and resolve any dependancies, type the following at the terminal command prompt.
     - **```dotnet add package Microsoft.Azure.Devices.Client --version 1.19.0```**
 
 6. Edit the file **SimulatedDevice.cs** by clicking on the filename in the left panel.
 
-7.  Copy your connection string from the IoT Hub you created previously.  
+7.  Copy the connection string from the IoT Hub you created previously.  
     - Go to the **Azure Portal**.
     - In the left side menu, click on **Resource Groups**.
     - Select the resource group created previously. i.e. **<*lastname*>-piday-rg**.
@@ -62,6 +62,7 @@ This is only required if it's the first time you're logging into Azure from Visu
     - Select the **IoT Devices** menu on the left.
     - Select **your device name** from the window
     - Copy the **connection string (primary key)**.
+        
         > Example:  "HostName=smith-iothub.azure-devices.net;DeviceId=RaspberryPIHostName;SharedAccessKey=WAvH5fGAZHKo6U3ccUBpiHa7r1wETD+9gja/Aim6HiR=";
 
    ![Image](/images/lab-0-imagex.png)
@@ -70,7 +71,7 @@ This is only required if it's the first time you're logging into Azure from Visu
 
 9. Press **Cntrl-S** to save the file.
    
-## Test the Function
+## ?🚨? Test the Function
 
 1. Make sure the Output window is displayed in the bottom panel of Visual studio Code.
 
