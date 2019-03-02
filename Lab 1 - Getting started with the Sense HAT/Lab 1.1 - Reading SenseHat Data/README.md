@@ -96,7 +96,7 @@ This is only required if it's the first time you're logging into Azure from Visu
     ![Image](/images/lab-1.1-image4.png)
 
 7. Verify that permissions has been changed on the executable.
-8. Type **ls**, the scroll up and locate **SenseHATDotNetCore**, it should be green.
+8. Type **```ls -al```**, the scroll up and locate **SenseHATDotNetCore**, it should be green.
 
     ![Image](/images/lab-1.1-image5.png)
 
@@ -104,9 +104,7 @@ This is only required if it's the first time you're logging into Azure from Visu
 
     > Note: If all went well, you should see each record in JSON format being sent up to the IoT Hub.
 
-10.  Press **Cntl-C** to stop.
-
-        ![Image](/images/lab-1.1-image6.png)
+    ![Image](/images/lab-1.1-image6.png)
 
 ## Verify data is being sent to Azure IoT Hub
 
@@ -114,10 +112,15 @@ This is only required if it's the first time you're logging into Azure from Visu
 2. Select your **IotHub**
 3. Select the **Overview** menu on the left
 4. Scroll to bottom of blade and select **Device to cloud messages**
-5. On the **Metrics** page, change the timeframe to **Last 30 minutes**.
+5. On the **Metrics** page, change the timeframe to **Last 30 minutes** and time granularity to **1 minute**.
 
     ![Image](/images/lab-1.1-image7.png)
 
+6. Verify you are seeing data being sent to your IoT Hub.
+
+    > IoT Hub is an Azure service that enables you to ingest high volumes of telemetry from your IoT devices into the cloud for storage or processing. You are now sending information from the Raspberry Pi device to Azure IoT Hub. At this point, nothing interesting is happening in the cloud with that data you are sending to Azure. It is simply being persisted for a default amount of time (1-day) and then being dropped.
+
+7. From the existing Telnet window, press **Cntl-C** to stop.
 
 ## Reference Sites
 
