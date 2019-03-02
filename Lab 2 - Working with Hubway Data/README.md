@@ -9,7 +9,7 @@
 - Return - Return your bike to any station. Slide the bike firmly into an empty dock and wait for the green light to make sure it's locked.
 
 ## Prerequisites
-1. The Resource Configuation Lab is completed, see [Lab 1.0 - Resource Configuration]https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%200%20-%20Resource%20Configuration#create-an-iot-hub)
+1. The Resource Configuation Lab is completed, see [Lab 1.0 - Resource Configuration](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%200%20-%20Resource%20Configuration#create-an-iot-hub)
 2. The Resource Configuation Lab is completed, see [Lab 2.0 - Resource Configuration](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.0%20-%20Resource%20Configuration)
 
 ## Lab 2 - Working with Hubway Data
