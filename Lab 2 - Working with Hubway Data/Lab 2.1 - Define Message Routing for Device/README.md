@@ -9,9 +9,13 @@ TBD - We need to document the scenario here
 - TBD
 
 ## Message Routing - Define Custom End points and Routes
-1. Select **Message routing** from the **Iot Hub** Blade.
-2. Click **Custom Endpoints** from the **Message Routing** blade.
-3. Click **Add** and select **Event Hubs**.
+1. Select your IoT Hub from the Resource Blade
+
+    ![Image](/images/lab-2.1-image0.png)
+
+2. Select **Message routing** from the **Iot Hub** Blade.
+3. Click **Custom Endpoints** from the **Message Routing** blade.
+4. Click **Add** and select **Event Hubs**.
 
     ![Image](/images/lab-2.1-image3.png)
 

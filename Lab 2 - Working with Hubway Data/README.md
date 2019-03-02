@@ -16,7 +16,7 @@
 - [**Lab 2.0** - Resource Configuration](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.0%20-%20Resource%20Configuration)
     - This lab is a Prerequisite for Lab 2.
 
-- [**Lab 2.1** - Define Message Routing for Device](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.1%20-%20Setting%20up%20Iot%20Hub%20Device)
+- [**Lab 2.1** - Define Message Routing for Device](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.1%20-%20Define%20Message%20Routing%20for%20Device)
     - This lab will guide you through ...(desc coming soon...)
 
 - [**Lab 2.2** - Send Hubway Data to Iot Hub](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.2%20-%20Send%20Hubway%20Data%20to%20Iot%20Hub)
