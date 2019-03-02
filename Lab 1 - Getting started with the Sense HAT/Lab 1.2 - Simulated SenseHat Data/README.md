@@ -104,7 +104,7 @@ This is only required if it's the first time you're logging into Azure from Visu
 
     > Note: If all went well, you should see each record in JSON format being sent up to the IoT Hub.
 
-        ![Image](/images/lab-1.2-image6.png)
+    ![Image](/images/lab-1.2-image6.png)
 
 ## Verify data is being sent to Azure IoT Hub
 
