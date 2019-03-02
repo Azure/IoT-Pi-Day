@@ -3,8 +3,8 @@ We need to document the scenario here
 
 ## Prerequisites
 1. The Laptop is setup correctly, see [Setting up the Laptop](https://github.com/Azure/IoT-Pi-Day/tree/master/Setting%20up%20the%20Laptop).
-
-2. The Resource Configuation Lab is completed, see [Lab 0 - Resource Configuration](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%200%20-%20Resource%20Configuration)
+2. The Resource Configuation Lab is completed, see [Lab 1.0 - Resource Configuration](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%200%20-%20Resource%20Configuration)
+2. The Resource Configuation Lab is completed, see [Lab 2.0 - Resource Configuration](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%200%20-%20Resource%20Configuration)
 
 <!--
 2.  The Event Hub Namespace and Event Hub instance must already be created.
@@ -111,14 +111,14 @@ We need to execute two copy commands
 
 2.  Type **scp.exe -r .\bin\Debug\netcoreapp2.2\linux-arm\publish\* <**username**>@<**device ip address or name**>:/home/<**username**>/SimulatedDevice**
 
-        scp.exe -r .\bin\Debug\netcoreapp2.2\linux-arm\publish\* pi@raspberrypi-rpagels:/home/pi/SimulatedDevice
+        scp.exe -r .\bin\Debug\netcoreapp2.2\linux-arm\publish\* pi@raspberrypi-rpagels:/home/pi/SimulatedDevice/
 
 3. When prompted to continue to connect, type **yes**.
 4. Type in the raspberry pi password **Password.1.!!**
 
-5.  Type **scp.exe -r .\data\\\* <**username**>@<**device ip address or device name**>:/home/<**username**>/SimulatedDevice/data**
+5.  Type **scp.exe -r .\data\\\* <**username**>@<**device ip address**>:/home/<**username**>/SimulatedDevice/data/**
 
-        scp.exe -r .\data\* pi@raspberrypi-rpagels:/home/pi/SimulatedDevice/data
+        Example: scp.exe -r .\data\* pi1@192.168.1.200:/home/pi/SimulatedDevice/data/
 
 5. Type in **Password.1.!!** as the password.
 

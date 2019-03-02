@@ -4,8 +4,8 @@
 - TBD
 
 ## Prerequisites
-- A Laptop. :smirk:
-- A Raspberry Pi. :smiley:
+- A Laptop.
+- A Raspberry Pi. :smirk:
 - A Raspberry Pi SenseHAT (only required for 1 lab).
 
 ## Install Raspbian
@@ -203,7 +203,17 @@ The following commands need to be run on the Raspberry Pi whilst connected over 
 
         ![Image](/images/settingupthepi-4.png)
 
-    - Entering the following commands to create folders for both user accounts.
+    - Entering the following commands to create folders for all user accounts.
+
+    **User: Pi**
+    - **```sudo mkdir "/home/pi/SenseHATDotNetCore"```**
+        - Change ownership: **```sudo chown pi:pi -R "/home/pi/SenseHATDotNetCore"```**
+    - **```sudo mkdir "/home/pi/SenseHATDotNetCoreSimulation"```**
+        - Change ownership: **```sudo chown pi:pi -R "/home/pi/SenseHATDotNetCoreSimulation"```**
+    - **```sudo mkdir "/home/pi/SimulatedDevice"```**
+        - Change ownership: **``sudo chown pi:pi -R "/home/pi/SimulatedDevice"``**
+    - **```sudo mkdir "/home/pi/SimulatedDevice/data"```**
+        - Change ownership: **``sudo chown pi:pi -R "/home/pi/SimulatedDevice/data"``**
 
     **User: Pi1**
     - **```sudo mkdir "/home/pi1/SenseHATDotNetCore"```**
@@ -213,6 +223,7 @@ The following commands need to be run on the Raspberry Pi whilst connected over 
     - **```sudo mkdir "/home/pi1/SimulatedDevice"```**
         - Change ownership: **``sudo chown pi1:pi1 -R "/home/pi1/SimulatedDevice"``**
     - **```sudo mkdir "/home/pi1/SimulatedDevice/data"```**
+        - Change ownership: **``sudo chown pi1:pi1 -R "/home/pi1/SimulatedDevice/data"``**
 
    **User: Pi2**
     - **```sudo mkdir "/home/pi2/SenseHATDotNetCore"```**
@@ -222,6 +233,7 @@ The following commands need to be run on the Raspberry Pi whilst connected over 
     - **```sudo mkdir "/home/pi2/SimulatedDevice"```**
         - Change ownership: **``sudo chown pi2:pi2 -R "/home/pi2/SimulatedDevice"``**
     - **```sudo mkdir "/home/pi2/SimulatedDevice/data"```**
+        - Change ownership: **``sudo chown pi2:pi2 -R "/home/pi2/SimulatedDevice/data"``**
 
 ## How to Clone the microSD card
 - These steps will allow you use an existing image and configure it for each Raspberry Pi.
@@ -250,14 +262,14 @@ The following commands need to be run on the Raspberry Pi whilst connected over 
 - Insert the microSD card into the Raspberry Pi. 
 - Boot the Raspberry Pi.
 
-**Get the MAC Address**
-- See **Find the MAC Address** above.
-
 **Update the Devicename**
-- See **Change the Device Name** above.
+- See [**Change the Device Name**](https://github.com/Azure/IoT-Pi-Day/tree/master/Setting%20up%20the%20Raspberry%20Pi#change-the-device-name) above.
+
+**Get the MAC Address**
+- See [**Find the MAC Address**](https://github.com/Azure/IoT-Pi-Day/tree/master/Setting%20up%20the%20Raspberry%20Pi#find-the-mac-address) above.
 
 **Update the permissions**
-- See **Create User Account Permissions** above.
+- See [**Create User Account Permissions**](https://github.com/Azure/IoT-Pi-Day/tree/master/Setting%20up%20the%20Raspberry%20Pi#create-user-account-permissions) above.
 
 ## Acknowledgements
 - These instructions were based off of the following blog, [Set up Raspian and .NET Core 2.0 on a Raspberry Pi](https://blogs.msdn.microsoft.com/david/2017/07/20/setting_up_raspian_and_dotnet_core_2_0_on_a_raspberry_pi/)

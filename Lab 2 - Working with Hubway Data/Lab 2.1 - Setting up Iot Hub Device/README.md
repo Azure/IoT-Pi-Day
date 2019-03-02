@@ -2,7 +2,8 @@
 TBD - We need to document the scenario here
 
 ## Prerequisites
-- The Iot Hub must already be created, see [Lab 0 - Resource Configuration, Section Create an IoT Hub](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%200%20-%20Resource%20Configuration#create-an-iot-hub)
+1. The Resource Configuation Lab is completed, see [Lab 1.0 - Resource Configuration]https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%200%20-%20Resource%20Configuration#create-an-iot-hub)
+2. The Resource Configuation Lab is completed, see [Lab 2.0 - Resource Configuration](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%200%20-%20Resource%20Configuration)
 
 ## Estimated time to complete
 - TBD

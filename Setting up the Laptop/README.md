@@ -104,7 +104,7 @@ What is npm? npm makes it easy for JavaScript developers to share and reuse code
 What are Azure Functions Core Tools? The Azure Functions Core Tools provide a local development experience for creating, developing, testing, running, and debugging Azure Functions.
 
 **Windows**
-- To install v2 with npm, open a Command Prompt as Adminstrator.
+- To install v2 with npm, open a **Node.js Command Prompt** as Adminstrator.
 - Type: **npm i -g azure-functions-core-tools --unsafe-perm true**
 
 **MacOS**

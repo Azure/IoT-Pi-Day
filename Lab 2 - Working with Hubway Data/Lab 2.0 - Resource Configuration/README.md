@@ -1,12 +1,14 @@
-# Lab 0 - Resource Configuration
+# Lab 2/0 - Resource Configuration
 TBD - We need to document the scenario here
 
 ## Prerequisites
-1.  Azure Subscription [Microsoft Azure Portal](https://portal.azure.com).
+1. The Resource Configuation Lab is completed, see [Lab 1.0 - Resource Configuration](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%200%20-%20Resource%20Configuration#create-an-iot-hub)
+2. The Resource Configuation Lab is completed, see [Lab 2.0 - Resource Configuration](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%200%20-%20Resource%20Configuration)
 
 ## Estimated time to complete
 - TBD
 
+<!-->
 ## Download the Repo
 The **Azure IoTPiDay Workshop** is setup to build out a real-life IoT scenario by capturing IoT data and ingesting it into the Azure Cloud.
 
@@ -35,7 +37,7 @@ The **Azure IoTPiDay Workshop** is setup to build out a real-life IoT scenario b
 
 ## Create an Iot Hub
 
-Use the following steps to create an Iot Hub:    
+An IoT Hub is the gateway to Azure IoT, a service that handles device management, security, and communication among the connected devices.  Will be using an IoT Hub throughout this lab. Use the following steps to create an Iot Hub:    
 
 1. In a new browser window, sign in to the [Microsoft Azure Portal](https://portal.azure.com).
 
@@ -51,14 +53,12 @@ Use the following steps to create an Iot Hub:
 
 4. Fill in the fields.
    * **Subscription**: Select the subscription to use for your IoT hub.
-   * **Resource Group**: You can create a new resource group or use an existing one. To create a new one, click Create new and fill in the name you want to use. To use an existing resource group, click Use existing and select the resource group from the dropdown list.
+   * **Resource Group**: A resource group acts as a logical boundary for all the resources that we create for this Lab. Create a new one, click **Create new**, type **<*lastname*>-piday-rg**
    * **Region**: This is the region in which you want your hub to be located. Select the location closest to you from the dropdown list.
-   * **IoT Hub Name**: Put in the name for your IoT Hub. This name must be globally unique. A recommendation is LastName-pi-day-IoT-Hub.
+   * **IoT Hub Name**: Put in the name for your IoT Hub. This name must be globally unique, type **<*lastname*>-piday-iothub**.
    * Click **Next: Size and scale** to continue creating your IoT hub.
 
     ![Image](/images/lab-0-image3.png)
-
-    <!-- ![Image](/images/lab-0-image3.2.png) -->
 
 6. On this screen, **S1: Standard Tier**.
 
@@ -68,10 +68,10 @@ Use the following steps to create an Iot Hub:
 
 7. Click **Review + create** to review your choices.  
 
-    <!-- ![Image](/images/lab-0-image5.png) -->
-
 8. After reviewing the screen, click **Create**.
 
+
+-->
 
 ## Create an Event Hub namespace
 
@@ -97,9 +97,10 @@ Use the following steps to create an Event Hub Namespace:
 
 6. On the Create namespace page, fill in the fields.
    * **Name** Enter a name for the namespace. Consider **LastName-pi-day-EventHub**.
-   * **Pricing Tier** Choose the pricing tier (Basic or Standard).
+   * **Pricing Tier** Choose the pricing tier **Standard**.
    * **Subscription** Select the subscription in which you want to create the namespace.
-   * **Resource Group** Select a location for the namespace.
+   * **Resource Group**, select previously created resource group name, **<*lastname*>-piday-rg**.
+   * **Location**, select **East US** for your location.
     > Note: You may have to wait a few minutes for the system to fully provision the resources.
 
     ![Image](/images/lab-0-image13.png)
@@ -142,10 +143,10 @@ Use the following steps to create an Azure Cosmos account:
 
 4. On the **Create Azure Cosmos DB Account** page, enter the basic settings for the new Azure Cosmos DB account.
 5. Select the Azure subscription that you want to use for this Azure Cosmos DB account.
-6. Ener the **resource-group name**.
-7. Enter an **Account Name** that is a unique name to identify your Azure Cosmos DB account. Consider LastName-pi-day-cosmosdb as an example.
+6. **Resource Group**, select previously created resource group name, **<*lastname*>-piday-rg**.
+7. The Account Name must be a globally unique name to identify your Azure Cosmos DB account, type **<*lastname*>-piday-cosmosdb**.
 8. Select **Core(SQL)** for document databases.
-9. Select a geographic **Location** to host your Azure Cosmos DB account.
+9. For the location, select **East US** to host your Azure Cosmos DB account
 10. Select **Review+Create**.
 
     ![Image](/images/lab-0-image21.png)
@@ -160,8 +161,7 @@ Use the following steps to create an Azure Cosmos account:
 You can now use the Data Explorer tool in the Azure portal to create a database and collection.
 
 1. From the Azure Portal menu, select **Azure CosmosDB**.
-2. Select your CosmosDB account created earlier.
-    - i.e. **<**Lastname**>-pi-day-cosmosdb** from the list.
+2. Select your CosmosDB account created earlier, **<*lastname*>-piday-cosmosdb**, from the list.
 
     ![Image](/images/lab-2.4-image1.png)
 
@@ -197,8 +197,8 @@ Use the following steps to create an Azure Map:
 
 6. On the **Create Azure Maps Account** page, enter the basic settings for the new Azure Maps account.
 7. Select the **Azure subscription** that you want to use.
-8. Ener the **Resource Group Name** from previous steps.
-9. Enter an **Account Name** that is a unique name to identify your Azure Maps account. Consider LastName-pi-day-maps as an example.
+8. **Resource Group**, select previously created resource group name, **<*lastname*>-piday-rg**.
+9. The **Account Name** must be a globally unique name to identify your Azure Maps account, type **<*lastname*>-piday-azuremaps**
 10. Select **Standard S0** for pricing tier.
 11. Check the box **I confirm...**.
 12. Select **Review+Create**.
@@ -222,14 +222,13 @@ Use the following steps to create a Storage Account:
 
 5. On the **Create Storage Account** page, fill in the fields:
    - **Subscription** Select your subscription.
-   - **Resource Group** Select the resource group you have been using.
-   - **Storage Account Name** Enter a unique name for your storage account.
-        - Consider using **hubwaydatastorage**.
-   - **Location** Select a location for the account.
-   - **Performance** Select Standard.
-   - **Account Kind** Select StorageV2 (general purpose v2).
-   - **Replication** Select locally-redundant storage (LRS).
-   - **Access tier** Select Hot.
+8. **Resource Group**, select previously created resource group name, **<*lastname*>-piday-rg**.
+   - The **Storage Account Name** must be a globally unique name for your storage account type **<*lastname*>pidayhubwaydatastorage**
+   - For Location, select **East US**.
+   - For Performance, select **Standard**.
+   - For Account Kind select **StorageV2 (general purpose v2)**.
+   - For Replication, select **locally-redundant storage (LRS)**.
+   - For Access tier, select **Hot**.
 
     ![Image](/images/lab-2.6-image2.png) 
 
