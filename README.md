@@ -46,7 +46,7 @@ As you create an end-to-end IoT application in a day, you’ll see how easy it i
  
 
 ## Lab 2 - Working with Hubway Data
-- [**Lab 2.0** - Resource Configuration](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%201%20-%20Getting%20started%20with%20the%20Sense%20HAT/Lab%201.1%20-%20Reading%20SenseHat%20Data)
+- [**Lab 2.0** - Resource Configuration](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.0%20-%20Resource%20Configuration)
     - This lab will guide you through setting up the neccessary Azure services in preparation for the following labs.
 
 - [**Lab 2.1** - Setting up Iot Hub Device](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.1%20-%20Setting%20up%20Iot%20Hub%20Device)
