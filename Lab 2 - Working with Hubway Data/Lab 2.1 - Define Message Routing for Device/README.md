@@ -9,22 +9,23 @@ TBD - We need to document the scenario here
 - TBD
 
 ## Define Custom End points and Routes
-1. Select your IoT Hub from the Resource Blade
+1. In the left side menu, click on **Resource Groups**.
+2. Select the resource group created previously. i.e. **<*lastname*>-piday-rg**.
+3. Click on the IoT Hub created earlier, i.e. **<*lastname*>-piday-iothub**.
 
-    ![Image](/images/lab-2.1-image0.png)
+    ![Image](/images/lab-0-imagex.png)
 
-2. Select **Message routing** from the **Iot Hub** Blade.
-3. Click **Custom Endpoints** from the **Message Routing** blade.
-4. Click **Add** and select **Event Hubs**.
+4. Select **Message routing** from the **IoT Hub** Blade.
+5. Click **Custom Endpoints**.
+6. Click **Add** and select **Event Hubs**.
 
     ![Image](/images/lab-2.1-image3.png)
 
 5.  Fill in the fields:
-    - **Endpoint Name**, enter **HubwayTelemetryRoute**.
+    - **Endpoint Name**, type **HubwayTelemetryRoute**.
     - **Event Hub Namespace**, select your event hub namespace created early in the drop down.
-        - i.e. **<**Lastname**>-pi-day-EventHub**.
-    - **Event Hub Instance**, select your event hub instance created from Lab 0 in the drop down.
-        - i.e. **hubwaytelemetry** from the drop down.
+        - i.e. **<**lastname**>-piday-eventhub**.
+    - **Event Hub Instance**, select your event hub instance created, i.e. **hubwaytelemetry** from the drop down.
 
     ![Image](/images/lab-2.1-image4.png)
 
@@ -34,9 +35,9 @@ TBD - We need to document the scenario here
 
     ![Image](/images/lab-2.1-image5.png)
 
-8.  Click Add and fill in the fields:
+8.  Fill in the fields:
     - **Name**, enter **BostonHubwayTelemetryRoute**.
-    - **Endpoint**, select the **Event Hub name** from the drop down such as **HubwayTelemetryRoute**.
+    - **Endpoint**, select the **Event Hub name** from the drop down, i.e. **HubwayTelemetryRoute**.
     - **Data Source**, select **Device Telemetry Messages**.
     - **Routing Query**: type in **```RoutingProperty = 'Hubway' ```**
 

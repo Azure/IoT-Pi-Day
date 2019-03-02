@@ -21,9 +21,9 @@ In this lab, we are running a program on the Raspberry Pi device that will grab 
 
     > C:\Workspace\IoT-Pi-Day-master\Lab 1 - Getting started with the Sense HAT\Solution\SenseHATDotNetCore
 
-3. Type **```code .```** (that's **code space dot**) to open **SenseHATDotNetCore.csproj** with **Visual Studio Code**.
+4. Type **```code .```** (that's **code space dot**) to open **SenseHATDotNetCore.csproj** with **Visual Studio Code**.
 
-3. Click **Restore** for the **There are unresolved dependencies** message.
+5. Click **Restore** if there is a **There are unresolved dependencies** message.
 
 ## Azure Credentials
 
@@ -63,7 +63,7 @@ This is only required if it's the first time you're logging into Azure from Visu
 3. Press **Cntrl-S** to save the file.
 
 ##  Compile the code
-1. From the existing Command Prompt or PowerShell as an Administrator.
+1. From the existing Command Prompt or PowerShell.
 
 2. Confirm you are sitting in the correct folder.
 
@@ -75,7 +75,7 @@ This is only required if it's the first time you're logging into Azure from Visu
     - **```dotnet publish . -r linux-arm```**
 
 ##  Deploy to Raspberry Pi
-1.  From the existing Command Prompt or PowerShell Prompt, cut-n-pasted the below line and format it as follows: **scp.exe -r .\bin\Debug\netcoreapp2.2\linux-arm\publish\* <**username**>@<**device ip address**>:/home/<**pi1**>/SenseHATDotNetCore**
+1.  From the existing Command Prompt or PowerShell Prompt, cut-n-paste the below line and format it as follows: **scp.exe -r .\bin\Debug\netcoreapp2.2\linux-arm\publish\* <**username**>@<**device ip address**>:/home/<**pi1**>/SenseHATDotNetCore**
 
     **```scp.exe -r .\bin\Debug\netcoreapp2.2\linux-arm\publish\* pi1@192.168.1.200:/home/pi1/SenseHATDotNetCore```**
 
@@ -108,11 +108,16 @@ This is only required if it's the first time you're logging into Azure from Visu
 
 ## Verify data is being sent to Azure IoT Hub
 
-1. Go to the **Azure Portal**
-2. Select your **IotHub**
-3. Select the **Overview** menu on the left
-4. Scroll to bottom of blade and select **Device to cloud messages**
-5. On the **Metrics** page, change the timeframe to **Last 30 minutes** and time granularity to **1 minute**.
+1. Go to the **Azure Portal**.
+2. In the left side menu, click on **Resource Groups**.
+3. Select the resource group created previously. i.e. **<*lastname*>-piday-rg**.
+4. Click on the IoT Hub that you created.
+
+    ![Image](/images/lab-0-imagex.png)
+
+6. Click on the **Overview** menu on the left.
+7. Scroll to bottom of blade and select **Device to cloud messages**
+8. On the **Metrics** page, change the timeframe to **Last 30 minutes** and time granularity to **1 minute**.
 
     ![Image](/images/lab-1.1-image7.png)
 
