@@ -26,8 +26,6 @@ The **Azure IoTPiDay Workshop** is setup to build out a real-life IoT scenario b
 - **Right-Click** on **Iot-Pi-Day-master.zip**.
 - Select **Extract All**, click **Extract** to **C:\Workspace**.
 
-    ![Image](/images/settingupthelaptop-2.png)
-
 **Option 2 - Clone to your Desktop**
     
 > Note: This requires Git + GitHub Desktop to be installed first. If not already done, click [Install Git](https://github.com/Azure/IoT-Pi-Day/tree/master/Setting%20up%20the%20Laptop#optional-install-git) and [Install GitHub Desktop](https://github.com/Azure/IoT-Pi-Day/tree/master/Setting%20up%20the%20Laptop#optional-install-git-desktop).
@@ -84,10 +82,10 @@ An IoT Hub is the gateway to Azure IoT, a service that handles device management
 
     ![Image](/images/lab-2.1-image1.png)
 
-4. Fill in the fields as follows.
-    - **Device ID**  Enter the Device ID.
-        > Consider using the device hostname, i.e. **raspberrypi-<**cityabbrev>**<**nn**>**.
-    - Make sure **Auto Generate Keys** is selected.
+4. Fill in the fields for the IoT Device as follows.
+    - **Device ID**,use the hostname of your IoT Device.
+        > i.e. **raspberrypi-<**cityabbrev>**<**number**>**.
+    - Ensure **Auto Generate Keys** is selected.
 
     ![Image](/images/lab-2.1-image2.png)
 

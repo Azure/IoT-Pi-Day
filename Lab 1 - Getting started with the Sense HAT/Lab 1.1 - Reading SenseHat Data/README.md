@@ -3,31 +3,27 @@ In this lab, we are running a program on the Raspberry Pi device that will grab 
 
 ## Prerequisites
 1. The Laptop is setup correctly, see [Setting up the Laptop](https://github.com/Azure/IoT-Pi-Day/tree/master/Setting%20up%20the%20Laptop).
-2.  The IoT Hub must be created and configured
-    - To create an IoT Hub, see [Lab 1.0 - Resource Configuration, Section Create an IoT Hub](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%201%20-%20Getting%20started%20with%20the%20Sense%20HAT/Lab%201.0%20-%20Resource%20Configuration#create-an-iot-hub)
-3. The IP Address of your Raspberry Pi device
+2. The Resource Configuation Lab is completed, see [Lab 1.0 - Resource Configuration](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%201%20-%20Getting%20started%20with%20the%20Sense%20HAT/Lab%201.0%20-%20Resource%20Configuration).
+3. Get the IP Address of your Raspberry Pi device.
 
 ## Estimated time to complete
 - 20 min
 
-<!--
-## 🚨 Content below this line is Under Construction 🚨
--->
-
 ## Load SenseHATDotNetCore code
 
-1. Navigate to the Workspace created in [Setting up the Laptop](https://github.com/Azure/IoT-Pi-Day/tree/master/Setting%20up%20the%20Laptop).
-2. Open up a **Command Prompt** or **PowerShell** as an **Administrator**.
-    - Type **CD C:\Workspace\IoT-Pi-Day-master\IoT-Pi-Day-master\Lab 1 - Getting started with the Sense HAT\Solution\SenseHATDotNetCore**
-3.  Enter **code ."** and press return to load project in Visual Studo Code
-4. Click **Restore** for the **There are unresolved dependencies** message.
+1. Using Windows Explorer, navigate to the workspace created in [Setting up the Laptop](https://github.com/Azure/IoT-Pi-Day/tree/master/Setting%20up%20the%20Laptop), and click on the folder **SenseHATDotNetCore**.
+
+    ![Image](/images/lab-1.1-image1.png)
+
+2. **Right-click** and open **SenseHATDotNetCore.csproj** with **Visual Studio Code**.
+3. Click **Restore** for the **There are unresolved dependencies** message.
 
 ## Azure Credentials
 
-Note:  If this is the first time logging into Azure from Visual Studio Code.
+This is only required if it's the first time you're logging into Azure from Visual Studio Code.
 
-1.  From Visual Studio Code, press **Cntl-Shift-P**
-2.  Enter **Azure** and select **Sign in to Azure Cloud**
+1. From Visual Studio Code, press **Cntl-Shift-P**
+2. Enter **Azure** and select **Sign in to Azure Cloud**
 3. Authenticate to Azure when the dialog box appears.
 
     > Note: Once you are signed in, close the web page and return to Visual Studio Code.
@@ -36,84 +32,78 @@ Note:  If this is the first time logging into Azure from Visual Studio Code.
 
 1. From Visual Studio Code, edit the **Program.cs** by clicking on the filename in the left panel.
 
-    ![Image](/images/lab-1.1-image1.png)
+    ![Image](/images/lab-1.1-image1.2.png) 
 
-2.  Replace <**Your IoT Hub Connnection String**> in **Program.cs** with your connection string from the IotHub.  
+2.  Copy your IoT Device connection string from the IotHub.  
 
     - Go to the **Azure Portal**
     - Select your **IotHub**
-    - Select the **IoT Devices** menu on the left
-    - Select **your device name** from the window
+    - Under Settings, select the **IoT Devices** menu on the left
+    - Select **your device name** from the window,
     - Copy the **connection string (primary key)**.
         > Example:  "HostName=smith-iothub.azure-devices.net;DeviceId=RaspberryPIHostName;SharedAccessKey=WAvH5fGAZHKo6U3ccUBpiHa7r1wETD+9gja/Aim6HiR=";
 
+    ![Image](/images/lab-1.1-image1.5.png)
+
+3.  Replace your copied <**IoT Hub Device Connnection String**> in **Program.cs** with your connection string from the IotHub.  
+
     ![Image](/images/lab-1.1-image2.png)
 
-2.  Replace <**Your Raspberry Pi Device Name**> in **Program.cs** with your assigned Raspberry Pi device name.  
+2.  Replace <**Your Raspberry Pi Device Name**> in **Program.cs** with your assigned Raspberry Pi device hostname.  
 
     ![Image](/images/lab-1.1-image3.png) 
 
 3. Press **Cntrl-S** to save the file.
 
 ##  Compile the code
-1.  From the command prompt or powershell prompt
+1. Open up a Command Prompt or PowerShell as an Administrator.
+2. Navigate to the Workspace created in [Setting up the Laptop](https://github.com/Azure/IoT-Pi-Day/tree/master/Setting%20up%20the%20Laptop).
+    - Simply Cut-n-Paste the following line at the command prompt:
 
-2.  Change directory to **Workspace\IoT-Pi-Day-master\IoT-Pi-Day-master\Lab 1 - Getting started with the Sense HAT\Solution\SenseHATDotNetCore** ( if not already in the directory)
+        **```CD C:\Workspace\IoT-Pi-Day-master\Lab 1 - Getting started with the Sense HAT\Solution\SenseHATDotNetCore```**
 
-3.  Run the following commands:
-    - **dotnet clean .**
-    - **dotnet build .**
-    - **dotnet publish . -r linux-arm**
+3.  Run the following commands and press **Enter** after each one:
+    - **```dotnet clean .```**
+    - **```dotnet build .```**
+    - **```dotnet publish . -r linux-arm```**
 
 ##  Deploy to Raspberry Pi
-1.  From the command prompt or powershell prompt
-2.  Type **scp.exe -r .\bin\Debug\netcoreapp2.2\linux-arm\publish\* <**username**>@<**device ip address or name**>:/home/<**username**>/SenseHATDotNetCore**
+1.  At the Command Prompt or PowerShell Prompt, cut-n-pasted the below line and format it as follows: **scp.exe -r .\bin\Debug\netcoreapp2.2\linux-arm\publish\* <**username**>@<**device ip address**>:/home/<**pi1**>/SenseHATDotNetCore**
 
-        scp.exe -r .\bin\Debug\netcoreapp2.2\linux-arm\publish\* pi@raspberrypi-rpagels:/home/pi/SenseHATDotNetCore
+    **```scp.exe -r .\bin\Debug\netcoreapp2.2\linux-arm\publish\* pi1@192.168.1.200:/home/pi1/SenseHATDotNetCore```**
 
 3. When prompted to continue to connect, type **yes**.
 4. Type in **Password.1.!!** as the password.
 
 ## Run the code from the Raspberry Pi
 
-### Telnet into the Raspberry Pi using SSH
+ 1. Run **PuTTY** or **Windows 10 SSH** to connect to the Raspberry Pi Device.
+ 2. Enter the **IP address** of the Raspberry Pi Device.
+ 3. Click **Open** and Accept the message about keys.
+    - Enter <**pi1**> as the logon name, and **Password.1.!!** as the password.
+4.  Once you are logged in
+5.  Type **```cd SenseHATDotNetCore```**
 
-- **Option 1** - Use PuTTY
-    - Download the PuTTY SSH and Telnet client and launch it.
-        - Click [Download PuTTY](https://www.putty.org/) and click **Download it here** to download the latest version. Use the **MSI Windows Installer - 64-bit**.
-        - Click **Run** to accept the default prompts.
-        - Run **PuTTY** and enter the IP address of the Raspberry Pi and click Open. Accept the message about keys.
-        - Enter <**username**> as the logon name, and **Password.1.!!** as the password.
-
-- **Option 2** - Use Windows 10
-    - Click [How to Enable and Use Windows 10’s New Built-in SSH Commands](https://www.howtogeek.com/336775/how-to-enable-and-use-windows-10s-built-in-ssh-commands/)
-
-- **Option 3** - Use your favorate SSH tool.
-
-1.  Once you are logged in
-
-2.  Type **cd SenseHATDotNetCore**
-
-3.  Type **chmod 755 SenseHATDotNetCore** ( this only has to be done the first time )
+6.  Type **```chmod 755 SenseHATDotNetCore```**
 
     ![Image](/images/lab-1.1-image4.png)
 
-4. Verify that permissions has been changed on the executable.
-5. Type **ls**, the scroll up and locate **SenseHATDotNetCore**, it should be green.
+7. Verify that permissions has been changed on the executable.
+8. Type **ls**, the scroll up and locate **SenseHATDotNetCore**, it should be green.
 
     ![Image](/images/lab-1.1-image5.png)
 
-4.  To execute the code, type **./SenseHATDotNetCore**
+9.  To execute the code, type **```./SenseHATDotNetCore```**
 
     > Note: If all went well, you should see each record in JSON format being sent up to the IoT Hub.
 
-3.  Press **Cntl-C** to stop.
+10.  Press **Cntl-C** to stop.
 
-    ![Image](/images/lab-1.1-image6.png)
+        ![Image](/images/lab-1.1-image6.png)
 
 ## Verify data is being sent to Azure IoT Hub
 
-1.  Go to the **Azure Portal**
+1. Go to the **Azure Portal**
 2. Select your **IotHub**
 3. Select the **Overview** menu on the left
 4. Scroll to bottom of blade and select **Device to cloud messages**

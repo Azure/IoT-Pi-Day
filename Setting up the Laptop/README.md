@@ -120,6 +120,16 @@ What is Azure Storage Explorer?  This tool allows you to easily manage the conte
 - Click **Download Storage Explorer free**.
 - Click **Run** to install.
 
+## Install Telnet Tool
+
+- **Option 1** - To use PuTTY
+    - Download the PuTTY SSH and Telnet client and launch it.
+        - Click [Download PuTTY](https://www.putty.org/) and click **Download it here** to download the latest version. Use the **MSI Windows Installer - 64-bit**.
+        - Click **Run** to accept the default prompts.
+
+- **Option 2** - To use Windows 10
+    - Click [How to Enable and Use Windows 10’s New Built-in SSH Commands](https://www.howtogeek.com/336775/how-to-enable-and-use-windows-10s-built-in-ssh-commands/)
+
 <!--
 ## (Optional) Install Git
 What is Git? Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
