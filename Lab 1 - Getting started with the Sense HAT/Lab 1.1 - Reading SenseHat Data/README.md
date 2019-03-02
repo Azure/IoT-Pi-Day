@@ -11,11 +11,18 @@ In this lab, we are running a program on the Raspberry Pi device that will grab 
 
 ## Load SenseHATDotNetCore code
 
-1. Using Windows Explorer, navigate to the workspace created in [Setting up the Laptop](https://github.com/Azure/IoT-Pi-Day/tree/master/Setting%20up%20the%20Laptop), and click on the folder **SenseHATDotNetCore**.
+1. Open up a Command Prompt or PowerShell as an Administrator.
+2. Navigate to the Workspace created in [Setting up the Laptop](https://github.com/Azure/IoT-Pi-Day/tree/master/Setting%20up%20the%20Laptop).
+    - Simply Copy the following line and Paste at the command prompt:
 
-    ![Image](/images/lab-1.1-image1.png)
+        **```CD C:\Workspace\IoT-Pi-Day-master\Lab 1 - Getting started with the Sense HAT\Solution\SenseHATDotNetCore```**
 
-2. **Right-click** and open **SenseHATDotNetCore.csproj** with **Visual Studio Code**.
+3. Confirm you are sitting in the correct folder.
+
+    > C:\Workspace\IoT-Pi-Day-master\Lab 1 - Getting started with the Sense HAT\Solution\SenseHATDotNetCore
+
+3. Type **```code .```** (that's **code space dot**) to open **SenseHATDotNetCore.csproj** with **Visual Studio Code**.
+
 3. Click **Restore** for the **There are unresolved dependencies** message.
 
 ## Azure Credentials
@@ -56,11 +63,11 @@ This is only required if it's the first time you're logging into Azure from Visu
 3. Press **Cntrl-S** to save the file.
 
 ##  Compile the code
-1. Open up a Command Prompt or PowerShell as an Administrator.
-2. Navigate to the Workspace created in [Setting up the Laptop](https://github.com/Azure/IoT-Pi-Day/tree/master/Setting%20up%20the%20Laptop).
-    - Simply Cut-n-Paste the following line at the command prompt:
+1. From the existing Command Prompt or PowerShell as an Administrator.
 
-        **```CD C:\Workspace\IoT-Pi-Day-master\Lab 1 - Getting started with the Sense HAT\Solution\SenseHATDotNetCore```**
+2. Confirm you are sitting in the correct folder.
+
+    > C:\Workspace\IoT-Pi-Day-master\Lab 1 - Getting started with the Sense HAT\Solution\SenseHATDotNetCoreSimulation
 
 3.  Run the following commands and press **Enter** after each one:
     - **```dotnet clean .```**
@@ -68,7 +75,7 @@ This is only required if it's the first time you're logging into Azure from Visu
     - **```dotnet publish . -r linux-arm```**
 
 ##  Deploy to Raspberry Pi
-1.  At the Command Prompt or PowerShell Prompt, cut-n-pasted the below line and format it as follows: **scp.exe -r .\bin\Debug\netcoreapp2.2\linux-arm\publish\* <**username**>@<**device ip address**>:/home/<**pi1**>/SenseHATDotNetCore**
+1.  From the existing Command Prompt or PowerShell Prompt, cut-n-pasted the below line and format it as follows: **scp.exe -r .\bin\Debug\netcoreapp2.2\linux-arm\publish\* <**username**>@<**device ip address**>:/home/<**pi1**>/SenseHATDotNetCore**
 
     **```scp.exe -r .\bin\Debug\netcoreapp2.2\linux-arm\publish\* pi1@192.168.1.200:/home/pi1/SenseHATDotNetCore```**
 
