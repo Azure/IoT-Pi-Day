@@ -8,7 +8,7 @@ TBD - We need to document the scenario here
 ## Estimated time to complete
 - TBD
 
-## Message Routing - Define Custom End points and Routes
+## Define Custom End points and Routes
 1. Select your IoT Hub from the Resource Blade
 
     ![Image](/images/lab-2.1-image0.png)
@@ -38,7 +38,7 @@ TBD - We need to document the scenario here
     - **Name**, enter **BostonHubwayTelemetryRoute**.
     - **Endpoint**, select the **Event Hub name** from the drop down such as **HubwayTelemetryRoute**.
     - **Data Source**, select **Device Telemetry Messages**.
-    - **Routing Query**: enter **```RoutingProperty = 'Hubway' ```**.
+    - **Routing Query**: type in **```RoutingProperty = 'Hubway' ```**
 
     ![Image](/images/lab-2.1-image6.png)
 
