@@ -6,7 +6,7 @@
     - To create an IoT Hub, see [Lab 1.0 - Resource Configuration, Section Create an IoT Hub](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%201%20-%20Getting%20started%20with%20the%20Sense%20HAT/Lab%201.0%20-%20Resource%20Configuration#create-an-iot-hub)
 
 ## Estimated time to complete
-- TBD
+- TBD min
 
 <!--
 ## 🚨 Content below this line is Under Construction 🚨
