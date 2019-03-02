@@ -33,7 +33,7 @@ As you create an end-to-end IoT application in a day, you’ll see how easy it i
 ## Lab 1 - Getting Started with the SenseHAT
 - [**Lab 1** - Getting started with the Sense HAT](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%201%20-%20Getting%20started%20with%20the%20Sense%20HAT)
 
-    - [**Lab 1.0** - Resource Configuration](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%201%20-%20Getting%20started%20with%20the%20Sense%20HAT/Lab%201.1%20-%20Reading%20SenseHat%20Data)
+    - [**Lab 1.0** - Resource Configuration](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%201%20-%20Getting%20started%20with%20the%20Sense%20HAT/Lab%201.0%20-%20Resource%20Configuration)
         - This lab will guide you through setting up the neccessary Azure services in preparation for the following labs.
 
     - [**Lab 1.1** - Reading SenseHat Data](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%201%20-%20Getting%20started%20with%20the%20Sense%20HAT/Lab%201.1%20-%20Reading%20SenseHat%20Data)

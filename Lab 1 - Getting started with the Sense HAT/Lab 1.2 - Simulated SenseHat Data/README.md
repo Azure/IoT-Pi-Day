@@ -3,7 +3,7 @@
 ## Prerequisites
 1. The Laptop is setup correctly, see [Setting up the Laptop](https://github.com/Azure/IoT-Pi-Day/tree/master/Setting%20up%20the%20Laptop).
 2.  The IoT Hub must be created and configured
-    - To create an IoT Hub, see [Lab 1.0 - Resource Configuration, Section Create an IoT Hub](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%200%20-%20Resource%20Configuration#create-an-iot-hub)
+    - To create an IoT Hub, see [Lab 1.0 - Resource Configuration, Section Create an IoT Hub](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%201%20-%20Getting%20started%20with%20the%20Sense%20HAT/Lab%201.0%20-%20Resource%20Configuration#create-an-iot-hub)
 
 ## Estimated time to complete
 - TBD
