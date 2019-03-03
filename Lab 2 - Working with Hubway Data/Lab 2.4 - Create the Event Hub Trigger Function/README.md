@@ -1,5 +1,4 @@
 # Lab 2.4 - Update Function App and Triggers
-## (Old) Lab 2.4 - Create a Function App and Event Hub Trigger Function
 We need to document the scenario here
 
 ## Prerequisites
@@ -17,12 +16,13 @@ Use the following steps to create an Azure Function:
 
 3. In the **Search the Marketplace** textbox, type **Function** and press **Enter**.
 
-    ![Image](/images/lab-0-imagex.png)
+    ![Image](/images/lab-2.4-image1.png)
 
 4. Select **Function App** from the list.
-5. Click **Create** to create a IoT Hub.
 
-    ![Image](/images/lab-0-imagex.png)
+    ![Image](/images/lab-2.4-image2.png)
+
+5. Click **Create** to create a IoT Hub.
 
 6. Fill in the fields:
 
@@ -34,9 +34,9 @@ Use the following steps to create an Azure Function:
    
     - **Location**, choose the same one you already selected.
 
-    - **OS** We are using Windows for these labs.
+    - **OS** We are using **Windows** for these labs.
 
-    - **Hosting Plan**  Ensure **Consumption plan** is selected.
+    - **Hosting Plan**, Select **Consumption plan**.
         > Hosting plan that defines how resources are allocated to your function app. In the default Consumption Plan, resources are added dynamically as required by your functions. In this serverless hosting, you only pay for the time your functions run. When you run in an App Service plan, you must manage the scaling of your function app.
    
     - **Location**, choose the same one you already selected.
@@ -44,15 +44,16 @@ Use the following steps to create an Azure Function:
     - **Runtime Stack** Select **.NET**
 
     - **Storage**, select **Create new** storage account for your function app, type **<*lastname*>pidayfuncstorage**.
+
         > Storage account names must be between 3 and 24 characters in length and may contain numbers and lowercase letters only.
    
     - **Application Insights**, select **Enable**.
    
-    - **Application Insights Location**, select same location as before.
+        - **Application Insights Location**, select same location as before.
 
-5. Select **Create** to provision and deploy the function app.
+        ![Image](/images/lab-2.4-image3.png) 
 
-    ![Image](/images/lab-2.3-imagex.png) 
+7. Select **Create** to provision and deploy the function app.
 
 ## Azure Credentials
 
@@ -81,74 +82,7 @@ We use the Event Hubs trigger to respond to an event sent to an event hub event 
 
 4. Type **```code .```** (that's **code space dot**) to open **HubwayFunctions.csproj** with **Visual Studio Code**.
 
-5. Click **Restore** if there is a **There are unresolved dependencies** message.
-
-
-<!--
-1. Navigate to the Workspace created in [Setting up the Laptop](https://github.com/Azure/IoT-Pi-Day/tree/master/Setting%20up%20the%20Laptop).
-2. Open up a **Command Prompt** or **PowerShell** as an **Administrator**.
-    - Type **```CD C:\Workspace\IoT-Pi-Day-master\IoT-Pi-Day-master\Lab 2 - Working with Hubway Data\Workspace\HubwayFunctions```**
-3.  Enter **```code .```** and press return.
-    > This brings up an instance on Visual Studio Code with HubwayFunctions selected as the working folder.
-3.  Press **Ctrl-Shift-P**.
-4.  Enter Azure Functions and select **Create New Project** from the list.
-
-    ![Image](/images/lab-2.3-image4.png) 
-
-5.  Select the folder that will contain your function app, **HubwayFunctions** and press **Enter**.
-
-    ![Image](/images/lab-2.3-image5.png) 
-
-6.  Select the project language -- in this case, **C#**
-
-    ![Image](/images/lab-2.3-image6.png)
-
-    > You should see the message Finshed creating project.
-    Select the **Restore** button on the lower right corner when it pops up.
-
-    ![Image](/images/lab-2.3-image7.png)
-
-10.  Select the **HubwayFunctions.csproj** from the left panel and change the TargetFramework to **netcoreapp2.2**.
-
-       ![Image](/images/lab-2.3-image8.png) 
-
-9.  **Save** and **Close** the file.
-
-## Create the Event Hub Trigger
-
-1. From **Visual Studio Code**, press **Ctrl-Shift-P**.
-2. Enter **Azure Functions** and select **Create Function** from the list.
-
-    ![Image](/images/lab-2.3-image9.png) 
-
-3. Select the folder containting your function app, **HubwayFunctions**.
-
-    ![Image](/images/lab-2.3-image10.png) 
-
-4. Select a function Template and select **All**.
-
-    ![Image](/images/lab-2.3-image11.png) 
-    ![Image](/images/lab-2.3-image12.png) 
-
-5. Select **EventHubTrigger**
-
-    ![Image](/images/lab-2.3-image13.png) 
-
-6. Change the name from EventHubTriggerCSharp to **HubwayEventHubTrigger**.
-
-    ![Image](/images/lab-2.3-image14.png) 
-
-7. Select the default nameaspace **Company.Function**.
-
-    ![Image](/images/lab-2.3-image15.png)
-
-8.  Select an App Setting for your Event Hub:
-    - Select **+ New App Setting**.
-    - Enter the key **Hubway_EVENTHUB** for your Event Hub key and press **Enter**
-    
-        ![Image](/images/lab-2.3-image16.png)
-
--->
+5. Click **Restore** for the message about unresolved dependencies.
 
 6. Navigate to the resource group.
 
@@ -156,35 +90,19 @@ We use the Event Hubs trigger to respond to an event sent to an event hub event 
     - Select the resource group created previously, i.e. **<*lastname*>-piday-rg**.
     - Click on the Event Hub namespace created earlier, i.e. **<*lastname*>-piday-eventhub**.
 
-    ![Image](/images/lab-0-imagex.png)
+    ![Image](/images/lab-2.4-image4.png)
 
 7. Update the **Event Hub** connection string.
 
-    - Click on **Shared Access policies** and select the **RootManageSharedAccessKey**.
+    - Under **Settings**, click on **Shared access policies**.
+    - Click **RootManageSharedAccessKey**.
     - Copy the **Connection string-primary key**.
 
-        ![Image](/images/lab-2.3-image17.x.png)
+        ![Image](/images/lab-2.4-image5.png)
 
     - From Visual Studio Code, open the file **local.settings.json** and **Paste** in the connection string between the quotes on the **Shared_Access_Key_EVENTHUB** line.
 
-        ![Image](/images/lab-2.3-imagex.png)
-
-<!--
-    - Enter the name of the event hub you created earlier, **hubwaytelemetry**.
-
-        ![Image](/images/lab-2.3-image18.png)
-
-    - When you get the message for **AzureWebJobsStorage**, click **Skip for now**.
-
-        ![Image](/images/lab-2.3-image18.1.png)
-
-9. Verify the **Hubway_EVENTHUB** connection string.
-    - Open the file **local.settings.json** file.
-    - Confirm the **Hubway_EVENTHUB** connection string has been added.
-
-        ![Image](/images/lab-2.3-image19.png) 
-
--->
+        ![Image](/images/lab-2.4-image6.png) 
 
 8. Update the **AzureWebJobsStorage** connection string.
 
@@ -192,19 +110,18 @@ We use the Event Hubs trigger to respond to an event sent to an event hub event 
     - Select the resource group created previously. i.e. **<*lastname*>-piday-rg**.
     - Click on the Storage Account created earlier, i.e. **<*lastname*>pidaydatastorage**.
 
-    ![Image](/images/lab-0-imagex.png)
+    ![Image](/images/lab-2.4-image7.png)
 
-    - Click on **Access Keys** under Settings.
+    - Under **Settings**, click on **Access Keys**.
     - Copy the **Connection String** under **key1**.
 
-        ![Image](/images/lab-2.3-image19.x.png)  
+        ![Image](/images/lab-2.4-image8.png)  
 
     - From Visual Studio Code, open the file **local.settings.json** and **Paste** in the connection string between the quotes on the **AzureWebJobsStorage** line.
 
-        > The connection string line will appear longer than this screen shot.
+        ![Image](/images/lab-2.4-image9.png)  
 
-        ![Image](/images/lab-2.3-image19.x.png)  
-
+Pagels
 
 ## Test the Function
 Let's test the Event Hub trigger to ensure it's firing and ready to process data.
@@ -217,7 +134,6 @@ Let's test the Event Hub trigger to ensure it's firing and ready to process data
 
     > Refer to Lab 2.1.1 - Send Hubway data to Iot Hub, section [Run the code from the Raspberry PI](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.1%20-%20IoT%20Hub/Lab%202.1.1%20-%20Send%20Hubway%20Data%20to%20Iot%20Hub#run-the-code-from-the-raspberry-pi)
 
-    <!--  ![Image](/images/missing-image.png) -->
 
 6. If all went well, you should see each record in JSON format being sent up to the IoT Hub from Visual Studio Code.
 
@@ -225,151 +141,57 @@ Let's test the Event Hub trigger to ensure it's firing and ready to process data
 
 7. From **Visual Studio Code**, press **Ctrl-C** to stop.
 
+Pagels
+
 ## Configure CosmosDB Trigger Bindings
 
 🚨 Descrption on what were doing here is needed!
 
-1.  Copy the connection string from the CosmosDB Account you created previously.  
-    - Go to the **Azure Portal**.
-    - In the left side menu, click on **Resource Groups**.
-    - Select the resource group created previously. i.e. **<*lastname*>-piday-rg**.
-    - Click on the CosmosDB Account created earlier, i.e. **<*lastname*>-piday-cosmosdb**.
+1. Navigate to the resource group.
 
-        ![Image](/images/lab-0-imagex.png)
+    - From the Azure Portal from the left menu, click on **Resource Groups**.
+    - Select the resource group created previously, i.e. **<*lastname*>-piday-rg**.
+    - Click on the CosmosDB created earlier, i.e. **<*lastname*>-piday-cosmosdb**.
+
+    ![Image](/images/lab-2.4-image10.png) 
+
+2.  Copy the connection string from the CosmosDB Account.
 
     - Click on **Keys** under Settings.
     - Copy the **Primary Connection String** on the **Read-write keys** tab.
+
+        ![Image](/images/lab-2.4-image11.png)
 
 2. Update the **cosmosdb_DOCUMENTDB** connection string.
 
     - In Visual Studio Code, open the file **local.settings.json** and **Paste** in the connection string between the quotes on the **Hubway_EVENTHUB** line.
 
-        ![Image](/images/lab-2.3-image25.x.png) 
-
-    > The connection string line will appear longer than this screen shot.
-
     - ?🚨? In Visual Studio Code, open the file **local.settings.json** and **Paste** in the connection string between the quotes on the **cosmosdb_DOCUMENTDB** line.
 
-    > The connection string line will appear longer than this screen shot.
+    - ?🚨? In Visual Studio Code, open the file **local.settings.json** and **Paste** in the connection string between the quotes on the **Shared_Access_Key_DOCUMENTDB** line.
 
-    ![ Image](/images/lab-2.3-image25.x.png) 
-
-3. Resolve code dependancies.
-?🚨? Check if still needed?
-
-    - From Visual Studio Code, click on **Terminal** in the top menu and select **New Terminal** to open a new terminal window below.
-    - Press **Enter** to get the prompt.
-    - To update packages and resolve dependancies, type the following at the terminal command prompt.
-    > **```dotnet add package Microsoft.Azure.WebJobs.Extensions.CosmosDB --version 3.0.3```**
-
-<!--
-1. From **Visual Studio Code**, double-click on file **HubwayEventHubTrigger.cs** to open in the editor, if it's not alreday opened.
-
-    ![Image](/images/lab-2.3-image21.png)
-
-2. Add the following using statement to the top of the file, **using Newtonsoft.Json.Linq;**.
-
-    ![Image](/images/lab-2.3-image21.5.png) 
-
-2. Decorate the function with the CosmosDB Bindings.
-3. From **Visual Studio Code**, click on file **Snippets.txt** to open in editor.
-4. Highlight the entire line under **Snippet One:**
-
-    ![Image](/images/lab-2.3-image22.png)
-
-5. Click on the file **HubwayEventHubTrigger.cs** in the editor, if it's not alreday opened.
-6. Scroll the file to the right and highlight **EventData[] events**
-
-    ![Image](/images/lab-2.3-image23.png)
-
-7. Paste in the code copied from the **Snippet One:** section above.
-
-    ![Image](/images/lab-2.3-image24.png)
-
-    > For reference, refer to the file **HubwayEventHubTrigger.cs** found under the [Lab 2 - Working with Hubway Data/Solution](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Solution/HubwayFunctions) folder.
-
-8.  Update the Event Hub Trigger by adding **```, ConsumerGroup = "hubwaycg"```** right after Connection = "Hubway_EVENTHUB".
-    > Don't forget to add the comma.
-
-    ![Image](/images/lab-2.3-image25.png)
-
-
-2. Open the file **local.settings.json** to manually add the **cosmosdb_DOCUMENTDB** connection string.
--->
-
-<!--
-10. Place your cursor in front of the **Hubway_EVENTHUB** entry, and press **Enter** to insert a new line.
-11. Enter the following line.
-
-    > **```"cosmosdb_DOCUMENTDB": "",```**
-
-    ![Image](/images/lab-2.3-image25.1.png)
-
-
-- In Visual Studio Code, open the file **local.settings.json**, **Paste** in the connection string between the quotes on the **Hubway_EVENTHUB** line.
--->
-
-
-<!-- ## 🚨 Content below this line is Under Construction 🚨 -->
-
-
-<!--
-## Update the code for CosmosDB
-
-1.  Change the body of the code to map the incoming JSON string to an output document for inserting into CosmosDB.
-
-
-3. From **Visual Studio Code**, click on file **Snippets.txt** to open in editor.
-4. Highlight the entire section under **Snippet Two:**
-
-    ![Image](/images/lab-2.3-image26.png)
-
-5. Click on the file **HubwayEventHubTrigger.cs** in the editor, if it's not alreday opened.
-6. Highlight everything between the **{** and **}** braces.
-
-    ![Image](/images/lab-2.3-image27.png)
-
-7. Paste in the code copied from the **Snippet Two:** section above.
-
-    ![Image](/images/lab-2.3-image28.png) 
-
-    > For reference, refer to the file **HubwayEventHubTrigger.cs** found under the [Lab 2 - Working with Hubway Data/Solution](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Solution/HubwayFunctions) folder.
-
-3. Modify the **Public static** trigger by removing the keywords **async Task** and adding **void**.
-    
-    ![Image](/images/lab-2.3-image30.png)
-    ![Image](/images/lab-2.3-image31.png)
--->
+        ![Image](/images/lab-2.4-image12.png) 
 
 ## Deploy your Function App Project
-<!--
-In order to properly deploy Dot Net Core 2.2 code, the settings file must be updated.
-1. From **Visual Studio Code**, open the **settings.json** file found under **.vscode**.
-2. Change the **azureFunctions.deploySubpath** to **netcoreapp2.2**.
-
-    ![Image](/images/lab-2.3-image31.5.png) 
-
-3. Press **Ctrl-S** to save the file.
--->
 
 🚨 Descrption on what were doing here is needed!
 
 1. From Visual Studio Code, press **Ctrl-Shift-P**, enter **Azure Functions** and select **Deploy to Function App**.
 
-    ![Image](/images/lab-2.3-imagex.png) 
+    ![Image](/images/lab-2.4-image13.png) 
 
 2. Select the **Function App name** created in the above section **Create a function app from the Azure portal**.
     > i.e. **<**lastname**>-piday-functionapp**.
 
-    ![Image](/images/lab-2.3-imagex.png) 
+    ![Image](/images/lab-2.4-image14.png) 
 
 3. For the message **Are you sure...**, click **Deploy**.
 
-    ![Image](/images/lab-2.3-imagex.png)
+    ![Image](/images/lab-2.4-image15.png)
 
 4. After a successful deployment, click **Stream Logs**.
 
-    ![Image](/images/lab-2.3-imagex.png)
+    ![Image](/images/lab-2.4-image16.png) 
 
 ## Run the code from the Raspberry PI
 
@@ -384,10 +206,9 @@ In order to properly deploy Dot Net Core 2.2 code, the settings file must be upd
 
 6. If all went well, you should see each record in JSON format being sent up to the IoT Hub from Visual Studio Code.
 
-    ![Image](/images/lab-2.3-imagex.png)
+    ![Image](/images/lab-2.4-image17.png)
 
 7. From **Visual Studio Code**, press **Ctrl-C** to stop.
-
 
 ## Reference Sites
 
