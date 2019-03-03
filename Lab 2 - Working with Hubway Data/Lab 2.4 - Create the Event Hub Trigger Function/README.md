@@ -1,4 +1,5 @@
-# Lab 2.4 - Create a Function App and Event Hub Trigger Function
+# Lab 2.4 - Update Function App and Event Hub Trigger Function
+## Lab 2.4 - Create a Function App and Event Hub Trigger Function
 We need to document the scenario here
 
 ## Prerequisites
@@ -63,10 +64,10 @@ This is only required if it's the first time you're logging into Azure from Visu
 
     > Note: Once you are signed in, close the web page and return to Visual Studio Code.
 
-## ?🚨? Create the EventHubTrigger Function Project
 ## Develop the HubwayFunctions code
+### ?🚨? Create the EventHubTrigger Function Project
 
-Use the Event Hubs trigger to respond to an event sent to an event hub event stream. You must have read access to the event hub to set up the trigger. When an Event Hubs trigger function is triggered, the message that is passed into the function is a string type.
+We use the Event Hubs trigger to respond to an event sent to an event hub event stream. You must have read access to the event hub to set up the trigger. When an Event Hubs trigger function is triggered, the message that is passed into the function is a string type.
 
 We will be using Visual Studio Code and the Azure Functions Extension.
 
@@ -151,9 +152,9 @@ We will be using Visual Studio Code and the Azure Functions Extension.
 
 -->
 
-10. Update the **Event Hub** connection string.
+6. Update the **Event Hub** connection string.
 
-    - In the left side menu, click on **Resource Groups**.
+    - From the Azure Portal from the left menu, click on **Resource Groups**.
     - Select the resource group created previously, i.e. **<*lastname*>-piday-rg**.
     - Click on the Event Hub namespace created earlier, i.e. **<*lastname*>-piday-eventhub**.
 
@@ -164,7 +165,7 @@ We will be using Visual Studio Code and the Azure Functions Extension.
 
         ![Image](/images/lab-2.3-image17.x.png)
 
-    - In the file **local.settings.json**, **Paste** in the connection string between the quotes on the **Shared_Access_Key_EVENTHUB** line.
+    - From Visual Studio Code, open the file **local.settings.json** and **Paste** in the connection string between the quotes on the **Shared_Access_Key_EVENTHUB** line.
 
         ![Image](/images/lab-2.3-imagex.png)
 
@@ -185,9 +186,9 @@ We will be using Visual Studio Code and the Azure Functions Extension.
 
 -->
 
-10. Update the **AzureWebJobsStorage** connection string.
+7. Update the **AzureWebJobsStorage** connection string.
 
-    - In the left side menu, click on **Resource Groups**.
+    - From the Azure Portal in the left menu, click on **Resource Groups**.
     - Select the resource group created previously. i.e. **<*lastname*>-piday-rg**.
     - Click on the Storage Account created earlier, i.e. **<*lastname*>pidaydatastorage**.
 
@@ -198,7 +199,7 @@ We will be using Visual Studio Code and the Azure Functions Extension.
 
         ![Image](/images/lab-2.3-image19.x.png)  
 
-    - In the file **local.settings.json**, **Paste** in the connection string between the quotes on the **AzureWebJobsStorage** line.
+    - From Visual Studio Code, open the file **local.settings.json** and **Paste** in the connection string between the quotes on the **AzureWebJobsStorage** line.
 
         > The connection string line will appear longer than this screen shot.
 
@@ -206,10 +207,13 @@ We will be using Visual Studio Code and the Azure Functions Extension.
 
 
 ## Test the Function
-1. To execute the code, from **Visual Studio Code**, press **F5**.
-2. Telnet into the Raspberry Pi using SSH and login.
-3. Once you are logged in, type **cd SimulatedDevice**.
-4. Exectute the code, type **./simulated-device**.
+Let's test the Event Hub trigger to ensure it's firing and ready to process data.
+
+1. From **Visual Studio Code**, double-click on file **HubwayEventHubTrigger.cs** to open in the editor
+2. To execute the code, press **F5**.
+3. Telnet into the Raspberry Pi using SSH and login.
+4. Once you are logged in, type **cd SimulatedDevice**.
+5. Exectute the code, type **./simulated-device**.
 
     > Refer to Lab 2.1.1 - Send Hubway data to Iot Hub, section [Run the code from the Raspberry PI](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.1%20-%20IoT%20Hub/Lab%202.1.1%20-%20Send%20Hubway%20Data%20to%20Iot%20Hub#run-the-code-from-the-raspberry-pi)
 
@@ -219,17 +223,44 @@ We will be using Visual Studio Code and the Azure Functions Extension.
 
 ![Image](/images/lab-2.3-image20.png)
 
-5. From **Visual Studio Code**, press **Cntl-C** to stop.
+7. From **Visual Studio Code**, press **Cntl-C** to stop.
 
-## Configure Trigger Bindings
+## Configure CosmosDB Trigger Bindings
 
-1. Update the **cosmosdb_DOCUMENTDB** connection string.
+🚨 Descrption on what were doing here is needed!
 
+1.  Copy the connection string from the CosmosDB Account you created previously.  
+    - Go to the **Azure Portal**.
     - In the left side menu, click on **Resource Groups**.
-    - Select the resource group created previously, i.e. **<*lastname*>-piday-rg**.
+    - Select the resource group created previously. i.e. **<*lastname*>-piday-rg**.
     - Click on the CosmosDB Account created earlier, i.e. **<*lastname*>-piday-cosmosdb**.
 
-    ![Image](/images/lab-0-imagex.png)
+        ![Image](/images/lab-0-imagex.png)
+
+    - Click on **Keys** under Settings.
+    - Copy the **Primary Connection String** on the **Read-write keys** tab.
+
+2. Update the **cosmosdb_DOCUMENTDB** connection string.
+
+    - In Visual Studio Code, open the file **local.settings.json** and **Paste** in the connection string between the quotes on the **Hubway_EVENTHUB** line.
+
+        ![Image](/images/lab-2.3-image25.x.png) 
+
+    > The connection string line will appear longer than this screen shot.
+
+    - ?🚨? In Visual Studio Code, open the file **local.settings.json** and **Paste** in the connection string between the quotes on the **cosmosdb_DOCUMENTDB** line.
+
+    > The connection string line will appear longer than this screen shot.
+
+    ![ Image](/images/lab-2.3-image25.x.png) 
+
+3. Resolve code dependancies.
+?🚨? Check if still needed?
+
+    - From Visual Studio Code, click on **Terminal** in the top menu and select **New Terminal** to open a new terminal window below.
+    - Press **Enter** to get the prompt.
+    - To update packages and resolve dependancies, type the following at the terminal command prompt.
+    > **```dotnet add package Microsoft.Azure.WebJobs.Extensions.CosmosDB --version 3.0.3```**
 
 <!--
 1. From **Visual Studio Code**, double-click on file **HubwayEventHubTrigger.cs** to open in the editor, if it's not alreday opened.
@@ -262,9 +293,9 @@ We will be using Visual Studio Code and the Azure Functions Extension.
 
     ![Image](/images/lab-2.3-image25.png)
 
--->
 
 2. Open the file **local.settings.json** to manually add the **cosmosdb_DOCUMENTDB** connection string.
+-->
 
 <!--
 10. Place your cursor in front of the **Hubway_EVENTHUB** entry, and press **Enter** to insert a new line.
@@ -273,26 +304,11 @@ We will be using Visual Studio Code and the Azure Functions Extension.
     > **```"cosmosdb_DOCUMENTDB": "",```**
 
     ![Image](/images/lab-2.3-image25.1.png)
+
+
+- In Visual Studio Code, open the file **local.settings.json**, **Paste** in the connection string between the quotes on the **Hubway_EVENTHUB** line.
 -->
 
-- Click on **Keys** under Settings.
-- Copy the **Primary Connection String** on the **Read-write keys** tab.
-
-![Image](/images/lab-2.3-image25.x.png) 
-
-- In the file **local.settings.json**, **Paste** in the connection string between the quotes on the **Hubway_EVENTHUB** line.
-
-- ?🚨? In the file **local.settings.json**, **Paste** in the connection string between the quotes on the **cosmosdb_DOCUMENTDB** line.
-> The connection string line will appear longer than this screen shot.
-
-![Image](/images/lab-2.3-image25.x.png) 
-
-3. From Visual Studio Code, click on **Terminal** in the top menu and select **New Terminal** to open a new terminal window below.
-
-4. Press **Enter** to get the prompt.
-
-5. To update packages and resolve dependancies, type the following at the terminal command prompt.
-    > **```dotnet add package Microsoft.Azure.WebJobs.Extensions.CosmosDB --version 3.0.3```**
 
 <!-- ## 🚨 Content below this line is Under Construction 🚨 -->
 
@@ -336,7 +352,9 @@ In order to properly deploy Dot Net Core 2.2 code, the settings file must be upd
 3. Press **Ctrl-S** to save the file.
 -->
 
-1. Press **Ctrl-Shift-P**, enter **Azure Functions** and select **Deploy to Function App**.
+🚨 Descrption on what were doing here is needed!
+
+1. From Visual Studio Code, press **Ctrl-Shift-P**, enter **Azure Functions** and select **Deploy to Function App**.
 
     ![Image](/images/lab-2.3-imagex.png) 
 
