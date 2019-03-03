@@ -67,9 +67,7 @@ This is only required if it's the first time you're logging into Azure from Visu
 ## Develop the HubwayFunctions code
 ### ?🚨? Create the EventHubTrigger Function Project
 
-We use the Event Hubs trigger to respond to an event sent to an event hub event stream. You must have read access to the event hub to set up the trigger. When an Event Hubs trigger function is triggered, the message that is passed into the function is a string type.
-
-We will be using Visual Studio Code and the Azure Functions Extension.
+We use the Event Hubs trigger to respond to an event sent to an event hub event stream. You must have read access to the event hub to set up the trigger. When an Event Hubs trigger function is triggered, the message that is passed into the function is a string type. We will be using Visual Studio Code and the Azure Functions Extension.
 
 1. Open up a Command Prompt or PowerShell as an Administrator.
 2. Navigate to the Workspace created in [Setting up the Laptop](https://github.com/Azure/IoT-Pi-Day/tree/master/Setting%20up%20the%20Laptop).

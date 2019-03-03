@@ -1,6 +1,4 @@
 # Lab 2.5 - Update the CosmosDB Trigger Function
-## (old) Lab 2.5 - Create a CosmosDB Trigger Function
-
 
 ## Prerequisites
 1. The Resource Configuation Lab is completed, see [Lab 1.0 - Resource Configuration](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%201%20-%20Getting%20started%20with%20the%20Sense%20HAT/Lab%201.0%20-%20Resource%20Configuration)
@@ -9,11 +7,7 @@
 
 ## Develop the CosmosDBTrigger Function code
 
-🚨 Descrption on what were doing here is needed!
-
-We use the CosmosDB trigger to respond to an event sent to an ...
-
-We will be using Visual Studio Code and the Azure Functions Extension.
+🚨 Descrption on what were doing here is needed! We use the CosmosDB trigger to respond to an event sent to an ..... We will be using Visual Studio Code and the Azure Functions Extension.
 
 <!--
 1. From **Visual Studio Code**, press **Ctrl-Shift-P**.
@@ -82,6 +76,7 @@ The body of the code is used to map the incoming JSON string to an output docume
 
 2. Update the **Azure Maps Subscription Key** connection string.
 
+    - Confirm you have the project **HubwayFunctions.csproj** opened in Visual Studio Code.
     - From **Visual Studio Code**, double-click on the file **HubwayCosmosDBTrigger.cs** in the editor to open it.
 
         ![Image](/images/lab-2.3-imagex.png)
