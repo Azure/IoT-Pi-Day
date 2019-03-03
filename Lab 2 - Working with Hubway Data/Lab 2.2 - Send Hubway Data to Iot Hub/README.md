@@ -37,20 +37,6 @@ This is only required if it's the first time you're logging into Azure from Visu
 
 ## Develop simulated-device code
 
-<!--
-1. ?🚨? From Visual Studio Code, edit the **simulated-device.csproj** by clicking on the filename in the left panel.
-
-    > ?🚨? Click **Restore** for the **There are unresolved dependencies** message.
-
-2. ?🚨? Press **Cntrl-S** to save the file.
-
-3. ?🚨? From Visual Studio Code, click on **Terminal** in the top menu and select **New Terminal** to open a new terminal window below.
-4. ?🚨? Press **Enter** to get the prompt.
-
-5. ?🚨? To update packages and resolve any dependancies, type the following at the terminal command prompt.
-    - **```dotnet add package Microsoft.Azure.Devices.Client --version 1.19.0```**
--->
-
 1. Select the resource group.
 
     - From the Azure Portal from the left menu, click on **Resource Groups**.

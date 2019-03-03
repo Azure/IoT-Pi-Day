@@ -7,30 +7,30 @@ We need to document the scenario here
 3. Completion of Lab 2.1 through 2.2 must be done.
 
 ## Estimated time to complete
-- TBD
+- 5 min
 
 ## Configuration and Settings
 
-1. Navigate to the resource group.
+1. Select the resource group.
 
-    - In the left side menu, click on **Resource Groups**.
-    - Select the resource group created previously. i.e. **<*lastname*>-piday-rg**.
+    - From the Azure Portal from the left menu, click on **Resource Groups**.
+    - Select the resource group created previously, i.e. **<*lastname*>-piday-rg**.
     - Click on the Event Hub namespace created earlier, i.e. **<*lastname*>-piday-eventhub**.
 
-        ![Image](/images/lab-0-imagex.png)
+        ![Image](/images/lab-2.3-image1.png) 
 
 2. Add a Consumer group
 
     - In the left panel under **Entities**, select **Event Hubs**.
     - Select yours in the window on the right, i.e. **hubwaytelemetry**.
 
-        ![Image](/images/lab-2.2-imagex.png)
+        ![Image](/images/lab-2.3-image2.png) 
 
     - Under **Entities**, select **Consumer Groups**.
     - Click **+ Consumer Group** to create a new Group.
     - Type the name **hubwaycg** in the name field.
 
-        ![Image](/images/lab-2.3-imagex.png)
+        ![Image](/images/lab-2.3-image3.png) 
 
 7. Click **Create**.
 
