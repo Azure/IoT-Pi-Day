@@ -65,17 +65,13 @@ We will be using Visual Studio Code and the Azure Functions Extension.
 
 -->
 
-## Update the code for CosmosDBTrigger
-
-🚨 Descrption on what were doing here is needed!
-
 The body of the code is used to map the incoming JSON string to an output document for inserting into CosmosDB.
 
 1. Copy the **Azure Maps Subscription Key** connection string.
 
     - From the Azure Portal from the left menu, click on **Resource Groups**.
     - Select the resource group created previously, i.e. **<*lastname*>-piday-rg**.
-    - Click on the Azure Maps Account created earlier, i.e. **<*lastname*>-piday-eventhub**.
+    - Click on the Azure Maps Account created earlier, i.e. **<*lastname*>-piday-azuremaps**.
 
         ![Image](/images/lab-0-imagex.png)
 
@@ -87,8 +83,6 @@ The body of the code is used to map the incoming JSON string to an output docume
 2. Update the **Azure Maps Subscription Key** connection string.
 
     - From **Visual Studio Code**, double-click on the file **HubwayCosmosDBTrigger.cs** in the editor to open it.
-
-    - From Visual Studio Code, open the file **local.settings.json** and **Paste** in the connection string between the quotes on the **Shared_Access_Key_EVENTHUB** line.
 
         ![Image](/images/lab-2.3-imagex.png)
 
