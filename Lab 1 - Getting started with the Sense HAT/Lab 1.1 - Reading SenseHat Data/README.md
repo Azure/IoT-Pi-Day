@@ -26,7 +26,7 @@ In this lab, we are running a program on the Raspberry Pi device that will grab 
 5. Click on **Terminal** in the top menu and select **New Terminal** to open a new terminal window below.
 6. Press **Enter** to get the prompt.
 
-7. Click **Restore** to resolve dependencies message and update packages and resolve any dependancies, type the following at the terminal.
+7. Click **Restore** to resolve dependencies message and update packages.
 
 ## Azure Credentials
 
@@ -67,7 +67,7 @@ This is only required if it's the first time you're logging into Azure from Visu
 
     ![Image](/images/lab-1.1-image5.png) 
 
-4.  Update your assigned Raspberry Pi device hostname.  
+4.  Update the Raspberry Pi device hostname.  
 
     - Replace <**Your Raspberry Pi Device Name**> in **Program.cs** with Raspberry Pi device hostname.
     - Type your assigned Raspberry Pi device hostname. i.e. **raspberrypi-det-000**.
@@ -94,14 +94,14 @@ This is only required if it's the first time you're logging into Azure from Visu
     **```scp.exe -r .\bin\Debug\netcoreapp2.2\linux-arm\publish\* pi1@192.168.1.203:/home/pi1/SenseHATDotNetCore```**
 
 3. When prompted to continue to connect, type **yes**.
-4. Type in **Password.1.!!** as the password.
+4. Type in **```Password.1.!!```** as the password.
 
 ## Run the code from the Raspberry Pi
 
  1. Run **PuTTY** or **Windows 10 SSH** to connect to the Raspberry Pi Device.
  2. Enter the **IP address** of the Raspberry Pi Device.
  3. Click **Open** and Accept the message about keys.
-    - Enter <**pi1**> as the logon name, and **Password.1.!!** as the password.
+    - Enter <**pi1**> as the logon name, and **```Password.1.!!```** as the password.
 4.  Once you are logged in
 5.  Type **```cd SenseHATDotNetCore```**
 6.  Type **```chmod 755 SenseHATDotNetCore```**

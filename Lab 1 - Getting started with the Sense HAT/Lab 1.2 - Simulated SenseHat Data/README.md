@@ -21,9 +21,13 @@ In this lab, we are running a program on the Raspberry Pi device that will "simu
 
     > C:\Workspace\IoT-Pi-Day-master\Lab 1 - Getting started with the Sense HAT\Solution\SenseHATDotNetCoreSimulation
 
-3. Type **```code .```** (that's **code space dot**) to open **SenseHATDotNetCoreSimulation.csproj** with **Visual Studio Code**.
+4. Type **```code .```** (that's **code space dot**) to open **SenseHATDotNetCoreSimulation.csproj** with **Visual Studio Code**.
 
-3. Click **Restore** for the **There are unresolved dependencies** message.
+5. Click on **Terminal** in the top menu and select **New Terminal** to open a new terminal window below.
+
+6. Press **Enter** to get the prompt.
+
+7. Click **Restore** to resolve dependencies message and update packages.
 
 ## Azure Credentials
 
@@ -37,33 +41,44 @@ This is only required if it's the first time you're logging into Azure from Visu
 
 ## Develop SenseHATDotNetCoreSimulation code
 
-1. From Visual Studio Code, edit the **Program.cs** by clicking on the filename in the left panel.
+1. Select the resource group.
 
-    ![Image](/images/lab-1.2-image1.2.png) 
+    - From the Azure Portal from the left menu, click on **Resource Groups**.
+    - Select the resource group created previously, i.e. **<*lastname*>-piday-rg**.
+    - Click on the IoT Hub created earlier, i.e. **<*lastname*>-piday-iothub**.
 
-2.  Copy your IoT Device connection string from the IotHub.  
+        ![Image](/images/lab-1.1-image2.png) 
 
-    - Go to the **Azure Portal**
-    - Select your **IotHub**
-    - Under Settings, select the **IoT Devices** menu on the left
-    - Select **your device name** from the window,
-    - Copy the **connection string (primary key)**.
-        > Example:  "HostName=smith-iothub.azure-devices.net;DeviceId=RaspberryPIHostName;SharedAccessKey=WAvH5fGAZHKo6U3ccUBpiHa7r1wETD+9gja/Aim6HiR=";
+2. Copy the **IoT Hub** connection string.
 
-    ![Image](/images/lab-1.1-image1.5.png)
+    - Under **Explorers**, select the **IoT Devices** menu on the left
+    - Select **your device name** from the window, i.e. **raspberrypi-det-000**.
 
-3.  Replace your copied <**IoT Hub Device Connnection String**> in **Program.cs** with your connection string from the IotHub.  
+        ![Image](/images/lab-1.1-image3.png) 
 
-    ![Image](/images/lab-1.2-image2.png)
+    - Copy the **Connection string (primary key)**.
 
-2.  Replace <**Your Raspberry Pi Device Name**> in **Program.cs** with your assigned Raspberry Pi device hostname.  
+        ![Image](/images/lab-1.1-image4.png)
 
-    ![Image](/images/lab-1.2-image3.png) 
+3.  Replace the **IoT Hub Device Connnection String**.
+
+    - From Visual Studio Code, edit the **Program.cs** by clicking on the filename in the left panel.
+
+    - **Paste** in and replace your <**IoT Hub Device Connnection String**>.
+
+        ![Image](/images/lab-1.2-image5.png) 
+
+4.  Update the Raspberry Pi device hostname.  
+
+    - Replace <**Your Raspberry Pi Device Name**> in **Program.cs** with Raspberry Pi device hostname.
+    - Type your assigned Raspberry Pi device hostname. i.e. **raspberrypi-det-000**.
+
+        ![Image](/images/lab-1.2-image6.png) 
 
 3. Press **Cntrl-S** to save the file.
 
 ##  Compile the code
-1. From the existing Command Prompt or PowerShell as an Administrator.
+1. From the existing Command Prompt or PowerShell.
 
 2. Confirm you are sitting in the correct folder.
 
@@ -75,52 +90,60 @@ This is only required if it's the first time you're logging into Azure from Visu
     - **```dotnet publish . -r linux-arm```**
 
 ##  Deploy to Raspberry Pi
-1.  From the existing Command Prompt or PowerShell Prompt, cut-n-pasted the below line and format it as follows: **scp.exe -r .\bin\Debug\netcoreapp2.2\linux-arm\publish\* <**username**>@<**device ip address**>:/home/<**pi1**>/SenseHATDotNetCoreSimulation**
+1.  From the existing Command Prompt or PowerShell Prompt, cut-n-paste the below line and format it as follows: **scp.exe -r .\bin\Debug\netcoreapp2.2\linux-arm\publish\* <**username**>@<**device ip address**>:/home/<**pi1**>/SenseHATDotNetCoreSimulation**
 
-    **```scp.exe -r .\bin\Debug\netcoreapp2.2\linux-arm\publish\* pi1@192.168.1.200:/home/pi1/SenseHATDotNetCoreSimulation```**
+    **```scp.exe -r .\bin\Debug\netcoreapp2.2\linux-arm\publish\* pi1@192.168.1.203:/home/pi1/SenseHATDotNetCoreSimulation```**
 
 3. When prompted to continue to connect, type **yes**.
-4. Type in **Password.1.!!** as the password.
+4. Type in **```Password.1.!!```** as the password.
 
 ## Run the code from the Raspberry Pi
 
  1. Run **PuTTY** or **Windows 10 SSH** to connect to the Raspberry Pi Device.
  2. Enter the **IP address** of the Raspberry Pi Device.
  3. Click **Open** and Accept the message about keys.
-    - Enter <**pi1**> as the logon name, and **Password.1.!!** as the password.
+    - Enter <**pi1**> as the logon name, and **```Password.1.!!```** as the password.
 4.  Once you are logged in
 5.  Type **```cd SenseHATDotNetCoreSimulation```**
 
+    > If you get a message for no such directory, type **```cd ..```** to back up 1 directory.
+
 6.  Type **```chmod 755 SenseHATDotNetCoreSimulation```**
 
-    ![Image](/images/lab-1.2-image4.png)
+    ![Image](/images/lab-1.2-image7.png) 
 
 7. Verify that permissions has been changed on the executable.
-8. Type **ls**, the scroll up and locate **SenseHATDotNetCoreSimulation**, it should be green.
+8. Type **```ls -al```**, the scroll up and locate **SenseHATDotNetCore**, it should be green.
 
-    ![Image](/images/lab-1.2-image5.png)
+    ![Image](/images/lab-1.1-image8.png)
 
 9.  To execute the code, type **```./SenseHATDotNetCoreSimulation```**
 
     > Note: If all went well, you should see each record in JSON format being sent up to the IoT Hub.
 
-    ![Image](/images/lab-1.2-image6.png)
+    ![Image](/images/lab-1.2-image9.png) 
 
 ## Verify data is being sent to Azure IoT Hub
 
-1. Go to the **Azure Portal**
-2. Select your **IotHub**
-3. Select the **Overview** menu on the left
-4. Scroll to bottom of blade and select **Device to cloud messages**
-5. On the **Metrics** page, change the timeframe to **Last 30 minutes** and time granularity to **1 minute**.
+1. Select the resource group.
 
-    ![Image](/images/lab-1.2-image7.png)
+    - From the Azure Portal from the left menu, click on **Resource Groups**.
+    - Select the resource group created previously, i.e. **<*lastname*>-piday-rg**.
+    - Click on the IoT Hub created earlier, i.e. **<*lastname*>-piday-iothub**.
 
-6. Verify you are seeing data being sent to your IoT Hub.
+        ![Image](/images/lab-1.1-image2.png) 
+
+2. Verify you are seeing data being sent to your IoT Hub.
 
     > IoT Hub is an Azure service that enables you to ingest high volumes of telemetry from your IoT devices into the cloud for storage or processing. You are now sending information from the Raspberry Pi device to Azure IoT Hub. At this point, nothing interesting is happening in the cloud with that data you are sending to Azure. It is simply being persisted for a default amount of time (1-day) and then being dropped.
 
-7. From the existing Telnet window, press **Cntl-C** to stop.
+    - Click on the **Overview** menu on the left.
+    - In the right panel, scroll to bottom of blade and click on **Device to cloud messages**.
+    - On the **Metrics** page, change the timeframe to **Last 30 minutes** and time granularity to **1 minute**.
+
+    ![Image](/images/lab-1.1-image10.png)
+
+3. From the existing Telnet window, press **Cntl-C** to stop sending data.
 
 ## Reference Sites
 
@@ -133,4 +156,3 @@ This is only required if it's the first time you're logging into Azure from Visu
 [Get-Started]: https://docs.microsoft.com/en-us/dotnet/core/tutorials/with-visual-studio-code
 
 [vs-code-debug]: https://code.visualstudio.com/Docs/editor/debugging
-
