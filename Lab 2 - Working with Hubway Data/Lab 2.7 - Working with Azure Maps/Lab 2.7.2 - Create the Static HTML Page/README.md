@@ -20,7 +20,7 @@ We need to document the scenario here
 
 4. Type **```code .```** (that's **code space dot**).
 
-5. Copy the **Azure Maps Subscription Key** connection string.
+5. Select the resource group.
 
     - From the Azure Portal from the left menu, click on **Resource Groups**.
     - Select the resource group created previously, i.e. **<*lastname*>-piday-rg**.
@@ -28,12 +28,14 @@ We need to document the scenario here
 
         ![Image](/images/lab-0-imagex.png)
 
+6. Copy the **Azure Maps Subscription Key** connection string.
+
     - Under **Settings**, click on **Authentication**.
     - Under **Shared Key Authentication**, copy the **Primary Key**.
 
         ![Image](/images/lab-2.5-imagex.png)
 
-6. Update the **Azure Maps Subscription Key** connection string.
+7. Update the **Azure Maps Subscription Key** connection string.
 
     - From **Visual Studio Code**, double-click on the file **hubwayplot.html** in the editor to open it.
 

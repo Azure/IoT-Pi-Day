@@ -134,7 +134,7 @@ After the CosmosDB deployment is complete, navigate to the Cosmos DB Account.
 
     > You can watch the notification pane to validate that it created successfully.
 
-## Create an Azure Map
+## Create an Azure Map Account
 Azure Maps is a portfolio of geospatial services that include service APIs for Maps, Search, Routing, Traffic and Time Zones. We will be using Azure Maps for visualization of the data in one of the labs. In this section, you will create the Azure Map component so we can use it later.
 
 Use the following steps to create an Azure Map:    
