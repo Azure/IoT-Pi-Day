@@ -21,7 +21,7 @@ The **Azure IoTPiDay Workshop** is setup to build out a real-life IoT scenario b
 
 **Option 1 - Download ZIP to your Desktop**
 
-- Click **Download Zip**, **Save As** to Downloads folder.
+- Click **Download Zip**, **Save As** to the **Desktop** or **Downloads** folder.
 - When download is complete, click **Open Folder**.
 - **Right-Click** on **Iot-Pi-Day-master.zip**.
 - Select **Extract All**, click **Extract** to **C:\Workspace**.
@@ -42,12 +42,12 @@ In this section, we will be creating an IOT Hub that we will use to connect to t
 
 3. In the **Search the Marketplace** textbox, type **IoT** and press **Enter**.
 
-    ![Image](/images/lab-0-imagex.png)
+    ![Image](/images/lab-1.0-image1.png) 
 
 3. Select **Iot Hub** from the list.
 4. Click **Create** to create a IoT Hhub.
 
-    ![Image](/images/lab-0-imagex.png)
+    ![Image](/images/lab-1.0-image2.png) 
 
 4. Fill in the fields.
    - **Subscription**, select the subscription to use for your IoT Hub.
@@ -59,6 +59,9 @@ In this section, we will be creating an IOT Hub that we will use to connect to t
    - **Region**, This is the region in which you want your IoT Hub to be located. Select the location closest to you from the dropdown list and take note as they will use this region for all components through the day.
 
    - **IoT Hub Name**:, type in the name for your IoT Hub. This name must be globally unique, type **<*lastname*>-piday-iothub**.
+
+        ![Image](/images/lab-1.0-image3.png) 
+
    - Click **Review + create**.
    - If there are no issues, click **Create** to create your IoT hub.
 
@@ -69,7 +72,7 @@ In this section, we will be creating an IOT Hub that we will use to connect to t
 2.  Click **IoT devices** under Explorers.
 3.  Click **Add**.
 
-    ![Image](/images/lab-2.1-image1.png)
+    ![Image](/images/lab-1.0-image4.png)
 
 4. Fill in the fields for the IoT Device as follows.
     - **Device ID**, use the hostname of your IoT Device, type **raspberrypi-<**cityabbrev>**<**number**>**.
@@ -78,7 +81,7 @@ In this section, we will be creating an IOT Hub that we will use to connect to t
 
     - Ensure **Auto Generate Keys** is selected.
 
-    ![Image](/images/lab-2.1-image2.png)
+        ![Image](/images/lab-1.0-image5.png)
 
     - Click **Save**
 

@@ -17,14 +17,14 @@ Use the following steps to create an Event Hubs Namespace:
 
 2. In the Azure portal click **+Create a resource** at the top left of the screen.
 
-3. In the **Search the Marketplace** textbox, type **Event Hubs** and press **Enter**.
+3. In the **Search the Marketplace** textbox, type **Event** and press **Enter**.
 
-    ![Image](/images/lab-0-imagex.png)
+    ![Image](/images/lab-2.0-image1.png)
 
 4. Select **Event Hubs** from the list.
 5. Click **Create** to create a IoT Hub.
 
-    ![Image](/images/lab-0-imagex.png)
+    ![Image](/images/lab-2.0-image2.png)
 
 6. Fill in the fields.
 
@@ -36,9 +36,9 @@ Use the following steps to create an Event Hubs Namespace:
 
     - **Resource Group**, choose the one created already, i.e. **<*lastname*>-piday-rg**.
    
-    - **Region**, choose the same one you already selected.
+    - **Location**, choose the same one you already selected.
 
-![Image](/images/lab-0-imagex.png)
+![Image](/images/lab-2.0-image3.png)
 
    - Click **Create**.
   
@@ -53,32 +53,32 @@ After the Event Hub deployment is complete, navigate to the Event Hub Namespace.
 2. Select the resource group created previously. i.e. **<*lastname*>-piday-rg**.
 3. Click on the Event Hub Namespace that was just created.
 
-    ![Image](/images/lab-0-imagex.png)
+    ![Image](/images/lab-2.0-image4.png)
 
-4. Click on **Event Hubs** in the left menu under Entities
+4. Click on **Event Hubs** in the left menu under **Entities**.
 5. Click **+ Event Hub** to add a new Event Hub to this namespace.
 <!--4. Click on the **Refresh** button to refresh the Event Hubs page to see the event hub namespace. -->
+
+    ![Image](/images/lab-2.0-image5.png)
 
 6. Type **hubwaytelemetry** for the name for your event hub.
 7. Click **Create**.
 
-    ![Image](/images/lab-0-image17.png)
+    ![Image](/images/lab-2.0-image6.png)
 
 ## Create a CosmosDB Account
 In this section, we will be creating a CosmosDB account that we will use to store the data collected during the labs.
-
-<!-- Note:  If you already created your account, skip to the section **Add a Collection**. -->
 
 Use the following steps to create an Azure CosmosDB account:    
 
 1. In the **Search the Marketplace** textbox, type **CosmosDB** and press **Enter**.
 
-    ![Image](/images/lab-0-imagex.png)
+    ![Image](/images/lab-2.0-image7.png)
 
 2. Select **Azure Cosmos DB** from the list.
 3. Click **Create** to create a CosmosDB account.
 
-    ![Image](/images/lab-0-imagex.png)
+    ![Image](/images/lab-2.0-image8.png)
 
 4. Fill in the fields.
 
@@ -91,6 +91,8 @@ Use the following steps to create an Azure CosmosDB account:
     - **API**, select **Core(SQL)** for document databases.
 
     - **Location**, choose the same one you already selected.
+
+    ![Image](/images/lab-2.0-image9.png)
 
 5. Click **Review+Create**, then **Create** to create your Azure Cosmos DB Account.
 
@@ -105,15 +107,15 @@ After the CosmosDB deployment is complete, navigate to the Cosmos DB Account.
 2. Select the resource group created previously. i.e. **<*lastname*>-piday-rg**.
 3. Click on the Cosmos DB Account created earlier, i.e. **<*lastname*>-piday-cosmosdb**.
 
-    ![Image](/images/lab-0-imagex.png)
+    ![Image](/images/lab-2.0-image10.png)
 
-4. From the **Overview** tab, Click **Data Explorer**.
-
-    ![Image](/images/lab-2.4-image2.png)
-
+4. From the **Overview** tab, click **Data Explorer**.
 5. Click on **New Collection**.
+
+    ![Image](/images/lab-2.0-image11.png)
+
 6. On the **Add Collection** page, enter the settings for the new collection.
-    - Enter **Hubway** as the name for the **Database Id**.
+    - Select **Create New**, and enter **Hubway** for **Database Id**.
 
     - Enter **Tripdata** as the name for **Collection Id**.
 
@@ -122,7 +124,7 @@ After the CosmosDB deployment is complete, navigate to the Cosmos DB Account.
     - Change the **Throughput** to **400** request units per second (RU/s).
         > Note: If you want to reduce latency, you can scale up the throughput later.
 
-    ![Image](/images/lab-2.4-image3.png)
+    ![Image](/images/lab-2.0-image12.png)
 
 7.  Click **OK**.
 
@@ -135,12 +137,12 @@ Use the following steps to create an Azure Map:
 
 1. In the **Search the Marketplace** textbox, type **Azure Maps** and press **Enter**.
 
-    ![Image](/images/lab-0-imagex.png)
+    ![Image](/images/lab-2.0-image13.png)
 
 2. Select **Maps** from the list.
-3. Click **Create** to create a IoT Hhub.
+3. Click **Create** to create a Maps Account.
 
-    ![Image](/images/lab-0-imagex.png)
+    ![Image](/images/lab-2.0-image14.png)
 
 4. Fill in the fields.
 
@@ -154,9 +156,9 @@ Use the following steps to create an Azure Map:
 
     - Check the box **I confirm...**.
 
-    - Select **Review+Create**, then **Create**.
+        ![Image](/images/lab-2.0-image15.png)
 
-    ![Image](/images/lab-0-image32.png)
+    - Select **Review+Create**, then **Create**.
 
     > You can watch the notification pane to validate that it created successfully.
 
@@ -166,12 +168,13 @@ Use the following steps to create a Storage Account:
 
 1. In the **Search the Marketplace** textbox, type **Storage** and press **Enter**.
 
-    ![Image](/images/lab-0-imagex.png)
+    ![Image](/images/lab-2.0-image16.png)
 
 2. Select **Storage Account** from the list.
-3. Click **Create** to create a Storage Account.
 
-    ![Image](/images/lab-0-imagex.png)
+    ![Image](/images/lab-2.0-image17.png)
+
+3. Click **Create** to create a Storage Account.
 
 4. Fill in the fields.
 
@@ -193,7 +196,7 @@ Use the following steps to create a Storage Account:
 
    - **Access tier**, select **Hot**.
 
-    ![Image](/images/lab-2.6-image2.png) 
+    ![Image](/images/lab-2.0-image18.png) 
 
 6. Select **Review + Create**, then **Create** to create Storage Account.
 
@@ -205,9 +208,9 @@ During this lab, you should have placed all items in a single resource group. We
 1. In the left side menu, click on **Resource Groups**.
 2. Select the resource group created previously. i.e. **<*lastname*>-piday-rg**.
 
-    > This will show you all the resources you created that you will use through the day.
+    > This will show you all the resources you created that you will use throughout the day.
     
-    ![Image](/images/lab-0-imagex.png)
+    ![Image](/images/lab-2.0-image20.png)
 
 ## Reference Sites
 
