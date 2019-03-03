@@ -32,7 +32,7 @@ Use the following steps to create an Event Hubs Namespace:
     - **Name**, type in the name for your Event Hub Namespace. This name must be globally unique.
         - Type **<*lastname*>-piday-eventhub**.
 
-    - **Pricing Tier**, choose the pricing tier **Basic**.
+    - **Pricing Tier**, choose the pricing tier **Standard**.
 
     - **Subscription**, select the subscription to use for your Event Hub.
 
