@@ -1,5 +1,5 @@
-# Lab 2.4 - Update Function App and Event Hub Trigger Function
-## Lab 2.4 - Create a Function App and Event Hub Trigger Function
+# Lab 2.4 - Update Function App and Triggers
+## (Old) Lab 2.4 - Create a Function App and Event Hub Trigger Function
 We need to document the scenario here
 
 ## Prerequisites
