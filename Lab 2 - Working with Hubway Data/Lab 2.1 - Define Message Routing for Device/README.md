@@ -13,13 +13,13 @@ TBD - We need to document the scenario here
 2. Select the resource group created previously. i.e. **<*lastname*>-piday-rg**.
 3. Click on the IoT Hub created earlier, i.e. **<*lastname*>-piday-iothub**.
 
-    ![Image](/images/lab-0-imagex.png)
+    ![Image](/images/lab-2.1-image1.png) 
 
-4. Select **Message routing** from the **IoT Hub** Blade.
+4. Click **Message routing** from the **IoT Hub** Blade.
 5. Click **Custom Endpoints**.
-6. Click **Add** and select **Event Hubs**.
+6. Click **+ Add** and select **Event Hubs**.
 
-    ![Image](/images/lab-2.1-image3.png)
+    ![Image](/images/lab-2.1-image2.png)
 
 5.  Fill in the fields:
     - **Endpoint Name**, type **HubwayTelemetryRoute**.
@@ -27,13 +27,13 @@ TBD - We need to document the scenario here
         - i.e. **<**lastname**>-piday-eventhub**.
     - **Event Hub Instance**, select your event hub instance created, i.e. **hubwaytelemetry** from the drop down.
 
-    ![Image](/images/lab-2.1-image4.png)
+        ![Image](/images/lab-2.1-image3.png) 
 
 6. Click **Create**.
 7. Select the **Routes** tab at the top of the **Message Routing Blade**.
-8. Click **Add**.
+8. Click **+ Add**.
 
-    ![Image](/images/lab-2.1-image5.png)
+    ![Image](/images/lab-2.1-image4.png) 
 
 8.  Fill in the fields:
     - **Name**, enter **BostonHubwayTelemetryRoute**.
@@ -41,7 +41,7 @@ TBD - We need to document the scenario here
     - **Data Source**, select **Device Telemetry Messages**.
     - **Routing Query**: type in **```RoutingProperty = 'Hubway' ```**
 
-    ![Image](/images/lab-2.1-image6.png)
+        ![Image](/images/lab-2.1-image5.png) 
 
 9. Click **Save**.
 
