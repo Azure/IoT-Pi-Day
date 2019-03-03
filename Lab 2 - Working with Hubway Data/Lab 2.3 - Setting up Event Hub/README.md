@@ -11,16 +11,22 @@ We need to document the scenario here
 
 ## Configuration and Settings
 
+1. In the left side menu, click on **Resource Groups**.
+2. Select the resource group created previously. i.e. **<*lastname*>-piday-rg**.
+3. Click on the Event Hub Namespace that was just created.
+
+    ![Image](/images/lab-0-imagex.png)
+
+
 1. From the Azure Portal menu, select **Event Hubs**.
 1. Select your event hub created earlier.
     - i.e. **<**Lastname**>-pi-day-EventHub** from the list.
 
-    ![Image](/images/lab-2.2-image1.png)
+    ![Image](/images/lab-2.2-imagex.png)
 
-3. In the left panel under **Entities**, select **Event Hubs** and select yours in the window on the right,
-    - i.e. **hubwaytelemetry**.
+3. In the left panel under **Entities**, select **Event Hubs** and select yours in the window on the right, i.e. **hubwaytelemetry**.
 
-    ![Image](/images/lab-2.2-image2.png)
+    ![Image](/images/lab-2.2-imagex.png)
 
 4. In the left panel under **Entities**, select **Consumer Groups** on the left menu.
 5. Select **+ Consumer Group** to create a new Group.

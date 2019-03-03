@@ -9,48 +9,83 @@ We need to document the scenario here
 ## Create a function app from the Azure portal
 
 Use the following steps to create an Azure Function:    
+
 1. In a new browser window, sign in to the [Microsoft Azure Portal](https://portal.azure.com).
 
 2. In the Azure portal click **+Create a resource** at the top left of the screen.
 
-1. In a new browser window, sign in to the [Azure Portal][Azure-Portal].
+3. In the **Search the Marketplace** textbox, type **Function** and press **Enter**.
 
-2. Click **+ Create a resource**.
-3. Click **Compute**.
-3. Select **Function App** on the right panel.
+    ![Image](/images/lab-0-imagex.png)
 
-    ![Image](/images/lab-2.3-image1.png)
+4. Select **Function App** from the list.
+5. Click **Create** to create a IoT Hub.
 
-4. Fill in the fields:
-   - **App name**, enter **<**LastName**>-pi-day-functionapp**
-   - **Subscription**  Select your subscription.
-   - **Resource Group**  Select your resource Group.
-   - **OS** We are using Windows for these labs.
-   - **Hosting Plan**  Ensure **Consumption plan** is selected.
+    ![Image](/images/lab-0-imagex.png)
+
+6. Fill in the fields:
+
+   - **App Name**, type in the name for your Function App. This name must be globally unique, type **<*lastname*>-piday-functionapp**.
+
+    - **Subscription**, select the subscription to use for your Function App.
+
+    - **Resource Group**, choose **Use existing** and select the one created already, i.e. **<*lastname*>-piday-rg**.
+   
+    - **Location**, choose the same one you already selected.
+
+    - **OS** We are using Windows for these labs.
+
+    - **Hosting Plan**  Ensure **Consumption plan** is selected.
         > Hosting plan that defines how resources are allocated to your function app. In the default Consumption Plan, resources are added dynamically as required by your functions. In this serverless hosting, you only pay for the time your functions run. When you run in an App Service plan, you must manage the scaling of your function app.
-   * **Location**  Select the same location as before.
-   * **Runtime Stack** Select **.NET**
-   * **Storage** Create a storage account used by your function app, consider **functionappstorage**.
+   
+    - **Location**, choose the same one you already selected.
+
+    - **Runtime Stack** Select **.NET**
+
+    - **Storage**, select **Create new** storage account for your function app, type **<*lastname*>pidayfuncstorage**.
         > Storage account names must be between 3 and 24 characters in length and may contain numbers and lowercase letters only.
-   * **Application Insights**, select On.
-   * **Application Insights Location**, select same location as before.
+   
+    - **Application Insights**, select **Enable**.
+   
+    - **Application Insights Location**, select same location as before.
+
 5. Select **Create** to provision and deploy the function app.
 
-    ![Image](/images/lab-2.3-image2.png) 
+    ![Image](/images/lab-2.3-imagex.png) 
 
 ## Azure Credentials
 
-1. From **Visual Studio Code**, login to your Azure account.
-2. Press **Ctrl-Shift-P**.
-2. Enter **Azure** and select **Sign in to Azure Cloud**.
+This is only required if it's the first time you're logging into Azure from Visual Studio Code.
 
-    ![Image](/images/lab-2.3-image3.png) 
+1. From Visual Studio Code, press **Cntl-Shift-P**
+2. Enter **Azure** and select **Sign in to Azure Cloud**
+3. Authenticate to Azure when the dialog box appears.
 
-## Create the EventHubTrigger Function Project
+    > Note: Once you are signed in, close the web page and return to Visual Studio Code.
 
-Use the Event Hubs trigger to respond to an event sent to an event hub event stream. You must have read access to the event hub to set up the trigger. When an Event Hubs trigger function is triggered, the message that is passed into the function a string type.
+## ?🚨? Create the EventHubTrigger Function Project
+## Develop the HubwayFunctions code
+
+Use the Event Hubs trigger to respond to an event sent to an event hub event stream. You must have read access to the event hub to set up the trigger. When an Event Hubs trigger function is triggered, the message that is passed into the function is a string type.
 
 We will be using Visual Studio Code and the Azure Functions Extension.
+
+1. Open up a Command Prompt or PowerShell as an Administrator.
+2. Navigate to the Workspace created in [Setting up the Laptop](https://github.com/Azure/IoT-Pi-Day/tree/master/Setting%20up%20the%20Laptop).
+    - Simply Copy the following line and Paste at the command prompt:
+
+        **```CD C:\Workspace\IoT-Pi-Day-master\Lab 2 - Working with Hubway Data\Solution\HubwayFunctions```**
+
+3. Confirm you are sitting in the correct folder.
+
+    > C:\Workspace\IoT-Pi-Day-master\Lab 2 - Working with Hubway Data\Solution\HubwayFunctions
+
+4. Type **```code .```** (that's **code space dot**) to open **HubwayFunctions.csproj** with **Visual Studio Code**.
+
+5. Click **Restore** if there is a **There are unresolved dependencies** message.
+
+
+<!--
 1. Navigate to the Workspace created in [Setting up the Laptop](https://github.com/Azure/IoT-Pi-Day/tree/master/Setting%20up%20the%20Laptop).
 2. Open up a **Command Prompt** or **PowerShell** as an **Administrator**.
     - Type **```CD C:\Workspace\IoT-Pi-Day-master\IoT-Pi-Day-master\Lab 2 - Working with Hubway Data\Workspace\HubwayFunctions```**
@@ -114,16 +149,26 @@ We will be using Visual Studio Code and the Azure Functions Extension.
     
         ![Image](/images/lab-2.3-image16.png)
 
-    - Go to the Azure Portal and select the Event Hub namespace.
+-->
+
+10. Update the **Event Hub** connection string.
+
+    - In the left side menu, click on **Resource Groups**.
+    - Select the resource group created previously. i.e. **<*lastname*>-piday-rg**.
+    - Click on the Event Hub namespace created earlier, i.e. **<*lastname*>-piday-eventhub**.
+
+    ![Image](/images/lab-0-imagex.png)
+
     - Click on **Shared Access policies** and select the **RootManageSharedAccessKey**.
     - Copy the **Connection string-primary key**.
 
-        ![Image](/images/lab-2.3-image17.2.png)
+        ![Image](/images/lab-2.3-image17.x.png)
 
-    - Paste in the **connection string** for your event hub and press **Enter**.
+    - In the file **local.settings.json**, **Paste** in the connection string between the quotes on the **Shared_Access_Key_EVENTHUB** line.
 
-        ![Image](/images/lab-2.3-image17.png)
+        ![Image](/images/lab-2.3-imagex.png)
 
+<!--
     - Enter the name of the event hub you created earlier, **hubwaytelemetry**.
 
         ![Image](/images/lab-2.3-image18.png)
@@ -138,18 +183,27 @@ We will be using Visual Studio Code and the Azure Functions Extension.
 
         ![Image](/images/lab-2.3-image19.png) 
 
-10. Manually add the **AzureWebJobsStorage** connection string.
-    - From the Azure Portal, navigate to your **Storage** account.
+-->
+
+10. Update the **AzureWebJobsStorage** connection string.
+
+    - In the left side menu, click on **Resource Groups**.
+    - Select the resource group created previously. i.e. **<*lastname*>-piday-rg**.
+    - Click on the Storage Account created earlier, i.e. **<*lastname*>pidaydatastorage**.
+
+    ![Image](/images/lab-0-imagex.png)
+
     - Click on **Access Keys** under Settings.
     - Copy the **Connection String** under **key1**.
 
-        ![Image](/images/lab-2.3-image19.2.png)  
+        ![Image](/images/lab-2.3-image19.x.png)  
 
     - In the file **local.settings.json**, **Paste** in the connection string between the quotes on the **AzureWebJobsStorage** line.
 
         > The connection string line will appear longer than this screen shot.
 
-        ![Image](/images/lab-2.3-image19.4.png)  
+        ![Image](/images/lab-2.3-image19.x.png)  
+
 
 ## Test the Function
 1. To execute the code, from **Visual Studio Code**, press **F5**.
@@ -169,6 +223,15 @@ We will be using Visual Studio Code and the Azure Functions Extension.
 
 ## Configure Trigger Bindings
 
+10. Update the **cosmosdb_DOCUMENTDB** connection string.
+
+    - In the left side menu, click on **Resource Groups**.
+    - Select the resource group created previously. i.e. **<*lastname*>-piday-rg**.
+    - Click on the CosmosDB Account created earlier, i.e. **<*lastname*>-piday-cosmosdb**.
+
+    ![Image](/images/lab-0-imagex.png)
+
+<!--
 1. From **Visual Studio Code**, double-click on file **HubwayEventHubTrigger.cs** to open in the editor, if it's not alreday opened.
 
     ![Image](/images/lab-2.3-image21.png)
@@ -199,38 +262,46 @@ We will be using Visual Studio Code and the Azure Functions Extension.
 
     ![Image](/images/lab-2.3-image25.png)
 
+-->
+
 9. Open the file **local.settings.json** to manually add the **cosmosdb_DOCUMENTDB** connection string.
+
+<!--
 10. Place your cursor in front of the **Hubway_EVENTHUB** entry, and press **Enter** to insert a new line.
 11. Enter the following line.
 
     > **```"cosmosdb_DOCUMENTDB": "",```**
 
     ![Image](/images/lab-2.3-image25.1.png)
+-->
 
-12. From the Azure Portal, navigate to your **CosmosDB** account.
-13. Click on **Keys** under Settings.
-14. Copy the **Primary Connection String** on the **Read-write keys** tab.
+    - Click on **Keys** under Settings.
+    - Copy the **Primary Connection String** on the **Read-write keys** tab.
 
-    ![Image](/images/lab-2.3-image25.2.png) 
+    ![Image](/images/lab-2.3-image25.x.png) 
 
-15. In the file **local.settings.json**, **Paste** in the connection string between the quotes on the **Hubway_EVENTHUB** line.
+    - In the file **local.settings.json**, **Paste** in the connection string between the quotes on the **Hubway_EVENTHUB** line.
 
+    - ?🚨? In the file **local.settings.json**, **Paste** in the connection string between the quotes on the **cosmosdb_DOCUMENTDB** line.
     > The connection string line will appear longer than this screen shot.
 
-    ![Image](/images/lab-2.3-image25.3.png) 
+    ![Image](/images/lab-2.3-image25.x.png) 
 
 16. From Visual Studio Code, click on **Terminal** in the top menu and select **New Terminal** to open a new terminal window below.
 
 17. Press **Enter** to get the prompt.
 
-18. To  resolve dependancies, type the following at the terminal command prompt.
+18. To update packages and resolve dependancies, type the following at the terminal command prompt.
     > **```dotnet add package Microsoft.Azure.WebJobs.Extensions.CosmosDB --version 3.0.3```**
 
 <!-- ## 🚨 Content below this line is Under Construction 🚨 -->
 
+
+<!--
 ## Update the code for CosmosDB
 
 1.  Change the body of the code to map the incoming JSON string to an output document for inserting into CosmosDB.
+
 
 3. From **Visual Studio Code**, click on file **Snippets.txt** to open in editor.
 4. Highlight the entire section under **Snippet Two:**
@@ -252,8 +323,10 @@ We will be using Visual Studio Code and the Azure Functions Extension.
     
     ![Image](/images/lab-2.3-image30.png)
     ![Image](/images/lab-2.3-image31.png)
+-->
 
 ## Deploy your Project
+<!--
 In order to properly deploy Dot Net Core 2.2 code, the settings file must be updated.
 1. From **Visual Studio Code**, open the **settings.json** file found under **.vscode**.
 2. Change the **azureFunctions.deploySubpath** to **netcoreapp2.2**.
@@ -261,22 +334,24 @@ In order to properly deploy Dot Net Core 2.2 code, the settings file must be upd
     ![Image](/images/lab-2.3-image31.5.png) 
 
 3. Press **Ctrl-S** to save the file.
+-->
+
 4. Press **Ctrl-Shift-P**, enter **Azure Functions** and select **Deploy to Function App**.
 
-    ![Image](/images/lab-2.3-image32.png) 
+    ![Image](/images/lab-2.3-imagex.png) 
 
 5. Select the **Function App name** created in the above section **Create a function app from the Azure portal**.
-    > i.e. **<**LastName**>-pi-day-functionapp**.
+    > i.e. **<**lastname**>-piday-functionapp**.
 
-    ![Image](/images/lab-2.3-image33.png) 
+    ![Image](/images/lab-2.3-imagex.png) 
 
 6. For the message **Are you sure...**, click **Deploy**.
 
-    ![Image](/images/lab-2.3-image34.png)
+    ![Image](/images/lab-2.3-imagex.png)
 
 7. After a successful deployment, click **Stream Logs**.
 
-    ![Image](/images/lab-2.3-image35.png)
+    ![Image](/images/lab-2.3-imagex.png)
 
 8. Telnet into the Raspberry Pi using SSH and login.
 9. Once you are logged in, type **cd SimulatedDevice**.

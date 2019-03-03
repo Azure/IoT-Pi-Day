@@ -5,6 +5,8 @@
     "FUNCTIONS_WORKER_RUNTIME": "dotnet",
     "Shared_Access_Key_EVENTHUB": "Endpoint=<Endpoint>;SharedAccessKeyName=<Shared Access Key Name>;SharedAccessKey=<Shared Access Key>",
     "Shared_Access_Key_DOCUMENTDB": "AccountEndpoint=<End Point>;AccountKey=<Account Key>",
+    "cosmosdb_DOCUMENTDB": "",
+    "Hubway_EVENTHUB": "",
     "service": "<Connection String>"
   }
 }

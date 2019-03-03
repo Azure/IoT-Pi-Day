@@ -32,11 +32,11 @@ Use the following steps to create an Event Hubs Namespace:
 
     - **Pricing Tier**, choose the pricing tier **Basic**.
 
-  - **Subscription**, select the subscription to use for your Event Hub.
+    - **Subscription**, select the subscription to use for your Event Hub.
 
-   - **Resource Group**, choose the one created already, i.e. **<*lastname*>-piday-rg**.
+    - **Resource Group**, choose the one created already, i.e. **<*lastname*>-piday-rg**.
    
-   - **Region**, choose the same one you already selected.
+    - **Region**, choose the same one you already selected.
 
 ![Image](/images/lab-0-imagex.png)
 
