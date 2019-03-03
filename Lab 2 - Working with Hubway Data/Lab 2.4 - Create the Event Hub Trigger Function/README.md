@@ -341,7 +341,7 @@ Let's test the Event Hub trigger to ensure it's firing and ready to process data
     ![Image](/images/lab-2.3-image31.png)
 -->
 
-## Deploy your Project
+## Deploy your Function App Project
 <!--
 In order to properly deploy Dot Net Core 2.2 code, the settings file must be updated.
 1. From **Visual Studio Code**, open the **settings.json** file found under **.vscode**.
@@ -371,18 +371,22 @@ In order to properly deploy Dot Net Core 2.2 code, the settings file must be upd
 
     ![Image](/images/lab-2.3-imagex.png)
 
-5. Telnet into the Raspberry Pi using SSH and login.
-6. Once you are logged in, type **cd SimulatedDevice**.
-7. Exectute the code, type **./simulated-device**.
+## Run the code from the Raspberry PI
 
-    > Refer to Lab 2.1.1 - Send Hubway data to Iot Hub, section [Run the code from the Raspberry PI](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.1%20-%20IoT%20Hub/Lab%202.1.1%20-%20Send%20Hubway%20Data%20to%20Iot%20Hub#run-the-code-from-the-raspberry-pi)
+1. Run **PuTTY** or **Windows 10 SSH** to Telnet into the Raspberry Pi Device using SSH.
+2. Enter the **IP address** of the Raspberry Pi Device.
+    - Enter <**pi1**> as the logon name, and **Password.1.!!** as the password.
+3.  Once you are logged in
+4.  Type **```cd SimulatedDevice```**
+5.  To execute the code, type **```./simulated-device```**
 
-8. If all went well, you should see each record in JSON format being sent up to the IoT Hub from Visual Studio Code.
+    > Refer to Lab 2.2 - Send Hubway data to Iot Hub, section [Run the code from the Raspberry PI](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.1%20-%20IoT%20Hub/Lab%202.1.1%20-%20Send%20Hubway%20Data%20to%20Iot%20Hub#run-the-code-from-the-raspberry-pi)
 
-    ![Image](/images/lab-2.3-image36.png)
-    ![Image](/images/lab-2.3-image20.png)
+6. If all went well, you should see each record in JSON format being sent up to the IoT Hub from Visual Studio Code.
 
-9. From **Visual Studio Code**, press **Cntl-C** to stop.
+    ![Image](/images/lab-2.3-imagex.png)
+
+7. From **Visual Studio Code**, press **Cntl-C** to stop.
 
 
 ## Reference Sites

@@ -90,7 +90,6 @@ This is only required if it's the first time you're logging into Azure from Visu
     - Enter <**pi1**> as the logon name, and **Password.1.!!** as the password.
 4.  Once you are logged in
 5.  Type **```cd SenseHATDotNetCore```**
-
 6.  Type **```chmod 755 SenseHATDotNetCore```**
 
     ![Image](/images/lab-1.1-image4.png)
