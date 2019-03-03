@@ -22,13 +22,15 @@ Use the following steps to create an Event Hubs Namespace:
     ![Image](/images/lab-2.0-image1.png)
 
 4. Select **Event Hubs** from the list.
-5. Click **Create** to create a IoT Hub.
 
     ![Image](/images/lab-2.0-image2.png)
 
+5. Click **Create** to create an Event Hub.
+
 6. Fill in the fields.
 
-   - **Name**, type in the name for your Event Hub Namespace. This name must be globally unique, type **<*lastname*>-piday-eventhub**.
+    - **Name**, type in the name for your Event Hub Namespace. This name must be globally unique.
+        - Type **<*lastname*>-piday-eventhub**.
 
     - **Pricing Tier**, choose the pricing tier **Basic**.
 
@@ -38,7 +40,7 @@ Use the following steps to create an Event Hubs Namespace:
    
     - **Location**, choose the same one you already selected.
 
-![Image](/images/lab-2.0-image3.png)
+        ![Image](/images/lab-2.0-image3.png)
 
    - Click **Create**.
   
@@ -51,20 +53,20 @@ After the Event Hub deployment is complete, navigate to the Event Hub Namespace.
 
 1. In the left side menu, click on **Resource Groups**.
 2. Select the resource group created previously. i.e. **<*lastname*>-piday-rg**.
-3. Click on the Event Hub Namespace that was just created.
+3. Click on the **Event Hub Namespace** that was just created.
 
     ![Image](/images/lab-2.0-image4.png)
 
 4. Click on **Event Hubs** in the left menu under **Entities**.
 5. Click **+ Event Hub** to add a new Event Hub to this namespace.
-<!--4. Click on the **Refresh** button to refresh the Event Hubs page to see the event hub namespace. -->
 
     ![Image](/images/lab-2.0-image5.png)
 
 6. Type **hubwaytelemetry** for the name for your event hub.
-7. Click **Create**.
 
     ![Image](/images/lab-2.0-image6.png)
+
+7. Click **Create**.
 
 ## Create a CosmosDB Account
 In this section, we will be creating a CosmosDB account that we will use to store the data collected during the labs.
@@ -76,9 +78,10 @@ Use the following steps to create an Azure CosmosDB account:
     ![Image](/images/lab-2.0-image7.png)
 
 2. Select **Azure Cosmos DB** from the list.
-3. Click **Create** to create a CosmosDB account.
 
     ![Image](/images/lab-2.0-image8.png)
+
+3. Click **Create** to create a CosmosDB account.
 
 4. Fill in the fields.
 
@@ -86,7 +89,8 @@ Use the following steps to create an Azure CosmosDB account:
 
     - **Resource Group**, choose the one created already, i.e. **<*lastname*>-piday-rg**.
 
-    - **Account Name**, type in the name for your Azure Cosmos DB Account. This name must be globally unique, type **<*lastname*>-piday-cosmosdb**.
+    - **Account Name**, type in the name for your Azure Cosmos DB Account. This name must be globally unique.
+        - Type **<*lastname*>-piday-cosmosdb**.
 
     - **API**, select **Core(SQL)** for document databases.
 
@@ -140,9 +144,10 @@ Use the following steps to create an Azure Map:
     ![Image](/images/lab-2.0-image13.png)
 
 2. Select **Maps** from the list.
-3. Click **Create** to create a Maps Account.
 
     ![Image](/images/lab-2.0-image14.png)
+
+3. Click **Create** to create a Maps Account.
 
 4. Fill in the fields.
 
@@ -150,7 +155,8 @@ Use the following steps to create an Azure Map:
 
     - **Resource Group**, choose the one created already, i.e. **<*lastname*>-piday-rg**.
 
-    - **Name**, type in the name for your Azure Maps Account. This name must be globally unique, type **<*lastname*>-piday-azuremaps**.
+    - **Name**, type in the name for your Azure Maps Account. This name must be globally unique.
+        - Type **<*lastname*>-piday-azuremaps**.
 
     - **Pricing Tier**, select **Standard S0**.
 
