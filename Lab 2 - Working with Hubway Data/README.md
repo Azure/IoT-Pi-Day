@@ -5,8 +5,8 @@
 
 ### How it works
 - Unlock - Pick up a bike at any station around Boston, Brookline, Cambridge and Somerville.
-- Ride - Take a quick one-way trip or a leisurely ride around town. Commute to work or school, run errands and explore the city.
-- Return - Return your bike to any station. Slide the bike firmly into an empty dock and wait for the green light to make sure it's locked.
+- Ride - Take a quick one-way trip or a leisurely ride around town.
+- Return - Return your bike to any station.
 
 ## Prerequisites
 1. The Resource Configuation Lab is completed, see [Lab 1.0 - Resource Configuration](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%201%20-%20Getting%20started%20with%20the%20Sense%20HAT/Lab%201.0%20-%20Resource%20Configuration)
