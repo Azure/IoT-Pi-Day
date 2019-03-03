@@ -141,7 +141,7 @@ This is only required if it's the first time you're logging into Azure from Visu
     - In the right panel, scroll to bottom of blade and click on **Device to cloud messages**.
     - On the **Metrics** page, change the timeframe to **Last 30 minutes** and time granularity to **1 minute**.
 
-    ![Image](/images/lab-1.1-image10.png)
+    ![Image](/images/lab-1.2-image10.png) 
 
 3. From the existing Telnet window, press **Cntl-C** to stop sending data.
 
