@@ -10,35 +10,45 @@ We need to document the scenario here
 - TBD
 
 ## Creating the Blob container
+🚨 In this section, we will be creating a container to store the the hubway data.
 
-1. Sign in to the [Microsoft Azure Portal](https://portal.azure.com).
-2. Under **Blob service**, click **Blobs**.
-3. On the right, click **+ Container**.
-4. Enter a name for your blob container, **boston-hubway-data**.
-5. Select **Private(no anonymous access)**.
-6. Click **OK** to create the container.
+1. Create the Blob Container
 
-    ![Image](/images/lab-2.6-image4.png)
+    - From the Azure Portal from the left menu, click on **Resource Groups**.
+    - Select the resource group created previously, i.e. **<*lastname*>-piday-rg**.
+    - Click on the Storage Account created earlier, i.e. **<*lastname*>pidaydatastorage**.
 
-## Enable the Static Web Site
-1.  Under **Settings**, select Static website
-2.  In the window, select **Enabled**
-3.  Select Save.
+        ![Image](/images/lab-0-imagex.png)
+
+    - Under **Blob service**, click **Blobs**.
+    - On the right, click **+ Container** to add a container.
+    - Enter a name for your blob container, type **boston-hubway-data**.
+    - Select **Private(no anonymous access)**.
+    - Click **OK** to create the container.
+
+        ![Image](/images/lab-2.6-image4.png)
+
+## Configure the Blob service for static website hosting
+
+1. Enable the Static Web Site
+    - Under **Settings**, click **Static website**.
+    - Under **Static website**, click **Enabled** to enable you to host static content in your storage account.
+    - Click **Save**.
 
     ![Image](/images/lab-2.6-image5.png)
 
-    - Notice the $web folder that is created
-    - Take note of the Primary endpoint
+    - Notice the **$web** folder that is created
+    - Take note of the Primary endpoint, as you will need this URL later.
 
         ![Image](/images/lab-2.6-image6.png)
 
 ## Storage Explorer
-1.  Under **Storage Explorer(preview)**, select Static website
-
-2.  Select BLOB CONTAINERS
-3. You should have two containers:
-   - $web
-   - boston-hubway-data 
+1.  Verify containers were created.
+    - Click **Storage Explorer (preview)**.
+    - Click **BLOB CONTAINERS** to expand the tree structure.
+    - You should have two containers:
+        - **$web**
+        - **boston-hubway-data**
 
     ![Image](/images/lab-2.6-image7.png)
 

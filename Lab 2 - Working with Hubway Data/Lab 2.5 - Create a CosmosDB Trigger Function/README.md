@@ -7,7 +7,7 @@
 
 ## Develop the CosmosDBTrigger Function code
 
-🚨 Descrption on what were doing here is needed! We use the CosmosDB trigger to respond to an event sent to an ..... We will be using Visual Studio Code and the Azure Functions Extension.
+🚨 In this section, we will use a CosmosDB trigger function to respond to an event everytime a ??? We will be using Visual Studio Code and the Azure Functions Extension.
 
 <!--
 1. From **Visual Studio Code**, press **Ctrl-Shift-P**.

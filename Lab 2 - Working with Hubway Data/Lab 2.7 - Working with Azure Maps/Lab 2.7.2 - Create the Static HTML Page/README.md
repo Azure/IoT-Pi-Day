@@ -6,75 +6,91 @@ We need to document the scenario here
 2. The Resource Configuation Lab is completed, see [Lab 2.0 - Resource Configuration](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.0%20-%20Resource%20Configuration)
 3. Completion of Lab 2.1 through 2.7.1 must be done.
 
-## Update the Code
+## Develop the Static HTML Page code
 
-1. Using File Explorer, **<*Right-Click*>** and **Copy** the **HubwayMap** folder from solution.
+1. Open up a Command Prompt or PowerShell as an Administrator.
+2. Navigate to the Workspace created in [Setting up the Laptop](https://github.com/Azure/IoT-Pi-Day/tree/master/Setting%20up%20the%20Laptop).
+    - Simply Copy the following line and Paste at the command prompt:
 
-    ![Image](/images/lab-2.7.2-image1.png) 
+        **```CD C:\Workspace\IoT-Pi-Day-master\Lab 2 - Working with Hubway Data\Solution\HubwayMap```**
 
-2. Using File Explorer, **Paste** into your workspace folder.
-    > Refer to **Lab 0 - Resource Configuration** section **[Download the Repo](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%200%20-%20Resource%20Configuration#download-the-repo)**.
+3. Confirm you are sitting in the correct folder.
 
-    ![Image](/images/lab-2.7.2-image2.png)
+    > C:\Workspace\IoT-Pi-Day-master\Lab 2 - Working with Hubway Data\Solution\HubwayMap
 
-3. Open up a **Command Prompt** as an **Administrator**.
-4. Type **cd C:\Workspace\IoT-Pi-Day-master\IoT-Pi-Day-master\Lab 2 - Working with Hubway Data\Workspace\HubwayMap** to change to the Hubwaymap folder.
-5. Type **code .** and press enter.
-6. Open file **hubwayplot.html** an update the **Azure Maps subscription** key Azure Maps Subscription key.
+4. Type **```code .```** (that's **code space dot**).
 
-    ![Image](/images/lab-2.7.2-image3.png)
+5. Copy the **Azure Maps Subscription Key** connection string.
 
-    > From the Azure Portal, navigate to your Azure Maps Account deployment. Click on **Authentication** under **Settings**.  Locate and copy to clipboard, **Primary** key
+    - From the Azure Portal from the left menu, click on **Resource Groups**.
+    - Select the resource group created previously, i.e. **<*lastname*>-piday-rg**.
+    - Click on the Azure Maps Account created earlier, i.e. **<*lastname*>-piday-azuremaps**.
 
-8. Press **Ctrl+S** to save the file.
+        ![Image](/images/lab-0-imagex.png)
 
-## Azure Storage Explorer
+    - Under **Settings**, click on **Authentication**.
+    - Under **Shared Key Authentication**, copy the **Primary Key**.
 
-1. Launch the Azure Storage Explorer.
+        ![Image](/images/lab-2.5-imagex.png)
 
-    ![Image](/images/lab-2.7.2-image4.png) 
+6. Update the **Azure Maps Subscription Key** connection string.
 
-2. Connect to Azure Storage.
-3. Select Add an Azure Account in the top left.
-    
-    ![Image](/images/lab-2.7.2-image5.png) 
+    - From **Visual Studio Code**, double-click on the file **hubwayplot.html** in the editor to open it.
 
-    - Sign-In with your Azure credentials
-        - OR
-    - Select Use a Connection String
-    - Enter a Display Name
-    - Copy the **Connection String** from the **Access Keys** in the Azure Storage settings from the Azure Portal.
+        ![Image](/images/lab-2.3-imagex.png)
 
-    > From the Azure Portal, navigate to your Azure Storage Account. Click on **Access Keys** under **Settings**.  Locate and copy to clipboard, **Connection String** under **key1**.
+    - Scroll down and to the right and highlight **Azure Maps subscription**
 
-    ![Image](/images/lab-2.7.2-image6.png) 
+        ![Image](/images/lab-2.5-image19.png)
 
-4.  Click **Apply**.
-5.  Select the **Explorer Icon** in the top left.
-6.  Browse into **Storage Accounts**.
-7.  Select your storage account that you previously created in **Lab 2.6**.
-    - i.e. **hubwaydatastorage**
-8.  Open the Blob Containers
-9.  Select **$web**
-10. Upload the **hubwayplot.html** file into **$web**
+    - **Paste** in your **Subscription-Key** with your **Azure Maps Subscription Key**.
 
-    ![Image](/images/lab-2.7.2-image7.png) 
+        ![Image](/images/lab-2.5-image20.png) 
+
+    - Press **Ctrl-S** to save the file.
+
+
+## Upload file to Storage account
+
+1. Navigate to the resource group.
+
+    - From the Azure Portal from the left menu, click on **Resource Groups**.
+    - Select the resource group created previously, i.e. **<*lastname*>-piday-rg**.
+    - Click on the Storage Account created earlier, i.e. **<*lastname*>pidaydatastorage**.
+
+        ![Image](/images/lab-0-imagex.png)
+
+    - Click **Storage Explorer (preview)**.
+    - Click **BLOB CONTAINERS** to expand the tree structure.
+    - Click on the **$web** container.
+    - Click on **File Upload** button and select the file **hubwayplot.html**.
+
+        > The file will be in the folder C:\Workspace\IoT-Pi-Day-master\Lab 2 - Working with Hubway Data\Solution\HubwayMap
+
+    - Click **Upload**.
+
+    ![Image](/images/lab-2.7.2-imagex.png)
 
 ## View the Page
 
-1. Navigate to your storage account in the Azure Portal.    
-2.  Select **Static website** under **Settings**
-3.  Copy the primary endpoint.
-    - i.e. **https://mystorage.z20.web.core.windows.net/**
+1. Navigate to the resource group.
 
-    ![Image](/images/lab-2.7.2-image8.png) 
+    - From the Azure Portal from the left menu, click on **Resource Groups**.
+    - Select the resource group created previously, i.e. **<*lastname*>-piday-rg**.
+    - Click on the Storage Account created earlier, i.e. **<*lastname*>pidaydatastorage**.
 
-4. Copy the entire URL to the clipboard.
-5. Open up a new browswer window and paste in the URL.
-6. Append **hubwayplot.html** to the end of it.
+        ![Image](/images/lab-0-imagex.png)
+
+    - Under **Settings**, click **Static website**.
+    - Click copy button to **Copy** the Primary endpoint URL.
+
+        ![Image](/images/ab-2.7.2-image8.png) 
+
+2. Open up a new browser window and paste in the URL, do not press enter.
+3. Append **hubwayplot.html** to the end of it.
 
     > The URL should look something like this:
-    **```https://mystorage.z20.web.core.windows.net/hubwayplot.html```**
+    **```https://mystorage.xyz.web.core.windows.net/hubwayplot.html```**
 
 7. Press **Enter** to see the data points on the map.
 
