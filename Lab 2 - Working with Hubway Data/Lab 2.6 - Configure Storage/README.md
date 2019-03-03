@@ -10,7 +10,7 @@ We need to document the scenario here
 - 10 min
 
 ## Creating the Blob container
-🚨 In this section, we will be creating a container to store the the hubway data.
+In this section, we will be creating a container to store the the hubway data.
 
 1. Navigate to the resource group.
 
