@@ -150,13 +150,15 @@ We use the Event Hubs trigger to respond to an event sent to an event hub event 
 
 -->
 
-6. Update the **Event Hub** connection string.
+6. Navigate to the resource group.
 
     - From the Azure Portal from the left menu, click on **Resource Groups**.
     - Select the resource group created previously, i.e. **<*lastname*>-piday-rg**.
     - Click on the Event Hub namespace created earlier, i.e. **<*lastname*>-piday-eventhub**.
 
     ![Image](/images/lab-0-imagex.png)
+
+7. Update the **Event Hub** connection string.
 
     - Click on **Shared Access policies** and select the **RootManageSharedAccessKey**.
     - Copy the **Connection string-primary key**.
@@ -184,7 +186,7 @@ We use the Event Hubs trigger to respond to an event sent to an event hub event 
 
 -->
 
-7. Update the **AzureWebJobsStorage** connection string.
+8. Update the **AzureWebJobsStorage** connection string.
 
     - From the Azure Portal in the left menu, click on **Resource Groups**.
     - Select the resource group created previously. i.e. **<*lastname*>-piday-rg**.

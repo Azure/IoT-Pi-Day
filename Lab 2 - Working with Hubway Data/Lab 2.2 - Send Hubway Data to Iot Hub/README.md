@@ -51,25 +51,28 @@ This is only required if it's the first time you're logging into Azure from Visu
 
 6. Edit the file **SimulatedDevice.cs** by clicking on the filename in the left panel.
 
-7.  Copy the connection string from the IoT Hub you created previously.  
+7. Navigate to the resource group.
+
     - Go to the **Azure Portal**.
     - In the left side menu, click on **Resource Groups**.
-    - Select the resource group created previously. i.e. **<*lastname*>-piday-rg**.
-    - Click on the IoT Hub that you created.
+    - Select the resource group created previously, i.e. **<*lastname*>-piday-rg**.
+    - Click on the IoT Hub that you created, i.e. **<*lastname*>-piday-iothub**.
 
     ![Image](/images/lab-0-imagex.png)
+
+8.  Copy the connection string from the IoT Hub you created previously.  
 
     - Select the **IoT Devices** menu on the left.
     - Select **your device name** from the window
     - Copy the **connection string (primary key)**.
         
-        > Example:  "HostName=smith-iothub.azure-devices.net;DeviceId=RaspberryPIHostName;SharedAccessKey=WAvH5fGAZHKo6U3ccUBpiHa7r1wETD+9gja/Aim6HiR=";
+        > Example: "HostName=smith-iothub.azure-devices.net;DeviceId=RaspberryPIHostName;SharedAccessKey=WAvH5fGAZHKo6U3ccUBpiHa7r1wETD+9gja/Aim6HiR=";
 
-   ![Image](/images/lab-0-imagex.png)
+        ![Image](/images/lab-0-imagex.png)
 
-8. In Visual Studio Code, replace <**Your IoT Hub Connnection String**> in the file **simulated-device.cs** with your connection string from the IoT Hub. 
+9. In Visual Studio Code, replace <**Your IoT Hub Connnection String**> in the file **simulated-device.cs** with your connection string from the IoT Hub. 
 
-9. Press **Cntrl-S** to save the file.
+10. Press **Cntrl-S** to save the file.
    
 ## ?🚨? Test the Function
 
@@ -115,9 +118,9 @@ This is only required if it's the first time you're logging into Azure from Visu
 
 ## Run the code from the Raspberry PI
 
- 1. Run **PuTTY** or **Windows 10 SSH** to Telnet into the Raspberry Pi Device using SSH.
- 2. Enter the **IP address** of the Raspberry Pi Device.
- 3. Click **Open** and Accept the message about keys.
+1. Run **PuTTY** or **Windows 10 SSH** to Telnet into the Raspberry Pi Device using SSH.
+2. Enter the **IP address** of the Raspberry Pi Device.
+3. Click **Open** and Accept the message about keys.
     - Enter <**pi1**> as the logon name, and **Password.1.!!** as the password.
 4.  Once you are logged in
 5.  Type **```cd SimulatedDevice```**
@@ -145,17 +148,17 @@ This is only required if it's the first time you're logging into Azure from Visu
 
     ![Image](/images/lab-0-imagex.png)
 
-6. Click on the **Overview** menu on the left.
-7. Scroll to bottom of blade and select **Device to cloud messages**
-8. On the **Metrics** page, change the timeframe to **Last 30 minutes** and time granularity to **1 minute**.
+5. Click on the **Overview** menu on the left.
+6. Scroll to bottom of blade and select **Device to cloud messages**
+7. On the **Metrics** page, change the timeframe to **Last 30 minutes** and time granularity to **1 minute**.
 
     ![Image](/images/lab-2.1.1-imagex.png)
 
-6. Verify you are seeing data being sent to your IoT Hub.
+8. Verify you are seeing data being sent to your IoT Hub.
 
     > IoT Hub is an Azure service that enables you to ingest high volumes of telemetry from your IoT devices into the cloud for storage or processing. You are now sending information from the Raspberry Pi device to Azure IoT Hub. At this point, nothing interesting is happening in the cloud with that data you are sending to Azure. It is simply being persisted for a default amount of time (1-day) and then being dropped.
 
-7. From the existing Telnet window, press **Cntl-C** to stop.
+9. From the existing Telnet window, press **Cntl-C** to stop.
 
 
 ## Reference Sites

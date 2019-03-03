@@ -22,7 +22,7 @@
 
         > Notice that **tripItems** is populated from CosmosDB. Class is defined at bottom of code.
 
-    [Image](/images/lab-2.7.1-image13.png) 
+        ![Image](/images/lab-2.7.1-image13.png) 
 
 3. Review Return Value.
 
@@ -45,8 +45,6 @@
 
     ![Image](/images/lab-2.7.1-image22.png)
 
-    > The function is now deploying...![Image](/images/lab-2.7.1-image22.4.png) 
-
 4. For the message **Deployment to...** message, click **View Output**.
 
     ![Image](/images/lab-2.7.1-image22.5.png)
@@ -55,7 +53,8 @@
 
 ## View the HubwayHTTP Endpoint
 
-1. Navigate to your **Function App**.
+1. Navigate to the resource group.
+
     - From the Azure Portal from the left menu, click on **Resource Groups**.
     - Select the resource group created previously, i.e. **<*lastname*>-piday-rg**.
     - Click on the Function App created earlier, i.e. **<*lastname*>-piday-functionapp**.

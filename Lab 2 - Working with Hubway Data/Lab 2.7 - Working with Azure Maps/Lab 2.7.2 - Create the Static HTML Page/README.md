@@ -39,7 +39,7 @@ We need to document the scenario here
 
         ![Image](/images/lab-2.3-imagex.png)
 
-    - Scroll down and to the right and highlight **Azure Maps subscription**
+    - Scroll down and to the right and highlight **Subscription-Key**
 
         ![Image](/images/lab-2.5-image19.png)
 
@@ -60,6 +60,7 @@ We need to document the scenario here
 
         ![Image](/images/lab-0-imagex.png)
 
+2. Upload the file.
     - Click **Storage Explorer (preview)**.
     - Click **BLOB CONTAINERS** to expand the tree structure.
     - Click on the **$web** container.
@@ -92,11 +93,11 @@ We need to document the scenario here
     > The URL should look something like this:
     **```https://mystorage.xyz.web.core.windows.net/hubwayplot.html```**
 
-7. Press **Enter** to see the data points on the map.
+4. Press **Enter** to see the data points on the map.
 
     ![Image](/images/lab-2.7.2-image10.png) 
 
-    > If you have data in CosmosDB, you should see that information plotted on the map. Yeah!!! :smiley:
+5. Verify you have data in CosmosDB, you should see that information plotted on the map. Yeah!!! :smiley:
 
 <!--
 ## 🚨 Content below this line is Under Cons***truction 🚨

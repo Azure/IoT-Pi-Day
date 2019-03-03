@@ -11,28 +11,26 @@ We need to document the scenario here
 
 ## Configuration and Settings
 
-1. In the left side menu, click on **Resource Groups**.
-2. Select the resource group created previously. i.e. **<*lastname*>-piday-rg**.
-3. Click on the Event Hub Namespace that was just created.
+1. Navigate to the resource group.
 
-    ![Image](/images/lab-0-imagex.png)
+    - In the left side menu, click on **Resource Groups**.
+    - Select the resource group created previously. i.e. **<*lastname*>-piday-rg**.
+    - Click on the Event Hub namespace created earlier, i.e. **<*lastname*>-piday-eventhub**.
 
+        ![Image](/images/lab-0-imagex.png)
 
-1. From the Azure Portal menu, select **Event Hubs**.
-1. Select your event hub created earlier.
-    - i.e. **<**Lastname**>-pi-day-EventHub** from the list.
+2. Add a Consumer group
 
-    ![Image](/images/lab-2.2-imagex.png)
+    - In the left panel under **Entities**, select **Event Hubs**.
+    - Select yours in the window on the right, i.e. **hubwaytelemetry**.
 
-3. In the left panel under **Entities**, select **Event Hubs** and select yours in the window on the right, i.e. **hubwaytelemetry**.
+        ![Image](/images/lab-2.2-imagex.png)
 
-    ![Image](/images/lab-2.2-imagex.png)
+    - Under **Entities**, select **Consumer Groups**.
+    - Click **+ Consumer Group** to create a new Group.
+    - Type the name **hubwaycg** in the name field.
 
-4. In the left panel under **Entities**, select **Consumer Groups** on the left menu.
-5. Select **+ Consumer Group** to create a new Group.
-6. Enter the name **hubwaycg** in the name field on the right.
-
-    ![Image](/images/lab-2.2-image3.png)
+        ![Image](/images/lab-2.3-imagex.png)
 
 7. Click **Create**.
 

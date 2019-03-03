@@ -12,13 +12,15 @@ We need to document the scenario here
 ## Creating the Blob container
 🚨 In this section, we will be creating a container to store the the hubway data.
 
-1. Create the Blob Container
+1. Navigate to the resource group.
 
     - From the Azure Portal from the left menu, click on **Resource Groups**.
     - Select the resource group created previously, i.e. **<*lastname*>-piday-rg**.
     - Click on the Storage Account created earlier, i.e. **<*lastname*>pidaydatastorage**.
 
         ![Image](/images/lab-0-imagex.png)
+
+2. Create the Blob Container
 
     - Under **Blob service**, click **Blobs**.
     - On the right, click **+ Container** to add a container.
@@ -42,7 +44,7 @@ We need to document the scenario here
 
         ![Image](/images/lab-2.6-image6.png)
 
-## Storage Explorer
+## View Containers
 1.  Verify containers were created.
     - Click **Storage Explorer (preview)**.
     - Click **BLOB CONTAINERS** to expand the tree structure.

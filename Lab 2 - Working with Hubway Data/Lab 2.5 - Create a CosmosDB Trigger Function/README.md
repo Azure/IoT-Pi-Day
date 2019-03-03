@@ -61,7 +61,7 @@
 
 The body of the code is used to map the incoming JSON string to an output document for inserting into CosmosDB.
 
-1. Copy the **Azure Maps Subscription Key** connection string.
+1. Navigate to the resource group.
 
     - From the Azure Portal from the left menu, click on **Resource Groups**.
     - Select the resource group created previously, i.e. **<*lastname*>-piday-rg**.
@@ -69,12 +69,14 @@ The body of the code is used to map the incoming JSON string to an output docume
 
         ![Image](/images/lab-0-imagex.png)
 
+2. Copy the **Azure Maps Subscription Key** connection string.
+
     - Under **Settings**, click on **Authentication**.
     - Under **Shared Key Authentication**, copy the **Primary Key**.
 
         ![Image](/images/lab-2.5-imagex.png)
 
-2. Update the **Azure Maps Subscription Key** connection string.
+3. Update the **Azure Maps Subscription Key** connection string.
 
     - Confirm you have the project **HubwayFunctions.csproj** opened in Visual Studio Code.
     - From **Visual Studio Code**, double-click on the file **HubwayCosmosDBTrigger.cs** in the editor to open it.
