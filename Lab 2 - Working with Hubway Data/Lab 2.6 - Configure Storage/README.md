@@ -7,7 +7,7 @@ We need to document the scenario here
 3. Completion of Lab 2.1 through 2.5 must be done.
 
 ## Estimated time to complete
-- TBD
+- 10 min
 
 ## Creating the Blob container
 🚨 In this section, we will be creating a container to store the the hubway data.
