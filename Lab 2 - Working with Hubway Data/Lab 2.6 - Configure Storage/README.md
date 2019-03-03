@@ -18,7 +18,7 @@ We need to document the scenario here
     - Select the resource group created previously, i.e. **<*lastname*>-piday-rg**.
     - Click on the Storage Account created earlier, i.e. **<*lastname*>pidaydatastorage**.
 
-        ![Image](/images/lab-0-imagex.png)
+        ![Image](/images/lab-2.6-image1.png) 
 
 2. Create the Blob Container
 
@@ -26,23 +26,25 @@ We need to document the scenario here
     - On the right, click **+ Container** to add a container.
     - Enter a name for your blob container, type **boston-hubway-data**.
     - Select **Private(no anonymous access)**.
-    - Click **OK** to create the container.
 
-        ![Image](/images/lab-2.6-image4.png)
+        ![Image](/images/lab-2.6-image2.png)
+
+    - Click **OK** to create the container.
 
 ## Configure the Blob service for static website hosting
 
 1. Enable the Static Web Site
     - Under **Settings**, click **Static website**.
     - Under **Static website**, click **Enabled** to enable you to host static content in your storage account.
-    - Click **Save**.
 
-    ![Image](/images/lab-2.6-image5.png)
+    ![Image](/images/lab-2.6-image3.png) 
+ 
+     - Click **Save**.
 
     - Notice the **$web** folder that is created
     - Take note of the Primary endpoint, as you will need this URL later.
 
-        ![Image](/images/lab-2.6-image6.png)
+        ![Image](/images/lab-2.6-image4.png) 
 
 ## View Containers
 1.  Verify containers were created.
@@ -52,7 +54,7 @@ We need to document the scenario here
         - **$web**
         - **boston-hubway-data**
 
-    ![Image](/images/lab-2.6-image7.png)
+            ![Image](/images/lab-2.6-image5.png) 
 
 ## Reference Sites
 
