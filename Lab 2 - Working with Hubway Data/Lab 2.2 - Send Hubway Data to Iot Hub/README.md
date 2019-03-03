@@ -23,7 +23,7 @@ We need to document the scenario here
 
 4. Type **```code .```** (that's **code space dot**) to open **simulated-device.csproj** with **Visual Studio Code**.
 
-    > ?🚨? Click **Restore** for the **There are unresolved dependencies** message.
+5. Click **Restore** to resolve dependencies message and update packages.
 
 ## Azure Credentials
 
@@ -37,6 +37,7 @@ This is only required if it's the first time you're logging into Azure from Visu
 
 ## Develop simulated-device code
 
+<!--
 1. ?🚨? From Visual Studio Code, edit the **simulated-device.csproj** by clicking on the filename in the left panel.
 
     > ?🚨? Click **Restore** for the **There are unresolved dependencies** message.
@@ -48,35 +49,40 @@ This is only required if it's the first time you're logging into Azure from Visu
 
 5. ?🚨? To update packages and resolve any dependancies, type the following at the terminal command prompt.
     - **```dotnet add package Microsoft.Azure.Devices.Client --version 1.19.0```**
+-->
 
-6. Edit the file **SimulatedDevice.cs** by clicking on the filename in the left panel.
+1. Select the resource group.
 
-7. Navigate to the resource group.
-
-    - Go to the **Azure Portal**.
-    - In the left side menu, click on **Resource Groups**.
+    - From the Azure Portal from the left menu, click on **Resource Groups**.
     - Select the resource group created previously, i.e. **<*lastname*>-piday-rg**.
-    - Click on the IoT Hub that you created, i.e. **<*lastname*>-piday-iothub**.
+    - Click on the IoT Hub created earlier, i.e. **<*lastname*>-piday-iothub**.
 
-    ![Image](/images/lab-0-imagex.png)
+        ![Image](/images/lab-1.1-image2.png) 
 
-8.  Copy the connection string from the IoT Hub you created previously.  
+2. Copy the **IoT Hub** connection string.
 
-    - Select the **IoT Devices** menu on the left.
-    - Select **your device name** from the window
-    - Copy the **connection string (primary key)**.
-        
-        > Example: "HostName=smith-iothub.azure-devices.net;DeviceId=RaspberryPIHostName;SharedAccessKey=WAvH5fGAZHKo6U3ccUBpiHa7r1wETD+9gja/Aim6HiR=";
+    - Under **Explorers**, select the **IoT Devices** menu on the left
+    - Select **your device name** from the window, i.e. **raspberrypi-det-000**.
 
-        ![Image](/images/lab-0-imagex.png)
+        ![Image](/images/lab-1.1-image3.png) 
 
-9. In Visual Studio Code, replace <**Your IoT Hub Connnection String**> in the file **simulated-device.cs** with your connection string from the IoT Hub. 
+    - Copy the **Connection string (primary key)**.
 
-10. Press **Cntrl-S** to save the file.
+        ![Image](/images/lab-1.1-image4.png)
+
+3.  Replace the **IoT Hub Device Connnection String**.
+
+    - From Visual Studio Code, edit the **SimulatedDevice.cs** by clicking on the filename in the left panel.
+
+    - **Paste** in and replace your <**IoT Hub Device Connnection String**>.
+
+        ![Image](/images/lab-2.2-image1.png)  
+
+    - Press **Cntrl-S** to save the file.
    
-## ?🚨? Test the Function
+## Test the Code
 
-1. Make sure the Output window is displayed in the bottom panel of Visual studio Code.
+1. Open the Output windows, select the menu item **View** then click on **Output**.
 
     > Note: Press **Cntl-Shift-U** to view the output window. 
 
@@ -84,9 +90,9 @@ This is only required if it's the first time you're logging into Azure from Visu
 
     > Note: If all went well, you should see each record in JSON format being sent up to the IoT Hub.
 
-3.  Press **Cntrl-F5** to stop.
+    ![Image](/images/lab-2.2-image2.png) 
 
-    ![Image](/images/lab-2.1.1-image4.png)
+3.  Press **Shift-F5** to stop debugging.
 
 ##  Compile the code
 1.  From the already opened Command Prompt or PowerShell prompt.
@@ -109,9 +115,9 @@ This is only required if it's the first time you're logging into Azure from Visu
 2. When prompted to continue to connect, type **yes**.
 3. Type in **Password.1.!!** as the password.
 
-4.  From the existing Command Prompt or PowerShell Prompt, cut-n-paste the below line and format it as follows: **scp.exe -r .\bin\Debug\netcoreapp2.2\linux-arm\publish\* <**username**>@<**device ip address**>:/home/<**pi1**>/SimulatedDevice/data/**
+4.  From the existing Command Prompt or PowerShell Prompt, cut-n-paste the below line and format it as follows: **scp.exe -r .\data\* <**username**>@<**device ip address**>:/home/<**pi1**>/SimulatedDevice/data/**
 
-    **```scp.exe -r .\bin\Debug\netcoreapp2.2\linux-arm\publish\* pi1@192.168.1.200:/home/pi1/SimulatedDevice/data/```**
+    **```scp.exe -r .\data\* pi1@192.168.1.200:/home/pi1/SimulatedDevice/data/```**
 
 5. When prompted to continue to connect, type **yes**.
 6. Type in **Password.1.!!** as the password.
@@ -124,42 +130,42 @@ This is only required if it's the first time you're logging into Azure from Visu
     - Enter <**pi1**> as the logon name, and **Password.1.!!** as the password.
 4.  Once you are logged in
 5.  Type **```cd SimulatedDevice```**
-6.  Type **```chmod 755 SimulatedDevice```**
+6.  Type **```chmod 755 simulated-device```**
 
-    ![Image](/images/lab-1.1-imagex.png)
+    ![Image](/images/lab-2.2-image3.png) 
 
 7. Verify that permissions has been changed on the executable.
 8. Type **```ls -al```**, the scroll up and locate **simulated-device**, it should be green.
 
-    ![Image](/images/lab-1.1-imagex.png)
+    ![Image](/images/lab-2.2-image4.png)
 
 9.  To execute the code, type **```./simulated-device```**
 
-    > Note: If all went well, you should see each record in JSON format being sent up to the IoT Hub.  There are **60,315 rows** of data being sent to IoT Hub.
+    > Note: If all went well, you should see each record in JSON format being sent up to the IoT Hub.  There are **60,315 rows** of data being sent to IoT Hub being read from the **201502-hubway-tripdata.csv** file.
 
-    ![Image](/images/lab-2.1.1-image7.png)
+    ![Image](/images/lab-2.2-image5.png)
 
 ## Verify data is being sent to Azure IoT Hub
 
-1. Go to the **Azure Portal**.
-2. In the left side menu, click on **Resource Groups**.
-3. Select the resource group created previously. i.e. **<*lastname*>-piday-rg**.
-4. Click on the IoT Hub that you created.
+1. Select the resource group.
 
-    ![Image](/images/lab-0-imagex.png)
+    - From the Azure Portal from the left menu, click on **Resource Groups**.
+    - Select the resource group created previously, i.e. **<*lastname*>-piday-rg**.
+    - Click on the IoT Hub created earlier, i.e. **<*lastname*>-piday-iothub**.
 
-5. Click on the **Overview** menu on the left.
-6. Scroll to bottom of blade and select **Device to cloud messages**
-7. On the **Metrics** page, change the timeframe to **Last 30 minutes** and time granularity to **1 minute**.
+        ![Image](/images/lab-1.1-image2.png) 
 
-    ![Image](/images/lab-2.1.1-imagex.png)
-
-8. Verify you are seeing data being sent to your IoT Hub.
+2. Verify you are seeing data being sent to your IoT Hub.
 
     > IoT Hub is an Azure service that enables you to ingest high volumes of telemetry from your IoT devices into the cloud for storage or processing. You are now sending information from the Raspberry Pi device to Azure IoT Hub. At this point, nothing interesting is happening in the cloud with that data you are sending to Azure. It is simply being persisted for a default amount of time (1-day) and then being dropped.
 
-9. From the existing Telnet window, press **Cntl-C** to stop.
+    - Click on the **Overview** menu on the left.
+    - In the right panel, scroll to bottom of blade and click on **Device to cloud messages**.
+    - On the **Metrics** page, change the timeframe to **Last 30 minutes** and time granularity to **1 minute**.
 
+    ![Image](/images/lab-2.2-image6.png)  
+
+3. From the existing Telnet window, press **Cntl-C** to stop sending data.
 
 ## Reference Sites
 
