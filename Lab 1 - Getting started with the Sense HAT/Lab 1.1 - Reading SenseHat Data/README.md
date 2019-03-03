@@ -139,7 +139,7 @@ This is only required if it's the first time you're logging into Azure from Visu
 
     ![Image](/images/lab-1.1-image10.png)
 
-3. From the existing Telnet window, press **Cntl-C** to stop sending data.
+3. From the existing Telnet window, press **Ctrl-C** to stop sending data.
 
 ## Reference Sites
 

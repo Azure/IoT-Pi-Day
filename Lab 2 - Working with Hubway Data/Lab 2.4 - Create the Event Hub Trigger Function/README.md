@@ -223,7 +223,7 @@ Let's test the Event Hub trigger to ensure it's firing and ready to process data
 
 ![Image](/images/lab-2.3-image20.png)
 
-7. From **Visual Studio Code**, press **Cntl-C** to stop.
+7. From **Visual Studio Code**, press **Ctrl-C** to stop.
 
 ## Configure CosmosDB Trigger Bindings
 
@@ -386,7 +386,7 @@ In order to properly deploy Dot Net Core 2.2 code, the settings file must be upd
 
     ![Image](/images/lab-2.3-imagex.png)
 
-7. From **Visual Studio Code**, press **Cntl-C** to stop.
+7. From **Visual Studio Code**, press **Ctrl-C** to stop.
 
 
 ## Reference Sites

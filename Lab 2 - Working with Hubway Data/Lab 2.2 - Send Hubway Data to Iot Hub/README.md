@@ -108,16 +108,22 @@ This is only required if it's the first time you're logging into Azure from Visu
 
 ##  Deploy to Raspberry PI
 
-1.  From the existing Command Prompt or PowerShell Prompt, cut-n-paste the below line and format it as follows: **scp.exe -r .\bin\Debug\netcoreapp2.2\linux-arm\publish\* <**username**>@<**device ip address**>:/home/<**pi1**>/SimulatedDevice**
+**Copy the Program File**
 
-    **```scp.exe -r .\bin\Debug\netcoreapp2.2\linux-arm\publish\* pi1@192.168.1.200:/home/pi1/SimulatedDevice```**
+1.  From the existing Command Prompt or PowerShell Prompt, cut-n-paste the below line and format it as follows:
+    - **scp.exe -r .\bin\Debug\netcoreapp2.2\linux-arm\publish\* <**username**>@<**device ip address**>:/home/<**pi1**>/SimulatedDevice**
+
+        **```scp.exe -r .\bin\Debug\netcoreapp2.2\linux-arm\publish\* pi1@192.168.1.200:/home/pi1/SimulatedDevice```**
 
 2. When prompted to continue to connect, type **yes**.
 3. Type in **Password.1.!!** as the password.
 
-4.  From the existing Command Prompt or PowerShell Prompt, cut-n-paste the below line and format it as follows: **scp.exe -r .\data\* <**username**>@<**device ip address**>:/home/<**pi1**>/SimulatedDevice/data/**
+**Copy the Data File**
 
-    **```scp.exe -r .\data\* pi1@192.168.1.200:/home/pi1/SimulatedDevice/data/```**
+4.  From the existing Command Prompt or PowerShell Prompt, cut-n-paste the below line and format it as follows:
+    - **scp.exe -r .\data\* <**username**>@<**device ip address**>:/home/<**pi1**>/SimulatedDevice/data/**
+
+        **```scp.exe -r .\data\* pi1@192.168.1.200:/home/pi1/SimulatedDevice/data/```**
 
 5. When prompted to continue to connect, type **yes**.
 6. Type in **Password.1.!!** as the password.
@@ -165,7 +171,7 @@ This is only required if it's the first time you're logging into Azure from Visu
 
     ![Image](/images/lab-2.2-image6.png)  
 
-3. From the existing Telnet window, press **Cntl-C** to stop sending data.
+3. From the existing Telnet window, press **Ctrl-C** to stop sending data.
 
 ## Reference Sites
 
