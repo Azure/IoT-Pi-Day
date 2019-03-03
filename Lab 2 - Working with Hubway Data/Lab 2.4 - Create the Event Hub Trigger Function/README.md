@@ -65,8 +65,7 @@ This is only required if it's the first time you're logging into Azure from Visu
 
     > Note: Once you are signed in, close the web page and return to Visual Studio Code.
 
-## Develop the HubwayFunctions code
-### ?🚨? Create the EventHubTrigger Function Project
+## Develop the EventHubTrigger Function code
 
 We use the Event Hubs trigger to respond to an event sent to an event hub event stream. You must have read access to the event hub to set up the trigger. When an Event Hubs trigger function is triggered, the message that is passed into the function is a string type. We will be using Visual Studio Code and the Azure Functions Extension.
 
