@@ -67,29 +67,26 @@ The body of the code is used to map the incoming JSON string to an output docume
     - Select the resource group created previously, i.e. **<*lastname*>-piday-rg**.
     - Click on the Azure Maps Account created earlier, i.e. **<*lastname*>-piday-azuremaps**.
 
-        ![Image](/images/lab-0-imagex.png)
+        ![Image](/images/lab-2.5-image1.png) 
 
 2. Copy the **Azure Maps Subscription Key** connection string.
 
     - Under **Settings**, click on **Authentication**.
     - Under **Shared Key Authentication**, copy the **Primary Key**.
 
-        ![Image](/images/lab-2.5-imagex.png)
+        ![Image](/images/lab-2.5-image2.png)
 
 3. Update the **Azure Maps Subscription Key** connection string.
 
     - Confirm you have the project **HubwayFunctions.csproj** opened in Visual Studio Code.
-    - From **Visual Studio Code**, double-click on the file **HubwayCosmosDBTrigger.cs** in the editor to open it.
 
-        ![Image](/images/lab-2.3-imagex.png)
+    - From **Visual Studio Code**, double-click on the file **HubwayCosmosDBTrigger.cs** in the editor to open it.
 
     - Scroll down and to the right and highlight **Subscription-Key**
 
-        ![Image](/images/lab-2.5-image19.png)
-
     - **Paste** in your **Subscription-Key** with your **Azure Maps Subscription Key**.
 
-        ![Image](/images/lab-2.5-image20.png) 
+        ![Image](/images/lab-2.5-image3.png) 
 
     - Press **Ctrl-S** to save the file.
 
@@ -97,25 +94,24 @@ The body of the code is used to map the incoming JSON string to an output docume
 
 1. From Visual Studio Code, press **Ctrl-Shift-P**, enter **Azure Functions** and select **Deploy to Function App**.
 
-    ![Image](/images/lab-2.3-imagex.png) 
- 
+    ![Image](/images/lab-2.4-image13.png) 
+
 2. Select the **Function App name** created in the above section **Create a function app from the Azure portal**.
     > i.e. **<**lastname**>-piday-functionapp**.
 
-    ![Image](/images/lab-2.5-image23.png) 
+    ![Image](/images/lab-2.4-image14.png) 
 
 3. For the message **Are you sure...**, click **Deploy**.
 
-    ![Image](/images/lab-2.5-image24.png)
+    ![Image](/images/lab-2.4-image15.png)
 
 4. After a successful deployment, click **Stream Logs**.
 
-    ![Image](/images/lab-2.5-image25.png)
+    ![Image](/images/lab-2.4-image16.png) 
 
 5. If everything worked, you will see the following in the Visual Studio Code output window.
 
-    ![Image](/images/lab-2.5-image26.png)
-
+    ![Image](/images/lab-2.5-image4.png)
 
 ## Reference Sites
 

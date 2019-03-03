@@ -121,28 +121,6 @@ We use the Event Hubs trigger to respond to an event sent to an event hub event 
 
         ![Image](/images/lab-2.4-image9.png)  
 
-Pagels
-
-## Test the Function
-Let's test the Event Hub trigger to ensure it's firing and ready to process data.
-
-1. From **Visual Studio Code**, double-click on file **HubwayEventHubTrigger.cs** to open in the editor
-2. To execute the code, press **F5**.
-3. Telnet into the Raspberry Pi using SSH and login.
-4. Once you are logged in, type **cd SimulatedDevice**.
-5. Exectute the code, type **./simulated-device**.
-
-    > Refer to Lab 2.1.1 - Send Hubway data to Iot Hub, section [Run the code from the Raspberry PI](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.1%20-%20IoT%20Hub/Lab%202.1.1%20-%20Send%20Hubway%20Data%20to%20Iot%20Hub#run-the-code-from-the-raspberry-pi)
-
-
-6. If all went well, you should see each record in JSON format being sent up to the IoT Hub from Visual Studio Code.
-
-![Image](/images/lab-2.3-image20.png)
-
-7. From **Visual Studio Code**, press **Ctrl-C** to stop.
-
-Pagels
-
 ## Configure CosmosDB Trigger Bindings
 
 🚨 Descrption on what were doing here is needed!
@@ -171,6 +149,23 @@ Pagels
     - ?🚨? In Visual Studio Code, open the file **local.settings.json** and **Paste** in the connection string between the quotes on the **Shared_Access_Key_DOCUMENTDB** line.
 
         ![Image](/images/lab-2.4-image12.png) 
+
+## Test the Function
+Let's test the Event Hub trigger to ensure it's firing and ready to process data.
+
+1. From **Visual Studio Code**, double-click on file **HubwayEventHubTrigger.cs** to open in the editor
+2. To execute the code, press **F5**.
+3. Telnet into the Raspberry Pi using SSH and login.
+4. Once you are logged in, type **cd SimulatedDevice**.
+5. Exectute the code, type **./simulated-device**.
+
+    > Refer to Lab 2.2 - Send Hubway data to Iot Hub, section [Run the code from the Raspberry PI](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.2%20-%20Send%20Hubway%20Data%20to%20Iot%20Hub)
+
+6. If all went well, you should see each record in JSON format being sent up to the IoT Hub from Visual Studio Code.
+
+![Image](/images/lab-2.3-image20.png)
+
+7. From **Visual Studio Code**, press **Ctrl-C** to stop.
 
 ## Deploy your Function App Project
 
