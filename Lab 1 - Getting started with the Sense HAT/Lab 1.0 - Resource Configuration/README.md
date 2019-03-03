@@ -21,7 +21,7 @@ The **Azure IoTPiDay Workshop** is setup to build out a real-life IoT scenario b
 
 **Option 1 - Download ZIP to your Desktop**
 
-- Click **Download Zip**, **Save As** to Workspace folder.
+- Click **Download Zip**, **Save As** to Downloads folder.
 - When download is complete, click **Open Folder**.
 - **Right-Click** on **Iot-Pi-Day-master.zip**.
 - Select **Extract All**, click **Extract** to **C:\Workspace**.
