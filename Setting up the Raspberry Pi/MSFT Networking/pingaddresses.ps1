@@ -69,9 +69,6 @@ $loopCount = ([convert]::ToInt32($lastAddress.split(".")[2]) - $suffix) + 1
 $addressesToScan = 254
 $totalCount = 1
 $addressCount = $addressesToScan * $loopCount
-
-$fileURL = "https://raw.githubusercontent.com/Azure/IoT-Pi-Day/master/Setting%20up%20the%20Raspberry%20Pi/MSFT%20Networking/piMaclist.csv"
-
 $deviceList = @()
 
 # // Set variables and storage context to upload to Azure blob
@@ -88,9 +85,11 @@ TD {border-width: 2px; padding: 10px; text-align: center; border-style: solid; b
 </style>
 "@
 
-$htmlScript = "<script src=`"https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js`"></script>"
+# // not using this yet $htmlScript = "<script src=`"https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js`"></script>"
 
 # // Grab master CSV list from GitHub and convert URL object content to CSV
+
+$fileURL = "https://raw.githubusercontent.com/Azure/IoT-Pi-Day/master/Setting%20up%20the%20Raspberry%20Pi/MSFT%20Networking/piMaclist.csv"
 
 $inputFile = Invoke-WebRequest $fileURL
 $inputFile = $inputFile.Content
@@ -125,6 +124,17 @@ foreach ($device in $inputFile) {
 
     if ($device.DeviceName -eq "") { continue }
     if ($device.DeviceName.split("-")[1] -ne $city) { continue }
+
+    # // Check for non-windows MAC delimiter and convert if required
+
+    if ($device.MacAddress.Contains(":") -eq $true) {
+
+        $nixMAc = $device.MacAddress.split(":")
+        $device.MacAddress = $nixMAc[0] + "-" + $nixMAc[1] + "-" + $nixMAc[2] + "-" + $nixMAc[3] + "-" + $nixMAc[4] + "-" + $nixMAc[5]
+
+    }
+
+    Write-Host $device.MacAddress
 
     $piIP = arp -a | select-string $device.MacAddress | foreach { $_.ToString().Trim().Split(" ")[0] }
 
