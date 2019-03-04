@@ -103,3 +103,4 @@ We need to document the scenario here
 
 ## Reference Sites
 
+[GeoJSON](http://geojson.org/) specification.

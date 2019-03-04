@@ -76,3 +76,5 @@
 
 
 ## Reference Sites
+
+[GeoJSON](http://geojson.org/) specification.
