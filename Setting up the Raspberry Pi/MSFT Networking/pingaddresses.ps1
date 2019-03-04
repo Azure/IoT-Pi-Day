@@ -1,3 +1,44 @@
+<#
+
+.SYNOPSIS
+    Script to ping address range, build local ARP table, and match IP to MAC in CSV list.
+
+.DESCRIPTION
+    This script was built to support a "Pi Day" workshop run by Microsoft to identify the DHCP IP address assigned
+    to a headless Raspberry Pi device. The CSV file is stored in a GitHub Repo with the MAC address and location/device
+    name of the Pi devices. The format of the CSV is as follows with the cit field being a 3 letter city identifier:
+    
+    DeviceName, MacAddress
+    name-cit-num, b8:27:eb:41:25:5e
+
+.PARAMETER city
+    Three letter city prefix that designates the name of the City to match in the CSV file and the name of created HTML file
+
+.PARAMETER ipaddress
+    IP address that is part of the same network you are scanning
+    This can be any IP in the network range as the script always scans from 1-254
+
+.PARAMETER subnet
+    Subnet mask in 0.0.0.0 form that combined with IP address will determine the amount of addresses to ping
+
+.EXAMPLE
+    ./pingaddresses.ps1 ind 172.16.20.1 255.255.252.0
+
+.NOTES
+    IP address/subnet range uses script found here: http://www.itadmintools.com/2011/08/calculating-tcpip-subnets-with.html
+    There is a decent amount of technical debt to be cleaned up. In no particual order here are the needs.
+
+        1. Better error checking/handling
+        2. Parrallel processing (scanning large IP ranges takes a long time, should fire multiple at once)
+        3. IP scan range is hard-coded to 254, this should be variable based on the network range
+        4. Script has hard-coded city names, maybe there is a better way to handle that (file?)
+        5. Could use more documentation in the script
+
+.LINK
+    Sample CSV file: https://github.com/Azure/IoT-Pi-Day/blob/master/Setting%20up%20the%20Raspberry%20Pi/MSFT%20Networking/piMaclist.csv
+
+#>
+
 [CmdletBinding()]
     Param(
         [Parameter(Position=0,Mandatory)]
