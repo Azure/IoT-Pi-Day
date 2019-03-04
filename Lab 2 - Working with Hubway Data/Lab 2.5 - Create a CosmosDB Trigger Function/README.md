@@ -1,14 +1,15 @@
-# Lab 2.5 - Create a CosmosDB Trigger Function
-
+# Lab 2.5 - Update the CosmosDB Trigger Function
 
 ## Prerequisites
-1. The CosmosDB Account must already be created, see [Lab 0 - Resource Configuration, section Create a CosmosDB Account](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%200%20-%20Resource%20Configuration#create-a-cosmosdb-account)
-2. The Laptop is setup correctly, see [Setting up the Laptop](https://github.com/Azure/IoT-Pi-Day/tree/master/Setting%20up%20the%20Laptop).
-2. Lab 2.3 is completed, see [Lab 2.4 - Create a Function App and Event Hub Trigger Function](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.3%20-%20Create%20the%20Event%20Hub%20Trigger%20Function)
-3. Lab 2.4 is completed, see [Lab 2.5 - Setting up CosmosDB](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.4%20-%20Setting%20up%20CosmosDB)
+1. The Resource Configuation Lab is completed, see [Lab 1.0 - Resource Configuration](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%201%20-%20Getting%20started%20with%20the%20Sense%20HAT/Lab%201.0%20-%20Resource%20Configuration)
+2. The Resource Configuation Lab is completed, see [Lab 2.0 - Resource Configuration](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.0%20-%20Resource%20Configuration)
+3. Completion of Lab 2.1 through 2.4 must be done.
 
-## Create the CosmosDBTrigger Function
+## Develop the CosmosDBTrigger Function code
 
+🚨 In this section, we will use a CosmosDB trigger function to respond to an event everytime a ??? We will be using Visual Studio Code and the Azure Functions Extension.
+
+<!--
 1. From **Visual Studio Code**, press **Ctrl-Shift-P**.
 2. Enter **Azure Functions** and select **Create Function** from the list.
 
@@ -56,71 +57,87 @@
 
     ![Image](/images/lab-2.5-image11.png)
 
-## Update the code for CosmosDBTrigger
+-->
 
-1.  Change the body of the code to map the incoming JSON string to an output document for inserting into CosmosDB.
+The body of the code is used to map the incoming JSON string to an output document for inserting into CosmosDB.
 
-2. From **Visual Studio Code**, click on file **Snippets.txt** to open in editor.
-3. Highlight the entire section under **Snippet Three:**
+1. Navigate to the resource group.
 
-    ![Image](/images/lab-2.5-image12.png)
+    - From the Azure Portal from the left menu, click on **Resource Groups**.
+    - Select the resource group created previously, i.e. **<*lastname*>-piday-rg**.
+    - Click on the Azure Maps Account created earlier, i.e. **<*lastname*>-piday-azuremaps**.
 
-4. Click on the file **HubwayCosmosDBTrigger.cs** in the editor, if it's not alreday opened.
-5. Highlight everything between the **{** and **}** braces.
+        ![Image](/images/lab-2.5-image1.png) 
 
-    ![Image](/images/lab-2.5-image13.png)
+2. Copy the **Azure Maps Subscription Key** connection string.
 
-6. Paste in the code copied from the **Snippet Three:** section above.
+    - Under **Settings**, click on **Authentication**.
+    - Under **Shared Key Authentication**, copy the **Primary Key**.
 
-    ![Image](/images/lab-2.5-image14.png) 
+        ![Image](/images/lab-2.5-image2.png)
 
-    > For reference, refer to the file **HubwayCosmosDBTrigger.cs** found under the [Lab 2 - Working with Hubway Data/Solution](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Solution/HubwayFunctions) folder.
+3. Update the **Azure Maps Subscription Key** connection string.
 
-7. Modify the **Public static** trigger by addding the keywords **async**.
+    - Confirm you have the project **HubwayFunctions.csproj** opened in Visual Studio Code.
+
+    - From **Visual Studio Code**, double-click on the file **HubwayCosmosDBTrigger.cs** in the editor to open it.
+
+    - Scroll down and to the right and highlight **Subscription-Key**
+
+    - **Paste** in your **Subscription-Key** with your **Azure Maps Subscription Key**.
+
+        ![Image](/images/lab-2.5-image3.png) 
+
+    - Press **Ctrl-S** to save the file.
+
+## Deploy your Function App Project
+
+1. From Visual Studio Code, press **Ctrl-Shift-P**, enter **Azure Functions** and select **Deploy to Function App**.
+
+    ![Image](/images/lab-2.4-image13.png) 
+
+2. Select the **Function App name** created in the above section **Create a function app from the Azure portal**.
+    > i.e. **<**lastname**>-piday-functionapp**.
+
+    ![Image](/images/lab-2.4-image14.png) 
+
+3. For the message **Are you sure...**, click **Deploy**.
+
+    ![Image](/images/lab-2.4-image15.png)
+
+4. After a successful deployment, click **Stream Logs**.
+
+    ![Image](/images/lab-2.4-image16.png) 
+
+5. If everything worked, you will see the following in the Visual Studio Code output window.
+
+    🚨 Need a good screenshot here.
     
-    ![Image](/images/lab-2.5-image15.png)
-    ![Image](/images/lab-2.5-image16.png) 
+    ![Image](/images/lab-2.5-image4.png)
 
-9. Add the following using statement to the top of the file, **using System.Net.Http;**.
+## Reference Sites
 
-    ![Image](/images/lab-2.5-image17.png) 
+[How to Create a Function App using the Azure Portal][Create-FunctionApp]
 
-10. Locate the **var url** line after the **try** block of code. 
+[Azure Functions Documentation][Functions-Documentation]
 
-    ![Image](/images/lab-2.5-image18.png) 
+[Triggers and Bindings Concepts][Triggers-Bindings]
 
-11. Scroll the file to the right and highlight **Subscription-Key**
+[Event Hub Trigger][EventHubTrigger]
 
-    ![Image](/images/lab-2.5-image19.png)
+[CosmosDB Binding][CosmosDB-Binding]
 
-12. Replace **Subscription-Key** with your **Azure Maps Subscription Key**
+[Azure-Portal]: https://portal.azure.com/ 
 
-    ![Image](/images/lab-2.5-image20.png) 
+[Create-FunctionApp]: https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-function-app-portal
 
-    > This can be found in the Azure Portal by selecting the Azure Maps Account. Go to  **Settings**, **Authentication**, then **Shared Key Authentication**.  Copy the **Primary Key**.
+[Functions-Documentation]: https://docs.microsoft.com/en-us/azure/azure-functions/
 
-    ![Image](/images/lab-2.5-image21.png)
+[Triggers-Bindings]: 
+https://docs.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings
 
-13. Press **Ctrl-S** to save the file.
-14. Press **Ctrl-Shift-P**, enter **Azure Functions** and select **Deploy to Function App**.
+[EventHubTrigger]: 
+https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-event-hubs
 
-    ![Image](/images/lab-2.5-image22.png) 
- 
-15. Select the **Function App name** created in the above section **Create a function app from the Azure portal**.
-    > i.e. **<**LastName**>-pi-day-functionapp**.
-
-    ![Image](/images/lab-2.5-image23.png) 
-
-16. For the message **Are you sure...**, click **Deploy**.
-
-    ![Image](/images/lab-2.5-image24.png)
-
-17. After a successful deployment, click **Stream Logs**.
-
-    ![Image](/images/lab-2.5-image25.png)
-
-18. If everything worked, you will see the following in the Visual Studio Code output window.
-
-    ![Image](/images/lab-2.5-image26.png)
-
-
+[CosmosDB-Binding]: 
+https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-cosmosdb-v2

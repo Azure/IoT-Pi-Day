@@ -104,7 +104,7 @@ What is npm? npm makes it easy for JavaScript developers to share and reuse code
 What are Azure Functions Core Tools? The Azure Functions Core Tools provide a local development experience for creating, developing, testing, running, and debugging Azure Functions.
 
 **Windows**
-- To install v2 with npm, open a Command Prompt as Adminstrator.
+- To install v2 with npm, open a **Node.js Command Prompt** as Adminstrator.
 - Type: **npm i -g azure-functions-core-tools --unsafe-perm true**
 
 **MacOS**
@@ -119,6 +119,16 @@ What is Azure Storage Explorer?  This tool allows you to easily manage the conte
 - Select the correct **Operating System** in the dropdown.
 - Click **Download Storage Explorer free**.
 - Click **Run** to install.
+
+## Install Telnet Tool
+
+- **Option 1** - To use PuTTY
+    - Download the PuTTY SSH and Telnet client and launch it.
+        - Click [Download PuTTY](https://www.putty.org/) and click **Download it here** to download the latest version. Use the **MSI Windows Installer - 64-bit**.
+        - Click **Run** to accept the default prompts.
+
+- **Option 2** - To use Windows 10
+    - Click [How to Enable and Use Windows 10’s New Built-in SSH Commands](https://www.howtogeek.com/336775/how-to-enable-and-use-windows-10s-built-in-ssh-commands/)
 
 <!--
 ## (Optional) Install Git

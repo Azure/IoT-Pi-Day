@@ -10,7 +10,7 @@
            "type": "coreclr",
            "request": "launch",
            "preLaunchTask": "build",
-           "program": "${workspaceFolder}/bin/Debug/netcoreapp2.2/<project-name.dll>",
+           "program": "${workspaceFolder}/bin/Debug/netcoreapp2.2/simulated-device.dll",
            "args": [],
            "cwd": "${workspaceFolder}",
            "stopAtEntry": false,
