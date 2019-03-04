@@ -32,7 +32,7 @@ Add the MAC address of the device to the matching host name that you assigned ab
 
 ![Image](/images/network/editCSV.jpg)
 
-> - Note: Linux formats the MAC address with a : delimiter, <strike>but the PowerShell script does not take this into account. So if you have a : separated MAC when you add it to the CSV file make sure to separate the elements with a - I may fix this via the script but have not commited to it yet.</strike> The PowerShell script will check for a : delimiter and convert it to the Windows - format as necssary. 
+> - Note: Linux formats the MAC address with a : delimiter, <strike>but the PowerShell script does not take this into account. So if you have a : separated MAC when you add it to the CSV file make sure to separate the elements with a - I may fix this via the script but have not commited to it yet.</strike> The PowerShell script will check for a : delimiter and convert it to the Windows - format as necessary. 
 
 ![Image](/images/network/editCSV2.jpg)
 
