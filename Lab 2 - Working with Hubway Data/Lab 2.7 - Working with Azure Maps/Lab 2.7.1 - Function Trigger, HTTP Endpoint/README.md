@@ -12,9 +12,8 @@
 1. Open file.
 
     - Confirm you have the project **HubwayFunctions.csproj** opened in Visual Studio Code.
-    - From **Visual Studio Code**, double-click on the file **HubwayHTTPTrigger.cs** in the editor to open it.
 
-        ![Image](/images/lab-2.7.1-image7.png)
+    - From **Visual Studio Code**, double-click on the file **HubwayHTTPTrigger.cs** in the editor to open it.
 
 2. Review Input Bindings.
 
@@ -22,34 +21,32 @@
 
         > Notice that **tripItems** is populated from CosmosDB. Class is defined at bottom of code.
 
-        ![Image](/images/lab-2.7.1-image13.png) 
+        ![Image](/images/lab-2.7.1-image1.png)
 
 3. Review Return Value.
 
     - The function's **Return Value** is returning a **Static Geo Object** formatted to [GeoJSON](http://geojson.org/) specification.  Class is defined at bottom of code.
 
-        ![Image](/images/lab-2.7.1-image12.png) 
+        ![Image](/images/lab-2.7.1-image2.png)  
 
 ## Deploy your Function App Project
 
 1. From Visual Studio Code, press **Ctrl-Shift-P**, enter **Azure Functions** and select **Deploy to Function App**.
 
-    ![Image](/images/lab-2.7.1-image20.png) 
+    ![Image](/images/lab-2.7.1-image3.png)  
 
 2. Select the **Function App name** created in the above section **Create a function app from the Azure portal**.
     > i.e. **<**lastname**>-piday-functionapp**.
 
-    ![Image](/images/lab-2.7.1-image21.png) 
+    ![Image](/images/lab-2.7.1-image4.png)  
 
 3. For the message **Are you sure...**, click **Deploy**.
 
-    ![Image](/images/lab-2.7.1-image22.png)
+    ![Image](/images/lab-2.7.1-image5.png) 
 
 4. For the message **Deployment to...** message, click **View Output**.
 
-    ![Image](/images/lab-2.7.1-image22.5.png)
-
-    > The function is now deployed. ![Image](/images/lab-2.7.1-image22.6.png) 
+    ![Image](/images/lab-2.7.1-image6.png)
 
 ## View the HubwayHTTP Endpoint
 
@@ -59,24 +56,23 @@
     - Select the resource group created previously, i.e. **<*lastname*>-piday-rg**.
     - Click on the Function App created earlier, i.e. **<*lastname*>-piday-functionapp**.
 
-        ![Image](/images/lab-0-imagex.png)
+        ![Image](/images/lab-2.7.1-image7.png)
 
-2. Click on the **HubWayHttpTrigger**.
-3. Click on **Get function URL**.
+2. Copy the Endpoint
+    - Click on the **HubWayHttpTrigger**.
+    - Click on **Get function URL**.
 
-    ![Image](/images/lab-2.7.1-imagex.png)
+    ![Image](/images/lab-2.7.1-image8.png)
 
 4. Click on **Copy** to copy the URL to clipboard.
 
-    ![Image](/images/lab-2.7.1-imagex.png) 
+    ![Image](/images/lab-2.7.1-image9.png)  
 
 5. Open a new tab in the browser, **Paste** in the URL, and press **Enter**.
 
-    > This function is now reading TripData from CosmosDB. You will see the following output.
+    - This function is now reading TripData from CosmosDB. You will see the following output.
 
-    🚨 Screenshot needed here!
-
-    ![Image](/images/missing-image.png)  
+        ![Image](/images/lab-2.7.1-image10.png) 
 
 
 ## Reference Sites
