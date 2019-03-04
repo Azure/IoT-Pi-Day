@@ -111,6 +111,8 @@ The body of the code is used to map the incoming JSON string to an output docume
 
 5. If everything worked, you will see the following in the Visual Studio Code output window.
 
+    🚨 Need a good screenshot here.
+    
     ![Image](/images/lab-2.5-image4.png)
 
 ## Reference Sites

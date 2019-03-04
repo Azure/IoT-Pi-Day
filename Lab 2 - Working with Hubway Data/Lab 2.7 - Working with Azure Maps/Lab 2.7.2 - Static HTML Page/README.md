@@ -1,4 +1,4 @@
-# Lab 2.7.2 - Create the Static HTML Page
+# Lab 2.7.2 - Static HTML Page
 We need to document the scenario here
 
 ## Prerequisites

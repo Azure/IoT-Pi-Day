@@ -1,4 +1,4 @@
-# Lab 2.7.1 - Update the HTTP Trigger Function
+# Lab 2.7.1 - Function Trigger, HTTP Endpoint
 
 ## Prerequisites
 1. The Resource Configuation Lab is completed, see [Lab 1.0 - Resource Configuration](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%201%20-%20Getting%20started%20with%20the%20Sense%20HAT/Lab%201.0%20-%20Resource%20Configuration)
