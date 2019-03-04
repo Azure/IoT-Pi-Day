@@ -12,7 +12,7 @@ raspberrypi-det-10,xx-xx-xx-xx-xx-xx
 raspberrypi-det-11,xx-xx-xx-xx-xx-xx
 ,
 raspberrypi-pit-00,b8-27-eb-33-a6-89
-raspberrypi-pit-01,xx-xx-xx-xx-xx-xx
+raspberrypi-pit-01,b8-27-eb-95-ce-10
 raspberrypi-pit-02,xx-xx-xx-xx-xx-xx
 raspberrypi-pit-03,xx-xx-xx-xx-xx-xx
 raspberrypi-pit-04,xx-xx-xx-xx-xx-xx
@@ -60,6 +60,7 @@ raspberrypi-ind-09,b8-27-eb-2a-e2-xx
 raspberrypi-ind-10,b8-27-eb-2a-e2-xx
 raspberrypi-ind-11,b8-27-eb-2a-e2-xx
 ,
+raspberrypi-roc-00,b8-27-eb-43-35-6e
 raspberrypi-roc-01,b8-27-eb-5f-b6-c3
 raspberrypi-roc-02,b8-27-eb-9c-ad-c8
 raspberrypi-roc-03,b8-27-eb-cc-39-8c
