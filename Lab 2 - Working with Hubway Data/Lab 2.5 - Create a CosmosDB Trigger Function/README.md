@@ -105,9 +105,9 @@ The body of the code is used to map the incoming JSON string to an output docume
 
     ![Image](/images/lab-2.4-image15.png)
 
-4. After a successful deployment, click **Stream Logs**.
+4. After a successful deployment, click **View Output**.
 
-    ![Image](/images/lab-2.4-image16.png) 
+    ![Image](/images/lab-2.5-image3.2.png)  
 
 5. If everything worked, you will see the following in the Visual Studio Code output window.
 
