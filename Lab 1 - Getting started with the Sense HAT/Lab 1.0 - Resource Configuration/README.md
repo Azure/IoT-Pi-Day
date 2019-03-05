@@ -5,7 +5,7 @@ TBD - We need to document the scenario here
 1. Azure Subscription [Microsoft Azure Portal](https://portal.azure.com) with rights to create a Resource group and resources.
 
 ## Estimated time to complete
-- 20 min
+- 15 min
 
 ## Download the Repo
 The **Azure IoTPiDay Workshop** is setup to build out a real-life IoT scenario by capturing IoT data and ingesting it into the Azure Cloud. The GitHub repo contains all the lab files and code components we will be using for this full lab. As you work through the lab, you will need to reference the documents and items from this repo.  As such, it will be easier for you to download the repo contents onto your local computer for reference.
