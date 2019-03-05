@@ -25,7 +25,8 @@
     ./pingaddresses.ps1 ind 172.16.20.1 255.255.252.0
 
 .NOTES
-    IP address/subnet range uses script found here: http://www.itadmintools.com/2011/08/calculating-tcpip-subnets-with.html
+    There is a requirement to have the AZ PowerShell module installed. See the link section of the notes for the URL.
+    The IP address/subnet range uses script found in the links section.
     There is a decent amount of technical debt to be cleaned up. In no particual order here are the needs.
 
         1. Better error checking/handling
@@ -35,7 +36,9 @@
         5. Could use more documentation in the script
 
 .LINK
+    Azure PowerShell AZ: https://docs.microsoft.com/en-us/powershell/azure/install-az-ps?view=azps-1.4.0
     Sample CSV file: https://github.com/Azure/IoT-Pi-Day/blob/master/Setting%20up%20the%20Raspberry%20Pi/MSFT%20Networking/piMaclist.csv
+    Identify Address Range Script: http://www.itadmintools.com/2011/08/calculating-tcpip-subnets-with.html
 
 #>
 
