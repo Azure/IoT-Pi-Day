@@ -5,7 +5,7 @@ TBD - We need to document the scenario here
 1. Azure Subscription [Microsoft Azure Portal](https://portal.azure.com) with rights to create a Resource group and resources.
 
 ## Estimated time to complete
-- 20 min
+- 15 min
 
 ## Download the Repo
 The **Azure IoTPiDay Workshop** is setup to build out a real-life IoT scenario by capturing IoT data and ingesting it into the Azure Cloud. The GitHub repo contains all the lab files and code components we will be using for this full lab. As you work through the lab, you will need to reference the documents and items from this repo.  As such, it will be easier for you to download the repo contents onto your local computer for reference.
@@ -56,7 +56,7 @@ In this section, we will be creating an IOT Hub that we will use to connect to t
    
         > A resource group acts as a logical boundary for all the resources that we create for this Lab.
 
-   - **Region**, This is the region in which you want your IoT Hub to be located. Select the location closest to you from the dropdown list and take note as they will use this region for all components through the day.
+   - **Region**, This is the region in which you want your IoT Hub to be located. Select the location closest to you from the dropdown list and take note as you will use this region for all components through the day.
 
    - **IoT Hub Name**:, type in the name for your IoT Hub. This name must be globally unique, type **<*lastname*>-piday-iothub**.
 
@@ -75,9 +75,9 @@ In this section, we will be creating an IOT Hub that we will use to connect to t
     ![Image](/images/lab-1.0-image4.png)
 
 4. Fill in the fields for the IoT Device as follows.
-    - **Device ID**, use the hostname of your IoT Device, type **raspberrypi-<**cityabbrev>**<**number**>**.
+    - **Device ID**, use the hostname of your IoT Device, type **raspberrypi-<**cityabbrev>**-<**number**>**.
 
-        > i.e. raspberrypi-det-000
+        > i.e. raspberrypi-det-00
 
     - Ensure **Auto Generate Keys** is selected.
 

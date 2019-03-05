@@ -7,7 +7,7 @@
 
 ## Develop the CosmosDBTrigger Function code
 
-🚨 In this section, we will use a CosmosDB trigger function to respond to an event everytime a ??? We will be using Visual Studio Code and the Azure Functions Extension.
+In this section, we will use a CosmosDB trigger function to respond to an event from Event Hub and apply data transformation. We will be using Visual Studio Code and the Azure Functions Extension.
 
 <!--
 1. From **Visual Studio Code**, press **Ctrl-Shift-P**.
@@ -82,6 +82,10 @@ The body of the code is used to map the incoming JSON string to an output docume
 
     - From **Visual Studio Code**, double-click on the file **HubwayCosmosDBTrigger.cs** in the editor to open it.
 
+    - Notice the ... and .... (Tim Brown)
+
+       ![Image](/images/lab-2.5-image2.2.png)  
+
     - Scroll down and to the right and highlight **Subscription-Key**
 
     - **Paste** in your **Subscription-Key** with your **Azure Maps Subscription Key**.
@@ -105,15 +109,13 @@ The body of the code is used to map the incoming JSON string to an output docume
 
     ![Image](/images/lab-2.4-image15.png)
 
-4. After a successful deployment, click **Stream Logs**.
+4. After a successful deployment, click **View Output**.
 
-    ![Image](/images/lab-2.4-image16.png) 
+    ![Image](/images/lab-2.5-image3.2.png)  
 
 5. If everything worked, you will see the following in the Visual Studio Code output window.
 
-    🚨 Need a good screenshot here.
-    
-    ![Image](/images/lab-2.5-image4.png)
+    ![Image](/images/lab-2.5-image4.png) 
 
 ## Reference Sites
 
