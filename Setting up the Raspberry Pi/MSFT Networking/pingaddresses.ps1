@@ -34,6 +34,7 @@
         3. IP scan range is hard-coded to 254, this should be variable based on the network range
         4. Script has hard-coded city names, maybe there is a better way to handle that (file?)
         5. Could use more documentation in the script
+        6. Right now a user can overwrite another users city by specifying that ID, would be nice to have a way to stop that
 
 .LINK
     Azure PowerShell AZ: https://docs.microsoft.com/en-us/powershell/azure/install-az-ps?view=azps-1.4.0
