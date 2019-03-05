@@ -82,6 +82,10 @@ The body of the code is used to map the incoming JSON string to an output docume
 
     - From **Visual Studio Code**, double-click on the file **HubwayCosmosDBTrigger.cs** in the editor to open it.
 
+    - Notice the ... and .... (Tim Brown)
+
+       ![Image](/images/lab-2.5-image2.2.png)  
+
     - Scroll down and to the right and highlight **Subscription-Key**
 
     - **Paste** in your **Subscription-Key** with your **Azure Maps Subscription Key**.
