@@ -178,8 +178,6 @@ foreach ($device in $inputFile) {
 
     }
 
-    Write-Host $device.MacAddress
-
     $piIP = arp -a | select-string $device.MacAddress | foreach { $_.ToString().Trim().Split(" ")[0] }
 
     if ($piIP -eq $null) {
