@@ -49,6 +49,18 @@ We need to document the scenario here
 
     - Press **Ctrl-S** to save the file.
 
+8. Update the HttpTrigger API.
+
+    - Update the **hubwayFeed** API with your **HubWayHttpTrigger** URL.
+
+        ![Image](/images/lab-2.7.2-image4.2.png)  
+
+    - **Paste** in your **URL** from [Lab 2.7.1](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.7%20-%20Working%20with%20Azure%20Maps/Lab%202.7.1%20-%20Function%20Trigger%2C%20HTTP%20Endpoint#view-the-hubwayhttp-endpoint) with your **HubWayHttpTrigger URL**.
+
+        ![Image](/images/lab-2.7.2-image4.4.png) 
+
+        > For reference, see [Lab 2.7.1 - Function Trigger, HTTP Endpoint, View the HubwayHTTP Endpoint](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.7%20-%20Working%20with%20Azure%20Maps/Lab%202.7.1%20-%20Function%20Trigger%2C%20HTTP%20Endpoint#view-the-hubwayhttp-endpoint)
+
 ## Upload file to Storage account
 
 1. Navigate to the resource group.

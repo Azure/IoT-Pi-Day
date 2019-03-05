@@ -66,7 +66,7 @@
 
 4. Click on **Copy** to copy the URL to clipboard.
 
-    ![Image](/images/lab-2.7.1-image9.png)  
+    ![Image](/images/lab-2.7.1-image9.png) 
 
 5. Open a new tab in the browser, **Paste** in the URL, and press **Enter**.
 
@@ -74,6 +74,7 @@
 
         ![Image](/images/lab-2.7.1-image10.png) 
 
+6. Keep the browser tab open to save this URL, you will it in the next lab, [Lab 2.7.2 - Static HTML Page](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.7%20-%20Working%20with%20Azure%20Maps/Lab%202.7.2%20-%20Static%20HTML%20Page).
 
 ## Reference Sites
 
