@@ -7,7 +7,7 @@
 
 ## Develop the CosmosDBTrigger Function code
 
-🚨 In this section, we will use a CosmosDB trigger function to respond to an event everytime a ??? We will be using Visual Studio Code and the Azure Functions Extension.
+In this section, we will use a CosmosDB trigger function to respond to an event from Event Hub and apply data transformation. We will be using Visual Studio Code and the Azure Functions Extension.
 
 <!--
 1. From **Visual Studio Code**, press **Ctrl-Shift-P**.
@@ -111,9 +111,7 @@ The body of the code is used to map the incoming JSON string to an output docume
 
 5. If everything worked, you will see the following in the Visual Studio Code output window.
 
-    🚨 Need a good screenshot here.
-    
-    ![Image](/images/lab-2.5-image4.png)
+    ![Image](/images/lab-2.5-image4.png) 
 
 ## Reference Sites
 

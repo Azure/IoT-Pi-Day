@@ -7,7 +7,7 @@
 
 ## HTTPTrigger Function code
 
-🚨 In this section, we will use a HTTP trigger function to respond to an event everytime a ??? We will be using Visual Studio Code and the Azure Functions Extension.
+In this section, we will use a HTTP trigger function to respond to an event everytime a CosmosDB records are updatd. We will be using Visual Studio Code and the Azure Functions Extension.
 
 1. Open file.
 
@@ -19,13 +19,13 @@
 
     - The function's **Input Bindings** is reading the data from **CosmosDB** from the **TripData** collection.
 
-        > Notice that **tripItems** is populated from CosmosDB. Class is defined at bottom of code.
+        > Notice that **tripItems** is populated from CosmosDB. This class is defined at bottom of code.
 
         ![Image](/images/lab-2.7.1-image1.png)
 
 3. Review Return Value.
 
-    - The function's **Return Value** is returning a **Static Geo Object** formatted to [GeoJSON](http://geojson.org/) specification.  Class is defined at bottom of code.
+    - The function's **Return Value** is returning a **Static Trip Data Geo Object** formatted to [GeoJSON](http://geojson.org/) specification.  Class is defined at bottom of code.
 
         ![Image](/images/lab-2.7.1-image2.png)  
 
@@ -74,7 +74,7 @@
 
         ![Image](/images/lab-2.7.1-image10.png) 
 
-6. Keep the browser tab open to save this URL, you will it in the next lab, [Lab 2.7.2 - Static HTML Page](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.7%20-%20Working%20with%20Azure%20Maps/Lab%202.7.2%20-%20Static%20HTML%20Page).
+6. Keep the browser open, you will need to copy the URL in the next lab, [Lab 2.7.2 - Static HTML Page](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.7%20-%20Working%20with%20Azure%20Maps/Lab%202.7.2%20-%20Static%20HTML%20Page).
 
 ## Reference Sites
 

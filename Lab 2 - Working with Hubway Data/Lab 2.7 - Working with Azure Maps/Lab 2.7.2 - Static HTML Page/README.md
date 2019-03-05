@@ -51,17 +51,23 @@ We need to document the scenario here
 
 8. Update the HttpTrigger API.
 
-    - Update the **hubwayFeed** API with your **HubWayHttpTrigger** URL.
+    - Update the **hubwayFeed** variable with your **HubwayHttpTrigger** URL.
 
         ![Image](/images/lab-2.7.2-image4.2.png)  
 
-    - **Paste** in your **URL** from [Lab 2.7.1](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.7%20-%20Working%20with%20Azure%20Maps/Lab%202.7.1%20-%20Function%20Trigger%2C%20HTTP%20Endpoint#view-the-hubwayhttp-endpoint) with your **HubWayHttpTrigger URL**.
+    - **Paste** in your **URL** from [Lab 2.7.1](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.7%20-%20Working%20with%20Azure%20Maps/Lab%202.7.1%20-%20Function%20Trigger%2C%20HTTP%20Endpoint#view-the-hubwayhttp-endpoint) with your **HubwayHttpTrigger URL**.
+
+        > This is the one you kept open in the browser from previous Lab.
 
         ![Image](/images/lab-2.7.2-image4.4.png) 
 
         > For reference, see [Lab 2.7.1 - Function Trigger, HTTP Endpoint, View the HubwayHTTP Endpoint](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.7%20-%20Working%20with%20Azure%20Maps/Lab%202.7.1%20-%20Function%20Trigger%2C%20HTTP%20Endpoint#view-the-hubwayhttp-endpoint)
 
+    - Press **Ctrl-S** to save the file.
+
 ## Upload file to Storage account
+
+**Option 1 - Storage Explorer from the Azure Portal**
 
 1. Navigate to the resource group.
 
@@ -86,6 +92,10 @@ We need to document the scenario here
     - Click **Upload**.
 
     ![Image](/images/lab-2.7.2-image7.png)
+
+**Option 2 - Storage Explorer from the Desktop**
+
+1. To get started, see [Install Azure Storage Explorer](https://github.com/Azure/IoT-Pi-Day/tree/master/Setting%20up%20the%20Laptop)
 
 ## View the Page
 
