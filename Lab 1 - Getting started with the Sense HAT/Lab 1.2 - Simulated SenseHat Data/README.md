@@ -1,5 +1,7 @@
 # Lab 1.2 - Simulated SenseHat Data
-In this lab, we are running a program on the Raspberry Pi device that will "simulate" reading temperature, humidity and barometric pressure from the SenseHAT and send it on a regular basis to the Azure IOT Hub we setup in a previous lab.
+In this lab, we are running a program on the Raspberry Pi device that will "simulate" temperature, humidity and barometric pressure and send it on a regular basis to the Azure IOT Hub we setup in a previous lab.
+
+> :information_source: This lab is completely **OPTIONAL** and not neccessary if you completed Lab 1.1.
 
 ## Prerequisites
 1. The Laptop is setup correctly, see [Setting up the Laptop](https://github.com/Azure/IoT-Pi-Day/tree/master/Setting%20up%20the%20Laptop).
@@ -106,7 +108,7 @@ This is only required if it's the first time you're logging into Azure from Visu
 4.  Once you are logged in
 5.  Type **```cd SenseHATDotNetCoreSimulation```**
 
-    > If you get a message for no such directory, type **```cd ..```** to back up 1 directory.
+<!--    > If you get a message for no such directory, type **```cd ..```** to back up 1 directory. -->
 
 6.  Type **```chmod 755 SenseHATDotNetCoreSimulation```**
 
@@ -143,7 +145,7 @@ This is only required if it's the first time you're logging into Azure from Visu
 
     ![Image](/images/lab-1.2-image10.png) 
 
-3. From the existing Telnet window, press **Cntl-C** to stop sending data.
+3. From the existing **PuTTY** or **Windows 10 SSH** telnet window, press **Ctrl-C** to stop sending data.
 
 ## Reference Sites
 

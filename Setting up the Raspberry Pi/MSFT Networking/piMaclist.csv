@@ -35,6 +35,7 @@ raspberrypi-cle-08,b8-27-eb-88-d9-b0
 raspberrypi-cle-09,b8-27-eb-92-ea-3c
 raspberrypi-cle-10,b8-27-eb-ce-75-14
 raspberrypi-cle-11,b8-27-eb-66-2f-c4
+countrydiverpi,    b8:27:eb:cd:62:92
 ,
 raspberrypi-cin-01,xx-xx-xx-xx-xx-xx
 raspberrypi-cin-02,xx-xx-xx-xx-xx-xx
@@ -51,8 +52,8 @@ raspberrypi-cin-11,xx-xx-xx-xx-xx-xx
 raspberrypi-ind-01,b8-27-eb-2a-e2-43
 raspberrypi-ind-02,b8-27-eb-68-5b-b7
 raspberrypi-ind-03,b8-27-eb-db-3b-e8
-raspberrypi-ind-04,b8:27:ee:ee:ee:xx
-raspberrypi-ind-05,b8-27-eb-2a-e2-xx
+raspberrypi-ind-04,b8:27:eb:a5:c4:b3
+raspberrypi-ind-05,b8-27-eb-d8-17-30
 raspberrypi-ind-06,b8-27-eb-2a-e2-xx
 raspberrypi-ind-07,b8-27-eb-2a-e2-xx
 raspberrypi-ind-08,b8-27-eb-2a-e2-xx
@@ -60,7 +61,6 @@ raspberrypi-ind-09,b8-27-eb-2a-e2-xx
 raspberrypi-ind-10,b8-27-eb-2a-e2-xx
 raspberrypi-ind-11,b8-27-eb-2a-e2-xx
 ,
-raspberrypi-roc-00,b8-27-eb-43-35-6e
 raspberrypi-roc-01,b8-27-eb-5f-b6-c3
 raspberrypi-roc-02,b8-27-eb-9c-ad-c8
 raspberrypi-roc-03,b8-27-eb-cc-39-8c
@@ -72,3 +72,4 @@ raspberrypi-roc-08,b8-27-eb-96-c2-58
 raspberrypi-roc-09,b8-27-eb-a7-4b-bc
 raspberrypi-roc-10,b8-27-eb-62-1a-86
 raspberrypi-roc-11,b8-27-eb-3b-87-2c
+raspberrypi-roc-12,b8-27-eb-43-35-6e
