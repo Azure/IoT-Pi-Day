@@ -5,7 +5,12 @@
 
 .DESCRIPTION
     This script was built to support a "Pi Day" workshop run by Microsoft to identify the DHCP IP address assigned
-    to a headless Raspberry Pi device. The CSV file is stored in a GitHub Repo with the MAC address and location/device
+    to a headless Raspberry Pi device. 
+    
+    There is a requirement to have the Azure AZ PowerShell Module installed to write to blob storage. You can find 
+    instructions for install in the links section.
+
+    The CSV file is stored in a GitHub Repo with the MAC address and location/device
     name of the Pi devices. The format of the CSV is as follows with the cit field being a 3 letter city identifier:
     
     DeviceName, MacAddress
