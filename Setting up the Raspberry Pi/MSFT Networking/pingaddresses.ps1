@@ -199,6 +199,11 @@ foreach ($device in $inputFile) {
 
     $piIP = arp -a | select-string $device.MacAddress | foreach { $_.ToString().Trim().Split(" ")[0] }
 
+    # // troublshooting
+    Write-Host "-----"
+    Write-Host $device.MacAddress
+    Write-Host $piIP
+
     if ($piIP -eq $null) {
         $piIP = "Device Not Found"
         $connectStringU1 = ""
