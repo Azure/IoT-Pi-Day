@@ -72,7 +72,9 @@ Download the Pi Day MAC to IP PowerShell script below and place it on your local
 
 [Pi Day MAC to IP Script](https://raw.githubusercontent.com/Azure/IoT-Pi-Day/master/Setting%20up%20the%20Raspberry%20Pi/MSFT%20Networking/pingaddresses.ps1)
 
-You will need to create an environmental variable on your local computer with the Azure Blob Storage Account Access Key. The environmental variable should be named "pidayblob" and the key value can be found and copied/pasted from the event OneNote [Storage Account Key](https://microsoft.sharepoint.com/teams/GLRIntelligentCloudBusiness/_layouts/15/WopiFrame.aspx?sourcedoc={1a1dd006-1921-47cc-982f-17ffc28ec578}&action=edit&wd=target%28Resources.one%7Cbff86843-f761-4bf8-846c-6945cd981ce3%2FNetworking%20Data%7C05f4db38-e8cc-4c78-9e95-cff2945afdc1%2F%29&wdorigin=703).
+You will need to create an environmental variable on your local computer with the Azure Blob Storage Account Access Key. The environmental variable should be named "pidayblob" and the key value can be found and copied/pasted from the event OneNote [Storage Account Key](https://microsoft.sharepoint.com/teams/GLRIntelligentCloudBusiness/_layouts/15/WopiFrame.aspx?sourcedoc={1a1dd006-1921-47cc-982f-17ffc28ec578}&action=edit&wd=target%28Resources.one%7Cbff86843-f761-4bf8-846c-6945cd981ce3%2FNetworking%20Data%7C05f4db38-e8cc-4c78-9e95-cff2945afdc1%2F%29&wdorigin=703)
+
+The key can also be found in the Teams Site [Storage Account Key](https://microsoft.sharepoint.com/teams/AzurePiDayEvent/Shared%20Documents/General/pidayblobkey.txt).
 
 - Click the start menu and type environmental
 
