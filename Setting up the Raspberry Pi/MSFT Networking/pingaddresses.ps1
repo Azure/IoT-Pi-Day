@@ -67,50 +67,68 @@ if ($env:pidayblob -eq $null) {
     exit
 }
 
-# // Function to convert IP address to binary to find range to scan
+# // Start Function toBinary to convert IP address to binary to find range to scan
 
 function toBinary ($dottedDecimal){
+
     $dottedDecimal.split(".") | %{$binary=$binary + $([convert]::toString($_,2).padleft(8,"0"))}
     return $binary
-   }
 
-   # // Function to convert subnet mask to decimal to identify network range to scan
-   function toDottedDecimal ($binary){
+} # // End Function toBinary
+
+   # // Start Function toDottedDecimal to convert subnet mask to decimal to identify network range to scan
+function toDottedDecimal ($binary){
+
     do {$dottedDecimal += "." + [string]$([convert]::toInt32($binary.substring($i,8),2)); $i+=8 } while ($i -le 24)
     return $dottedDecimal.substring(1)
-   }
-  
-   $ipaddress = toBinary $ipaddress
-   $subnetMask = toBinary $subnetMask
 
-   # // how many bits are the network ID
+   } # // End Function toDottedDecimal
 
-   $netBits=$subnetMask.indexOf("0")
+# // Call toBinary function to convert IP address and subnet
+
+$ipaddress = toBinary $ipaddress
+$subnetMask = toBinary $subnetMask
+
+# // Find out how manu bits are in the network ID
+
+$netBits=$subnetMask.indexOf("0")
  
-   if(($ipaddress.length -ne 32) -or ($ipaddress.substring($netBits) -eq "00000000") -or ($ipaddress.substring($netBits) -eq "11111111")) {
+# // Validate IP address, exit if there is an error
+
+if (($ipaddress.length -ne 32) -or ($ipaddress.substring($netBits) -eq "00000000") -or ($ipaddress.substring($netBits) -eq "11111111")) {
+    
     Write-Warning "IP Address is invalid!"
     Exit
+    }
 
-   if(($subnetMask.length -ne 32) -or ($subnetMask.substring($netBits).contains("1") -eq $true)) {
+# // Validate subnet mask, exit if there is an error
+
+if (($subnetMask.length -ne 32) -or ($subnetMask.substring($netBits).contains("1") -eq $true)) {
+
     Write-Warning "Subnet Mask is invalid!"
     Exit
-   }
 
-   }
+    }
 
-   $firstAddress = toDottedDecimal $($ipaddress.substring(0,$netBits).padright(31,"0") + "1")
-   $lastAddress = toDottedDecimal $($ipaddress.substring(0,$netBits).padright(31,"1") + "0")
 
-   $prefix = $firstAddress.split(".")[0] + "." + $firstAddress.split(".")[1] + "."
-   $suffix = [convert]::ToInt32($firstAddress.split(".")[2])
+# // Call toDottedDecimal function to find first and last address range
 
-$i = 1
-$loop = 1
+$firstAddress = toDottedDecimal $($ipaddress.substring(0,$netBits).padright(31,"0") + "1")
+$lastAddress = toDottedDecimal $($ipaddress.substring(0,$netBits).padright(31,"1") + "0")
+
+# // Set the prefix and suffix to scan
+
+$prefix = $firstAddress.split(".")[0] + "." + $firstAddress.split(".")[1] + "."
+$suffix = [convert]::ToInt32($firstAddress.split(".")[2]) # // Convert suffix to integer in order to increment value in loop
 
 # // Determine how many times to loop the ping script based on IP and subnet
 
 $loopCount = ([convert]::ToInt32($lastAddress.split(".")[2]) - $suffix) + 1
 
+# // Set some script variables 
+
+$i = 1
+$loop = 1
 $addressesToScan = 254
 $totalCount = 1
 $addressCount = $addressesToScan * $loopCount
