@@ -32,7 +32,7 @@
 .NOTES
     There is a requirement to have the AZ PowerShell module installed. See the link section of the notes for the URL.
     The IP address/subnet range uses script found in the links section.
-    There is a decent amount of technical debt to be cleaned up. In no particual order here are the needs.
+    There is a decent amount of technical debt and feature/functions to add. In no particual order here are the needs.
 
         1. Better error checking/handling
         2. Parrallel processing (scanning large IP ranges takes a long time, should fire multiple at once)
@@ -40,6 +40,8 @@
         4. Script has hard-coded city names, maybe there is a better way to handle that (file?)
         5. Could use more documentation in the script
         6. Right now a user can overwrite another users city by specifying that ID, would be nice to have a way to stop that
+        7. Would be nice to leverage KeyVault for the Blob Account Key
+        8. Adding a "click to copy" for the SSH connect sctrings
 
 .LINK
     Azure PowerShell AZ: https://docs.microsoft.com/en-us/powershell/azure/install-az-ps?view=azps-1.4.0
@@ -68,7 +70,7 @@ if ($env:pidayblob -eq $null) {
     write-host " "
     write-host "Launching browser with link to key in OneNote..."
     Start-Sleep -seconds 5
-    start "https://microsoft.sharepoint.com/teams/GLRIntelligentCloudBusiness/_layouts/15/WopiFrame.aspx?sourcedoc={1a1dd006-1921-47cc-982f-17ffc28ec578}&action=edit&wd=target%28Resources.one%7Cbff86843-f761-4bf8-846c-6945cd981ce3%2FNetworking%20Data%7C05f4db38-e8cc-4c78-9e95-cff2945afdc1%2F%29&wdorigin=703"
+    start "https://microsoft.sharepoint.com/teams/AzurePiDayEvent/Shared%20Documents/General/pidayblobkey.txt"
     exit
 }
 
@@ -81,7 +83,8 @@ function toBinary ($dottedDecimal){
 
 } # // End Function toBinary
 
-   # // Start Function toDottedDecimal to convert subnet mask to decimal to identify network range to scan
+# // Start Function toDottedDecimal to convert subnet mask to decimal to identify network range to scan
+
 function toDottedDecimal ($binary){
 
     do {$dottedDecimal += "." + [string]$([convert]::toInt32($binary.substring($i,8),2)); $i+=8 } while ($i -le 24)
@@ -114,7 +117,6 @@ if (($subnetMask.length -ne 32) -or ($subnetMask.substring($netBits).contains("1
     Exit
 
     }
-
 
 # // Call toDottedDecimal function to find first and last address range
 
