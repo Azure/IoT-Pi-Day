@@ -1,5 +1,19 @@
 # This ReadMe contains the steps for finding your Raspberry Pi MAC address, adding them to the MSFT network, and finding the assigned IP on the day of the event
 
+# Important Notes and Pre-Req
+
+The best practice to run the script is to clone the entire repo to your local machine, and browse to the folder where this script lives and run it from there. Issue a "git pull" before you run the script to grab the latest version. There is a lot of detail in the script itself. You can access this documentation by running the command below.
+
+- help .\pingaddresses.ps1 -full
+
+You need the PowerShell AZ module installed prior to running the script. You must do this in a PowerShell prompt with elevated 
+privileges (run as administrator). Full details are here: https://docs.microsoft.com/en-us/powershell/azure/install-az-ps?view=azps-1.4.0
+
+- The command to do the install is: Install-Module -Name Az -AllowClobber
+
+Google Chrome is caching/not relaoding the iFrame in all cases for the web site after the script runs. If you are using Chrome and run the script successfully (devices are identified), but the site page: https://glrpiday.z20.web.core.windows.net/ shows no new added systems right click in the table and choose "reload frame". Reloading the page will not address the issue, you must click inside the table view and choose "reload frame".
+
+>- Note: This issue is not present in Edge, and it is unlikely to be an issue for customers the day of the event as it will be the first time they access the page.
 
 # Finding the Raspberry Pi MAC address
 
