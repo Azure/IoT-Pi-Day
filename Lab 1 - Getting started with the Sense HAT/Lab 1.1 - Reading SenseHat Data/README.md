@@ -4,7 +4,8 @@ In this lab, we are running a program on the Raspberry Pi device that will grab 
 ## Prerequisites
 1. The Laptop is setup correctly, see [Setting up the Laptop](https://github.com/Azure/IoT-Pi-Day/tree/master/Setting%20up%20the%20Laptop).
 2. The Resource Configuation Lab is completed, see [Lab 1.0 - Resource Configuration](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%201%20-%20Getting%20started%20with%20the%20Sense%20HAT/Lab%201.0%20-%20Resource%20Configuration).
-3. Get the IP Address of your Raspberry Pi device.
+3. Have the IP address of your Raspberry Pi device.  If you don’t have it, as a proctor for it.
+    > Each device has been assisnged an IP Address that correlate to it's MAC Address.
 
 ## Estimated time to complete
 - 20 min
@@ -42,7 +43,8 @@ This is only required if it's the first time you're logging into Azure from Visu
 
 1. Select the resource group.
 
-    - From the Azure Portal from the left menu, click on **Resource Groups**.
+    - In a browser window, sign in to the [Microsoft Azure Portal](https://portal.azure.com).
+    - Click on **Resource Groups**.
     - Select the resource group created previously, i.e. **<*lastname*>-piday-rg**.
     - Click on the IoT Hub created earlier, i.e. **<*lastname*>-piday-iothub**.
 
@@ -139,7 +141,7 @@ This is only required if it's the first time you're logging into Azure from Visu
 
     ![Image](/images/lab-1.1-image10.png)
 
-3. From the existing Telnet window, press **Ctrl-C** to stop sending data.
+3. From the existing **PuTTY** or **Windows 10 SSH** telnet window, press **Ctrl-C** to stop sending data.
 
 ## Reference Sites
 
