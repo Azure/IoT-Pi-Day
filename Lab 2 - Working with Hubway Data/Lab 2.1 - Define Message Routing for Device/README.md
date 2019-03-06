@@ -6,7 +6,7 @@ In this section, you will be setting up a message route in IoT Hub.  The route a
 2. The Resource Configuation Lab is completed, see [Lab 2.0 - Resource Configuration](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.0%20-%20Resource%20Configuration)
 
 ## Estimated time to complete
-- TBD
+- 5 min
 
 ## Define Custom End points and Routes
 1. In the left side menu, click on **Resource Groups**.
