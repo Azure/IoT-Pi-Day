@@ -1,5 +1,5 @@
 # Lab 2.3 - Setting up Event Hub
-We need to document the scenario here
+In this section, we will add a consumer group. Consumer groups are used by applications to pull data from Azure IoT Hub. A consumer group is a view (state, position, or offset) of an entire event hub. Consumer groups enable multiple consuming applications to each have a separate view of the event stream, and to read the stream independently at their own pace and with their own offsets.
 
 ## Prerequisites
 1. The Resource Configuation Lab is completed, see [Lab 1.0 - Resource Configuration](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%201%20-%20Getting%20started%20with%20the%20Sense%20HAT/Lab%201.0%20-%20Resource%20Configuration)
@@ -39,3 +39,7 @@ We need to document the scenario here
 [Azure-Portal](https://portal.azure.com/)
 
 [EventHub-Documentation](https://docs.microsoft.com/en-us/azure/event-hubs/)
+
+[Features and terminology in Azure Event Hubs](https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-features)
+
+[Consumer Groups](https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-features#consumer-groups)
