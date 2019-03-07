@@ -6,6 +6,9 @@ We need to document the scenario here
 2. The Resource Configuation Lab is completed, see [Lab 2.0 - Resource Configuration](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.0%20-%20Resource%20Configuration)
 3. Completion of Lab 2.1 through 2.3 must be done.
 
+## Estimated time to complete
+- 45 min
+
 ## Create a function app from the Azure portal
 
 Use the following steps to create an Azure Function:    
@@ -103,6 +106,8 @@ We use the Event Hubs trigger to respond to an event sent to an event hub event 
 
         ![Image](/images/lab-2.4-image6.png) 
 
+    - Press **Ctrl-S** to save the file.
+
 8. Update the **AzureWebJobsStorage** connection string.
 
     - From the Azure Portal in the left menu, click on **Resource Groups**.
@@ -118,7 +123,9 @@ We use the Event Hubs trigger to respond to an event sent to an event hub event 
 
     - From Visual Studio Code, open the file **local.settings.json** and **Paste** in the connection string between the quotes on the **AzureWebJobsStorage** line.
 
-        ![Image](/images/lab-2.4-image9.png)  
+        ![Image](/images/lab-2.4-image9.png) 
+    
+    - Press **Ctrl-S** to save the file.
 
 ## Configure CosmosDB Trigger Bindings
 
@@ -139,7 +146,7 @@ We use the Event Hubs trigger to respond to an event sent to an event hub event 
 
         ![Image](/images/lab-2.4-image11.png)
 
-2. Update the **cosmosdb_DOCUMENTDB** connection string.
+3. Update the **cosmosdb_DOCUMENTDB** connection string.
 
     - In Visual Studio Code, open the file **local.settings.json** and **Paste** in the connection string between the quotes on the **Hubway_EVENTHUB** line.
 
@@ -147,7 +154,9 @@ We use the Event Hubs trigger to respond to an event sent to an event hub event 
 
     - ?🚨? In Visual Studio Code, open the file **local.settings.json** and **Paste** in the connection string between the quotes on the **Shared_Access_Key_DOCUMENTDB** line.
 
-        ![Image](/images/lab-2.4-image12.png) 
+        ![Image](/images/lab-2.4-image12.png)
+
+    - Press **Ctrl-S** to save the file.
 
 ## Test the Function
 Let's test the Event Hub trigger to ensure it's firing and ready to process data.

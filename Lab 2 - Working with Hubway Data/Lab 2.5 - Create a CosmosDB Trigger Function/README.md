@@ -5,6 +5,9 @@
 2. The Resource Configuation Lab is completed, see [Lab 2.0 - Resource Configuration](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.0%20-%20Resource%20Configuration)
 3. Completion of Lab 2.1 through 2.4 must be done.
 
+## Estimated time to complete
+- 10 min
+
 ## Develop the CosmosDBTrigger Function code
 
 In this section, we will use a CosmosDB trigger function to respond to an event from Event Hub and apply data transformation. We will be using Visual Studio Code and the Azure Functions Extension.
@@ -82,13 +85,15 @@ The body of the code is used to map the incoming JSON string to an output docume
 
     - From **Visual Studio Code**, double-click on the file **HubwayCosmosDBTrigger.cs** in the editor to open it.
 
-    - Notice the ... and .... (Tim Brown)
+    - Notice the ... and .... (@Tim Brown, please update this line)
 
        ![Image](/images/lab-2.5-image2.2.png)  
 
-    - Scroll down and to the right and highlight **Subscription-Key**
+    - Scroll down and to the right and highlight **Subscription-Key**.
 
     - **Paste** in your **Subscription-Key** with your **Azure Maps Subscription Key**.
+
+        > Be sure to pasted between the **<** and **>** symbols.
 
         ![Image](/images/lab-2.5-image3.png) 
 
