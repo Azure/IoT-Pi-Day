@@ -2,7 +2,7 @@ Lab 2.3 Create the Event Hub Trigger Function
 
 Snippet One:
 
-string myEventHubMessage, [CosmosDB(databaseName: "Hubway",collectionName: "Tripdata",ConnectionStringSetting = "cosmosDB_DOCUMENTDB")] out dynamic outputDocument
+string myEventHubMessage, [CosmosDB(databaseName: "Hubway",collectionName: "Tripdata",ConnectionStringSetting = "Shared_Access_Key_DOCUMENTDB")] out dynamic outputDocument
 
 Snippet Two:                
                 

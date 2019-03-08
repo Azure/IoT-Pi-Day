@@ -63,6 +63,9 @@ namespace SenseHATDotNetCore
                 // Convert Celsius to Fahrenheit 
                 currentTemperature = humidityReadResult.Temperatur * 1.8 + 32;
 
+                // Update Temperature with Offset 
+                currentTemperature = currentTemperature - 9;
+
                 // Create JSON message
                 Telemetry telemetryRow = new Telemetry();
                 telemetryRow.DeviceId = "<Your Raspberry Pi Device Name>"; // i.e. raspberrypi-det-01

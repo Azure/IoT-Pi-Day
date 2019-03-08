@@ -146,13 +146,9 @@ We use the Event Hubs trigger to respond to an event sent to an event hub event 
 
         ![Image](/images/lab-2.4-image11.png)
 
-3. Update the **cosmosdb_DOCUMENTDB** connection string.
+3. Update the **CosmosDB** connection string.
 
-    - In Visual Studio Code, open the file **local.settings.json** and **Paste** in the connection string between the quotes on the **Hubway_EVENTHUB** line.
-
-    - ?🚨? In Visual Studio Code, open the file **local.settings.json** and **Paste** in the connection string between the quotes on the **cosmosdb_DOCUMENTDB** line.
-
-    - ?🚨? In Visual Studio Code, open the file **local.settings.json** and **Paste** in the connection string between the quotes on the **Shared_Access_Key_DOCUMENTDB** line.
+    - In Visual Studio Code, open the file **local.settings.json** and **Paste** in the connection string between the quotes on the **Shared_Access_Key_DOCUMENTDB** line.
 
         ![Image](/images/lab-2.4-image12.png)
 
@@ -195,6 +191,11 @@ Let's test the Event Hub trigger to ensure it's firing and ready to process data
 4. After a successful deployment, click **Stream Logs**.
 
     ![Image](/images/lab-2.4-image16.png) 
+
+## Verify Connection Strings in Application Settings
+
+### Randy will update this!!!
+
 
 ## Run the code from the Raspberry PI
 
