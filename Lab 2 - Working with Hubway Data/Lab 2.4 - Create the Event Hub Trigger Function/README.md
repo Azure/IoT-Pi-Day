@@ -167,7 +167,7 @@ Let's test the Event Hub trigger to ensure it's firing and ready to process data
 
 6. If all went well, you should see each record in JSON format being sent up to the IoT Hub from Visual Studio Code.
 
-![Image](/images/lab-2.3-image20.png)
+    ![Image](/images/missing-image.png)
 
 7. From **Visual Studio Code**, press **Ctrl-C** to stop.
 
@@ -192,7 +192,9 @@ Let's test the Event Hub trigger to ensure it's firing and ready to process data
 
     ![Image](/images/lab-2.4-image16.png) 
 
-## Verify Connection Strings in Application Settings
+## Add Connection Strings in Azure
+
+ in Application Settings
 
 🚨 @Randy Pagels to add additional steps here.
 

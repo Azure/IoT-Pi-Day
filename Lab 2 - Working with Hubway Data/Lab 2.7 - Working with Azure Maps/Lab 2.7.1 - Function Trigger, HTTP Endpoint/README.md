@@ -76,6 +76,29 @@ In this section, we will use a HTTP trigger function to respond to an event ever
 
 6. Keep the browser open, you will need to copy the URL in the next lab, [Lab 2.7.2 - Static HTML Page](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.7%20-%20Working%20with%20Azure%20Maps/Lab%202.7.2%20-%20Static%20HTML%20Page).
 
+
+## Update your Function App Features
+In this section, you need to update the origins used for CORS (Cross-Origin Resource Sharing). CORS is used to prevent malicious code execution in your services, App Service blocks calls to your function apps from external sources. Functions supports cross-origin resource sharing (CORS) to let you define a "whitelist" of allowed origins from which your functions can accept remote requests.
+
+1. Update allowed CORS orgins in the Portal.
+
+    - From the Azure Portal, click on **Platform Features**.
+
+        ![Image](/images/lab-2.7.1-image12.png) 
+    
+    - Scroll down and under **API**, click on **CORS**.
+
+    - Under **Allowed Origins**, click the ellipses on each row and click **Delete**/
+
+    - Type an **Asterisk** in the textbox.
+
+        ![Image](/images/lab-2.7.1-image13.png)  
+
+    - Click **Save**.
+
+        ![Image](/images/lab-2.7.1-image14.png)  
+
+
 ## Reference Sites
 
 [GeoJSON](http://geojson.org/) specification.
