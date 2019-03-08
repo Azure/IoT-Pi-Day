@@ -194,8 +194,11 @@ Let's test the Event Hub trigger to ensure it's firing and ready to process data
 
 ## Verify Connection Strings in Application Settings
 
-### Randy will update this!!!
+🚨 @Randy Pagels to add additional steps here.
 
+1. Verify the **EventHub** connection string, **Shared_Access_Key_EVENTHUB**, in the Azure Portal.
+
+2. Verify the **CosmosDB** connection string, **Shared_Access_Key_DOCUMENTDB**, in the Azure Portal.
 
 ## Run the code from the Raspberry PI
 
