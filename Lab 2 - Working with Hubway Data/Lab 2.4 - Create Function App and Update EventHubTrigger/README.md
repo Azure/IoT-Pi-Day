@@ -177,7 +177,7 @@ Let's test the Event Hub trigger to ensure it's firing and ready to process data
 
 3. If all went well, you should see each record in JSON format being sent up to the IoT Hub from Visual Studio Code.
 
-    ![Image](/images/missing-image.png)
+    ![Image](/images/lab-2.4-image12.5.png)
 
 4. From **Visual Studio Code**, press **Ctrl-C** to stop.
 
