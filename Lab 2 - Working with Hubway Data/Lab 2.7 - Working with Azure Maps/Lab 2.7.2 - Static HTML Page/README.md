@@ -7,7 +7,7 @@ We need to document the scenario here
 3. Completion of Lab 2.1 through 2.7.1 must be done.
 
 ## Estimated time to complete
-- 5 min
+- 15 min
 
 ## Develop the Static HTML Page code
 
@@ -21,7 +21,7 @@ We need to document the scenario here
 
     > C:\Workspace\IoT-Pi-Day-master\Lab 2 - Working with Hubway Data\Solution\HubwayMap
 
-4. Type **```code .```** (that's **code space dot**).
+4. Type **```code .```** (that's **code space dot**) to open Visual Studio Code.
 
 5. Select the resource group.
 
