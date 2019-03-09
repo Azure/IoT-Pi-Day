@@ -6,6 +6,9 @@ We need to document the scenario here
 2. The Resource Configuation Lab is completed, see [Lab 2.0 - Resource Configuration](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.0%20-%20Resource%20Configuration)
 3. Completion of Lab 2.1 through 2.7.1 must be done.
 
+## Estimated time to complete
+- 5 min
+
 ## Develop the Static HTML Page code
 
 1. Open up a Command Prompt or PowerShell as an Administrator.
