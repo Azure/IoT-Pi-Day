@@ -27,10 +27,15 @@ In this section, we will add a consumer group. Consumer groups are used by appli
         ![Image](/images/lab-2.3-image2.png) 
 
     - Under **Entities**, select **Consumer Groups**.
+
     - Click **+ Consumer Group** to create a new Group.
+
     - Type the name **hubwaycg** in the name field.
 
         ![Image](/images/lab-2.3-image3.png) 
+
+        > The **hubwaycg** Consumer Group will be used by the HubwayEventHubTrigger to filter events with this property set.  This custom message property is added to each record as it is sent to IoT Hub from the **SimulatedDevice** code used in [Lab 2.2 - Send Hubway data to Iot Hub](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.2%20-%20Send%20Hubway%20Data%20to%20Iot%20Hub).  Using Consumer Groups enables multiple consuming applications to each have a separate view of the event stream.
+
 
 7. Click **Create**.
 
