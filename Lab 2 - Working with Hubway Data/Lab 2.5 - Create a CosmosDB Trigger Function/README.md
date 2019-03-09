@@ -85,7 +85,7 @@ The body of the code is used to map the incoming JSON string to an output docume
 
     - From **Visual Studio Code**, double-click on the file **HubwayCosmosDBTrigger.cs** in the editor to open it.
 
-        > For every record in CosmosDB we are looking at startStation Latitiude & Longitude and sending them to the Azure Map Search. We are searching for a street address using Reverse Address Search feature of Azure Map to the address of the Hubway Station. 
+        > For every record in CosmosDB we are looking at startStation Latitiude & Longitude and sending them to the Azure Map Search. We are searching for a street address using the Reverse Address Search feature of Azure Map and return the address of the Hubway Station. 
 
        ![Image](/images/lab-2.5-image2.2.png)  
 
