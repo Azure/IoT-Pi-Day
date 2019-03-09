@@ -77,10 +77,10 @@ Functions supports cross-origin resource sharing (CORS) to let you define a "whi
 
     - Under **Allowed Origins**, click the ellipses on each row and click **Delete** to remove them.
 
-    - Type an **Asterisk** in the textbox.
-
         ![Image](/images/lab-2.7.1-image13.png)  
 
+    - Type an **Asterisk** in the textbox.
+    
     - Click **Save**, then click the **X** to close this window.
 
         ![Image](/images/lab-2.7.1-image14.png)  
