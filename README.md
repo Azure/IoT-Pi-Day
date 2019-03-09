@@ -58,10 +58,10 @@ As you create an end-to-end IoT application in a day, you’ll see how easy it i
 - [**Lab 2.3** - Setting up Event Hub](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.3%20-%20Setting%20up%20Event%20Hub)
     - This lab will guide you through ...(desc coming soon...)
 
-- [**Lab 2.4** - Create the Event Hub Trigger Function](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.4%20-%20Create%20the%20Event%20Hub%20Trigger%20Function)
+- [**Lab 2.4** - Create Function App and Update EventHubTrigger](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.4%20-%20Create%20the%20Event%20Hub%20Trigger%20Function)
     - This lab will guide you through ...(desc coming soon...)
 
-- [**Lab 2.5** - Create the CosmosDB Trigger Function](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.5%20-%20Create%20a%20CosmosDB%20Trigger%20Function)
+- [**Lab 2.5** - Update the CosmosDBTrigger Function](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.5%20-%20Create%20a%20CosmosDB%20Trigger%20Function)
     - This lab will guide you through ...(desc coming soon...)
 
 - [**Lab 2.6** - Configure Storage](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.6%20-%20Configure%20Storage)

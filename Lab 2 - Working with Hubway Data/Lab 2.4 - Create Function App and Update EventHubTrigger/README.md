@@ -1,4 +1,4 @@
-# Lab 2.4 - Create Function App and Triggers
+# Lab 2.4 - Create Function App and Update EventHubTrigger
 We need to document the scenario here
 
 ## Prerequisites
