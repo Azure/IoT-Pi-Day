@@ -48,7 +48,8 @@ In this section, we will use a HTTP trigger function to respond to an event ever
 
     ![Image](/images/lab-2.7.1-image6.png)
 
-## View the HubwayHTTP Endpoint
+## Update your Function App Features
+In this section, you need to update the origins used for CORS (Cross-Origin Resource Sharing). CORS is used to prevent malicious code execution in your services, App Service blocks calls to your function apps from external sources. Functions supports cross-origin resource sharing (CORS) to let you define a "whitelist" of allowed origins from which your functions can accept remote requests.
 
 1. Navigate to the resource group.
 
@@ -58,31 +59,9 @@ In this section, we will use a HTTP trigger function to respond to an event ever
 
         ![Image](/images/lab-2.7.1-image7.png)
 
-2. Copy the Endpoint
-    - Click on the **HubWayHttpTrigger**.
-    - Click on **Get function URL**.
+2. Update allowed CORS orgins in the Portal.
 
-    ![Image](/images/lab-2.7.1-image8.png)
-
-4. Click on **Copy** to copy the URL to clipboard.
-
-    ![Image](/images/lab-2.7.1-image9.png) 
-
-5. Open a new tab in the browser, **Paste** in the URL, and press **Enter**.
-
-    - This function is now reading TripData from CosmosDB. You will see the following output.
-
-        ![Image](/images/lab-2.7.1-image10.png) 
-
-6. Keep the browser open, you will need to copy the URL in the next lab, [Lab 2.7.2 - Static HTML Page](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.7%20-%20Working%20with%20Azure%20Maps/Lab%202.7.2%20-%20Static%20HTML%20Page).
-
-
-## Update your Function App Features
-In this section, you need to update the origins used for CORS (Cross-Origin Resource Sharing). CORS is used to prevent malicious code execution in your services, App Service blocks calls to your function apps from external sources. Functions supports cross-origin resource sharing (CORS) to let you define a "whitelist" of allowed origins from which your functions can accept remote requests.
-
-1. Update allowed CORS orgins in the Portal.
-
-    - From the Azure Portal, click on **Platform Features**.
+    - Click on **Platform Features**.
 
         ![Image](/images/lab-2.7.1-image12.png) 
     
@@ -97,6 +76,27 @@ In this section, you need to update the origins used for CORS (Cross-Origin Reso
     - Click **Save**.
 
         ![Image](/images/lab-2.7.1-image14.png)  
+
+## View the HubwayHTTP Endpoint
+
+1. Copy the Endpoint
+    - Under **Function Apps**, click Click on the **HubWayHttpTrigger**.
+    
+    - Click on **Get function URL**.
+
+        ![Image](/images/lab-2.7.1-image8.png)
+
+2. Click on **Copy** to copy the URL to clipboard.
+
+    ![Image](/images/lab-2.7.1-image9.png) 
+
+3. Open a new tab in the browser, **Paste** in the URL, and press **Enter**.
+
+    - This function is now reading TripData from CosmosDB. You will see the following output.
+
+        ![Image](/images/lab-2.7.1-image10.png) 
+
+4. Keep the browser open, you will need to copy the URL in the next lab, [Lab 2.7.2 - Static HTML Page](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.7%20-%20Working%20with%20Azure%20Maps/Lab%202.7.2%20-%20Static%20HTML%20Page).
 
 
 ## Reference Sites
