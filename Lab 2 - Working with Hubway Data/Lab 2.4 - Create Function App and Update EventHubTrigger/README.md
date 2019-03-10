@@ -224,7 +224,9 @@ Let's test the Event Hub trigger to ensure it's firing in Azure.
 
 1. Start the Streaming Output
 
-    - Click on **Functions** to expand it and select **HubwayEventHubTrigger**.
+    - Click on **Functions** to expand it the function list.
+    
+    - Click on **HubwayEventHubTrigger** to select it.
 
         ![Image](/images/lab-2.4-image20.png)  
 
