@@ -222,12 +222,16 @@ In this section, we will be deploying the Azure Function App. A function app is 
 
 Let's test the Event Hub trigger to ensure it's firing in Azure.
 
-<!--
-1. From **Visual Studio Code**, double-click on file **HubwayEventHubTrigger.cs** to open in the editor.
+1. Start the Streaming Output
 
-    - To execute the code, press **F5**.
+    - Click on **Functions** to expand it and select **HubwayEventHubTrigger**.
 
--->
+        ![Image](/images/lab-2.4-image20.png)  
+
+    - Right-click on **HubwayEventHubTrigger** and select **Start Streaming Logs** to open the output window.
+
+        ![Image](/images/lab-2.4-image21.png)  
+
 
 2. Run the code on the device.
 
@@ -243,16 +247,11 @@ Let's test the Event Hub trigger to ensure it's firing in Azure.
 
         > Refer to Lab 2.2 - Send Hubway data to Iot Hub, section [Run the code from the Raspberry PI](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.2%20-%20Send%20Hubway%20Data%20to%20Iot%20Hub)
 
-    - Press **Ctrl-C** to stop execution.
+3. If all went well, from the Visual Studio Code output window, you will see each record in JSON format being sent up to the IoT Hub.
 
-<!--
-3. If all went well, you should see each record in JSON format being sent up to the IoT Hub from Visual Studio Code.
+    ![Image](/images/lab-2.4-image22.png) 
 
-    ![Image](/images/lab-2.4-image17.png)
-
-4. From **Visual Studio Code**, press **Ctrl-C** to stop.
-
--->
+4. From **PuTTY** or **Windows 10 SSH**, press **Ctrl-C** to stop.
 
 ## Reference Sites
 
