@@ -29,6 +29,8 @@ After you run the initial [PI setup guide](https://github.com/Azure/IoT-Pi-Day/t
 
 From here you can find the IP address (and perhaps MAC) assigned to your Pi device. 
 
+> - Note: It is important to grab the wlan0 interface MAC as this is the wireless hardware. If you hardwire your device you can use the ethernet port to connect, but you will need to run: "ifconfig -a" in order to identify the wlan0 hardware MAC.
+
 > - Note: Your home router interface may not match the screenshot below:
 
 ![Image](/images/network/homeroute.jpg)
