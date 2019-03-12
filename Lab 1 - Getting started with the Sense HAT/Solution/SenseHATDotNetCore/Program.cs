@@ -1,9 +1,15 @@
-﻿using System;
+using System;
 using Microsoft.Azure.Devices.Client;
 using Newtonsoft.Json;
 using System.Text;
 using System.Threading.Tasks;
 using Sense.RTIMU;
+using System.Reactive;
+using System.Reactive.Linq;
+using Sense.Led;
+using Sense.Stick;
+using System.Threading;
+using System.Linq;
 
 namespace SenseHATDotNetCore
 {
@@ -11,11 +17,15 @@ namespace SenseHATDotNetCore
     {
         static void Main()
         {
+            
             Console.WriteLine();
             Console.WriteLine("=====================================================");
             Console.WriteLine("Welcome to the RaspberryPi SenseHAT - Ctrl-C to exit.");
             Console.WriteLine("=====================================================");
             Console.WriteLine();
+            
+            TestLedMessage("Welcome to Pi Day!");
+            TestLowLight();
             // Collect Simulated Sensor Data and send to IoT hub
             SendDeviceToCloudMessagesAsync();
             Console.ReadLine();
@@ -63,9 +73,6 @@ namespace SenseHATDotNetCore
                 // Convert Celsius to Fahrenheit 
                 currentTemperature = humidityReadResult.Temperatur * 1.8 + 32;
 
-                // Update Temperature with Offset 
-                currentTemperature = currentTemperature - 9;
-
                 // Create JSON message
                 Telemetry telemetryRow = new Telemetry();
                 telemetryRow.DeviceId = "<Your Raspberry Pi Device Name>"; // i.e. raspberrypi-det-01
@@ -105,6 +112,76 @@ namespace SenseHATDotNetCore
             public decimal Pressure { get; set; }
         }
 
+private static void TestLedMessage(string text)
+
+        {
+
+            Sense.Led.LedMatrix.ShowMessage(text);
+
+        }
+
+private static void TestLowLight()
+
+        {
+
+            var pixels = Sense.Led.PixelsFromText
+
+                .Create("Pi")
+
+                .SetColor(new Color(210, 31, 60));
+
+            Sense.Led.LedMatrix.SetPixels(pixels);
+
+            Sense.Led.LedMatrix.SetLowLight(true);
+
+            System.Console.WriteLine("LowLight = true");
+
+            System.Console.WriteLine($"Gamma: {string.Join(" ", Sense.Led.LedMatrix.GetGamma().Select(v => v.ToString("X")))}");
+
+            Thread.Sleep(2000);
+
+
+
+            Sense.Led.LedMatrix.SetLowLight(false);
+
+            System.Console.WriteLine("LowLight = false");
+
+            System.Console.WriteLine($"Gamma: {string.Join(" ", Sense.Led.LedMatrix.GetGamma().Select(v => v.ToString("X")))}");
+
+            Thread.Sleep(2000);
+
+            
+
+            var buffer = new byte[] { 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 10, 10 };
+
+            Sense.Led.LedMatrix.SetGamma(buffer);
+
+            System.Console.WriteLine("Light = custom");
+
+            System.Console.WriteLine($"Gamma: {string.Join(" ", Sense.Led.LedMatrix.GetGamma().Select(v => v.ToString("X")))}");
+
+            Thread.Sleep(2000);
+
+
+
+            Sense.Led.LedMatrix.SetLowLight(false);
+
+            System.Console.WriteLine("LowLight = false");
+
+            System.Console.WriteLine($"Gamma: {string.Join(" ", Sense.Led.LedMatrix.GetGamma().Select(v => v.ToString("X")))}");
+
+            Thread.Sleep(2000);
+
+            pixels = Sense.Led.PixelsFromText
+            
+            .Create("Pi")
+
+            .SetColor(new Color(0, 0, 0));
+
+            Sense.Led.LedMatrix.SetPixels(pixels);
+
+        }
 
     }
 }
+
