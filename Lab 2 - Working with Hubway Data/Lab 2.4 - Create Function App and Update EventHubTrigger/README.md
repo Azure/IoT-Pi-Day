@@ -130,7 +130,7 @@ We use the Event Hubs trigger to respond to an event sent to an event hub event 
 
 ## Configure CosmosDB Trigger Bindings
 
-In this section, we are updating the trigger connection string to poing to CosmosDB
+In this section, we are updating the trigger connection string to going to CosmosDB
 
 1. Navigate to the resource group.
 
