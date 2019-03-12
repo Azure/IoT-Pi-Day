@@ -1,5 +1,5 @@
 # Lab 2.6 - Configure Storage
-We need to document the scenario here
+In this section, you will configure Azure storage. Azure storage allows you to serve static content (HTML, CSS, JavaScript and image files) directly from a storage container. In this lab, rather than using a web server to show our map file, we will put the http file in a blob storage account and access it from there.
 
 ## Prerequisites
 1. The Resource Configuation Lab is completed, see [Lab 1.0 - Resource Configuration](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%201%20-%20Getting%20started%20with%20the%20Sense%20HAT/Lab%201.0%20-%20Resource%20Configuration)

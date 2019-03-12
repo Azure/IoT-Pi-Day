@@ -1,5 +1,6 @@
 # Lab 2.7.2 - Static HTML Page
-We need to document the scenario here
+
+In this lab, you will be setting up an Azure Function to communicate with Azure Maps so that it can create a map instance.
 
 ## Prerequisites
 1. The Resource Configuation Lab is completed, see [Lab 1.0 - Resource Configuration](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%201%20-%20Getting%20started%20with%20the%20Sense%20HAT/Lab%201.0%20-%20Resource%20Configuration)

@@ -1,5 +1,6 @@
 # Lab 2.4 - Create Function App and Update EventHubTrigger
-We need to document the scenario here
+
+In this lab, you will create an Azure Function to host the neccessary functions for this application. You will then update the triggers and storage connections to allow Azure services to respond to an event sent to an event hub event stream.
 
 ## Prerequisites
 1. The Resource Configuation Lab is completed, see [Lab 1.0 - Resource Configuration](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%201%20-%20Getting%20started%20with%20the%20Sense%20HAT/Lab%201.0%20-%20Resource%20Configuration)

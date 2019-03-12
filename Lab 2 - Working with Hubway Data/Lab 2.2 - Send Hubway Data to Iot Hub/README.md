@@ -8,7 +8,7 @@ In this section, you will simulate data being collected from the Hubway data sou
 3. Completion of Lab 2.1 through 2.1 must be done.
 
 ## Estimated time to complete
-- TBD
+- 20 min
 
 ## Load IoTProject code
 

@@ -34,7 +34,7 @@ The **Azure IoTPiDay Workshop** is setup to build out a real-life IoT scenario b
 
 ## Create an IoT Hub
 
-In this section, we will be creating an IOT Hub that we will use to connect to the Raspberry Pi device. An IoT Hub is the gateway to Azure IoT, a service that handles device management, security, and communication among the connected devices.  Will be using an IoT Hub throughout this lab. Use the following steps to create an Iot Hub:    
+In this section, we will be creating an IOT Hub that we will use to connect to the Raspberry Pi device. An IoT Hub is the gateway to Azure IoT, a service that handles device management, security, and communication among the connected devices.  We will be using an IoT Hub throughout this lab. Use the following steps to create an Iot Hub:    
 
 1. In a new browser window, sign in to the [Microsoft Azure Portal](https://portal.azure.com).
 
