@@ -1,0 +1,15 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/Lab 1 - Getting started with the Sense HAT/Solution/SenseHATDotNetCore/SenseHATDotNetCore.csproj"
+            ],
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}

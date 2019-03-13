@@ -1,0 +1,70 @@
+Lab 2.3 Create the Event Hub Trigger Function
+
+Snippet One:
+
+string myEventHubMessage, [CosmosDB(databaseName: "Hubway",collectionName: "Tripdata",ConnectionStringSetting = "Shared_Access_Key_DOCUMENTDB")] out dynamic outputDocument
+
+Snippet Two:                
+                
+            log.LogInformation($"C# Event Hub trigger function processed a message: {myEventHubMessage}");
+            
+            dynamic msg = JObject.Parse(myEventHubMessage);
+
+            outputDocument = new  {startTime = msg.GetValue("starttime").ToString(), 
+                        stopTime = msg.GetValue("stoptime").ToString(),
+                        tripDuration = msg.GetValue("tripduration").ToString(),
+                        startStationID = msg.GetValue("start_station_id").ToString(),
+                        startStationName = msg.GetValue("start_station_name").ToString(),
+                        startStationLatitiude = msg.GetValue("start_station_latitude").ToString(),
+                        startStationLongitude = msg.GetValue("start_station_longitude").ToString(),
+                        endStationID = msg.GetValue("end_station_id").ToString(),
+                        endStationName = msg.GetValue("end_station_name").ToString(),
+                        endStationLatitude = msg.GetValue("end_station_latitude").ToString(),
+                        endStationLongitude = msg.GetValue("end_station_longitude").ToString(),
+                        bikeID = msg.GetValue("bikeid").ToString(),
+                        userType = msg.GetValue("usertype").ToString(),
+                        gender = msg.GetValue("gender").ToString()};
+						   
+						   
+Lab 2.5 Function Trigger, CosmosDB
+
+Snippet One:
+
+				string lat = null;
+                string lon = null;
+
+                foreach (var doc in input)
+                {
+                    lat = doc.GetPropertyValue<string>("startStationLatitiude");
+                    lon = doc.GetPropertyValue<string>("startStationLongitude");
+
+                    log.LogInformation("Start Station Latitude variable lat: " + lat);
+                    log.LogInformation("Start Station Longitude variable lon: " + lon);
+
+                    // Create a New HttpClient object and dispose it when done, so the app doesn't leak resources
+                    using ( HttpClient http = new HttpClient() )                    
+
+                    // Perform the Azure Map Search passing lat/lon
+                    try
+                    {
+
+                        //var http = new HttpClient();
+                        var url = string.Format("https://atlas.microsoft.com/search/address/reverse/json?subscription-key=<Subscription-Key>&api-version=1.0&query="+lat+","+lon);
+                        
+                        log.LogInformation("Formatted Map URL: " + url);
+                        
+                        var response = await http.GetAsync(url);
+                        var result = await response.Content.ReadAsStringAsync();
+                        
+                        log.LogInformation("Azure Maps search result is: " + result );  
+
+                        }  
+                    catch(HttpRequestException e)
+                    {
+                        log.LogInformation("\nException Caught!");	
+                        log.LogInformation("Message :{0} ",e.Message);
+                    }             
+
+                }                
+
+						   

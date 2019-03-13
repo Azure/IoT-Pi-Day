@@ -1,0 +1,103 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hubway Data on Azure Maps Implementing Data-Driven Bubble Layer Styling</title>
+
+<meta charset="utf-8" />
+<meta http-equiv="x-ua-compatible" content="IE=Edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="description" content="This sample shows how to use data-driven styles on a BubbleLayer to define the radius and color of each circle based on the magnitude of each data point." />
+<meta name="keywords" content="map, gis, API, SDK, circle, bubble, layer, data-driven, bubblelayer, geojson, data driven styling, weather, earthquakes, USGS" />
+<meta name="author" content="Microsoft Azure Maps" />
+
+<!-- Add references to the Azure Maps Map control JavaScript and CSS files. -->
+<link rel="stylesheet" href="https://atlas.microsoft.com/sdk/css/atlas.min.css?api-version=1" type="text/css" />
+<script src="https://atlas.microsoft.com/sdk/js/atlas.min.js?api-version=1"></script>
+
+<script type='text/javascript'>
+    var map, datasource;
+    
+    //GeoJSON feed of data from CosmosDB
+
+    // change to your api
+    var hubwayFeed = "https://hubwayfunctions.azurewebsites.net/api/HubwayHttpTrigger";
+
+    function GetMap() {
+        
+        //Add your Azure Maps subscription key to the map SDK. Get an Azure Maps key at https://azure.com/maps
+        atlas.setSubscriptionKey('Azure Maps subscription');
+        
+        //Initialize a map instance.
+        map = new atlas.Map('myMap',
+        {
+            center: [-71.10, 42.4],
+            zoom: 11
+        });
+        
+        //Wait until the map resources have fully loaded.
+        map.events.add('load', function (e) {
+
+            //Create a data source and add it to the map.
+            datasource = new atlas.source.DataSource();
+            map.sources.add(datasource);
+
+            //Load the hubway start station data.
+            datasource.importDataFromUrl(hubwayFeed);
+
+            //Create a layer that defines how to render the shapes in the data source and add it to the map.
+            map.layers.add(new atlas.layer.BubbleLayer(datasource, 'hubway-circles', {
+
+                //Bubbles are made semi-transparent.
+                opacity: 0.75,
+
+                //Color of each bubble based on the value of "numberOfStations" property using a color gradient of green, yellow, orange, and red.
+                color: [
+                    'interpolate',
+                    ['linear'],
+                    ['get', 'numberOfStations'],
+                    5, 'green',
+                    25, 'yellow',
+                    50, 'orange',
+                    100, 'red'
+                ],
+                /*
+                 * Radius for each data point scaled based on the value of "numberOfStations" property.
+                 */
+                radius: [
+                    'interpolate',
+                    ['linear'],
+                    ['get', 'numberOfStations'],
+                    0, 2,
+                    100, 40
+                ]
+            }));
+
+            //Create a symbol layer using the same data source to render the magnitude as text above each bubble and add it to the map.
+            map.layers.add(new atlas.layer.SymbolLayer(datasource, 'hubway-labels', {
+                iconOptions: {
+
+                    //Hide the icon image.
+                    image: 'none'
+                },
+                textOptions: {
+
+                    //An expression is used to concerte the "mag" property value into a string and appends the letter "m" to the end of it.
+                    textField: ['concat', ['to-string', ['get', 'numberOfStations']], ' evt'],
+                    textSize: 12
+                }
+            }));
+        });
+    }
+</script>
+</head>
+<body onload="GetMap()">
+<div id="myMap" style="position:relative;width:100%;min-width:350px;height:600px;"></div>
+
+<fieldset style="width:calc(100% - 30px);min-width:350px;margin-top:10px;">
+    <legend>Boston Hubway Data-Driven Bubble Layer Styling</legend>
+    This Azure map depicts Boston Hubway data as each event is processed via an IoT process.  Azure Maps
+    Bubble Layer Styling is used to represent the number of start station events.
+</fieldset>
+</body>
+</html>

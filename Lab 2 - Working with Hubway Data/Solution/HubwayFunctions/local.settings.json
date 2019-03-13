@@ -1,0 +1,10 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=<Account Name>;AccountKey=<Account Key>",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+    "Shared_Access_Key_EVENTHUB": "Endpoint=<Endpoint>;SharedAccessKeyName=<Shared Access Key Name>;SharedAccessKey=<Shared Access Key>",
+    "Shared_Access_Key_DOCUMENTDB": "AccountEndpoint=<End Point>;AccountKey=<Account Key>",
+    "service": "<Connection String>"
+  }
+}
