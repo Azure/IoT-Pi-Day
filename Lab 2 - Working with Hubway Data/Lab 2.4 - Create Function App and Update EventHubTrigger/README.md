@@ -26,7 +26,7 @@ Use the following steps to create an Azure Function:
 
     ![Image](/images/lab-2.4-image2.png)
 
-5. Click **Create** to create a IoT Hub.
+5. Click **Create** to create a Function App.
 
 6. Fill in the fields:
 
