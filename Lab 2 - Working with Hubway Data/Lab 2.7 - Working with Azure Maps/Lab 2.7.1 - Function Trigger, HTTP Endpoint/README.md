@@ -10,7 +10,7 @@
 
 ## Review HTTPTrigger Function code
 
-In this section, we will use a HTTP trigger function to respond to an event everytime a CosmosDB record is updatd. We will be using Visual Studio Code and the Azure Functions Extension.
+In this section, we will use a HTTP trigger function to respond to an event everytime a CosmosDB record is updated. We will be using Visual Studio Code and the Azure Functions Extension.
 
 1. Open file.
 
