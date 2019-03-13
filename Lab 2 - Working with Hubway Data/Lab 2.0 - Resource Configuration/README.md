@@ -1,5 +1,6 @@
 # Lab 2.0 - Resource Configuration
-TBD - We need to document the scenario here
+
+In this lab, we are setting up the Azure components needed to complete all of the Lab 2.x sections.  This includes an Event Hub Namespace and Event Hub, An Azure CosmosDB account and collection, an Azure Map account and a storage account.  We will review what each of these components are for in subsequent labs.
 
 ## Prerequisites
 1. The Resource Configuation Lab is completed, see [Lab 1.0 - Resource Configuration](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%201%20-%20Getting%20started%20with%20the%20Sense%20HAT/Lab%201.0%20-%20Resource%20Configuration)
@@ -73,17 +74,19 @@ In this section, we will be creating a CosmosDB account that we will use to stor
 
 Use the following steps to create an Azure CosmosDB account:    
 
-1. In the **Search the Marketplace** textbox, type **CosmosDB** and press **Enter**.
+1. In the Azure portal click **+Create a resource** at the top left of the screen.
+
+2. In the **Search the Marketplace** textbox, type **CosmosDB** and press **Enter**.
 
     ![Image](/images/lab-2.0-image7.png)
 
-2. Select **Azure Cosmos DB** from the list.
+3. Select **Azure Cosmos DB** from the list.
 
     ![Image](/images/lab-2.0-image8.png)
 
-3. Click **Create** to create a CosmosDB account.
+4. Click **Create** to create a CosmosDB account.
 
-4. Fill in the fields.
+5. Fill in the fields.
 
     - **Subscription**, select the subscription to use for your Azure Cosmos DB Account.
 
@@ -98,7 +101,7 @@ Use the following steps to create an Azure CosmosDB account:
 
     ![Image](/images/lab-2.0-image9.png)
 
-5. Click **Review+Create**, then **Create** to create your Azure Cosmos DB Account.
+6. Click **Review+Create**, then **Create** to create your Azure Cosmos DB Account.
 
     > You can watch the notification pane to validate that it created successfully.
 
@@ -139,17 +142,19 @@ Azure Maps is a portfolio of geospatial services that include service APIs for M
 
 Use the following steps to create an Azure Map:    
 
-1. In the **Search the Marketplace** textbox, type **Azure Maps** and press **Enter**.
+1. In the Azure portal click **+Create a resource** at the top left of the screen.
+
+2. In the **Search the Marketplace** textbox, type **Azure Maps** and press **Enter**.
 
     ![Image](/images/lab-2.0-image13.png)
 
-2. Select **Maps** from the list.
+3. Select **Maps** from the list.
 
     ![Image](/images/lab-2.0-image14.png)
 
-3. Click **Create** to create a Maps Account.
+4. Click **Create** to create a Maps Account.
 
-4. Fill in the fields.
+5. Fill in the fields.
 
     - **Subscription**, select the subscription to use for your Azure Maps Account.
 
@@ -172,17 +177,19 @@ Use the following steps to create an Azure Map:
 
 Use the following steps to create a Storage Account:    
 
-1. In the **Search the Marketplace** textbox, type **Storage** and press **Enter**.
+1. In the Azure portal click **+Create a resource** at the top left of the screen.
+
+2. In the **Search the Marketplace** textbox, type **Storage** and press **Enter**.
 
     ![Image](/images/lab-2.0-image16.png)
 
-2. Select **Storage Account** from the list.
+3. Select **Storage Account** from the list.
 
     ![Image](/images/lab-2.0-image17.png)
 
-3. Click **Create** to create a Storage Account.
+4. Click **Create** to create a Storage Account.
 
-4. Fill in the fields.
+5. Fill in the fields.
 
     - **Subscription**, select the subscription to use for your Storage Account.
 

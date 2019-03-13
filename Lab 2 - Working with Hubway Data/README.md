@@ -25,10 +25,10 @@
 - [**Lab 2.3** - Setting up Event Hub](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.3%20-%20Setting%20up%20Event%20Hub)
     - This lab will guide you through ...(desc coming soon...)
 
-- [**Lab 2.4** - Create the Event Hub Trigger Function](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.4%20-%20Create%20the%20Event%20Hub%20Trigger%20Function)
+- [**Lab 2.4** - Create Function App and Update EventHubTrigger](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.4%20-%20Create%20Function%20App%20and%20Update%20EventHubTrigger)
     - This lab will guide you through ...(desc coming soon...)
 
-- [**Lab 2.5** - Create the CosmosDB Trigger Function](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.5%20-%20Create%20a%20CosmosDB%20Trigger%20Function)
+- [**Lab 2.5** - Update the CosmosDBTrigger Function](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.5%20-%20Update%20the%20CosmosDBTrigger%20Function)
     - This lab will guide you through ...(desc coming soon...)
 
 - [**Lab 2.6** - Configure Storage](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.6%20-%20Configure%20Storage)
@@ -40,5 +40,5 @@
     - [**Lab 2.7.1** - Create the HTTP Trigger Function](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.7%20-%20Working%20with%20Azure%20Maps/Lab%202.7.1%20-%20Function%20Trigger%2C%20HTTP%20Endpoint)
         - This lab will guide you through ...(desc coming soon...)
     
-    - [**Lab 2.7.2** - Create the Static HTML Page](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.7%20-%20Working%20with%20Azure%20Maps/Lab%202.7.2%20-%20Create%20the%20Static%20HTML%20Page)
+    - [**Lab 2.7.2** - Create the Static HTML Page](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.7%20-%20Working%20with%20Azure%20Maps/Lab%202.7.2%20-%20Static%20HTML%20Page)
         - This lab will guide you through ...(desc coming soon...)

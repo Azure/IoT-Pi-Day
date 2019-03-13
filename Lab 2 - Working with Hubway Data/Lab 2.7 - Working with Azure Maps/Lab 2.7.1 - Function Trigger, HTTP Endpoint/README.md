@@ -5,9 +5,12 @@
 2. The Resource Configuation Lab is completed, see [Lab 2.0 - Resource Configuration](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.0%20-%20Resource%20Configuration)
 3. Completion of Lab 2.1 through 2.6 must be done.
 
-## HTTPTrigger Function code
+## Estimated time to complete
+- 5 min
 
-In this section, we will use a HTTP trigger function to respond to an event everytime a CosmosDB records are updatd. We will be using Visual Studio Code and the Azure Functions Extension.
+## Review HTTPTrigger Function code
+
+In this section, we will use a HTTP trigger function to respond to an event everytime a CosmosDB record is updatd. We will be using Visual Studio Code and the Azure Functions Extension.
 
 1. Open file.
 
@@ -29,6 +32,7 @@ In this section, we will use a HTTP trigger function to respond to an event ever
 
         ![Image](/images/lab-2.7.1-image2.png)  
 
+<!--
 ## Deploy your Function App Project
 
 1. From Visual Studio Code, press **Ctrl-Shift-P**, enter **Azure Functions** and select **Deploy to Function App**.
@@ -48,7 +52,12 @@ In this section, we will use a HTTP trigger function to respond to an event ever
 
     ![Image](/images/lab-2.7.1-image6.png)
 
-## View the HubwayHTTP Endpoint
+-->
+
+## Update your Function App Features
+In this section, you need to update the origins used for CORS (Cross-Origin Resource Sharing). CORS is used to prevent malicious code execution in your services, App Service blocks calls to your function apps from external sources.
+
+Functions supports cross-origin resource sharing (CORS) to let you define a "whitelist" of allowed origins from which your functions can accept remote requests.
 
 1. Navigate to the resource group.
 
@@ -58,23 +67,45 @@ In this section, we will use a HTTP trigger function to respond to an event ever
 
         ![Image](/images/lab-2.7.1-image7.png)
 
-2. Copy the Endpoint
-    - Click on the **HubWayHttpTrigger**.
+2. Update allowed CORS orgins in the Portal.
+
+    - Click on **Platform Features**.
+
+        ![Image](/images/lab-2.7.1-image12.png) 
+    
+    - Scroll down, under **API**, click on **CORS**.
+
+    - Under **Allowed Origins**, click the ellipses on each row and click **Delete** to remove them.
+
+        ![Image](/images/lab-2.7.1-image13.png)  
+
+    - Type an **Asterisk** in the textbox.
+    
+    - Click **Save**, then click the **X** to close this window.
+
+        ![Image](/images/lab-2.7.1-image14.png)  
+
+## View the HubwayHTTP Endpoint
+
+1. Copy the Endpoint
+    - Under **Function Apps**, click Click on the **HubWayHttpTrigger**.
+    
     - Click on **Get function URL**.
 
-    ![Image](/images/lab-2.7.1-image8.png)
+        ![Image](/images/lab-2.7.1-image8.png)
 
-4. Click on **Copy** to copy the URL to clipboard.
+2. Click on **Copy** to copy the URL to clipboard.
 
     ![Image](/images/lab-2.7.1-image9.png) 
 
-5. Open a new tab in the browser, **Paste** in the URL, and press **Enter**.
+3. Open a new tab in the browser, **Paste** in the URL, and press **Enter**.
 
     - This function is now reading TripData from CosmosDB. You will see the following output.
 
         ![Image](/images/lab-2.7.1-image10.png) 
 
-6. Keep the browser open, you will need to copy the URL in the next lab, [Lab 2.7.2 - Static HTML Page](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.7%20-%20Working%20with%20Azure%20Maps/Lab%202.7.2%20-%20Static%20HTML%20Page).
+4. Keep the browser open, you will need to copy the URL in the next lab, [Lab 2.7.2 - Static HTML Page](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.7%20-%20Working%20with%20Azure%20Maps/Lab%202.7.2%20-%20Static%20HTML%20Page).
+
 
 ## Reference Sites
 

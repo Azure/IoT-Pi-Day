@@ -2,9 +2,9 @@
 
 ## What is a Sense HAT?
 
-The Sense HAT is an add-on board for the Raspberry Pi, made especially for the Astro Pi competition. The board allows you to make measurements of temperature, humidity, pressure, and orientation, and to output information using its built-in LED matrix.
+The Sense HAT is an add-on board for Raspberry Pi, made especially for the Astro Pi mission – it launched to the International Space Station in December 2015 – and is now available to the hobbyist. The board allows you to make measurements of temperature, humidity, pressure, and orientation, and to output information using its built-in LED matrix.
 
-![Image of Sense HAT](/images/sense-hat.png)
+![Image of Sense HAT](/images/SenseHAT-576x413.png)
 
 The Sense HAT has an 8 × 8 RGB LED matrix, a five – button joystick and includes the following sensors:
 - Gyroscope

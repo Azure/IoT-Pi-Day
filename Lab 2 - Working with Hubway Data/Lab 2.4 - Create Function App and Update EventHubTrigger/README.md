@@ -1,5 +1,6 @@
-# Lab 2.4 - Create Function App and Triggers
-We need to document the scenario here
+# Lab 2.4 - Create Function App and Update EventHubTrigger
+
+In this lab, you will create an Azure Function to host the neccessary functions for this application. You will then update the triggers and storage connections to allow Azure services to respond to an event sent to an event hub event stream.
 
 ## Prerequisites
 1. The Resource Configuation Lab is completed, see [Lab 1.0 - Resource Configuration](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%201%20-%20Getting%20started%20with%20the%20Sense%20HAT/Lab%201.0%20-%20Resource%20Configuration)
@@ -129,7 +130,7 @@ We use the Event Hubs trigger to respond to an event sent to an event hub event 
 
 ## Configure CosmosDB Trigger Bindings
 
-🚨 Descrption on what were doing here is needed!
+In this section, we are updating the trigger connection string to going to CosmosDB
 
 1. Navigate to the resource group.
 
@@ -154,68 +155,106 @@ We use the Event Hubs trigger to respond to an event sent to an event hub event 
 
     - Press **Ctrl-S** to save the file.
 
-## Test the Function
+## Test the Function Locally
 Let's test the Event Hub trigger to ensure it's firing and ready to process data.
 
-1. From **Visual Studio Code**, double-click on file **HubwayEventHubTrigger.cs** to open in the editor
-2. To execute the code, press **F5**.
-3. Telnet into the Raspberry Pi using SSH and login.
-4. Once you are logged in, type **cd SimulatedDevice**.
-5. Exectute the code, type **./simulated-device**.
+1. From **Visual Studio Code**, double-click on file **HubwayEventHubTrigger.cs** to open in the editor.
 
-    > Refer to Lab 2.2 - Send Hubway data to Iot Hub, section [Run the code from the Raspberry PI](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.2%20-%20Send%20Hubway%20Data%20to%20Iot%20Hub)
+    - To execute the code, press **F5**.
 
-6. If all went well, you should see each record in JSON format being sent up to the IoT Hub from Visual Studio Code.
+2. Run the code on the device.
 
-![Image](/images/lab-2.3-image20.png)
+    - Run **PuTTY** or **Windows 10 SSH** to Telnet into the Raspberry Pi Device using SSH.
 
-7. From **Visual Studio Code**, press **Ctrl-C** to stop.
+    - Enter the **IP address** of the Raspberry Pi Device.
+
+    - Enter <**pi1**> as the logon name, and **Password.1.!!** as the password.
+
+    - Once you are logged in, type **```cd SimulatedDevice```**
+
+    - To execute the code, type **```./simulated-device```**
+
+        > Refer to Lab 2.2 - Send Hubway data to Iot Hub, section [Run the code from the Raspberry PI](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.2%20-%20Send%20Hubway%20Data%20to%20Iot%20Hub)
+
+3. If all went well, you should see each record in JSON format being sent up to the IoT Hub from Visual Studio Code.
+
+    ![Image](/images/lab-2.4-image12.5.png)
+
+4. From **Visual Studio Code**, press **Ctrl-C** to stop.
 
 ## Deploy your Function App Project
 
-🚨 Descrption on what were doing here is needed!
+In this section, we will be deploying the Azure Function App. A function app is the container that hosts the execution of individual functions. A functions is a solution for easily running small pieces of code, or "functions," in the cloud.
 
-1. From Visual Studio Code, press **Ctrl-Shift-P**, enter **Azure Functions** and select **Deploy to Function App**.
+1. From Visual Studio Code, click on the **Azure** icon in the left menu.
 
-    ![Image](/images/lab-2.4-image13.png) 
+2. Click on the **Subscription** to expand it and expose the Function App created earlier, i.e. **<*lastname*>-piday-functionapp**.
 
-2. Select the **Function App name** created in the above section **Create a function app from the Azure portal**.
-    > i.e. **<**lastname**>-piday-functionapp**.
+    ![Image](/images/lab-2.4-image13.1.png) 
 
-    ![Image](/images/lab-2.4-image14.png) 
+4. Right-click and select **Deploy to Function App**.
 
-3. For the message **Are you sure...**, click **Deploy**.
+    ![Image](/images/lab-2.4-image13.2.png) 
 
-    ![Image](/images/lab-2.4-image15.png)
+5. For the message **Are you sure...**, click **Deploy**.
 
-4. After a successful deployment, click **Stream Logs**.
+    ![Image](/images/lab-2.4-image13.3.png) 
 
-    ![Image](/images/lab-2.4-image16.png) 
+4. After a successful deployment, click **View Output**.
 
-## Verify Connection Strings in Application Settings
+    ![Image](/images/lab-2.4-image13.4.png) 
 
-🚨 @Randy Pagels to add additional steps here.
+## Update Connection Strings in Azure
 
-1. Verify the **EventHub** connection string, **Shared_Access_Key_EVENTHUB**, in the Azure Portal.
+1. Right-click on **Application Settings** and select **Upload Local Settings**.
 
-2. Verify the **CosmosDB** connection string, **Shared_Access_Key_DOCUMENTDB**, in the Azure Portal.
+    ![Image](/images/lab-2.4-image13.5.png)  
+  
+2. Select **local.settings.json** file.
 
-## Run the code from the Raspberry PI
+    ![Image](/images/lab-2.4-image13.6.png) 
 
-1. Run **PuTTY** or **Windows 10 SSH** to Telnet into the Raspberry Pi Device using SSH.
-2. Enter the **IP address** of the Raspberry Pi Device.
+3. For the **Confirmation** message, click **Yes to all**.
+
+    ![Image](/images/lab-2.4-image13.7.png) 
+
+
+## Test the Function in Azure
+
+Let's test the Event Hub trigger to ensure it's firing in Azure.
+
+1. Start the Streaming Output
+
+    - Click on **Functions** to expand the functions list.
+    
+    - Click on **HubwayEventHubTrigger** to select it.
+
+        ![Image](/images/lab-2.4-image20.png)  
+
+    - Right-click on **HubwayEventHubTrigger** and select **Start Streaming Logs** to open the output window.
+
+        ![Image](/images/lab-2.4-image21.png)  
+
+
+2. Run the code on the device.
+
+    - Run **PuTTY** or **Windows 10 SSH** to Telnet into the Raspberry Pi Device using SSH.
+
+    - Enter the **IP address** of the Raspberry Pi Device.
+
     - Enter <**pi1**> as the logon name, and **Password.1.!!** as the password.
-3.  Once you are logged in
-4.  Type **```cd SimulatedDevice```**
-5.  To execute the code, type **```./simulated-device```**
 
-    > Refer to Lab 2.2 - Send Hubway data to Iot Hub, section [Run the code from the Raspberry PI](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.1%20-%20IoT%20Hub/Lab%202.1.1%20-%20Send%20Hubway%20Data%20to%20Iot%20Hub#run-the-code-from-the-raspberry-pi)
+    - Once you are logged in, type **```cd SimulatedDevice```**
 
-6. If all went well, you should see each record in JSON format being sent up to the IoT Hub from Visual Studio Code.
+    - To execute the code, type **```./simulated-device```**
 
-    ![Image](/images/lab-2.4-image17.png)
+        > Refer to Lab 2.2 - Send Hubway data to Iot Hub, section [Run the code from the Raspberry PI](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.2%20-%20Send%20Hubway%20Data%20to%20Iot%20Hub)
 
-7. From **Visual Studio Code**, press **Ctrl-C** to stop.
+3. If all went well, from the Visual Studio Code output window, you will see each record in JSON format being sent up to the IoT Hub.
+
+    ![Image](/images/lab-2.4-image22.png) 
+
+4. From **PuTTY** or **Windows 10 SSH**, press **Ctrl-C** to stop.
 
 ## Reference Sites
 

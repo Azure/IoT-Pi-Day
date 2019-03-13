@@ -1,4 +1,4 @@
-# Lab 2.5 - Update the CosmosDB Trigger Function
+# Lab 2.5 - Update the CosmosDBTrigger Function
 
 ## Prerequisites
 1. The Resource Configuation Lab is completed, see [Lab 1.0 - Resource Configuration](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%201%20-%20Getting%20started%20with%20the%20Sense%20HAT/Lab%201.0%20-%20Resource%20Configuration)
@@ -85,7 +85,7 @@ The body of the code is used to map the incoming JSON string to an output docume
 
     - From **Visual Studio Code**, double-click on the file **HubwayCosmosDBTrigger.cs** in the editor to open it.
 
-    - Notice the ... and .... (@Tim Brown, please update this line)
+        > For every record in CosmosDB we are looking at startStation Latitiude & Longitude and sending them to the Azure Map Search. We are searching for a street address using the Reverse Address Search feature of Azure Map and return the address of the Hubway Station. 
 
        ![Image](/images/lab-2.5-image2.2.png)  
 
@@ -99,6 +99,7 @@ The body of the code is used to map the incoming JSON string to an output docume
 
     - Press **Ctrl-S** to save the file.
 
+<!--
 ## Deploy your Function App Project
 
 1. From Visual Studio Code, press **Ctrl-Shift-P**, enter **Azure Functions** and select **Deploy to Function App**.
@@ -121,6 +122,30 @@ The body of the code is used to map the incoming JSON string to an output docume
 5. If everything worked, you will see the following in the Visual Studio Code output window.
 
     ![Image](/images/lab-2.5-image4.png) 
+
+-->
+
+## Deploy your Function App Project
+
+In this section, we will be deploying the Azure Function App. A function app is the container that hosts the execution of individual functions. A functions is a solution for easily running small pieces of code, or "functions," in the cloud.
+
+1. From Visual Studio Code, click on the **Azure** icon in the left menu.
+
+2. Click on the **Subscription** to expand it and expose the Function App created earlier, i.e. **<*lastname*>-piday-functionapp**.
+
+    ![Image](/images/lab-2.4-image13.1.png) 
+
+4. Right-click and select **Deploy to Function App**.
+
+    ![Image](/images/lab-2.4-image13.2.png) 
+
+5. For the message **Are you sure...**, click **Deploy**.
+
+    ![Image](/images/lab-2.4-image13.3.png) 
+
+4. After a successful deployment, click **View Output**.
+
+    ![Image](/images/lab-2.4-image13.4.png) 
 
 ## Reference Sites
 

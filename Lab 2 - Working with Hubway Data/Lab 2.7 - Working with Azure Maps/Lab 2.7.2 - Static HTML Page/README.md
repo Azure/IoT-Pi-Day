@@ -1,10 +1,14 @@
 # Lab 2.7.2 - Static HTML Page
-We need to document the scenario here
+
+In this lab, you will be setting up an Azure Function to communicate with Azure Maps so that it can create a map instance.
 
 ## Prerequisites
 1. The Resource Configuation Lab is completed, see [Lab 1.0 - Resource Configuration](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%201%20-%20Getting%20started%20with%20the%20Sense%20HAT/Lab%201.0%20-%20Resource%20Configuration)
 2. The Resource Configuation Lab is completed, see [Lab 2.0 - Resource Configuration](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%202%20-%20Working%20with%20Hubway%20Data/Lab%202.0%20-%20Resource%20Configuration)
 3. Completion of Lab 2.1 through 2.7.1 must be done.
+
+## Estimated time to complete
+- 15 min
 
 ## Develop the Static HTML Page code
 
@@ -18,7 +22,7 @@ We need to document the scenario here
 
     > C:\Workspace\IoT-Pi-Day-master\Lab 2 - Working with Hubway Data\Solution\HubwayMap
 
-4. Type **```code .```** (that's **code space dot**).
+4. Type **```code .```** (that's **code space dot**) to open Visual Studio Code.
 
 5. Select the resource group.
 
