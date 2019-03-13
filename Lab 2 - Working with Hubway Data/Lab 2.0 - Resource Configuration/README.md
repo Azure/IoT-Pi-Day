@@ -1,6 +1,6 @@
 # Lab 2.0 - Resource Configuration
 
-In this lab, we are setting up the Azure components needed to complete all of the Lab 2.x sections.  This includes an Event Hub Namespace and Event Hub, An Azure CosmosDB account and collection, an Azure Map account and a storage account.  We will review what each of these components are for in subsequent labs.
+In this lab, we are setting up the Azure components needed to complete all of the Lab 2.x sections.  This includes an Event Hub Namespace and Event Hub, an Azure CosmosDB account and collection, an Azure Map account and a storage account.  We will review what each of these components are for in subsequent labs.
 
 ## Prerequisites
 1. The Resource Configuation Lab is completed, see [Lab 1.0 - Resource Configuration](https://github.com/Azure/IoT-Pi-Day/tree/master/Lab%201%20-%20Getting%20started%20with%20the%20Sense%20HAT/Lab%201.0%20-%20Resource%20Configuration)
