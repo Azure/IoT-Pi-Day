@@ -93,7 +93,7 @@ This is only required if it's the first time you're logging into Azure from Visu
 ##  Deploy to Raspberry Pi
 1.  From the existing Command Prompt or PowerShell Prompt, cut-n-paste the below line and format it as follows: **scp.exe -r .\bin\Debug\netcoreapp2.2\linux-arm\publish\* <**username**>@<**device ip address**>:/home/<**pi1**>/SenseHATDotNetCore**
 
-    **```scp.exe -r .\bin\Debug\netcoreapp2.2\linux-arm\publish\* pi1@192.168.1.203:/home/pi1/SenseHATDotNetCore```**
+    **```scp.exe -r . \bin\Debug\netcoreapp2.2\linux-arm\publish\* pi1@192.168.1.203:/home/pi1/SenseHATDotNetCore```**
 
 3. When prompted to continue to connect, type **yes**.
 4. Type in **```Password.1.!!```** as the password.
