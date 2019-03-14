@@ -72,10 +72,12 @@ namespace SenseHATDotNetCore
                 Console.WriteLine();
                 Console.WriteLine($"Pressure: {pressureReadResult.Pressure}");
                 Console.WriteLine($"Humidity: {humidityReadResult.Humidity}");
-                Console.WriteLine($"Temperature: {humidityReadResult.Temperatur}"); 
+                Console.WriteLine($"Temperature C: {humidityReadResult.Temperatur}");
 
                 // Convert Celsius to Fahrenheit 
                 currentTemperature = humidityReadResult.Temperatur * 1.8 + 32;
+                
+                Console.WriteLine($"Temperature F: {currentTemperature}");
 
                 // Create JSON message
                 Telemetry telemetryRow = new Telemetry();
