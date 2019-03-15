@@ -83,7 +83,7 @@ namespace SenseHATDotNetCore
                 Console.WriteLine($"Temperature F: {currentTemperature}");
 
                 // Send Temperature to the SenseHAT matrix lights
-                //TestLedMessage(" " + Math.Round(currentTemperature), 2).ToString();
+                TestLedMessage("Temp = " + Math.Round(currentTemperature,2).ToString() + "   ");
                 
                 // Create JSON message
                 Telemetry telemetryRow = new Telemetry();
