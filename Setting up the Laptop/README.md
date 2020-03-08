@@ -48,7 +48,7 @@ What are Visual Studio Code Extensions? Extensions let you add languages, debugg
 - Azure Account, type: **```code --install-extension ms-vscode.azure-account```**
 - Azure Functions, type: **```code --install-extension ms-azuretools.vscode-azurefunctions```**
 - Azure IoT Device Workbench, type: **```code --install-extension vsciot-vscode.vscode-iot-workbench```**
-- C#, type: **```code --install-extension ms-vscode.csharp```**
+- C#, type: **```code --install-extension ms-dotnettools.csharp```**
 - Material Icon Theme, type: **```code --install-extension pkief.material-icon-theme```**
 - NuGet Package Manager, type: **```code --install-extension jmrog.vscode-nuget-package-manager```**
 - Azure CLI Tools, type: **```code --install-extension ms-vscode.azurecli```**
